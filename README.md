@@ -1,40 +1,40 @@
-#Cucina Vegana
+# Cucina Vegana
 
 
 This Mod adds some new Plants for vegan cooking in Minetest.
 It supports farming and farming_redo from TenPlus.
 
-##Soy:
+## Soy:
 ![Screenshot 1](textures/cucina_vegana_soy_screenshot.jpg)
 <br>
-##Parsley
+## Parsley
 ![Screenshot 1](textures/cucina_vegana_parsley_screenshot.jpg)
 <br>
-##Lettuce
+## Lettuce
 ![Screenshot 1](textures/cucina_vegana_lettuce_screenshot.jpg)
 <br>
-##Kohlrabi
+## Kohlrabi
 ![Screenshot 1](textures/cucina_vegana_kohlrabi_screenshot.jpg)
 <br>
 
 The Mod vegan_sunflower is integrated in Cucina Vegana.
 ![Screenshot 1](textures/cucina_vegana_sunflower_screenshot.jpg)
 
-##Install
+## Install
 
 Move your Download to the Mods-Folder.
 
-##Depends
+## Depends
 
 default<br>
 farming<br>
 vessels<br>
 
-###optional
+### optional
 mobs<br>
 farming_redo<br>
 
-##License
+## License
 
 License: WTFPL
 
