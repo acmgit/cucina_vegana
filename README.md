@@ -4,7 +4,7 @@
 This Mod adds some new Plants for vegan cooking in Minetest.
 It supports farming and farming_redo from TenPlus.
 
-## Soy:
+## Soy
 ![Screenshot 1](textures/cucina_vegana_soy_screenshot.jpg)
 <br>
 ## Parsley
@@ -17,7 +17,7 @@ It supports farming and farming_redo from TenPlus.
 ![Screenshot 1](textures/cucina_vegana_kohlrabi_screenshot.jpg)
 <br>
 
-The Mod vegan_sunflower is integrated in Cucina Vegana.
+## The Mod vegan_sunflower is integrated in Cucina Vegana.
 ![Screenshot 1](textures/cucina_vegana_sunflower_screenshot.jpg)
 
 ## Install
