@@ -28,7 +28,7 @@ minetest.register_craftitem("cucina_vegana:tofu", {
 	on_use = minetest.item_eat(2),
 })
 
-minetest.register_craftitem("cucina_vegana:milk", {
+minetest.register_craftitem("cucina_vegana:soy_milk", {
 	description = "Soy Milk",
 	inventory_image = "cucina_vegana_soy_milk.png",
 	groups = {flammable = 1, food = 1, food_milk = 1, eatable = 1},
@@ -52,7 +52,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "cucina_vegana:milk",
+	output = "cucina_vegana:soy_milk",
 	recipe = {
 			{"cucina_vegana:soy", "cucina_vegana:soy", "cucina_vegana:soy"},
 			{"", "cucina_vegana:soy", ""},
@@ -102,7 +102,6 @@ if minetest.get_modpath("animalmaterials") then
 	
 end -- if animalmaterials
 
-minetest.register_alias("soy:soy", "cucina_vegana:soy")
 minetest.register_alias("soy:tofu", "cucina_vegana:tofu")
 minetest.register_alias("soy:tofu_cooked", "cucina_vegana:tofu_cooked")
-minetest.register_alias("soy:milk", "cucina_vegana:milk")
+minetest.register_alias("soy:milk", "cucina_vegana:soy_milk")

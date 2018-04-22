@@ -113,5 +113,5 @@ minetest.register_craft({
 			}
 })
 
-minetest.register_alias("lettuce:salad_bowl", "cucina_vegana:salad_bowl")
-minetest.register_alias("lettuce:lettuce_oil", "cucina_vegana:lettuce_oil")
+minetest.register_alias("lettuce:bowl", "cucina_vegana:salad_bowl")
+minetest.register_alias("lettuce:oil", "cucina_vegana:lettuce_oil")

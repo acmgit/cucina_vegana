@@ -150,7 +150,7 @@ end
 -- can deleted if you have a clean world.
 
 minetest.register_alias("vegan_sunflower:seeds_dough", "cucina_vegana:sunflower_seeds_dough")
-minetest.register_alias("vegan_sunflower:seeds", "cucina_vegana:sunflower_seeds_dough")
+minetest.register_alias("vegan_sunflower:seeds", "cucina_vegana:sunflower_seeds")
 minetest.register_alias("vegan_sunflower:seeds_oil", "cucina_vegana:sunflower_seeds_oil")
 minetest.register_alias("vegan_sunflower:seeds_roasted", "cucina_vegana:sunflower_seeds_roasted")
 minetest.register_alias("vegan_sunflower:seeds_bread", "cucina_vegana:sunflower_seeds_bread")
