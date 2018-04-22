@@ -54,7 +54,7 @@ minetest.register_craft({
 	burntime = 4
 })
 
-minetest.register_node("cucina_vegana:soup", {
+minetest.register_node("cucina_vegana:kohlrabi_soup", {
 	description = "Kohlrabi Soup (raw)",
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_kohlrabi_soup.png"},
