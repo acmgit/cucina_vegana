@@ -73,8 +73,8 @@ minetest.register_node("cucina_vegana:lettuce_oil", {
 
 minetest.register_craft({
 	output = "cucina_vegana:lettuce_oil",
-	recipe = {	{"cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce"},
-				{"cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce"},
+	recipe = {	{"cucina_vegana:lettuce_seed", "cucina_vegana:lettuce_seed", "cucina_vegana:lettuce_seed"},
+				{"cucina_vegana:lettuce_seed", "cucina_vegana:lettuce_seed", "cucina_vegana:lettuce_seed"},
 				{"", "vessels:glass_bottle", ""}
 
 			}
