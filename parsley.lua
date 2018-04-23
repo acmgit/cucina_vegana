@@ -5,10 +5,10 @@ minetest.register_decoration({
 	sidelen = 16,
 	noise_params = {
 		offset = 0,
-		scale = 0.02,
+		scale = 0.01,
 		spread = {x = 70, y = 70, z = 70},
 		seed = 7133,
-		octaves = 4,
+		octaves = 3,
 		persist = 0.6
 	},
 	y_min = 0,
