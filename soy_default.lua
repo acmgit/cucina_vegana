@@ -4,7 +4,6 @@
 	**********************************************
 ]]--
 
-	-- Soy
 farming.register_plant("cucina_vegana:soy", {
 	description = "Soy Beans",
 	inventory_image = "cucina_vegana_soy_seed.png",
@@ -39,17 +38,6 @@ minetest.register_node("cucina_vegana:wild_soy", {
 	},
 })
 
--- Crafting Recipe to get additional Seeds (Default: additional_seed = false).
-if(cucina_vegana.additional_seeds) then
-
-	minetest.register_craft({
-		output = "cucina_vegana:seed_soy 4",
-		recipe = {
-			{"cucina_vegana:soy"}
-		}
-	})
-
-end -- if(additional_seeds)
 
 minetest.register_alias("soy:wild_soy", "cucina_vegana:wild_soy")
 minetest.register_alias("soy:soy", "cucina_vegana:soy")

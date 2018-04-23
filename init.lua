@@ -13,24 +13,19 @@
 	
 ]]--
 
-cucina_vegana = {}
+cucina_vegana_farming_default = true
 
-
-local farming_default = true
 local modpath = minetest.get_modpath(minetest.get_current_modname())
 
 -- looking if farming_redo is activ?
 if(farming.mod ~= nil and farming.mod == "redo") then
 
-	farming_default = false
+	cucina_vegana_farming_default = false
 	
 end
 
 
--- Switch true to use the Recipe for additional Seeds.
-cucina_vegana.additional_seeds = true
-
-if (farming_default) then
+if (cucina_vegana_farming_default) then
 
 	print("[MOD] " .. minetest.get_current_modname() .. " set to default mode.")
 	
@@ -52,6 +47,10 @@ if (farming_default) then
 	-- Kohlrabi
 	dofile(modpath .. "/kohlrabi_default.lua")
 	dofile(modpath .. "/kohlrabi.lua")
+
+	-- Chives
+	dofile(modpath .. "/chives_default.lua")
+	dofile(modpath .. "/chives.lua")
 	
 else
 
@@ -75,10 +74,21 @@ else
 	-- Kohlrabi
 	dofile(modpath .. "/kohlrabi_redo.lua")
 	dofile(modpath .. "/kohlrabi.lua")
+
+	-- Chives
+	dofile(modpath .. "/chives_redo.lua")
+	dofile(modpath .. "/chives.lua")
 	
 end -- if( default ....)
 
---<<== Technic-Support >>==--
+-- Insert Recipes
+	
+dofile(modpath .. "/recipes.lua")
+
+
+--   *******************************************
+--   *****           Technic-Support             ***** 
+--   *******************************************
 
 if (minetest.get_modpath("technic")) then
 
@@ -116,6 +126,5 @@ if (minetest.get_modpath("technic")) then
 	end
 	
 end
-
 
 print("[MOD] " .. minetest.get_current_modname() .. " loaded.")

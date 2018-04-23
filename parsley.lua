@@ -15,16 +15,3 @@ minetest.register_decoration({
 	y_max = 100,
 	decoration = "cucina_vegana:wild_parsley",
 })
-
-minetest.register_craft({
-	type = "fuel",
-	recipe = "cucina_vegana:parsley",
-	burntime = 1,
-})
-
-minetest.register_craftitem("cucina_vegana:parsley", {
-	description = "Parsley",
-	inventory_image = "cucina_vegana_parsley.png",
-	groups = {flammable = 1, food = 1, eatable = 1},
-	on_use = minetest.item_eat(1),
-})

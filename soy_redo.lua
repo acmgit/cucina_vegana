@@ -128,18 +128,6 @@ minetest.register_node("cucina_vegana:wild_soy", {
 	},
 })
 
--- Crafting Recipe to get additional Seeds (Default: additional_seed = false).
-if(cucina_vegana.additional_seeds) then
-
-	minetest.register_craft({
-		output = "cucina_vegana:soy_seed 4",
-		recipe = {
-			{"cucina_vegana:soy"}
-		}
-	})
-
-end -- if(additional_seeds)
-
 -- to import the old mod in cucina_vegana
 -- can deleted if you have a clean world.
 
