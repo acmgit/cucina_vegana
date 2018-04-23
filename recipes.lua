@@ -270,7 +270,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:salad_bowl",
-	recipe = {	{"cucina_vegana:lettuce", "cucina_vegana:lettuce", "cucina_vegana:lettuce"},
+	recipe = {	{"cucina_vegana:parsley", "cucina_vegana:lettuce", "cucina_vegana:chives"},
 				{"", "group:food_oil", ""},
 				{"", "group:food_bowl", ""}
 			}
