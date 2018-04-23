@@ -106,45 +106,6 @@ minetest.register_craft({
 	recipe = "cucina_vegana:sunflower_seeds"
 })
 
---[[
---<<== Technic-Support >>==--
-
-if (minetest.get_modpath("technic")) then
-
-
-	-- Support Compressor
-	local compressor_recipes = {
-					{"cucina_vegana:sunflower_seeds 6", "cucina_vegana:sunflower_seeds_oil"},
-				}
-	for _, data in pairs(compressor_recipes) do
-
-		technic.register_compressor_recipe({input = {data[1]}, output = data[2]})
-
-	end
-
-	-- Support Centrifuge
-	local centrifuge_recipes = {
-					{ "flowers:sunflower",             "cucina_vegana:sunflower_seeds 4",       "dye:yellow"      },
-				}
-				
-	for _, data in pairs(centrifuge_recipes) do
-	
-		technic.register_separating_recipe({ input = { data[1] }, output = { data[2], data[3], data[4] } })
-		
-	end
-
-	-- Support Extractor
-	local extractor_recipes = {
-		{"flowers:sunflower", "cucina_vegana:sunflower_seeds 4"},
-	}
-
-	for _, data in ipairs(extractor_recipes) do
-		technic.register_extractor_recipe({input = {data[1]}, output = data[2]})
-	end
-	
-end
-
-]]--
 
 -- to import the old mod in cucina_vegana
 -- can deleted if you have a clean world.
