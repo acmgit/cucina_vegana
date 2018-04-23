@@ -31,6 +31,7 @@ farming<br>
 vessels<br>
 
 ### optional
+technic<br>
 mobs<br>
 farming_redo<br>
 
