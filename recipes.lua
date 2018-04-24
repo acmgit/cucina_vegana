@@ -275,42 +275,42 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "cucina_vegana:bowl",
+	output = "cucina_vegana:bowl 5",
 	recipe = {	{"default:glass", "", "default:glass"},
 				{"default:glass", "default:glass", "default:glass"}
 			}
 })
 
 minetest.register_craft({
-	output = "cucina_vegana:plate",
+	output = "cucina_vegana:plate 5",
 	recipe = {	{"group:wood", "", "group:wood"},
 				{"group:wood", "group:wood", "group:wood"}
 			}
 })
 
 minetest.register_craft({
-	output = "cucina_vegana:plate",
+	output = "cucina_vegana:plate 2",
 	recipe = {	{"default:clay_lump", "", "default:clay_lump"},
 				{"default:clay_lump", "default:clay_lump", "default:clay_lump"}
 			}
 })
 
 minetest.register_craft({
-	output = "cucina_vegana:plate",
+	output = "cucina_vegana:plate 10",
 	recipe = {	{"default:steel_ingot", "", "default:steel_ingot"},
 				{"default:steel_ingot", "default:steel_ingot", "default:steel_ingot"}
 			}
 })
 
 minetest.register_craft({
-	output = "cucina_vegana:plate",
+	output = "cucina_vegana:plate 10",
 	recipe = {	{"default:copper_ingot", "", "default:copper_ingot"},
 				{"default:copper_ingot", "default:copper_ingot", "default:copper_ingot"}
 			}
 })
 
 minetest.register_craft({
-	output = "cucina_vegana:plate",
+	output = "cucina_vegana:plate 10",
 	recipe = {	{"default:tin_ingot", "", "default:tin_ingot"},
 				{"default:tin_ingot", "default:tin_ingot", "default:tin_ingot"}
 			}
