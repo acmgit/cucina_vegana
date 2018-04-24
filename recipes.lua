@@ -124,6 +124,24 @@ minetest.register_node("cucina_vegana:soy_soup_cooked", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
+minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
+	description = "Bottle of Sunflower Seeds Oil",
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_sunflower_seeds_oil.png"},
+	inventory_image = "cucina_vegana_sunflower_seeds_oil.png",
+	wield_image = "cucina_vegana_sunflower_seeds_oil.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	on_use = minetest.item_eat(2, "vessels:glass_bottle"),
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_oil = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
 --   *******************************************
 --   *****                 Items                       ***** 
 --   *******************************************
@@ -177,6 +195,37 @@ minetest.register_craftitem("cucina_vegana:kohlrabi_roasted", {
 	on_use = minetest.item_eat(4),
 })
 
+-- sunflower Seeds
+minetest.register_craftitem("cucina_vegana:sunflower_seeds", {
+    description = "Sunflower Seeds",
+    groups = {seed = 1, food = 1},
+    inventory_image = "cucina_vegana_sunflower_seeds.png",
+    on_use = minetest.item_eat(1),
+})
+
+-- sunflower Seeds Dough
+minetest.register_craftitem("cucina_vegana:sunflower_seeds_dough", {
+    description = "Sunflower Seeds Dough",
+    groups = {food = 1},
+    inventory_image = "cucina_vegana_sunflower_seeds_dough.png",
+    on_use = minetest.item_eat(2),
+})
+
+-- sunflower Seeds Roasted
+minetest.register_craftitem("cucina_vegana:sunflower_seeds_roasted", {
+	description = "Roasted Sunflower Seeds",
+	groups = {food = 1},
+	inventory_image = "cucina_vegana_sunflower_seeds_roasted.png",
+	on_use = minetest.item_eat(2),
+})
+
+-- sunflower Seeds Bread
+minetest.register_craftitem("cucina_vegana:sunflower_seeds_bread", {
+	description = "Sunflower Seeds Bread",
+	groups = {food = 1},
+	inventory_image = "cucina_vegana_sunflower_seeds_bread.png",
+	on_use = minetest.item_eat(4),
+})
 
 --   *******************************************
 --   *****                 Crafts                       ***** 
@@ -301,7 +350,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "cucina_vegana:soy_soup",
 	recipe = {	{"cucina_vegana:chives", "group:food_oil", "cucina_vegana:parsley"},
-				{"", "group:food_milk", ""},
+				{"", "cucina_vegana:soy_milk", ""},
 				{"", "group:food_plate", ""}
 			},
 			replacements = {{"group:food_milk", "vessels:glass_bottle"},

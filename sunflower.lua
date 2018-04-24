@@ -1,55 +1,45 @@
+local modpath = minetest.get_modpath(minetest.get_current_modname())
 
-minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
-	description = "Bottle of Sunflower Seeds Oil",
-	drawtype = "plantlike",
-	tiles = {"cucina_vegana_sunflower_seeds_oil.png"},
-	inventory_image = "cucina_vegana_sunflower_seeds_oil.png",
-	wield_image = "cucina_vegana_sunflower_seeds_oil.png",
-	paramtype = "light",
-	is_ground_content = false,
-	walkable = false,
-	on_use = minetest.item_eat(2, "vessels:glass_bottle"),
-	selection_box = {
-		type = "fixed",
-		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
-	},
-	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_oil = 1},
-	sounds = default.node_sound_glass_defaults(),
-})
+if(minetest.registered_nodes["flowers:sunflower"]  ~= nil) then
+	print("[MOD] " .. minetest.get_current_modname() .. " Sunflowers available.")
+	print("[MOD] " .. minetest.get_current_modname() .. " using \"flowers:sunflower\".")
 
+else
 
--- sunflower Seeds
-minetest.register_craftitem("cucina_vegana:sunflower_seeds", {
-    description = "Sunflower Seeds",
-    groups = {seed = 1, food = 1},
-    inventory_image = "cucina_vegana_sunflower_seeds.png",
-    on_use = minetest.item_eat(1),
-})
+	print("[MOD] " .. minetest.get_current_modname() .. " no Sunflowers available.")
+	print("[MOD] " .. minetest.get_current_modname() .. " use own Sunflowers.")
 
--- sunflower Seeds Dough
-minetest.register_craftitem("cucina_vegana:sunflower_seeds_dough", {
-    description = "Sunflower Seeds Dough",
-    groups = {food = 1},
-    inventory_image = "cucina_vegana_sunflower_seeds_dough.png",
-    on_use = minetest.item_eat(2),
-})
+	
+	minetest.register_decoration({
+		deco_type = "simple",
+		place_on = {"default:dirt_with_grass", "default:dirt_with_dry_grass"},
+		sidelen = 16,
+		noise_params = {
+			offset = 0,
+			scale = 0.01,
+			spread = {x = 10, y = 10, z = 10},
+			seed = 7133,
+			octaves = 3,
+			persist = 0.6
+		},
+		y_min = 0,
+		y_max = 150,
+		decoration = "cucina_vegana:wild_sunflower",
+		})
+	
+	minetest.register_alias("flowers:sunflower", "cucina_vegana:sunflower")
 
--- sunflower Seeds Roasted
-minetest.register_craftitem("cucina_vegana:sunflower_seeds_roasted", {
-	description = "Roasted Sunflower Seeds",
-	groups = {food = 1},
-	inventory_image = "cucina_vegana_sunflower_seeds_roasted.png",
-	on_use = minetest.item_eat(2),
-})
-
--- sunflower Seeds Bread
-minetest.register_craftitem("cucina_vegana:sunflower_seeds_bread", {
-	description = "Sunflower Seeds Bread",
-	groups = {food = 1},
-	inventory_image = "cucina_vegana_sunflower_seeds_bread.png",
-	on_use = minetest.item_eat(4),
-})
-
+	if (cucina_vegana_farming_default) then
+	
+		dofile(modpath .. "/sunflower_default.lua")
+		
+	else
+		
+		dofile(modpath .. "/sunflower_redo.lua")
+		
+	end
+	
+end
 
 -- to import the old mod in cucina_vegana
 -- can deleted if you have a clean world.
