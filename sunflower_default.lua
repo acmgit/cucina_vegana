@@ -23,7 +23,7 @@
 		drawtype = "plantlike",
 		paramtype2 = "facedir",
 		tiles = {"cucina_vegana_sunflower_5.png"},
-		groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1},
+		groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1},
 		sounds = default.node_sound_leaves_defaults(),
 		selection_box = {
 				type = "fixed",

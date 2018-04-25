@@ -5,7 +5,7 @@ minetest.register_node("cucina_vegana:parsley_seed", {
 	inventory_image = "cucina_vegana_parsley_seed.png",
 	wield_image = "cucina_vegana_parsley_seed.png",
 	drawtype = "signlike",
-	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
+	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4, attached_node = 1},
 	paramtype = "light",
 	paramtype2 = "wallmounted",
 	walkable = false,
@@ -89,7 +89,7 @@ minetest.register_node("cucina_vegana:wild_parsley", {
 	drawtype = "plantlike",
 	paramtype2 = "facedir",
 	tiles = {"cucina_vegana_parsley_5.png"},
-	groups = {snappy=3, dig_immediate=1, flammable=2, plant=1},
+	groups = {snappy=3, dig_immediate=1, flammable=2, plant=1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 			type = "fixed",
