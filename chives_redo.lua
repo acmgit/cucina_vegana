@@ -1,4 +1,4 @@
--- lettuce
+-- chives
 minetest.register_node("cucina_vegana:chives_seed", {
 	description = "Chives Seed",
 	tiles = {"cucina_vegana_chives_seed.png"},
@@ -22,7 +22,7 @@ minetest.register_craftitem("cucina_vegana:chives", {
 	groups = {flammable = 4},
 	})
 	
--- lettuce definition
+-- chives definition
 local crop_def = {
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_chives_1.png"},

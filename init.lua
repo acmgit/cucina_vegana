@@ -52,6 +52,10 @@ if (cucina_vegana_farming_default) then
 	dofile(modpath .. "/chives_default.lua")
 	dofile(modpath .. "/chives.lua")
 	
+	--Rosemary
+	dofile(modpath .. "/rosemary_default.lua")
+	dofile(modpath .. "/rosemary.lua")
+	
 else
 
 	print("[MOD] " .. minetest.get_current_modname() .. " set to redo mode.")
@@ -78,6 +82,11 @@ else
 	-- Chives
 	dofile(modpath .. "/chives_redo.lua")
 	dofile(modpath .. "/chives.lua")
+	
+	--Rosemary
+	dofile(modpath .. "/rosemary_redo.lua")
+	dofile(modpath .. "/rosemary.lua")
+
 	
 end -- if( default ....)
 
