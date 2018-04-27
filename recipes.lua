@@ -142,6 +142,42 @@ minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
+minetest.register_node("cucina_vegana:tofu_chives_rosemary", {
+	description = "Tofu on Chives and Rosemary",
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_tofu_chives_rosemary.png"},
+	inventory_image = "cucina_vegana_tofu_chives_rosemary.png",
+	wield_image = "cucina_vegana_tofu_chives_rosemary.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	on_use = minetest.item_eat(5,  "cucina_vegana:plate"),
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:tofu_chives_rosemary_cooked", {
+	description = "Tofu on Chives and Rosemary (cooked)",
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_tofu_chives_rosemary_cooked.png"},
+	inventory_image = "cucina_vegana_tofu_chives_rosemary_cooked.png",
+	wield_image = "cucina_vegana_tofu_chives_rosemary_cooked.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	on_use = minetest.item_eat(6,  "cucina_vegana:plate"),
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
 --   *******************************************
 --   *****                 Items                       ***** 
 --   *******************************************
@@ -225,6 +261,30 @@ minetest.register_craftitem("cucina_vegana:sunflower_seeds_bread", {
 	groups = {food = 1},
 	inventory_image = "cucina_vegana_sunflower_seeds_bread.png",
 	on_use = minetest.item_eat(4),
+})
+
+-- Imitation Meat
+minetest.register_craftitem("cucina_vegana:imitation_meat", {
+	description = "Imitation Meat",
+	groups = {food = 1, food_meat = 1},
+	inventory_image = "cucina_vegana_imitation_meat.png",
+	on_use = minetest.item_eat(3),
+})
+
+-- Imitation Cheese
+minetest.register_craftitem("cucina_vegana:imitation_butter", {
+	description = "Imitation Butter",
+	groups = {food = 1, food_butter = 1},
+	inventory_image = "cucina_vegana_imitation_butter.png",
+	on_use = minetest.item_eat(2),
+})
+
+-- Imitation Cheese
+minetest.register_craftitem("cucina_vegana:imitation_cheese", {
+	description = "Imitation Cheese",
+	groups = {food = 1, food_cheese = 1},
+	inventory_image = "cucina_vegana_imitation_cheese.png",
+	on_use = minetest.item_eat(3),
 })
 
 --   *******************************************
@@ -358,6 +418,36 @@ minetest.register_craft({
 						}
 })
 
+minetest.register_craft({
+	output = "cucina_vegana:tofu_chives_rosemary",
+	recipe = {	{"cucina_vegana:chives", "", "cucina_vegana:rosemary"},
+				{"", "cucina_vegana:tofu", ""},
+				{"", "group:food_plate", ""}
+			},
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:imitation_meat",
+	recipe = {	{"dye:red", "cucina_vegana:tofu", "dye:white"},
+				{"", "cucina_vegana:tofu", ""},
+				{"", "cucina_vegana:tofu", ""}
+			},
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:imitation_butter",
+	recipe = {	{"dye:yellow", "cucina_vegana:soy_milk",  "cucina_vegana:soy_milk"}
+			},
+			replacements = {{"cucina_vegana:soy_milk", "vessels:drinking_glass 2"}
+						}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:imitation_cheese",
+	recipe = {	{"dye:orange","cucina_vegana:imitation_butter", "cucina_vegana:imitation_butter", ""}
+			},
+})
+
 --   *******************************************
 --   *****                 Cookings                   ***** 
 --   *******************************************
@@ -400,6 +490,13 @@ minetest.register_craft({
 	cooktime = 15,
 	output = "cucina_vegana:soy_soup_cooked",
 	recipe = "cucina_vegana:soy_soup"
+})
+
+minetest.register_craft({
+	type = "cooking",
+	cooktime = 18,
+	output = "cucina_vegana:tofu_chives_rosemary_cooked",
+	recipe = "cucina_vegana:tofu_chives_rosemary"
 })
 
 --   *******************************************

@@ -1,6 +1,7 @@
 default
 farming
 vessels
+dye
 flowers?
 technic?
 mobs?
