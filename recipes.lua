@@ -183,7 +183,7 @@ minetest.register_node("cucina_vegana:fish_parsley_rosemary", {
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_fish_parsley_rosemary.png"},
 	inventory_image = "cucina_vegana_fish_parsley_rosemary.png",
-	wield_image = "cucina_fish_parsley_rosemary.png",
+	wield_image = "cucina_vegana_fish_parsley_rosemary.png",
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
@@ -200,7 +200,7 @@ minetest.register_node("cucina_vegana:fish_parsley_rosemary_cooked", {
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_fish_parsley_rosemary_cooked.png"},
 	inventory_image = "cucina_vegana_fish_parsley_rosemary_cooked.png",
-	wield_image = "cucina_fish_parsley_rosemary_cooked.png",
+	wield_image = "cucina_vegana_fish_parsley_rosemary_cooked.png",
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
@@ -513,11 +513,13 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "cucina_vegana:fish_parsley_rosemary",
 	recipe = {	
-				{"cucina_vegana:parsley","", "cucina_vegana:rosemary"},
+				{"cucina_vegana:parsley","group:food_oil", "cucina_vegana:rosemary"},
 				{"","group:food_fish", ""},
 				{"","cucina_vegana:plate", ""},
-			
 			},
+			replacements = {
+							{"group:food_oil", "vessels:glass_bottle"},
+						}
 })
 
 --   *******************************************
