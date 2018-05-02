@@ -1,3 +1,10 @@
+local modpath = minetest.get_modpath(minetest.get_current_modname())
+
+if(minetest.registered_nodes["flowers:sunflower"]  ~= nil) then
+	print("[MOD] " .. minetest.get_current_modname() .. " Sunflowers available.")
+	print("[MOD] " .. minetest.get_current_modname() .. " using \"flowers:sunflower\".")
+
+else
 
 	farming.register_plant("cucina_vegana:sunflower", {
 		description = "Sunflower Seed",
@@ -32,3 +39,5 @@
 				},
 		},
 	})
+
+end

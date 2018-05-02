@@ -13,6 +13,8 @@
 	
 ]]--
 
+local plants = {}
+
 cucina_vegana_farming_default = true
 
 local modpath = minetest.get_modpath(minetest.get_current_modname())
@@ -24,71 +26,55 @@ if(farming.mod ~= nil and farming.mod == "redo") then
 	
 end
 
+plants = {
 
+			["soy"] = true,
+			["parsley"] = true,
+			["lettuce"] = true,
+			["chives"] = true,
+			["rosemary"] = true,
+			["sunflower"] = true,
+			["kohlrabi"] = true
+		}
+		
 if (cucina_vegana_farming_default) then
 
 	print("[MOD] " .. minetest.get_current_modname() .. " set to default mode.")
 	
-	-- Vegan Sunflower
-	dofile(modpath .. "/sunflower.lua")
-
-	-- Soy
-	dofile(modpath .. "/soy_default.lua")
-	dofile(modpath .. "/soy.lua")
-
-	-- Parsley
-	dofile(modpath .. "/parsley_default.lua")
-	dofile(modpath .. "/parsley.lua")
-
-	-- Lettuce
-	dofile(modpath .. "/lettuce_default.lua")
-	dofile(modpath .. "/lettuce.lua")
-
-	-- Kohlrabi
-	dofile(modpath .. "/kohlrabi_default.lua")
-	dofile(modpath .. "/kohlrabi.lua")
-
-	-- Chives
-	dofile(modpath .. "/chives_default.lua")
-	dofile(modpath .. "/chives.lua")
+	-- Load all flowers in default-mode
+	for pname, value in pairs(plants) do
 	
-	--Rosemary
-	dofile(modpath .. "/rosemary_default.lua")
-	dofile(modpath .. "/rosemary.lua")
-	
-else
+		if(value) then
+		
+			print(pname .. "_default = loaded.")
+			
+			dofile(modpath .. "/" .. pname .. "_default.lua")
+			dofile(modpath .. "/".. pname .. ".lua")
+
+		end -- if(value)
+		
+	end -- for
+
+else -- farming_redo is active
 
 	print("[MOD] " .. minetest.get_current_modname() .. " set to redo mode.")
 	
-	-- Vegan Sunflower
-	dofile(modpath .. "/sunflower.lua")
+	-- Load all flowers in redo-mode.
+	for pname, value in pairs(plants) do
 	
-	-- Soy
-	dofile(modpath .. "/soy_redo.lua")
-	dofile(modpath .. "/soy.lua")
+		if(value) then
+		
+			print(pname .. "_redo = loaded.")
+			
+			dofile(modpath .. "/" .. pname .. "_redo.lua")
+			dofile(modpath .. "/".. pname .. ".lua")
 
-	-- Parsley
-	dofile(modpath .. "/parsley_redo.lua")
-	dofile(modpath .. "/parsley.lua")
+			
+		end -- if(value)
+		
+	end -- for
 
-	-- Lettuce
-	dofile(modpath .. "/lettuce_redo.lua")
-	dofile(modpath .. "/lettuce.lua")
-
-	-- Kohlrabi
-	dofile(modpath .. "/kohlrabi_redo.lua")
-	dofile(modpath .. "/kohlrabi.lua")
-
-	-- Chives
-	dofile(modpath .. "/chives_redo.lua")
-	dofile(modpath .. "/chives.lua")
-	
-	--Rosemary
-	dofile(modpath .. "/rosemary_redo.lua")
-	dofile(modpath .. "/rosemary.lua")
-
-	
-end -- if( default ....)
+end -- if (cucina_vegana_farming_default)
 
 -- Insert Recipes
 	
