@@ -30,11 +30,13 @@ plants = {
 
 			["soy"] = true,
 			["parsley"] = true,
-			["lettuce"] = true,
+			["lettuce"] =true,
 			["chives"] = true,
 			["rosemary"] = true,
 			["sunflower"] = true,
-			["kohlrabi"] = true
+			["kohlrabi"] = true,
+			["asparagus"] = true
+			
 		}
 		
 if (cucina_vegana_farming_default) then

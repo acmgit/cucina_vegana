@@ -23,6 +23,10 @@ It supports farming and farming_redo from TenPlus.
 ![Screenshot 1](textures/cucina_vegana_rosemary_screenshot.jpg)
 <br>
 
+## Asparagus
+![Screenshot 1](textures/cucina_vegana_asparagus_screenshot.jpg)
+<br>
+
 ## The Mod vegan_sunflower is integrated in Cucina Vegana.
 ![Screenshot 1](textures/cucina_vegana_sunflower_screenshot.jpg)
 

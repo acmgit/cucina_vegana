@@ -54,6 +54,24 @@ minetest.register_node("cucina_vegana:salad_bowl", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
+minetest.register_node("cucina_vegana:salad_hollandaise", {
+	description = "Salad Bowl Hollandaise",
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_salad_hollandaise.png"},
+	inventory_image = "cucina_vegana_salad_hollandaise.png",
+	wield_image = "cucina_vegana_salad_hollandaise.png",
+	on_use = minetest.item_eat(5, "cucina_vegana:bowl"),
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
 minetest.register_node("cucina_vegana:kohlrabi_soup", {
 	description = "Kohlrabi Soup (raw)",
 	drawtype = "plantlike",
@@ -124,6 +142,76 @@ minetest.register_node("cucina_vegana:soy_soup_cooked", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
+minetest.register_node("cucina_vegana:asparagus_soup", {
+	description = "Asparagus Soup (raw)",
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_asparagus_soup.png"},
+	inventory_image = "cucina_vegana_asparagus_soup.png",
+	wield_image = "cucina_vegana_asparagus_soup.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1, food_soup = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:asparagus_soup_cooked", {
+	description = "Asparagus Soup",
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_asparagus_soup_cooked.png"},
+	inventory_image = "cucina_vegana_asparagus_soup_cooked.png",
+	wield_image = "cucina_vegana_asparagus_soup_cooked.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	on_use = minetest.item_eat(5,  "cucina_vegana:plate"),
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:asparagus_hollandaise", {
+	description = "Asparagus Hollandaise (raw)",
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_soy_soup.png"},
+	inventory_image = "cucina_vegana_asparagus_hollandaise.png",
+	wield_image = "cucina_vegana_asparagus_hollandaise.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1, food_soup = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:asparagus_hollandaise_cooked", {
+	description = "Asparagus Hollandaise",
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_asparagus_hollandaise_cooked.png"},
+	inventory_image = "cucina_vegana_asparagus_hollandaise_cooked.png",
+	wield_image = "cucina_vegana_asparagus_hollandaise_cooked.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	on_use = minetest.item_eat(5,  "cucina_vegana:plate"),
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
 minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
 	description = "Bottle of Sunflower Seeds Oil",
 	drawtype = "plantlike",
@@ -139,6 +227,24 @@ minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
 	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_oil = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:sauce_hollandaise", {
+	description = "Sauce Hollandaise",
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_sauce_hollandaise.png"},
+	inventory_image = "cucina_vegana_sauce_hollandaise.png",
+	wield_image = "cucina_vegana_sauce_hollandaise.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	on_use = minetest.item_eat(3, "vessels:glass_bottle"),
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_sauce = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -335,6 +441,15 @@ minetest.register_craftitem("cucina_vegana:imitation_fish", {
 --   *******************************************
 
 minetest.register_craft({
+	output = "cucina_vegana:sauce_hollandaise",
+	recipe = {	{"cucina_vegana:parsley", "group:food_butter", "cucina_vegana:rosemary"},
+				{"", "cucina_vegana:soy_milk", ""},
+				{"", "vessels:glass_bottle", ""}
+			}
+})
+
+
+minetest.register_craft({
 	output = "cucina_vegana:sunflower_seeds_oil",
 	recipe = {	{"cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds"},
 				{"cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds"},
@@ -429,6 +544,16 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "cucina_vegana:salad_hollandaise",
+	recipe = {
+				{"cucina_vegana:sauce_hollandaise", "cucina_vegana:salad_bowl", ""}
+			},
+	replacements = {
+				{"cucina_vegana:sauce_hollandaise", "vessels:glass_bottle"},
+			}
+})
+
+minetest.register_craft({
 	output = "cucina_vegana:kohlrabi_soup",
 	recipe = {	{"cucina_vegana:kohlrabi", "group:food_oil", "cucina_vegana:parsley"},
 				{"", "bucket:bucket_water", ""},
@@ -458,6 +583,26 @@ minetest.register_craft({
 			},
 			replacements = {{"group:food_milk", "vessels:glass_bottle"},
 						   {"group:food_oil", "vessels:glass_bottle"},
+						}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:asparagus_soup",
+	recipe = {	{"cucina_vegana:chives", "group:food_oil", "cucina_vegana:asparagus"},
+				{"", "cucina_vegana:soy_milk", ""},
+				{"", "group:food_plate", ""}
+			},
+			replacements = {{"group:food_milk", "vessels:glass_bottle"},
+						   {"group:food_oil", "vessels:glass_bottle"},
+						}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:asparagus_hollandaise",
+	recipe = {	{"cucina_vegana:asparagus", "cucina_vegana:sauce_hollandaise", "cucina_vegana:parsley"},
+				{"", "group:food_plate", ""}
+			},
+			replacements = {	{"group:food_sauce", "vessels:glass_bottle"},
 						}
 })
 
@@ -568,6 +713,13 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "cooking",
+	cooktime = 15,
+	output = "cucina_vegana:asparagus_soup_cooked",
+	recipe = "cucina_vegana:asparagus_soup"
+})
+
+minetest.register_craft({
+	type = "cooking",
 	cooktime = 18,
 	output = "cucina_vegana:tofu_chives_rosemary_cooked",
 	recipe = "cucina_vegana:tofu_chives_rosemary"
@@ -580,6 +732,12 @@ minetest.register_craft({
 	recipe = "cucina_vegana:fish_parsley_rosemary"
 })
 
+minetest.register_craft({
+	type = "cooking",
+	cooktime = 18,
+	output = "cucina_vegana:asparagus_hollandaise_cooked",
+	recipe = "cucina_vegana:asparagus_hollandaise"
+})
 --   *******************************************
 --   *****                 Fuels                        ***** 
 --   *******************************************
@@ -644,6 +802,12 @@ minetest.register_craft({
 	type = "fuel",
 	recipe = "cucina_vegana:chives",
 	burntime = 1,
+})
+
+minetest.register_craft({
+	type = "fuel",
+	recipe = "cucina_vegana:asparagus",
+	burntime = 3,
 })
 
 --   *******************************************
