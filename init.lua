@@ -61,9 +61,11 @@ for pname, value in pairs(plants) do
 end -- for
 
 -- Insert Recipes
-	
+dofile(modpath .. "/nodes.lua")
+dofile(modpath .. "/items.lua")
+dofile(modpath .. "/fuels.lua")
 dofile(modpath .. "/recipes.lua")
-
+dofile(modpath .. "/recipes_cook.lua")
 
 --   *******************************************
 --   *****           Technic-Support             ***** 
