@@ -39,44 +39,26 @@ plants = {
 			
 		}
 		
-if (cucina_vegana_farming_default) then
 
-	print("[MOD] " .. minetest.get_current_modname() .. " set to default mode.")
+-- Load all flowers in default-mode
+for pname, value in pairs(plants) do
 	
-	-- Load all flowers in default-mode
-	for pname, value in pairs(plants) do
-	
-		if(value) then
-		
-			print(pname .. "_default = loaded.")
+	if(value) then
+		if (cucina_vegana_farming_default) then
 			
 			dofile(modpath .. "/" .. pname .. "_default.lua")
 			dofile(modpath .. "/".. pname .. ".lua")
-
-		end -- if(value)
-		
-	end -- for
-
-else -- farming_redo is active
-
-	print("[MOD] " .. minetest.get_current_modname() .. " set to redo mode.")
-	
-	-- Load all flowers in redo-mode.
-	for pname, value in pairs(plants) do
-	
-		if(value) then
-		
-			print(pname .. "_redo = loaded.")
 			
+		else
+				
 			dofile(modpath .. "/" .. pname .. "_redo.lua")
 			dofile(modpath .. "/".. pname .. ".lua")
-
 			
-		end -- if(value)
-		
-	end -- for
+		end -- if(cucina_vegana...)
 
-end -- if (cucina_vegana_farming_default)
+	end -- if(value)
+		
+end -- for
 
 -- Insert Recipes
 	
@@ -124,4 +106,12 @@ if (minetest.get_modpath("technic")) then
 	
 end
 
-print("[MOD] " .. minetest.get_current_modname() .. " loaded.")
+if (cucina_vegana_farming_default) then
+
+	print("[MOD] " .. minetest.get_current_modname() .. " in default-mode loaded.")
+
+else
+
+	print("[MOD] " .. minetest.get_current_modname() .. " in redo-mode loaded.")
+	
+end
