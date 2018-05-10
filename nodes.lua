@@ -344,7 +344,7 @@ minetest.register_node("cucina_vegana:bowl_rice_cooked", {
 	wield_image = "cucina_vegana_bowl_rice_cooked.png",
 	paramtype = "light",
 	is_ground_content = false,
-	on_use = minetest.item_eat(5,  "cucina_vegana:bowl"),
+	on_use = minetest.item_eat(4,  "cucina_vegana:bowl"),
 	walkable = false,
 	selection_box = {
 		type = "fixed",
@@ -380,7 +380,7 @@ minetest.register_node("cucina_vegana:asparagus_rice_cooked", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(5,  "cucina_vegana:plate"),
+	on_use = minetest.item_eat(6,  "cucina_vegana:plate"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
