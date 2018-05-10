@@ -222,12 +222,48 @@ minetest.register_craft({
 	recipe = {	
 				{"cucina_vegana:parsley","group:food_oil", "cucina_vegana:rosemary"},
 				{"","group:food_fish", ""},
-				{"","cucina_vegana:plate", ""},
+				{"","group:food_plate", ""},
 			},
 			replacements = {
 							{"group:food_oil", "vessels:glass_bottle"},
 						}
 })
+
+minetest.register_craft({
+	output = "cucina_vegana:bowl_rice",
+	recipe = {	
+				{"cucina_vegana:rice"},
+				{"bucket:bucket_water"},
+				{"group:food_bowl"},
+			},
+			replacements = {
+							{"bucket:bucket_water", "bucket:bucket_empty"},
+						}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:bowl_rice",
+	recipe = {	
+				{"cucina_vegana:rice"},
+				{"bucket:bucket_river_water"},
+				{"group:food_bowl"},
+			},
+			replacements = {
+							{"bucket:bucket_river_water", "bucket:bucket_empty"},
+						}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:asparagus_rice",
+	recipe = {	
+				{"cucina_vegana:asparagus", "group:food_rice", "group:food_butter"},
+				{"", "group:food_plate", ""}
+			},
+			replacements = {
+							{"group:food_rice", "cucina_vegana:bowl"},
+						}
+})
+
 
 --   *******************************************
 --   **             Recipe differences                 ** 
@@ -291,4 +327,40 @@ if minetest.get_modpath("animalmaterials") then
 	})
 	
 end -- if animalmaterials
+
+if minetest.get_modpath("fishing") then
+
+	minetest.register_craft({
+		type = "shapeless",
+		output = "fishing:sushi",
+		recipe = {"fishing:fish_raw","group:food_rice","flowers:seaweed"},
+		
+		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
+	})
+
+	minetest.register_craft({
+		type = "shapeless",
+		output = "fishing:sushi",
+		recipe = {"fishing:fish_raw","group:food_rice","seaplants:kelpgreen"},
+		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
+		
+	})
+
+	minetest.register_craft({
+		type = "shapeless",
+		output = "fishing:sushi",
+		recipe = {"group:food_fish","group:food_rice","flowers:seaweed"},
+		
+		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
+	})
+
+	minetest.register_craft({
+		type = "shapeless",
+		output = "fishing:sushi",
+		recipe = {"group:food_fish","group:food_rice","seaplants:kelpgreen"},
+		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
+		
+	})
+	
+end
 

@@ -180,7 +180,7 @@ minetest.register_node("cucina_vegana:asparagus_soup_cooked", {
 minetest.register_node("cucina_vegana:asparagus_hollandaise", {
 	description = "Asparagus Hollandaise (raw)",
 	drawtype = "plantlike",
-	tiles = {"cucina_vegana_soy_soup.png"},
+	tiles = {"cucina_vegana_asparagus_hollandaise.png"},
 	inventory_image = "cucina_vegana_asparagus_hollandaise.png",
 	wield_image = "cucina_vegana_asparagus_hollandaise.png",
 	paramtype = "light",
@@ -311,6 +311,76 @@ minetest.register_node("cucina_vegana:fish_parsley_rosemary_cooked", {
 	is_ground_content = false,
 	walkable = false,
 	on_use = minetest.item_eat(6,  "cucina_vegana:plate"),
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:bowl_rice", {
+	description = "Bowl of Rice",
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_bowl_rice.png"},
+	inventory_image = "cucina_vegana_bowl_rice.png",
+	wield_image = "cucina_vegana_bowl_rice.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food_rice=1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:bowl_rice_cooked", {
+	description = "Bowl of Rice",
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_bowl_rice_cooked.png"},
+	inventory_image = "cucina_vegana_bowl_rice_cooked.png",
+	wield_image = "cucina_vegana_bowl_rice_cooked.png",
+	paramtype = "light",
+	is_ground_content = false,
+	on_use = minetest.item_eat(5,  "cucina_vegana:bowl"),
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {vessel = 1, dig_immediate = 3, attached_node = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:asparagus_rice", {
+	description = "Asparagus on Rice (raw)",
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_asparagus_rice.png"},
+	inventory_image = "cucina_vegana_asparagus_rice.png",
+	wield_image = "cucina_vegana_asparagus_rice.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:asparagus_rice_cooked", {
+	description = "Asparagus on Rice",
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_asparagus_rice_cooked.png"},
+	inventory_image = "cucina_vegana_asparagus_rice_cooked.png",
+	wield_image = "cucina_vegana_asparagus_rice_cooked.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	on_use = minetest.item_eat(5,  "cucina_vegana:plate"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}

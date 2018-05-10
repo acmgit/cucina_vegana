@@ -27,6 +27,10 @@ It supports farming and farming_redo from TenPlus.
 ![Screenshot 1](textures/cucina_vegana_asparagus_screenshot.jpg)
 <br>
 
+## Rice
+![Screenshot 1](textures/cucina_vegana_rice_screenshot.jpg)
+<br>
+
 ## The Mod vegan_sunflower is integrated in Cucina Vegana.
 ![Screenshot 1](textures/cucina_vegana_sunflower_screenshot.jpg)
 
@@ -44,6 +48,7 @@ vessels<br>
 technic<br>
 mobs<br>
 farming_redo<br>
+fishing<br>
 
 ## License
 

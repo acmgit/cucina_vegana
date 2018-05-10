@@ -6,3 +6,4 @@ flowers?
 technic?
 mobs?
 farming_redo?
+fishing?

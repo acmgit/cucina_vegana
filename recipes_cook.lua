@@ -69,3 +69,17 @@ minetest.register_craft({
 	output = "cucina_vegana:asparagus_hollandaise_cooked",
 	recipe = "cucina_vegana:asparagus_hollandaise"
 })
+
+minetest.register_craft({
+	type = "cooking",
+	cooktime = 20,
+	output = "cucina_vegana:bowl_rice_cooked",
+	recipe = "cucina_vegana:bowl_rice"
+})
+
+minetest.register_craft({
+	type = "cooking",
+	cooktime = 10,
+	output = "cucina_vegana:asparagus_rice_cooked",
+	recipe = "cucina_vegana:asparagus_rice"
+})

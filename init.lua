@@ -35,7 +35,8 @@ plants = {
 			["rosemary"] = true,
 			["sunflower"] = true,
 			["kohlrabi"] = true,
-			["asparagus"] = true
+			["asparagus"] = true,
+			["rice"] = true
 			
 		}
 		
@@ -57,7 +58,8 @@ for pname, value in pairs(plants) do
 		end -- if(cucina_vegana...)
 
 	end -- if(value)
-		
+	
+	print("[MOD] " .. minetest.get_current_modname() .. " Module: " .. pname .. " loaded.")
 end -- for
 
 -- Insert Recipes

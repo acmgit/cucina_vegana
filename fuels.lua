@@ -70,3 +70,8 @@ minetest.register_craft({
 	burntime = 3,
 })
 
+minetest.register_craft({
+	type = "fuel",
+	recipe = "cucina_vegana:rice",
+	burntime = 5,
+})
