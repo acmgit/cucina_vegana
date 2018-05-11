@@ -68,6 +68,7 @@ dofile(modpath .. "/items.lua")
 dofile(modpath .. "/fuels.lua")
 dofile(modpath .. "/recipes.lua")
 dofile(modpath .. "/recipes_cook.lua")
+dofile(modpath .. "/recipes_support.lua")
 
 --   *******************************************
 --   *****           Technic-Support             ***** 
