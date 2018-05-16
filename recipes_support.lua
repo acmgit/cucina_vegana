@@ -28,10 +28,6 @@ end
 --   ** Additional Recipes with other Mods  ** 
 --   *******************************************
 
---   *******************************************
---   ** Mobs
---   *******************************************
-
 if minetest.get_modpath("mobs") then
 
 	minetest.register_craft({
@@ -52,10 +48,6 @@ if minetest.get_modpath("mobs") then
 
 end -- if mobs
 
---   *******************************************
---   ** Animal Materials 
---   *******************************************
-
 if minetest.get_modpath("animalmaterials") then
 
 	minetest.register_craft({
@@ -68,10 +60,6 @@ if minetest.get_modpath("animalmaterials") then
 	})
 	
 end -- if animalmaterials
-
---   *******************************************
---   ** Fishing
---   *******************************************
 
 if minetest.get_modpath("fishing") then
 
@@ -107,17 +95,5 @@ if minetest.get_modpath("fishing") then
 		
 	})
 	
-	----------------------------------------------------------------------------------------------
-	-- Roasted Fish
-	-----------------------------------------------------------------------------------------------
-	minetest.register_craft({
-		type = "cooking",
-		output = "fishing:fish",
-		recipe = "group:food_fish",
-		cooktime = 2,
-	})
-
-	
-end -- if fishing
-
+end
 
