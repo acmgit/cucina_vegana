@@ -3,6 +3,10 @@
 	***                        cucina vegana              ***
 	**********************************************
 	
+	If you want use cucina vegana with farming_redo from TenPlus, then set
+	farming_default = false
+	else true.
+	
 	if you want to add a Recipt to get additional Soy-Seeds, then set
 	additional_seed = true
 	else false.
@@ -11,7 +15,16 @@
 
 local plants = {}
 
+cucina_vegana_farming_default = true
+
 local modpath = minetest.get_modpath(minetest.get_current_modname())
+
+-- looking if farming_redo is activ?
+if(farming.mod ~= nil and farming.mod == "redo") then
+
+	cucina_vegana_farming_default = false
+	
+end
 
 plants = {
 
@@ -28,11 +41,25 @@ plants = {
 		}
 		
 
+-- Load all flowers in default-mode
 for pname, value in pairs(plants) do
 	
-	dofile(modpath .. "/".. pname .. ".lua")
-	print("[MOD] " .. minetest.get_current_modname() .. " Module: " .. pname .. " loaded.")
+	if(value) then
+		if (cucina_vegana_farming_default) then
+			
+			dofile(modpath .. "/" .. pname .. "_default.lua")
+			dofile(modpath .. "/".. pname .. ".lua")
+			
+		else
+				
+			dofile(modpath .. "/" .. pname .. "_redo.lua")
+			dofile(modpath .. "/".. pname .. ".lua")
+			
+		end -- if(cucina_vegana...)
+
+	end -- if(value)
 	
+	print("[MOD] " .. minetest.get_current_modname() .. " Module: " .. pname .. " loaded.")
 end -- for
 
 -- Insert Recipes
@@ -84,5 +111,12 @@ if (minetest.get_modpath("technic")) then
 	
 end
 
-print("[MOD] " .. minetest.get_current_modname() .. " in default-mode loaded.")
+if (cucina_vegana_farming_default) then
 
+	print("[MOD] " .. minetest.get_current_modname() .. " in default-mode loaded.")
+
+else
+
+	print("[MOD] " .. minetest.get_current_modname() .. " in redo-mode loaded.")
+	
+end
