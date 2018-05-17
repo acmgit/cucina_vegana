@@ -99,25 +99,13 @@ end
 
 if minetest.get_modpath("bbq") then
 
-	--Lamb Kebab Craft Recipe
+	-- *** group:food_meat
+	
+	--BBQ Beef Ribs Craft Recipe
 	minetest.register_craft( {
-		output = "bbq:lamb_kebab_raw 4",
+		output = "bbq:bbq_beef_ribs_raw 2",
 		type = "shapeless",
-		recipe = {"group:food_pepper", "group:food_meat", "default:stick", "flowers:mushroom_brown", "group:food_onion"}
-	})
-
-	--Rack of Lamb Craft Recipe
-	minetest.register_craft( {
-		output = "bbq:rack_lamb_raw 2",
-		type = "shapeless",
-		recipe = {"bbq:bbq_sauce", "group:food_meat", "mobs:mutton_raw"}
-	})
-
-	--Leg of Lamb Craft Recipe
-	minetest.register_craft( {
-		output = "bbq:leg_lamb_raw 2",
-		type = "shapeless",
-		recipe = {"group:food_garlic_clove", "group:food_meat", "mobs:mutton_raw"}
+		recipe = {"bbq:bbq_sauce", "group:food_meat", "group:food_pepper_ground"}
 	})
 
 	--Corned Beef Craft Recipe
@@ -134,18 +122,48 @@ if minetest.get_modpath("bbq") then
 		recipe = {"bbq:bbq_sauce", "bbq:molasses", "group:food_meat", "group:food_garlic_clove"}
 	})
 
+	--London Broil Craft Recipe
+	minetest.register_craft( {
+		output = "bbq:london_broil_raw 2",
+		type = "shapeless",
+		recipe = {"bbq:bacon", "group:food_garlic_clove", "group:food_meat"}
+	})
+	
+	--Beef Jerky Craft Recipe
+	minetest.register_craft( {
+		output = "bbq:beef_jerky_raw 3",
+		type = "shapeless",
+		recipe = {"bbq:liquid_smoke", "bbq:brine", "group:food_meat"}
+	})
+
+	--Pepper Steak Craft Recipe
+	minetest.register_craft( {
+		output = "bbq:pepper_steak_raw",
+		type = "shapeless",
+		recipe = {"group:food_pepper_ground", "group:food_meat", "group:food_pepper_ground"}
+	})
+
+	-- *** group:food_bread
+	
 	--Cheese Steak Craft Recipe
 	minetest.register_craft( {
 		output = "bbq:cheese_steak 2",
 		type = "shapeless",
 		recipe = {"group:food_bread", "group:food_pepper", "bbq:beef", "group:food_cheese", "group:food_onion"}
 	})
-
+	
 	--Bacon Cheeseburger Craft Recipe
 	minetest.register_craft( {
 		output = "bbq:bacon_cheeseburger 3",
 		type = "shapeless",
 		recipe = {"group:food_bread", "bbq:bacon", "bbq:hamburger_patty", "group:food_cheese"}
+	})
+
+	--Bacon Cheeseburger Craft Recipe
+	minetest.register_craft( {
+		output = "bbq:bacon_cheeseburger 3",
+		type = "shapeless",
+		recipe = {"group:food_bread", "bbq:bacon", "group:food_meat", "group:food_cheese"}
 	})
 
 	--Hamburger Craft Recipe
@@ -154,6 +172,28 @@ if minetest.get_modpath("bbq") then
 		type = "shapeless",
 		recipe = {"group:food_bread", "bbq:hamburger_patty"}
 	})
+
+	--Hamburger Craft Recipe
+	minetest.register_craft( {
+		output = "bbq:hamburger 2",
+		type = "shapeless",
+		recipe = {"group:food_bread", "group:food_meat"}
+	})
+	
+	--Hotdog Craft Recipe
+	minetest.register_craft( {
+		output = "bbq:hotdog 2",
+		type = "shapeless",
+		recipe = {"bbq:hotdog_cooked", "group:food_bread"}
+	})
+
+	--Pulled Pork Craft Recipe
+	minetest.register_craft( {
+		output = "bbq:pulled_pork 2",
+		type = "shapeless",
+		recipe = {"mobs:pork_cooked", "group:food_bread", "bbq:bbq_sauce"}
+	})
+
 
 	--Stuffed Chop Craft Recipe
 	minetest.register_craft( {
