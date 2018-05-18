@@ -23,6 +23,7 @@ minetest.register_node("cucina_vegana:wild_asparagus", {
 	drawtype = "plantlike",
 	paramtype2 = "facedir",
 	tiles = {"cucina_vegana_asparagus_6.png"},
+	sunlight_propagates = true,
 	groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {

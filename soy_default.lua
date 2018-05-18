@@ -28,6 +28,7 @@ minetest.register_node("cucina_vegana:wild_soy", {
 	drawtype = "plantlike",
 	paramtype2 = "facedir",
 	tiles = {"cucina_vegana_soy_8.png"},
+	sunlight_propagates = true,
 	groups = {chopspy=2, oddly_breakable_by_hand=3, flammable=2, plant=1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
