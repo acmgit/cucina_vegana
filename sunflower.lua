@@ -1,3 +1,7 @@
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 local modpath = minetest.get_modpath(minetest.get_current_modname())
 
 if(minetest.registered_nodes["flowers:sunflower"]  ~= nil) then
@@ -29,16 +33,46 @@ else
 	
 	minetest.register_alias("flowers:sunflower", "cucina_vegana:sunflower")
 
-	if (cucina_vegana_farming_default) then
+	farming.register_plant("cucina_vegana:sunflower", {
+		description = S("Sunflower Seed"),
+		inventory_image = "cucina_vegana_sunflower_seed.png",
+		steps = 5,
+		minlight = 13,
+		maxlight = default.LIGHT_MAX,
+		fertility = {"grassland"},
+		groups = {flammable = 4},
+	})
 	
-		dofile(modpath .. "/sunflower_default.lua")
-		
-	else
-		
-		dofile(modpath .. "/sunflower_redo.lua")
-		
-	end
-	
+	-- Register for Mapgen
+	minetest.register_node("cucina_vegana:wild_sunflower", {
+		description = S("Wild Sunflower"),
+        paramtype = "light",
+		walkable = false,
+	drop = { 
+			items = { 
+                    {items = {"cucina_vegana:seed_sunflower 2"}, rarity = 1},
+					{items = {"cucina_vegana:seed_sunflower 2"}, rarity = 2},
+					{items = {"cucina_vegana:sunflower 2"}, rarity = 1},
+                    {items = {"cucina_vegana:sunflower 2"}, rarity = 2},
+                    },
+			},
+		drawtype = "plantlike",
+		paramtype2 = "facedir",
+		tiles = {"cucina_vegana_sunflower_5.png"},
+		sunlight_propagates = true,
+		groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1, growing = 1},
+		sounds = default.node_sound_leaves_defaults(),
+		selection_box = {
+				type = "fixed",
+				fixed = {
+					{-0.5, -0.5, -0.5, 0.5, -0.35, 0.5}, -- side f
+				},
+		},
+	})
+    
+	-- Convert Redo-Seeds
+    minetest.register_alias("cucina_vegana:sunflower_seed", "cucina_vegana:seed_sunflower")
+
 end
 
 -- to import the old mod in cucina_vegana
