@@ -2,8 +2,12 @@
 --   *****                 Nodes                       ***** 
 --   *******************************************
 
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 minetest.register_node("cucina_vegana:plate", {
-	description = "Plate",
+	description = S("Plate"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_plate.png"},
 	inventory_image = "cucina_vegana_plate.png",
@@ -20,7 +24,7 @@ minetest.register_node("cucina_vegana:plate", {
 })
 
 minetest.register_node("cucina_vegana:bowl", {
-	description = "Glass Bowl",
+	description = S("Glass Bowl"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_bowl.png"},
 	inventory_image = "cucina_vegana_bowl.png",
@@ -37,7 +41,7 @@ minetest.register_node("cucina_vegana:bowl", {
 })
 
 minetest.register_node("cucina_vegana:salad_bowl", {
-	description = "Glass Salad Bowl",
+	description = S("Glass Salad Bowl"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_salad_bowl.png"},
 	inventory_image = "cucina_vegana_salad_bowl.png",
@@ -55,7 +59,7 @@ minetest.register_node("cucina_vegana:salad_bowl", {
 })
 
 minetest.register_node("cucina_vegana:salad_hollandaise", {
-	description = "Salad Bowl Hollandaise",
+	description = S("Salad Bowl Hollandaise"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_salad_hollandaise.png"},
 	inventory_image = "cucina_vegana_salad_hollandaise.png",
@@ -73,7 +77,7 @@ minetest.register_node("cucina_vegana:salad_hollandaise", {
 })
 
 minetest.register_node("cucina_vegana:kohlrabi_soup", {
-	description = "Kohlrabi Soup (raw)",
+	description = S("Kohlrabi Soup (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_kohlrabi_soup.png"},
 	inventory_image = "cucina_vegana_kohlrabi_soup.png",
@@ -90,7 +94,7 @@ minetest.register_node("cucina_vegana:kohlrabi_soup", {
 })
 
 minetest.register_node("cucina_vegana:kohlrabi_soup_cooked", {
-	description = "Kohlrabi Soup",
+	description = S("Kohlrabi Soup"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_kohlrabi_soup_cooked.png"},
 	inventory_image = "cucina_vegana_kohlrabi_soup_cooked.png",
@@ -108,7 +112,7 @@ minetest.register_node("cucina_vegana:kohlrabi_soup_cooked", {
 })
 
 minetest.register_node("cucina_vegana:soy_soup", {
-	description = "Soy Soup (raw)",
+	description = S("Soy Soup (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_soy_soup.png"},
 	inventory_image = "cucina_vegana_soy_soup.png",
@@ -125,7 +129,7 @@ minetest.register_node("cucina_vegana:soy_soup", {
 })
 
 minetest.register_node("cucina_vegana:soy_soup_cooked", {
-	description = "Soy Soup",
+	description = S("Soy Soup"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_soy_soup_cooked.png"},
 	inventory_image = "cucina_vegana_soy_soup_cooked.png",
@@ -143,7 +147,7 @@ minetest.register_node("cucina_vegana:soy_soup_cooked", {
 })
 
 minetest.register_node("cucina_vegana:asparagus_soup", {
-	description = "Asparagus Soup (raw)",
+	description = S("Asparagus Soup (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_asparagus_soup.png"},
 	inventory_image = "cucina_vegana_asparagus_soup.png",
@@ -160,7 +164,7 @@ minetest.register_node("cucina_vegana:asparagus_soup", {
 })
 
 minetest.register_node("cucina_vegana:asparagus_soup_cooked", {
-	description = "Asparagus Soup",
+	description = S("Asparagus Soup"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_asparagus_soup_cooked.png"},
 	inventory_image = "cucina_vegana_asparagus_soup_cooked.png",
@@ -178,7 +182,7 @@ minetest.register_node("cucina_vegana:asparagus_soup_cooked", {
 })
 
 minetest.register_node("cucina_vegana:asparagus_hollandaise", {
-	description = "Asparagus Hollandaise (raw)",
+	description = S("Asparagus Hollandaise (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_asparagus_hollandaise.png"},
 	inventory_image = "cucina_vegana_asparagus_hollandaise.png",
@@ -195,7 +199,7 @@ minetest.register_node("cucina_vegana:asparagus_hollandaise", {
 })
 
 minetest.register_node("cucina_vegana:asparagus_hollandaise_cooked", {
-	description = "Asparagus Hollandaise",
+	description = S("Asparagus Hollandaise"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_asparagus_hollandaise_cooked.png"},
 	inventory_image = "cucina_vegana_asparagus_hollandaise_cooked.png",
@@ -213,7 +217,7 @@ minetest.register_node("cucina_vegana:asparagus_hollandaise_cooked", {
 })
 
 minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
-	description = "Bottle of Sunflower Seeds Oil",
+	description = S("Bottle of Sunflower Seeds Oil"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_sunflower_seeds_oil.png"},
 	inventory_image = "cucina_vegana_sunflower_seeds_oil.png",
@@ -231,7 +235,7 @@ minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
 })
 
 minetest.register_node("cucina_vegana:sauce_hollandaise", {
-	description = "Sauce Hollandaise",
+	description = S("Sauce Hollandaise"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_sauce_hollandaise.png"},
 	inventory_image = "cucina_vegana_sauce_hollandaise.png",
@@ -249,7 +253,7 @@ minetest.register_node("cucina_vegana:sauce_hollandaise", {
 })
 
 minetest.register_node("cucina_vegana:tofu_chives_rosemary", {
-	description = "Tofu on Chives and Rosemary (raw)",
+	description = S("Tofu on Chives and Rosemary (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_tofu_chives_rosemary.png"},
 	inventory_image = "cucina_vegana_tofu_chives_rosemary.png",
@@ -267,7 +271,7 @@ minetest.register_node("cucina_vegana:tofu_chives_rosemary", {
 })
 
 minetest.register_node("cucina_vegana:tofu_chives_rosemary_cooked", {
-	description = "Tofu on Chives and Rosemary (cooked)",
+	description = S("Tofu on Chives and Rosemary"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_tofu_chives_rosemary_cooked.png"},
 	inventory_image = "cucina_vegana_tofu_chives_rosemary_cooked.png",
@@ -285,7 +289,7 @@ minetest.register_node("cucina_vegana:tofu_chives_rosemary_cooked", {
 })
 
 minetest.register_node("cucina_vegana:fish_parsley_rosemary", {
-	description = "Fish on Parsley and Rosemary (raw)",
+	description = S("Fish on Parsley and Rosemary (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_fish_parsley_rosemary.png"},
 	inventory_image = "cucina_vegana_fish_parsley_rosemary.png",
@@ -302,7 +306,7 @@ minetest.register_node("cucina_vegana:fish_parsley_rosemary", {
 })
 
 minetest.register_node("cucina_vegana:fish_parsley_rosemary_cooked", {
-	description = "Fish on Parsley and Rosemary (cooked)",
+	description = S("Fish on Parsley and Rosemary"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_fish_parsley_rosemary_cooked.png"},
 	inventory_image = "cucina_vegana_fish_parsley_rosemary_cooked.png",
@@ -320,8 +324,8 @@ minetest.register_node("cucina_vegana:fish_parsley_rosemary_cooked", {
 })
 
 minetest.register_node("cucina_vegana:bowl_rice", {
-	description = "Bowl of Rice",
-	drawtype = "plantlike",
+	description = S("Bowl of Rice (raw)"),
+    drawtype = "plantlike",
 	tiles = {"cucina_vegana_bowl_rice.png"},
 	inventory_image = "cucina_vegana_bowl_rice.png",
 	wield_image = "cucina_vegana_bowl_rice.png",
@@ -337,7 +341,7 @@ minetest.register_node("cucina_vegana:bowl_rice", {
 })
 
 minetest.register_node("cucina_vegana:bowl_rice_cooked", {
-	description = "Bowl of Rice",
+	description = S("Bowl of Rice"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_bowl_rice_cooked.png"},
 	inventory_image = "cucina_vegana_bowl_rice_cooked.png",
@@ -355,7 +359,7 @@ minetest.register_node("cucina_vegana:bowl_rice_cooked", {
 })
 
 minetest.register_node("cucina_vegana:asparagus_rice", {
-	description = "Asparagus on Rice (raw)",
+	description = S("Asparagus on Rice (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_asparagus_rice.png"},
 	inventory_image = "cucina_vegana_asparagus_rice.png",
@@ -372,7 +376,7 @@ minetest.register_node("cucina_vegana:asparagus_rice", {
 })
 
 minetest.register_node("cucina_vegana:asparagus_rice_cooked", {
-	description = "Asparagus on Rice",
+	description = S("Asparagus on Rice"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_asparagus_rice_cooked.png"},
 	inventory_image = "cucina_vegana_asparagus_rice_cooked.png",
@@ -390,7 +394,7 @@ minetest.register_node("cucina_vegana:asparagus_rice_cooked", {
 })
 
 minetest.register_node("cucina_vegana:lettuce_oil", {
-	description = "Salad Oil",
+	description = S("Salad Oil"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_lettuce_oil.png"},
 	inventory_image = "cucina_vegana_lettuce_oil.png",

@@ -1,0 +1,262 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-21 22:03+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: asparagus.lua
+msgid "Asparagus Seed"
+msgstr ""
+
+#: asparagus.lua
+msgid "Wild Asparagus"
+msgstr ""
+
+#: chives.lua
+msgid "Chives Seed"
+msgstr ""
+
+#: chives.lua
+msgid "Wild Chives"
+msgstr ""
+
+#: items.lua
+msgid "Asparagus"
+msgstr ""
+
+#: items.lua
+msgid "Chives"
+msgstr ""
+
+#: items.lua
+msgid "Kohlrabi"
+msgstr ""
+
+#: items.lua
+msgid "Lettuce"
+msgstr ""
+
+#: items.lua
+msgid "Parsley"
+msgstr ""
+
+#: items.lua
+msgid "Rosemary Twig"
+msgstr ""
+
+#: items.lua
+msgid "Rice"
+msgstr ""
+
+#: items.lua
+msgid "Soy Beans"
+msgstr ""
+
+#: items.lua
+msgid "Tofu"
+msgstr ""
+
+#: items.lua
+msgid "Soy Milk"
+msgstr ""
+
+#: items.lua
+msgid "Tofu (cooked)"
+msgstr ""
+
+#: items.lua
+msgid "Roasted Kohlrabi"
+msgstr ""
+
+#: items.lua
+msgid "Sunflower Seeds"
+msgstr ""
+
+#: items.lua
+msgid "Sunflower Seeds Dough"
+msgstr ""
+
+#: items.lua
+msgid "Roasted Sunflower Seeds"
+msgstr ""
+
+#: items.lua
+msgid "Sunflower Seeds Bread"
+msgstr ""
+
+#: items.lua
+msgid "Imitation Meat"
+msgstr ""
+
+#: items.lua
+msgid "Imitation Butter"
+msgstr ""
+
+#: items.lua
+msgid "Imitation Cheese"
+msgstr ""
+
+#: items.lua
+msgid "Imitation Fish"
+msgstr ""
+
+#: kohlrabi.lua
+msgid "Kohlrabi Seed"
+msgstr ""
+
+#: kohlrabi.lua
+msgid "Wild Kohlrabi"
+msgstr ""
+
+#: lettuce.lua
+msgid "Lettuce Seed"
+msgstr ""
+
+#: lettuce.lua
+msgid "Wild Lettuce"
+msgstr ""
+
+#: nodes.lua
+msgid "Plate"
+msgstr ""
+
+#: nodes.lua
+msgid "Glass Bowl"
+msgstr ""
+
+#: nodes.lua
+msgid "Glass Salad Bowl"
+msgstr ""
+
+#: nodes.lua
+msgid "Salad Bowl Hollandaise"
+msgstr ""
+
+#: nodes.lua
+msgid "Kohlrabi Soup (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Kohlrabi Soup"
+msgstr ""
+
+#: nodes.lua
+msgid "Soy Soup (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Soy Soup"
+msgstr ""
+
+#: nodes.lua
+msgid "Asparagus Soup (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Asparagus Soup"
+msgstr ""
+
+#: nodes.lua
+msgid "Asparagus Hollandaise (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Asparagus Hollandaise"
+msgstr ""
+
+#: nodes.lua
+msgid "Bottle of Sunflower Seeds Oil"
+msgstr ""
+
+#: nodes.lua
+msgid "Sauce Hollandaise"
+msgstr ""
+
+#: nodes.lua
+msgid "Tofu on Chives and Rosemary (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Tofu on Chives and Rosemary"
+msgstr ""
+
+#: nodes.lua
+msgid "Fish on Parsley and Rosemary (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Fish on Parsley and Rosemary"
+msgstr ""
+
+#: nodes.lua
+msgid "Bowl of Rice (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Bowl of Rice"
+msgstr ""
+
+#: nodes.lua
+msgid "Asparagus on Rice (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Asparagus on Rice"
+msgstr ""
+
+#: nodes.lua
+msgid "Salad Oil"
+msgstr ""
+
+#: parsley.lua
+msgid "Parsley Seed"
+msgstr ""
+
+#: parsley.lua
+msgid "Wild Parsley"
+msgstr ""
+
+#: rice.lua
+msgid "Rice Seed"
+msgstr ""
+
+#: rice.lua
+msgid "Wild Rice"
+msgstr ""
+
+#: rosemary.lua
+msgid "Rosemary Seed"
+msgstr ""
+
+#: rosemary.lua
+msgid "Wild Rosemary"
+msgstr ""
+
+#: soy.lua
+msgid "Soy Seed"
+msgstr ""
+
+#: soy.lua
+msgid "Wild Soy"
+msgstr ""
+
+#: sunflower.lua
+msgid "Sunflower Seed"
+msgstr ""
+
+#: sunflower.lua
+msgid "Wild Sunflower"
+msgstr ""
