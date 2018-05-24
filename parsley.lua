@@ -37,10 +37,10 @@ minetest.register_node("cucina_vegana:wild_parsley", {
 	walkable = false,
 	drop = { 
 			items = { 
-                    {items = {"cucina_vegana:seed_lettuce 2"}, rarity = 1},
-					{items = {"cucina_vegana:seed_lettuce 2"}, rarity = 2},
-					{items = {"cucina_vegana:lettuce 2"}, rarity = 1},
-                    {items = {"cucina_vegana:lettuce 2"}, rarity = 2},
+                    {items = {"cucina_vegana:seed_parsley 2"}, rarity = 1},
+					{items = {"cucina_vegana:seed_parsley 2"}, rarity = 2},
+					{items = {"cucina_vegana:parsley 2"}, rarity = 1},
+                    {items = {"cucina_vegana:parsley 2"}, rarity = 2},
                     },
 			},
 	drawtype = "plantlike",
