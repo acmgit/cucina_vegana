@@ -69,6 +69,7 @@ if (minetest.get_modpath("technic")) then
 	-- Support Centrifuge
 	local centrifuge_recipes = {
 					{ "flowers:sunflower",             "cucina_vegana:sunflower_seeds 4",       "dye:yellow"      },
+                    { "cucina_vegana:sunflower",       "cucina_vegana:sunflower_seeds 4",       "dye:yellow"      },
 				}
 				
 	for _, data in pairs(centrifuge_recipes) do
@@ -80,6 +81,7 @@ if (minetest.get_modpath("technic")) then
 	-- Support Extractor
 	local extractor_recipes = {
 		{"flowers:sunflower", "cucina_vegana:sunflower_seeds 4"},
+        {"cucina_vegana:sunflower", "cucina_vegana:sunflower_seeds 4"},
 	}
 
 	for _, data in ipairs(extractor_recipes) do

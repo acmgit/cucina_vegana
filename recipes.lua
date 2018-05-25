@@ -1,5 +1,5 @@
 --   *******************************************
---   *****                 Crafts                       ***** 
+--   *****    Crafts                       ***** 
 --   *******************************************
 
 minetest.register_craft({
@@ -10,6 +10,14 @@ minetest.register_craft({
 			}
 })
 
+
+minetest.register_craft({
+    output = "cucina_vegana:lettuce_oil",
+    recipe = {	{"cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce"},
+                {"cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce"},
+                {"", "vessels:glass_bottle", ""}
+            }
+})
 
 minetest.register_craft({
 	output = "cucina_vegana:sunflower_seeds_oil",

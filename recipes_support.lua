@@ -1,31 +1,5 @@
 --   *******************************************
---   **             Recipe differences                 ** 
---   *******************************************
-
-if(cucina_vegana_farming_default) then
-
-	minetest.register_craft({
-		output = "cucina_vegana:lettuce_oil",
-		recipe = {	{"cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce"},
-					{"cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce"},
-					{"", "vessels:glass_bottle", ""}
-				}
-	})
-
-else
-
-	minetest.register_craft({
-		output = "cucina_vegana:lettuce_oil",
-		recipe = {	{"cucina_vegana:lettuce_seed", "cucina_vegana:lettuce_seed", "cucina_vegana:lettuce_seed"},
-					{"cucina_vegana:lettuce_seed", "cucina_vegana:lettuce_seed", "cucina_vegana:lettuce_seed"},
-					{"", "vessels:glass_bottle", ""}
-				}
-	})
-
-end
-
---   *******************************************
---   ** Additional Recipes with other Mods  ** 
+--   **   Additional Recipes with other Mods  ** 
 --   *******************************************
 
 if minetest.get_modpath("mobs") then
