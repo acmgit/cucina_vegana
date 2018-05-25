@@ -40,7 +40,7 @@ else
 		minlight = 13,
 		maxlight = default.LIGHT_MAX,
 		fertility = {"grassland"},
-		groups = {flammable = 4},
+		groups = {flammable = 4, attached_node = 1, growing = 1},
 	})
 	
 	-- Register for Mapgen
