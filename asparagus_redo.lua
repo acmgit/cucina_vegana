@@ -1,6 +1,10 @@
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 	-- asparagus
 	minetest.register_node("cucina_vegana:asparagus_seed", {
-		description = "Asparagus Seed",
+		description = S("Asparagus Seed"),
 		tiles = {"cucina_vegana_asparagus_seed.png"},
 		inventory_image = "cucina_vegana_asparagus_seed.png",
 		wield_image = "cucina_vegana_asparagus_seed.png",
@@ -17,7 +21,7 @@
 	})
 
 	minetest.register_craftitem("cucina_vegana:asparagus", {
-		description = "Asparagus",
+		description = S("Asparagus"),
 		inventory_image = "cucina_vegana_asparagus.png",
 		groups = {flammable = 4},
 		})
@@ -86,7 +90,7 @@
 
 	-- Register for Mapgen
 	minetest.register_node("cucina_vegana:wild_asparagus", {
-		description = "Wild Asparagus",
+		description = S("Wild Asparagus"),
 		paramtype = "light",
 		walkable = false,
 		drop = { 

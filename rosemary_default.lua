@@ -1,6 +1,10 @@
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 -- rosemary
 farming.register_plant("cucina_vegana:rosemary", {
-	description = "Rosemary",
+	description = S("Rosemary"),
 	inventory_image = "cucina_vegana_rosemary_seed.png",
 	steps = 6,
 	minlight = 12,
@@ -11,7 +15,7 @@ farming.register_plant("cucina_vegana:rosemary", {
 	
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_rosemary", {
-	description = "Wild Rosemary",
+	description = S("Wild Rosemary"),
 	paramtype = "light",
 	walkable = false,
 	drop = { 

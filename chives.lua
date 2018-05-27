@@ -1,4 +1,3 @@
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = {"default:dirt_with_grass"},
@@ -16,12 +15,5 @@ minetest.register_decoration({
 	y_min = 0,
 	y_max = 150,
 	decoration = "cucina_vegana:wild_chives",
-})
-
-minetest.register_craftitem("cucina_vegana:chives", {
-	description = "Chives",
-	inventory_image = "cucina_vegana_chives.png",
-	groups = {flammable = 1, food = 1, eatable = 1},
-	on_use = minetest.item_eat(1),
 })
 

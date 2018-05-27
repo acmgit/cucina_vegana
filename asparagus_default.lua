@@ -1,6 +1,10 @@
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 -- asparagus
 farming.register_plant("cucina_vegana:asparagus", {
-	description = "Asparagus Seed",
+	description = S("Asparagus Seed"),
 	inventory_image = "cucina_vegana_asparagus_seed.png",
 	steps = 6,
 	minlight = 11,
@@ -11,7 +15,7 @@ farming.register_plant("cucina_vegana:asparagus", {
 	
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_asparagus", {
-	description = "Wild Asparagus",
+	description = S("Wild Asparagus"),
 	paramtype = "light",
 	walkable = false,
 	drop = { 

@@ -1,6 +1,10 @@
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 	-- kohlrabi
 	minetest.register_node("cucina_vegana:kohlrabi_seed", {
-		description = "Kohlrabi Seed",
+		description = S("Kohlrabi Seed"),
 		tiles = {"cucina_vegana_kohlrabi_seed.png"},
 		inventory_image = "cucina_vegana_kohlrabi_seed.png",
 		wield_image = "cucina_vegana_kohlrabi_seed.png",
@@ -12,12 +16,12 @@
 		sunlight_propagates = true,
 		selection_box = farming.select,
 		on_place = function(itemstack, placer, pointed_thing)
-			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:kohlrabi_1")
+			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:kohlrabi_seed")
 		end,
 	})
 
 	minetest.register_craftitem("cucina_vegana:kohlrabi", {
-		description = "Kohlrabi",
+		description = S("Kohlrabi"),
 		inventory_image = "cucina_vegana_kohlrabi.png",
 		groups = {flammable = 4},
 		})
@@ -86,7 +90,7 @@
 
 	-- Register for Mapgen
 	minetest.register_node("cucina_vegana:wild_kohlrabi", {
-		description = "Wild Kohlrabi",
+		description = S("Wild Kohlrabi"),
 		paramtype = "light",
 		walkable = false,
 		drop = { 

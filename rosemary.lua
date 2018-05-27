@@ -1,4 +1,3 @@
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = {"default:dirt_with_dry_grass", "default:sand", "default:silver_sand"},
@@ -17,11 +16,3 @@ minetest.register_decoration({
 	y_max = 50,
 	decoration = "cucina_vegana:wild_rosemary",
 })
-
-minetest.register_craftitem("cucina_vegana:rosemary", {
-	description = "Rosemary Twig",
-	inventory_image = "cucina_vegana_rosemary.png",
-	groups = {flammable = 1, food = 1, eatable = 1},
-	on_use = minetest.item_eat(1),
-})
-

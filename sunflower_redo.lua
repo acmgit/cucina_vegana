@@ -1,5 +1,9 @@
 local modpath = minetest.get_modpath(minetest.get_current_modname())
 
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 if(minetest.registered_nodes["flowers:sunflower"]  ~= nil) then
 	print("[MOD] " .. minetest.get_current_modname() .. " Sunflowers available.")
 	print("[MOD] " .. minetest.get_current_modname() .. " using \"flowers:sunflower\".")
@@ -7,7 +11,7 @@ if(minetest.registered_nodes["flowers:sunflower"]  ~= nil) then
 else
 
 	minetest.register_node("cucina_vegana:sunflower_seed", {
-		description = "Sunflower Seed",
+		description = S("Sunflower Seed"),
 		tiles = {"cucina_vegana_sunflower_seed.png"},
 		inventory_image = "cucina_vegana_sunflower_seed.png",
 		wield_image = "cucina_vegana_sunflower_seed.png",
@@ -19,12 +23,12 @@ else
 		sunlight_propagates = true,
 		selection_box = farming.select,
 		on_place = function(itemstack, placer, pointed_thing)
-			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:sunflower_1")
+			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:sunflower_seed")
 		end,
 	})
 
 	minetest.register_craftitem("cucina_vegana:sunflower", {
-		description = "Sunflower",
+		description = S("Sunflower"),
 		inventory_image = "cucina_vegana_sunflower.png",
 		groups = {flammable = 4},
 		})
@@ -80,7 +84,7 @@ else
 
 	-- Register for Mapgen
 	minetest.register_node("cucina_vegana:wild_sunflower", {
-		description = "Wild Sunflower",
+		description = S("Wild Sunflower"),
 		paramtype = "light",
 		walkable = false,
 		drop = { 

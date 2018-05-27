@@ -4,8 +4,12 @@
 	**********************************************
 ]]--
 
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 farming.register_plant("cucina_vegana:soy", {
-	description = "Soy Beans",
+	description = S("Soy Beans"),
 	inventory_image = "cucina_vegana_soy_seed.png",
 	steps = 8,
 	minlight = 12,
@@ -16,7 +20,7 @@ farming.register_plant("cucina_vegana:soy", {
 	
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_soy", {
-	description = "Wild Soy",
+	description = S("Wild Soy"),
 	paramtype = "light",
 	walkable = false,
 	drop = { 

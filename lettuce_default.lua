@@ -1,6 +1,10 @@
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 -- lettuce
 farming.register_plant("cucina_vegana:lettuce", {
-	description = "Lettuce",
+	description = S("Lettuce"),
 	inventory_image = "cucina_vegana_lettuce_seed.png",
 	steps = 5,
 	minlight = 12,
@@ -11,7 +15,7 @@ farming.register_plant("cucina_vegana:lettuce", {
 	
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_lettuce", {
-	description = "Wild Lettuce",
+	description = S("Wild Lettuce"),
 	paramtype = "light",
 	walkable = false,
 	drop = { 

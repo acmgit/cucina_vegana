@@ -1,6 +1,10 @@
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 -- Parsley
 farming.register_plant("cucina_vegana:parsley", {
-	description = "Parsley",
+	description = S("Parsley"),
 	inventory_image = "cucina_vegana_parsley_seed.png",
 	steps = 5,
 	minlight = 11,
@@ -11,7 +15,7 @@ farming.register_plant("cucina_vegana:parsley", {
 	
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_parsley", {
-	description = "Wild Parsley",
+	description = S("Wild Parsley"),
 	paramtype = "light",
 	walkable = false,
 	drop = { 

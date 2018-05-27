@@ -1,6 +1,10 @@
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 -- lettuce
 minetest.register_node("cucina_vegana:lettuce_seed", {
-	description = "Lettuce Seed",
+	description = S("Lettuce Seed"),
 	tiles = {"cucina_vegana_lettuce_seed.png"},
 	inventory_image = "cucina_vegana_lettuce_seed.png",
 	wield_image = "cucina_vegana_lettuce_seed.png",
@@ -12,16 +16,10 @@ minetest.register_node("cucina_vegana:lettuce_seed", {
 	sunlight_propagates = true,
 	selection_box = farming.select,
 	on_place = function(itemstack, placer, pointed_thing)
-		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:lettuce_1")
+		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:lettuce_seed")
 	end,
 })
 
-minetest.register_craftitem("cucina_vegana:lettuce", {
-	description = "Lettuce",
-	inventory_image = "cucina_vegana_lettuce.png",
-	groups = {flammable = 4},
-	})
-	
 -- lettuce definition
 local crop_def = {
 	drawtype = "plantlike",
@@ -75,7 +73,7 @@ minetest.register_node("cucina_vegana:lettuce_5", table.copy(crop_def))
 
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_lettuce", {
-	description = "Wild Lettuce",
+	description = S("Wild Lettuce"),
 	paramtype = "light",
 	walkable = false,
 	drop = { 

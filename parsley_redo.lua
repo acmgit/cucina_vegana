@@ -1,6 +1,10 @@
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 -- Parsley
 minetest.register_node("cucina_vegana:parsley_seed", {
-	description = "Parsley Seed",
+	description = S("Parsley Seed"),
 	tiles = {"cucina_vegana_parsley_seed.png"},
 	inventory_image = "cucina_vegana_parsley_seed.png",
 	wield_image = "cucina_vegana_parsley_seed.png",
@@ -12,12 +16,12 @@ minetest.register_node("cucina_vegana:parsley_seed", {
 	sunlight_propagates = true,
 	selection_box = farming.select,
 	on_place = function(itemstack, placer, pointed_thing)
-		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:parsley_1")
+		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:parsley_seed")
 	end,
 })
 
 minetest.register_craftitem("cucina_vegana:parsley", {
-	description = "Parsley",
+	description = S("Parsley"),
 	inventory_image = "cucina_vegana_parsley.png",
 	groups = {flammable = 4},
 	})
@@ -77,7 +81,7 @@ minetest.register_node("cucina_vegana:parsley_5", table.copy(crop_def))
 
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_parsley", {
-	description = "Wild Parsley",
+	description = S("Wild Parsley"),
 	paramtype = "light",
 	walkable = false,
 	drop = { 

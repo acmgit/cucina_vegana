@@ -1,6 +1,10 @@
--- asparagus
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
+-- rice
 farming.register_plant("cucina_vegana:rice", {
-	description = "Rice Seed",
+	description = S("Rice Seed"),
 	inventory_image = "cucina_vegana_rice_seed.png",
 	steps = 6,
 	minlight = 12,
@@ -11,7 +15,7 @@ farming.register_plant("cucina_vegana:rice", {
 	
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_rice", {
-	description = "Wild Rice",
+	description = S("Wild Rice"),
 	paramtype = "light",
 	walkable = false,
 	drop = { 

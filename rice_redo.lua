@@ -1,6 +1,10 @@
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 	-- rice
 	minetest.register_node("cucina_vegana:rice_seed", {
-		description = "Rice Seed",
+		description = S("Rice Seed"),
 		tiles = {"cucina_vegana_rice_seed.png"},
 		inventory_image = "cucina_vegana_rice_seed.png",
 		wield_image = "cucina_vegana_rice_seed.png",
@@ -12,12 +16,12 @@
 		sunlight_propagates = true,
 		selection_box = farming.select,
 		on_place = function(itemstack, placer, pointed_thing)
-			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:rice_1")
+			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:rice_seed")
 		end,
 	})
 
 	minetest.register_craftitem("cucina_vegana:rice", {
-		description = "Rice",
+		description = S("Rice"),
 		inventory_image = "cucina_vegana_rice.png",
 		groups = {flammable = 4},
 		})
@@ -86,7 +90,7 @@
 
 	-- Register for Mapgen
 	minetest.register_node("cucina_vegana:wild_rice", {
-		description = "Wild Rice",
+		description = S("Wild Rice"),
 		paramtype = "light",
 		walkable = false,
 		drop = { 

@@ -1,6 +1,10 @@
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 -- chives
 minetest.register_node("cucina_vegana:chives_seed", {
-	description = "Chives Seed",
+	description = S("Chives Seed"),
 	tiles = {"cucina_vegana_chives_seed.png"},
 	inventory_image = "cucina_vegana_chives_seed.png",
 	wield_image = "cucina_vegana_chives_seed.png",
@@ -16,12 +20,6 @@ minetest.register_node("cucina_vegana:chives_seed", {
 	end,
 })
 
-minetest.register_craftitem("cucina_vegana:chives", {
-	description = "Chives",
-	inventory_image = "cucina_vegana_chives.png",
-	groups = {flammable = 4},
-	})
-	
 -- chives definition
 local crop_def = {
 	drawtype = "plantlike",
@@ -76,7 +74,7 @@ minetest.register_node("cucina_vegana:chives_5", table.copy(crop_def))
 
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_chives", {
-	description = "Wild Chives",
+	description = S("Wild Chives"),
 	paramtype = "light",
 	walkable = false,
 	drop = { 

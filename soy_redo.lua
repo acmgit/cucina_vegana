@@ -4,8 +4,12 @@
 	**********************************************
 ]]--
 
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 minetest.register_node("cucina_vegana:soy_seed", {
-	description = "Soy Seed",
+	description = S("Soy Seed"),
 	tiles = {"cucina_vegana_soy_seed.png"},
 	inventory_image = "cucina_vegana_soy_seed.png",
 	wield_image = "cucina_vegana_soy_seed.png",
@@ -17,12 +21,12 @@ minetest.register_node("cucina_vegana:soy_seed", {
 	sunlight_propagates = true,
 	selection_box = farming.select,
 	on_place = function(itemstack, placer, pointed_thing)
-		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:soy_1")
+		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:soy_seed")
 	end,
 })
 
 minetest.register_craftitem("cucina_vegana:soy", {
-	description = "Soy Bean",
+	description = S("Soy Bean"),
 	inventory_image = "cucina_vegana_soy.png",
 	groups = {flammable = 4},
 	})
@@ -106,7 +110,7 @@ minetest.register_node("cucina_vegana:soy_8", table.copy(crop_def))
 	
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_soy", {
-	description = "Wild Soy",
+	description = S("Wild Soy"),
 	paramtype = "light",
 	walkable = false,
 	drop = { 

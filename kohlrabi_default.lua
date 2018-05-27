@@ -1,6 +1,10 @@
+-- Load support for intllib.
+local MP = minetest.get_modpath(minetest.get_current_modname())
+local S, NS = dofile(MP.."/intllib.lua")
+
 -- kohlrabi
 farming.register_plant("cucina_vegana:kohlrabi", {
-	description = "Kohlrabi",
+	description = S("Kohlrabi"),
 	inventory_image = "cucina_vegana_kohlrabi_seed.png",
 	steps = 6,
 	minlight = 13,
@@ -11,7 +15,7 @@ farming.register_plant("cucina_vegana:kohlrabi", {
 	
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_kohlrabi", {
-	description = "Wild kohlrabi",
+	description = S("Wild kohlrabi"),
 	paramtype = "light",
 	walkable = false,
 	drop = { 
