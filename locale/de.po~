@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 00:45+0200\n"
-"PO-Revision-Date: 2018-05-28 01:04+0100\n"
+"POT-Creation-Date: 2018-05-28 01:09+0200\n"
+"PO-Revision-Date: 2018-05-28 01:10+0100\n"
 "Last-Translator: A.C.M. <undertakers_help@yahoo.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -42,12 +42,16 @@ msgid "Chives Seed"
 msgstr "Schnittlauch Samen"
 
 #: items.lua
-msgid "Tofu"
-msgstr "Tofu"
+msgid "Tofu (raw)"
+msgstr "Tofu (roh)"
 
 #: items.lua
 msgid "Soy Milk"
 msgstr "Soja Milch"
+
+#: items.lua
+msgid "Tofu"
+msgstr "Tofu"
 
 #: items.lua parsley_default.lua parsley_redo.lua
 msgid "Parsley"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 01:09+0200\n"
+"POT-Creation-Date: 2018-05-28 01:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,10 +23,6 @@ msgstr ""
 
 #: asparagus_default.lua asparagus_redo.lua
 msgid "Wild Asparagus"
-msgstr ""
-
-#: asparagus_redo.lua items.lua
-msgid "Asparagus"
 msgstr ""
 
 #: chives_default.lua items.lua
@@ -53,7 +49,7 @@ msgstr ""
 msgid "Tofu"
 msgstr ""
 
-#: items.lua parsley_default.lua parsley_redo.lua
+#: items.lua parsley_default.lua
 msgid "Parsley"
 msgstr ""
 
@@ -61,12 +57,28 @@ msgstr ""
 msgid "Lettuce"
 msgstr ""
 
-#: items.lua kohlrabi_default.lua kohlrabi_redo.lua
+#: items.lua kohlrabi_default.lua
 msgid "Kohlrabi"
 msgstr ""
 
 #: items.lua
+msgid "Asparagus"
+msgstr ""
+
+#: items.lua
 msgid "Roasted Kohlrabi"
+msgstr ""
+
+#: items.lua
+msgid "Rice"
+msgstr ""
+
+#: items.lua
+msgid "Soy Bean"
+msgstr ""
+
+#: items.lua
+msgid "Sunflower"
 msgstr ""
 
 #: items.lua
@@ -233,10 +245,6 @@ msgstr ""
 msgid "Wild Rice"
 msgstr ""
 
-#: rice_redo.lua
-msgid "Rice"
-msgstr ""
-
 #: rosemary_default.lua
 msgid "Rosemary"
 msgstr ""
@@ -261,18 +269,10 @@ msgstr ""
 msgid "Soy Seed"
 msgstr ""
 
-#: soy_redo.lua
-msgid "Soy Bean"
-msgstr ""
-
 #: sunflower_default.lua sunflower_redo.lua
 msgid "Sunflower Seed"
 msgstr ""
 
 #: sunflower_default.lua sunflower_redo.lua
 msgid "Wild Sunflower"
-msgstr ""
-
-#: sunflower_redo.lua
-msgid "Sunflower"
 msgstr ""

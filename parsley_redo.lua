@@ -16,15 +16,9 @@ minetest.register_node("cucina_vegana:parsley_seed", {
 	sunlight_propagates = true,
 	selection_box = farming.select,
 	on_place = function(itemstack, placer, pointed_thing)
-		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:parsley_seed")
+		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:parsley_1")
 	end,
 })
-
-minetest.register_craftitem("cucina_vegana:parsley", {
-	description = S("Parsley"),
-	inventory_image = "cucina_vegana_parsley.png",
-	groups = {flammable = 4},
-	})
 
 -- Parsley definition
 local crop_def = {

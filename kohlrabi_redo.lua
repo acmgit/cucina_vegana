@@ -16,15 +16,9 @@ local S, NS = dofile(MP.."/intllib.lua")
 		sunlight_propagates = true,
 		selection_box = farming.select,
 		on_place = function(itemstack, placer, pointed_thing)
-			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:kohlrabi_seed")
+			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:kohlrabi_1")
 		end,
 	})
-
-	minetest.register_craftitem("cucina_vegana:kohlrabi", {
-		description = S("Kohlrabi"),
-		inventory_image = "cucina_vegana_kohlrabi.png",
-		groups = {flammable = 4},
-		})
 	
 	-- kohlrabi definition
 	local crop_def = {

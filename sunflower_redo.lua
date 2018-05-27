@@ -23,15 +23,9 @@ else
 		sunlight_propagates = true,
 		selection_box = farming.select,
 		on_place = function(itemstack, placer, pointed_thing)
-			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:sunflower_seed")
+			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:sunflower_1")
 		end,
 	})
-
-	minetest.register_craftitem("cucina_vegana:sunflower", {
-		description = S("Sunflower"),
-		inventory_image = "cucina_vegana_sunflower.png",
-		groups = {flammable = 4},
-		})
 	
 	-- sunflower definition
 	local crop_def = {

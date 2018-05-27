@@ -19,12 +19,6 @@ local S, NS = dofile(MP.."/intllib.lua")
 			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:asparagus_1")
 		end,
 	})
-
-	minetest.register_craftitem("cucina_vegana:asparagus", {
-		description = S("Asparagus"),
-		inventory_image = "cucina_vegana_asparagus.png",
-		groups = {flammable = 4},
-		})
 	
 	-- asparagus definition
 	local crop_def = {

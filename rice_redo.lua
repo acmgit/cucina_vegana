@@ -16,15 +16,9 @@ local S, NS = dofile(MP.."/intllib.lua")
 		sunlight_propagates = true,
 		selection_box = farming.select,
 		on_place = function(itemstack, placer, pointed_thing)
-			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:rice_seed")
+			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:rice_1")
 		end,
 	})
-
-	minetest.register_craftitem("cucina_vegana:rice", {
-		description = S("Rice"),
-		inventory_image = "cucina_vegana_rice.png",
-		groups = {flammable = 4},
-		})
 	
 	-- rice definition
 	local crop_def = {

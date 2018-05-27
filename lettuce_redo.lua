@@ -16,7 +16,7 @@ minetest.register_node("cucina_vegana:lettuce_seed", {
 	sunlight_propagates = true,
 	selection_box = farming.select,
 	on_place = function(itemstack, placer, pointed_thing)
-		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:lettuce_seed")
+		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:lettuce_1")
 	end,
 })
 

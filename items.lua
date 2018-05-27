@@ -69,6 +69,24 @@ minetest.register_craftitem("cucina_vegana:kohlrabi_roasted", {
 	on_use = minetest.item_eat(4),
 })
 
+minetest.register_craftitem("cucina_vegana:rice", {
+    description = S("Rice"),
+    inventory_image = "cucina_vegana_rice.png",
+    groups = {flammable = 4},
+})
+
+minetest.register_craftitem("cucina_vegana:soy", {
+	description = S("Soy Bean"),
+	inventory_image = "cucina_vegana_soy.png",
+	groups = {flammable = 4},
+})
+
+minetest.register_craftitem("cucina_vegana:sunflower", {
+    description = S("Sunflower"),
+    inventory_image = "cucina_vegana_sunflower.png",
+    groups = {flammable = 4},
+})
+
 minetest.register_craftitem("cucina_vegana:sunflower_seeds", {
     description = S("Sunflower Seeds"),
     groups = {seed = 1, food = 1},

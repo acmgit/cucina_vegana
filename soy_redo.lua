@@ -21,15 +21,9 @@ minetest.register_node("cucina_vegana:soy_seed", {
 	sunlight_propagates = true,
 	selection_box = farming.select,
 	on_place = function(itemstack, placer, pointed_thing)
-		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:soy_seed")
+		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:soy_1")
 	end,
 })
-
-minetest.register_craftitem("cucina_vegana:soy", {
-	description = S("Soy Bean"),
-	inventory_image = "cucina_vegana_soy.png",
-	groups = {flammable = 4},
-	})
 	
 -- Soy definition
 local crop_def = {

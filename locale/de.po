@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 01:09+0200\n"
+"POT-Creation-Date: 2018-05-28 01:42+0200\n"
 "PO-Revision-Date: 2018-05-28 01:10+0100\n"
 "Last-Translator: A.C.M. <undertakers_help@yahoo.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -24,10 +24,6 @@ msgstr "Spargel Samen"
 #: asparagus_default.lua asparagus_redo.lua
 msgid "Wild Asparagus"
 msgstr "Wilder Spargel"
-
-#: asparagus_redo.lua items.lua
-msgid "Asparagus"
-msgstr "Spargel"
 
 #: chives_default.lua items.lua
 msgid "Chives"
@@ -53,7 +49,7 @@ msgstr "Soja Milch"
 msgid "Tofu"
 msgstr "Tofu"
 
-#: items.lua parsley_default.lua parsley_redo.lua
+#: items.lua parsley_default.lua
 msgid "Parsley"
 msgstr "Petersilie"
 
@@ -61,13 +57,29 @@ msgstr "Petersilie"
 msgid "Lettuce"
 msgstr "Salat"
 
-#: items.lua kohlrabi_default.lua kohlrabi_redo.lua
+#: items.lua kohlrabi_default.lua
 msgid "Kohlrabi"
 msgstr "Kohlrabi"
 
 #: items.lua
+msgid "Asparagus"
+msgstr "Spargel"
+
+#: items.lua
 msgid "Roasted Kohlrabi"
 msgstr "Gerösteter Kohlrabi"
+
+#: items.lua
+msgid "Rice"
+msgstr "Reis"
+
+#: items.lua
+msgid "Soy Bean"
+msgstr "Sojabohnen"
+
+#: items.lua
+msgid "Sunflower"
+msgstr "Sonnenblume"
 
 #: items.lua
 msgid "Sunflower Seeds"
@@ -233,10 +245,6 @@ msgstr "Reis Samen"
 msgid "Wild Rice"
 msgstr "Wilder Reis"
 
-#: rice_redo.lua
-msgid "Rice"
-msgstr "Reis"
-
 #: rosemary_default.lua
 msgid "Rosemary"
 msgstr "Rosmarie"
@@ -261,10 +269,6 @@ msgstr "Wildes Soja"
 msgid "Soy Seed"
 msgstr "Sojabohnen Samen"
 
-#: soy_redo.lua
-msgid "Soy Bean"
-msgstr "Sojabohnen"
-
 #: sunflower_default.lua sunflower_redo.lua
 msgid "Sunflower Seed"
 msgstr "Sonnenblumen Samen"
@@ -272,8 +276,3 @@ msgstr "Sonnenblumen Samen"
 #: sunflower_default.lua sunflower_redo.lua
 msgid "Wild Sunflower"
 msgstr "Wilde Sonnenblume"
-
-#: sunflower_redo.lua
-msgid "Sunflower"
-msgstr "Sonnenblume"
-
