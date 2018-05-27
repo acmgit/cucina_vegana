@@ -30,7 +30,7 @@ farming.register_plant("cucina_vegana:chives", {
 	minlight = 10,
 	maxlight = default.LIGHT_MAX,
 	fertility = {"grassland"},
-	groups = {flammable = 4, attached_node = 1, growing = 1},
+	groups = {flammable = 4, attached_node = 1},
 })
 	
 -- Register for Mapgen
@@ -50,7 +50,7 @@ minetest.register_node("cucina_vegana:wild_chives", {
 	paramtype2 = "facedir",
 	sunlight_propagates = true,
 	tiles = {"cucina_vegana_chives_5.png"},
-	groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1, growing = 1},
+	groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 			type = "fixed",

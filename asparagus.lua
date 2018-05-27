@@ -29,7 +29,7 @@ farming.register_plant("cucina_vegana:asparagus", {
 	minlight = 11,
 	maxlight = default.LIGHT_MAX,
 	fertility = {"grassland"},
-	groups = {flammable = 4, attached_node = 1, growing = 1},
+	groups = {flammable = 4, attached_node = 1},
 })
 	
 -- Register for Mapgen
@@ -49,7 +49,7 @@ minetest.register_node("cucina_vegana:wild_asparagus", {
 	paramtype2 = "facedir",
 	tiles = {"cucina_vegana_asparagus_6.png"},
 	sunlight_propagates = true,
-	groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1, growing = 1},
+	groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 			type = "fixed",
