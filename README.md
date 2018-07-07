@@ -43,12 +43,17 @@ Move your Download to the Mods-Folder.
 default<br>
 farming<br>
 vessels<br>
+dye<br>
 
 ### optional
 technic<br>
 mobs<br>
 farming_redo<br>
 fishing<br>
+bucket<br>
+bushes<br>
+bushes_classic<br>
+bbq<br>
 
 ## License
 

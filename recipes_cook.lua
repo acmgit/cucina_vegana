@@ -83,3 +83,11 @@ minetest.register_craft({
 	output = "cucina_vegana:asparagus_rice_cooked",
 	recipe = "cucina_vegana:asparagus_rice"
 })
+
+minetest.register_craft({
+	type = "cooking",
+	cooktime = 14,
+	output = "bushes:sugar",
+	recipe = "cucina_vegana:molasses",
+    replacements = {{"cucina_vegana:molasses", "vessels:drinking_glass"}}
+})

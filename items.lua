@@ -150,3 +150,8 @@ minetest.register_craftitem("cucina_vegana:rosemary", {
 	on_use = minetest.item_eat(1),
 })
 
+minetest.register_craftitem("cucina_vegana:molasses", {
+	description = S("Molasses"),
+	inventory_image = "cucina_vegana_molasses.png",
+	groups = {flammable = 1, food = 1},
+})

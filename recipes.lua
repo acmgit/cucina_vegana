@@ -263,3 +263,27 @@ minetest.register_craft({
 							{"group:food_rice", "cucina_vegana:bowl"},
 						}
 })
+
+minetest.register_craft({
+	output = "cucina_vegana:molasses",
+	recipe = {	
+				{"", "default:stick", ""},
+				{"cucina_vegana:kohlrabi", "vessels:drinking_glass", "cucina_vegana:kohlrabi"},
+                {"", "bucket:bucket_water", ""},
+			},
+			replacements = {
+							{"bucket:bucket_water", "bucket:bucket_empty"},
+						}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:molasses",
+	recipe = {	
+				{"", "default:stick", ""},
+				{"cucina_vegana:kohlrabi", "vessels:drinking_glass", "cucina_vegana:kohlrabi"},
+                {"", "bucket:bucket_river_water", ""},
+			},
+			replacements = {
+							{"bucket:bucket_river_water", "bucket:bucket_empty"},
+						}
+})

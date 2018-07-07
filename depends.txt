@@ -2,6 +2,9 @@ default
 farming
 vessels
 dye
+bucket?
+bushes?
+bushes_classic?
 flowers?
 technic?
 mobs?

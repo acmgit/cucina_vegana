@@ -82,6 +82,7 @@ if (minetest.get_modpath("technic")) then
 	local compressor_recipes = {
 					{"cucina_vegana:sunflower_seeds 6", "cucina_vegana:sunflower_seeds_oil"},
 					{"cucina_vegana:lettuce_seed 6", "cucina_vegana:lettuce_oil"},
+                    {"cucina_vegana:kohlrabi 6", "cucina_vegana:molasses"},
 				}
 
 	for _, data in pairs(compressor_recipes) do
@@ -94,6 +95,7 @@ if (minetest.get_modpath("technic")) then
 	local centrifuge_recipes = {
 					{ "flowers:sunflower",             "cucina_vegana:sunflower_seeds 4",       "dye:yellow"      },
                     { "cucina_vegana:sunflower",       "cucina_vegana:sunflower_seeds 4",       "dye:yellow"      },
+                    { "cucina_vegana:kohlrabi 4",      "cucina_vegana:molasses",                "default:leaves"  },
 				}
 				
 	for _, data in pairs(centrifuge_recipes) do
@@ -106,6 +108,8 @@ if (minetest.get_modpath("technic")) then
 	local extractor_recipes = {
 		{"flowers:sunflower", "cucina_vegana:sunflower_seeds 4"},
         {"cucina_vegana:sunflower", "cucina_vegana:sunflower_seeds 4"},
+        {"cucina_vegana:kohlrabi 3", "cucina_vegana:molasses"},
+        {"cucina_vegana:molasses", "bushes:sugar 2"},
 	}
 
 	for _, data in ipairs(extractor_recipes) do
