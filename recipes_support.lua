@@ -63,6 +63,13 @@ end -- if animalmaterials
 
 if minetest.get_modpath("fishing") then
 
+    minetest.register_craft({
+	type = "cooking",
+	output = "fishing:fish",
+	recipe = "group:food_fish",
+	cooktime = 2,
+    })
+
 	minetest.register_craft({
 		type = "shapeless",
 		output = "fishing:sushi",
