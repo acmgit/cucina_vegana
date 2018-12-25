@@ -57,7 +57,7 @@ bbq<br>
 
 ## License
 
-License: WTFPL
+License: LGPL3.0
 
 
 

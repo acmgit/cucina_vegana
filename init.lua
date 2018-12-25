@@ -1,6 +1,13 @@
 --[[
 	**********************************************
-	***                        cucina vegana              ***
+	***             Cucina Vegana              ***
+    ***                                        ***
+    ***  Cucina Vegana is a Mod for Minetest   ***
+    ***  and supports farming or farming_redo  ***
+    ***  by TenPlus.                           ***
+    ***                                        ***
+    ***  License: LGPL 3.0 by A.C.M.           ***
+    ***                                        ***
 	**********************************************
 	
 	If you want use cucina vegana with farming_redo from TenPlus, then set
@@ -14,6 +21,7 @@
 ]]--
 
 local plants = {}
+local version = "1.0"
 
 cucina_vegana_farming_default = true
 
@@ -121,10 +129,10 @@ end
 
 if (cucina_vegana_farming_default) then
 
-	print("[MOD] " .. minetest.get_current_modname() .. " in default-mode loaded.")
+	print("[MOD] " .. minetest.get_current_modname() .. " Version " .. version .. " in default-mode loaded.")
 
 else
 
-	print("[MOD] " .. minetest.get_current_modname() .. " in redo-mode loaded.")
+	print("[MOD] " .. minetest.get_current_modname() .. " Version " .. version .. " in redo-mode loaded.")
 	
 end
