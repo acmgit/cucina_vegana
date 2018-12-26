@@ -13,22 +13,18 @@
 	If you want use cucina vegana with farming_redo from TenPlus, then set
 	farming_default = false
 	else true.
-	
-	if you want to add a Recipt to get additional Soy-Seeds, then set
-	additional_seed = true
-	else false.
-	
+		
 ]]--
 
 local plants = {}
-local version = "1.0"
+local version = "1.2"
 
 cucina_vegana_farming_default = true
 
 local modpath = minetest.get_modpath(minetest.get_current_modname())
 
 -- looking if farming_redo is activ?
-if(farming.mod ~= nil and farming.mod == "redo") then
+if(farming.mod == "redo") then
 
 	cucina_vegana_farming_default = false
 	

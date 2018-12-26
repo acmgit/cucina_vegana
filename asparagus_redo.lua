@@ -117,6 +117,6 @@ local step = 6
 	})
 
 if (minetest.get_modpath("farming_nextgen")) then
-    farmingNG.register_seed("cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_" .. step)
+    farmingNG.register_seed("cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_1")
     farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step)
 end

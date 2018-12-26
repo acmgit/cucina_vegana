@@ -54,6 +54,7 @@ bucket<br>
 bushes<br>
 bushes_classic<br>
 bbq<br>
+farming_nextgen<br>
 
 ## License
 

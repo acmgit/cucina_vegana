@@ -107,7 +107,7 @@ crop_def.drop = {
 minetest.register_node("cucina_vegana:" .. pname .. "_8", table.copy(crop_def))
 	
 -- Register for Mapgen
-minetest.register_node("cucina_vegana:wild_" .. pname), {
+minetest.register_node("cucina_vegana:wild_" .. pname, {
 	description = S("Wild " .. dname),
 	paramtype = "light",
 	walkable = false,
@@ -149,5 +149,5 @@ minetest.register_alias("soy:seed_soy", "cucina_vegana:seed_" .. pname)
 
 if (minetest.get_modpath("farming_nextgen")) then
     farmingNG.register_seed("cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_1")
-    farmingNG.register_harvest("cucina_vegana:" .. pname .. "_8")
+    farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step)
 end
