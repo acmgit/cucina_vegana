@@ -4,13 +4,14 @@
 	**********************************************
 ]]--
 
-local dname = "Soy"
-local pname = "soy"
-local step = 8
 
 -- Load support for intllib.
 local MP = minetest.get_modpath(minetest.get_current_modname())
 local S, NS = dofile(MP.."/intllib.lua")
+
+local dname = S("Soy")
+local pname = "soy"
+local step = 8
 
 minetest.register_node("cucina_vegana:".. pname .."_seed", {
 	description = dname .. " " .. S("Seed"),

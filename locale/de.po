@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-27 00:03+0100\n"
+"POT-Creation-Date: 2018-12-27 00:12+0100\n"
 "PO-Revision-Date: 2018-12-27 00:03+0100\n"
 "Last-Translator: A.C.M. <undertakers_help@yahoo.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -219,7 +219,7 @@ msgstr "Salatöl"
 msgid "Rosemary"
 msgstr "Rosmarie"
 
-#: soy_default.lua
+#: soy_default.lua soy_redo.lua
 msgid "Soy"
 msgstr "Soja"
 
