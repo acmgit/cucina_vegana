@@ -1,13 +1,23 @@
+--[[
+	**********************************************
+	***           Lettuce redo                 ***
+	**********************************************
+]]--
+
 -- Load support for intllib.
 local MP = minetest.get_modpath(minetest.get_current_modname())
 local S, NS = dofile(MP.."/intllib.lua")
 
+local dname = S("Lettuce")
+local pname = "lettuce"
+local step = 5
+
 -- lettuce
-minetest.register_node("cucina_vegana:lettuce_seed", {
-	description = S("Lettuce Seed"),
-	tiles = {"cucina_vegana_lettuce_seed.png"},
-	inventory_image = "cucina_vegana_lettuce_seed.png",
-	wield_image = "cucina_vegana_lettuce_seed.png",
+minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
+	description = S(dname .. " Seed"),
+	tiles = {"cucina_vegana_" .. pname .. "_seed.png"},
+	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
+	wield_image = "cucina_vegana_" .. pname .. "_seed.png",
 	drawtype = "signlike",
 	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
 	paramtype = "light",
@@ -16,14 +26,14 @@ minetest.register_node("cucina_vegana:lettuce_seed", {
 	sunlight_propagates = true,
 	selection_box = farming.select,
 	on_place = function(itemstack, placer, pointed_thing)
-		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:lettuce_1")
+		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:" .. pname .. "_1")
 	end,
 })
 
 -- lettuce definition
 local crop_def = {
 	drawtype = "plantlike",
-	tiles = {"cucina_vegana_lettuce_1.png"},
+	tiles = {"cucina_vegana_" .. pname .. "_1.png"},
 	paramtype = "light",
 	sunlight_propagates = true,
 	walkable = false,
@@ -38,53 +48,53 @@ local crop_def = {
 }
 
 -- stage 1
-minetest.register_node("cucina_vegana:lettuce_1", table.copy(crop_def))
+minetest.register_node("cucina_vegana:" .. pname .. "_1", table.copy(crop_def))
 
 -- stage 2
-crop_def.tiles = {"cucina_vegana_lettuce_2.png"}
-minetest.register_node("cucina_vegana:lettuce_2", table.copy(crop_def))
+crop_def.tiles = {"cucina_vegana_" .. pname .. "_2.png"}
+minetest.register_node("cucina_vegana:" .. pname .. "_2", table.copy(crop_def))
 
 -- stage 3
-crop_def.tiles = {"cucina_vegana_lettuce_3.png"}
-minetest.register_node("cucina_vegana:lettuce_3", table.copy(crop_def))
+crop_def.tiles = {"cucina_vegana_" .. pname .. "_3.png"}
+minetest.register_node("cucina_vegana:" .. pname .. "_3", table.copy(crop_def))
 
 -- stage 4
-crop_def.tiles = {"cucina_vegana_lettuce_4.png"}
+crop_def.tiles = {"cucina_vegana_" .. pname .. "_4.png"}
 crop_def.drop = {
 	items = {
-		{items = {"cucina_vegana:lettuce_seed"}, rarity = 2},
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
 	}
 }
-minetest.register_node("cucina_vegana:lettuce_4", table.copy(crop_def))
+minetest.register_node("cucina_vegana:" .. pname .. "_4", table.copy(crop_def))
 
 -- stage 5
-crop_def.tiles = {"cucina_vegana_lettuce_5.png"}
+crop_def.tiles = {"cucina_vegana_" .. pname .. "_" .. step .. ".png"}
 crop_def.drop = {
 	items = {
-		{items = {"cucina_vegana:lettuce"}, rarity = 1},
-		{items = {"cucina_vegana:lettuce"}, rarity = 3},
-		{items = {"cucina_vegana:lettuce_seed"}, rarity = 1},
-		{items = {"cucina_vegana:lettuce_seed"}, rarity = 1},
-		{items = {"cucina_vegana:lettuce_seed"}, rarity = 3},
+		{items = {"cucina_vegana:" .. pname .. ""}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. ""}, rarity = 3},
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
 
 	}
 }
-minetest.register_node("cucina_vegana:lettuce_5", table.copy(crop_def))
+minetest.register_node("cucina_vegana:" .. pname .. "_" .. step, table.copy(crop_def))
 
 -- Register for Mapgen
-minetest.register_node("cucina_vegana:wild_lettuce", {
-	description = S("Wild Lettuce"),
+minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
+	description = S("Wild " .. dname .. ""),
 	paramtype = "light",
 	walkable = false,
 	drop = { 
 			items = { 
-					{items = {"cucina_vegana:lettuce_seed 3"}},
-					{items = {"cucina_vegana:lettuce"}},
+					{items = {"cucina_vegana:" .. pname .. "_seed 3"}},
+					{items = {"cucina_vegana:" .. pname .. ""}},
 				}
 			},
 	drawtype = "plantlike",
 	paramtype2 = "facedir",
-	tiles = {"cucina_vegana_lettuce_5.png"},
+	tiles = {"cucina_vegana_" .. pname .. "_" .. step .. ".png"},
 	groups = {snappy=3, dig_immediate=1, flammable=2, plant=1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
@@ -98,12 +108,17 @@ minetest.register_node("cucina_vegana:wild_lettuce", {
 -- to import the old mod in cucina_vegana
 -- can deleted if you have a clean world.
 
-minetest.register_alias("lettuce:lettuce_1", "cucina_vegana:lettuce_1")
-minetest.register_alias("lettuce:lettuce_2", "cucina_vegana:lettuce_2")
-minetest.register_alias("lettuce:lettuce_3", "cucina_vegana:lettuce_3")
-minetest.register_alias("lettuce:lettuce_4", "cucina_vegana:lettuce_4")
-minetest.register_alias("lettuce:lettuce_5", "cucina_vegana:lettuce_5")
+minetest.register_alias("lettuce:lettuce_1", "cucina_vegana:" .. pname .. "_1")
+minetest.register_alias("lettuce:lettuce_2", "cucina_vegana:" .. pname .. "_2")
+minetest.register_alias("lettuce:lettuce_3", "cucina_vegana:" .. pname .. "_3")
+minetest.register_alias("lettuce:lettuce_4", "cucina_vegana:" .. pname .. "_4")
+minetest.register_alias("lettuce:lettuce_5", "cucina_vegana:" .. pname .. "_" .. step .. "")
 
-minetest.register_alias("lettuce:lettuce", "cucina_vegana:lettuce")
-minetest.register_alias("lettuce:seed", "cucina_vegana:lettuce_seed")
-minetest.register_alias("lettuce:wild_lettuce", "cucina_vegana:wild_lettuce")
+minetest.register_alias("lettuce:lettuce", "cucina_vegana:" .. pname .. "")
+minetest.register_alias("lettuce:seed", "cucina_vegana:" .. pname .. "_seed")
+minetest.register_alias("lettuce:wild_lettuce", "cucina_vegana:wild_" .. pname .. "")
+
+if (minetest.get_modpath("farming_nextgen")) then
+    farmingNG.register_seed("cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_" .. step)
+    farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step)
+end

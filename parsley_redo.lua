@@ -1,13 +1,23 @@
+--[[
+	**********************************************
+	***            Parsley redo                ***
+	**********************************************
+]]--
+
 -- Load support for intllib.
 local MP = minetest.get_modpath(minetest.get_current_modname())
 local S, NS = dofile(MP.."/intllib.lua")
 
+local dname = S("Parsley")
+local pname = "parsley"
+local step = 5
+
 -- Parsley
-minetest.register_node("cucina_vegana:parsley_seed", {
-	description = S("Parsley Seed"),
-	tiles = {"cucina_vegana_parsley_seed.png"},
-	inventory_image = "cucina_vegana_parsley_seed.png",
-	wield_image = "cucina_vegana_parsley_seed.png",
+minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
+	description = S(dname .. " Seed"),
+	tiles = {"cucina_vegana_" .. pname .. "_seed.png"},
+	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
+	wield_image = "cucina_vegana_" .. pname .. "_seed.png",
 	drawtype = "signlike",
 	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4, attached_node = 1},
 	paramtype = "light",
@@ -16,14 +26,14 @@ minetest.register_node("cucina_vegana:parsley_seed", {
 	sunlight_propagates = true,
 	selection_box = farming.select,
 	on_place = function(itemstack, placer, pointed_thing)
-		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:parsley_1")
+		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:" .. pname .. "_1")
 	end,
 })
 
 -- Parsley definition
 local crop_def = {
 	drawtype = "plantlike",
-	tiles = {"cucina_vegana_parsley_1.png"},
+	tiles = {"cucina_vegana_" .. pname .. "_1.png"},
 	paramtype = "light",
 	sunlight_propagates = true,
 	walkable = false,
@@ -38,55 +48,55 @@ local crop_def = {
 }
 
 -- stage 1
-minetest.register_node("cucina_vegana:parsley_1", table.copy(crop_def))
+minetest.register_node("cucina_vegana:" .. pname .. "_1", table.copy(crop_def))
 
 -- stage 2
-crop_def.tiles = {"cucina_vegana_parsley_2.png"}
-minetest.register_node("cucina_vegana:parsley_2", table.copy(crop_def))
+crop_def.tiles = {"cucina_vegana_" .. pname .. "_2.png"}
+minetest.register_node("cucina_vegana:" .. pname .. "_2", table.copy(crop_def))
 
 -- stage 3
-crop_def.tiles = {"cucina_vegana_parsley_3.png"}
-minetest.register_node("cucina_vegana:parsley_3", table.copy(crop_def))
+crop_def.tiles = {"cucina_vegana_" .. pname .. "_3.png"}
+minetest.register_node("cucina_vegana:" .. pname .. "_3", table.copy(crop_def))
 
 -- stage 4
-crop_def.tiles = {"cucina_vegana_parsley_4.png"}
+crop_def.tiles = {"cucina_vegana_" .. pname .. "_4.png"}
 crop_def.drop = {
 	items = {
-		{items = {"cucina_vegana:parsley"}, rarity = 1},
-		{items = {"cucina_vegana:parsley_seed"}, rarity = 2},
+		{items = {"cucina_vegana:" .. pname .. ""}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
 	}
 }
-minetest.register_node("cucina_vegana:parsley_4", table.copy(crop_def))
+minetest.register_node("cucina_vegana:" .. pname .. "_4", table.copy(crop_def))
 
 -- stage 5
-crop_def.tiles = {"cucina_vegana_parsley_5.png"}
+crop_def.tiles = {"cucina_vegana_" .. pname .. "_" .. step .. ".png"}
 crop_def.drop = {
 	items = {
-		{items = {"cucina_vegana:parsley"}, rarity = 1},
-		{items = {"cucina_vegana:parsley"}, rarity = 1},
-		{items = {"cucina_vegana:parsley"}, rarity = 3},
-		{items = {"cucina_vegana:parsley_seed"}, rarity = 1},
-		{items = {"cucina_vegana:parsley_seed"}, rarity = 1},
-		{items = {"cucina_vegana:parsley_seed"}, rarity = 3},
+		{items = {"cucina_vegana:" .. pname .. ""}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. ""}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. ""}, rarity = 3},
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
 		
 	}
 }
-minetest.register_node("cucina_vegana:parsley_5", table.copy(crop_def))
+minetest.register_node("cucina_vegana:" .. pname .. "_5", table.copy(crop_def))
 
 -- Register for Mapgen
-minetest.register_node("cucina_vegana:wild_parsley", {
-	description = S("Wild Parsley"),
+minetest.register_node("cucina_vegana:wild_" .. pname, {
+	description = S("Wild " .. dname .. ""),
 	paramtype = "light",
 	walkable = false,
 	drop = { 
 			items = { 
-					{items = {"cucina_vegana:parsley_seed 3"}},
-					{items = {"cucina_vegana:parsley"}},
+					{items = {"cucina_vegana:" .. pname .. "_seed 3"}},
+					{items = {"cucina_vegana:" .. pname}},
 				}
 			},
 	drawtype = "plantlike",
 	paramtype2 = "facedir",
-	tiles = {"cucina_vegana_parsley_5.png"},
+	tiles = {"cucina_vegana_" .. pname .. "_" .. step .. ".png"},
 	groups = {snappy=3, dig_immediate=1, flammable=2, plant=1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
@@ -100,12 +110,17 @@ minetest.register_node("cucina_vegana:wild_parsley", {
 -- to import the old mod in cucina_vegana
 -- can deleted if you have a clean world.
 
-minetest.register_alias("parsley:parsley_1", "cucina_vegana:parsley_1")
-minetest.register_alias("parsley:parsley_2", "cucina_vegana:parsley_2")
-minetest.register_alias("parsley:parsley_3", "cucina_vegana:parsley_3")
-minetest.register_alias("parsley:parsley_4", "cucina_vegana:parsley_4")
-minetest.register_alias("parsley:parsley_5", "cucina_vegana:parsley_5")
+minetest.register_alias("parsley:parsley_1", "cucina_vegana:" .. pname .. "_1")
+minetest.register_alias("parsley:parsley_2", "cucina_vegana:" .. pname .. "_2")
+minetest.register_alias("parsley:parsley_3", "cucina_vegana:" .. pname .. "_3")
+minetest.register_alias("parsley:parsley_4", "cucina_vegana:" .. pname .. "_4")
+minetest.register_alias("parsley:parsley_5", "cucina_vegana:" .. pname .. "_" .. step)
 
-minetest.register_alias("parsley:parsley", "cucina_vegana:parsley")
-minetest.register_alias("parsley:seed", "cucina_vegana:parsley_seed")
-minetest.register_alias("parsley:wild_parsley", "cucina_vegana:wild_parsley")
+minetest.register_alias("parsley:parsley", "cucina_vegana:" .. pname .. "")
+minetest.register_alias("parsley:seed", "cucina_vegana:" .. pname .. "_seed")
+minetest.register_alias("parsley:wild_parsley", "cucina_vegana:wild_" .. pname .. "")
+
+if (minetest.get_modpath("farming_nextgen")) then
+    farmingNG.register_seed("cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_" .. step)
+    farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step)
+end

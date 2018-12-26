@@ -6,36 +6,38 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-07 13:22+0200\n"
-"PO-Revision-Date: 2018-07-07 13:24+0200\n"
+"POT-Creation-Date: 2018-12-26 21:04+0100\n"
+"PO-Revision-Date: 2018-12-26 21:02+0100\n"
 "Last-Translator: A.C.M. <undertakers_help@yahoo.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Lokalize 18.12.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: asparagus_default.lua asparagus_redo.lua
-msgid "Asparagus Seed"
-msgstr "Spargel Samen"
+#: asparagus_default.lua asparagus_redo.lua items.lua
+msgid "Asparagus"
+msgstr "Spargel"
 
-#: asparagus_default.lua asparagus_redo.lua
-msgid "Wild Asparagus"
-msgstr "Wilder Spargel"
+#: asparagus_default.lua asparagus_redo.lua chives_redo.lua kohlrabi_redo.lua
+#: lettuce_redo.lua parsley_redo.lua rice_default.lua rice_redo.lua
+#: rosemary_redo.lua soy_redo.lua sunflower_default.lua sunflower_redo.lua
+msgid " Seed"
+msgstr "Samen"
 
-#: chives_default.lua items.lua
+#: asparagus_default.lua asparagus_redo.lua chives_default.lua chives_redo.lua
+#: kohlrabi_default.lua kohlrabi_redo.lua lettuce_redo.lua parsley_default.lua
+#: parsley_redo.lua rice_default.lua rice_redo.lua rosemary_default.lua
+#: rosemary_redo.lua soy_default.lua soy_redo.lua sunflower_default.lua
+#: sunflower_redo.lua
+msgid "Wild "
+msgstr "Wild"
+
+#: chives_default.lua chives_redo.lua items.lua
 msgid "Chives"
 msgstr "Schnittlauch"
-
-#: chives_default.lua chives_redo.lua
-msgid "Wild Chives"
-msgstr "Wilder Schnittlauch"
-
-#: chives_redo.lua
-msgid "Chives Seed"
-msgstr "Schnittlauch Samen"
 
 #: items.lua
 msgid "Tofu (raw)"
@@ -49,27 +51,23 @@ msgstr "Soja Milch"
 msgid "Tofu"
 msgstr "Tofu"
 
-#: items.lua parsley_default.lua
+#: items.lua parsley_default.lua parsley_redo.lua
 msgid "Parsley"
 msgstr "Petersilie"
 
-#: items.lua lettuce_default.lua
+#: items.lua lettuce_default.lua lettuce_redo.lua
 msgid "Lettuce"
 msgstr "Salat"
 
-#: items.lua kohlrabi_default.lua
+#: items.lua kohlrabi_default.lua kohlrabi_redo.lua
 msgid "Kohlrabi"
 msgstr "Kohlrabi"
-
-#: items.lua
-msgid "Asparagus"
-msgstr "Spargel"
 
 #: items.lua
 msgid "Roasted Kohlrabi"
 msgstr "Gerösteter Kohlrabi"
 
-#: items.lua
+#: items.lua rice_default.lua rice_redo.lua
 msgid "Rice"
 msgstr "Reis"
 
@@ -77,7 +75,7 @@ msgstr "Reis"
 msgid "Soy Bean"
 msgstr "Sojabohnen"
 
-#: items.lua
+#: items.lua sunflower_default.lua sunflower_redo.lua
 msgid "Sunflower"
 msgstr "Sonnenblume"
 
@@ -121,25 +119,9 @@ msgstr "Rosmarien Zweig"
 msgid "Molasses"
 msgstr "Melasse"
 
-#: kohlrabi_default.lua
-msgid "Wild kohlrabi"
-msgstr "Wilder Kohlrabi"
-
-#: kohlrabi_redo.lua
-msgid "Kohlrabi Seed"
-msgstr "Kohlrabi Samen"
-
-#: kohlrabi_redo.lua
-msgid "Wild Kohlrabi"
-msgstr "Wilder Kohlrabi"
-
-#: lettuce_default.lua lettuce_redo.lua
+#: lettuce_default.lua
 msgid "Wild Lettuce"
 msgstr "Wilder Salat"
-
-#: lettuce_redo.lua
-msgid "Lettuce Seed"
-msgstr "Salatpflanzen Samen"
 
 #: nodes.lua
 msgid "Plate"
@@ -233,50 +215,62 @@ msgstr "Spargel auf Reis"
 msgid "Salad Oil"
 msgstr "Salatöl"
 
-#: parsley_default.lua parsley_redo.lua
-msgid "Wild Parsley"
-msgstr "Wilde Petersilie"
-
-#: parsley_redo.lua
-msgid "Parsley Seed"
-msgstr "Petersilie Samen"
-
-#: rice_default.lua rice_redo.lua
-msgid "Rice Seed"
-msgstr "Reis Samen"
-
-#: rice_default.lua rice_redo.lua
-msgid "Wild Rice"
-msgstr "Wilder Reis"
-
-#: rosemary_default.lua
+#: rosemary_default.lua rosemary_redo.lua
 msgid "Rosemary"
 msgstr "Rosmarie"
 
-#: rosemary_default.lua rosemary_redo.lua
-msgid "Wild Rosemary"
-msgstr "Wilde Rosmarie"
-
-#: rosemary_redo.lua
-msgid "Rosemary Seed"
-msgstr "Rosmarie Samen"
+#: soy_default.lua
+msgid "Soy"
+msgstr "Soja"
 
 #: soy_default.lua
-msgid "Soy Beans"
-msgstr "Sojabohnen"
+msgid " Beans"
+msgstr "Bohnen"
 
-#: soy_default.lua soy_redo.lua
-msgid "Wild Soy"
-msgstr "Wildes Soja"
+#~ msgid "Wild Parsley"
+#~ msgstr "Wilde Petersilie"
 
-#: soy_redo.lua
-msgid "Soy Seed"
-msgstr "Sojabohnen Samen"
+#~ msgid "Asparagus Seed"
+#~ msgstr "Spargel Samen"
 
-#: sunflower_default.lua sunflower_redo.lua
-msgid "Sunflower Seed"
-msgstr "Sonnenblumen Samen"
+#~ msgid "Wild Asparagus"
+#~ msgstr "Wilder Spargel"
 
-#: sunflower_default.lua sunflower_redo.lua
-msgid "Wild Sunflower"
-msgstr "Wilde Sonnenblume"
+#~ msgid "Wild Chives"
+#~ msgstr "Wilder Schnittlauch"
+
+#~ msgid "Chives Seed"
+#~ msgstr "Schnittlauch Samen"
+
+#~ msgid "Wild kohlrabi"
+#~ msgstr "Wilder Kohlrabi"
+
+#~ msgid "Kohlrabi Seed"
+#~ msgstr "Kohlrabi Samen"
+
+#~ msgid "Wild Kohlrabi"
+#~ msgstr "Wilder Kohlrabi"
+
+#~ msgid "Lettuce Seed"
+#~ msgstr "Salatpflanzen Samen"
+
+#~ msgid "Parsley Seed"
+#~ msgstr "Petersilie Samen"
+
+#~ msgid "Rice Seed"
+#~ msgstr "Reis Samen"
+
+#~ msgid "Wild Rice"
+#~ msgstr "Wilder Reis"
+
+#~ msgid "Wild Rosemary"
+#~ msgstr "Wilde Rosmarie"
+
+#~ msgid "Rosemary Seed"
+#~ msgstr "Rosmarie Samen"
+
+#~ msgid "Sunflower Seed"
+#~ msgstr "Sonnenblumen Samen"
+
+#~ msgid "Wild Sunflower"
+#~ msgstr "Wilde Sonnenblume"

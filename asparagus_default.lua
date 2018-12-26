@@ -1,12 +1,22 @@
+--[[
+	**********************************************
+	***         Asparagus default              ***
+	**********************************************
+]]--
+
 -- Load support for intllib.
 local MP = minetest.get_modpath(minetest.get_current_modname())
 local S, NS = dofile(MP.."/intllib.lua")
 
+local dname = S("Asparagus")
+local pname = "asparagus"
+local step = 6
+
 -- asparagus
-farming.register_plant("cucina_vegana:asparagus", {
-	description = S("Asparagus Seed"),
-	inventory_image = "cucina_vegana_asparagus_seed.png",
-	steps = 6,
+farming.register_plant("cucina_vegana:" .. pname, {
+	description = S(dname .. " Seed"),
+	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
+	steps = step,
 	minlight = 11,
 	maxlight = default.LIGHT_MAX,
 	fertility = {"grassland"},
@@ -14,19 +24,19 @@ farming.register_plant("cucina_vegana:asparagus", {
 })
 	
 -- Register for Mapgen
-minetest.register_node("cucina_vegana:wild_asparagus", {
-	description = S("Wild Asparagus"),
+minetest.register_node("cucina_vegana:wild_" .. pname, {
+	description = S("Wild " .. dname),
 	paramtype = "light",
 	walkable = false,
 	drop = { 
 			items = { 
-					{items = {"cucina_vegana:seed_asparagus 3"}},
-					{items = {"cucina_vegana:asparagus"}},
+					{items = {"cucina_vegana:seed_" .. pname .. " 3"}},
+					{items = {"cucina_vegana:" .. pname .. ""}},
 				}
 			},
 	drawtype = "plantlike",
 	paramtype2 = "facedir",
-	tiles = {"cucina_vegana_asparagus_6.png"},
+	tiles = {"cucina_vegana_" .. pname .. "_" .. step .. ".png"},
 	sunlight_propagates = true,
 	groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
@@ -37,3 +47,8 @@ minetest.register_node("cucina_vegana:wild_asparagus", {
 			},
 	},
 })
+
+if (minetest.get_modpath("farming_nextgen")) then
+    farmingNG.register_seed("cucina_vegana:seed_" .. pname .. "", "cucina_vegana:" .. pname .. "_1")
+    farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step)
+end
