@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-26 21:04+0100\n"
+"POT-Creation-Date: 2018-12-27 00:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,18 +21,18 @@ msgstr ""
 msgid "Asparagus"
 msgstr ""
 
-#: asparagus_default.lua asparagus_redo.lua chives_redo.lua kohlrabi_redo.lua
-#: lettuce_redo.lua parsley_redo.lua rice_default.lua rice_redo.lua
-#: rosemary_redo.lua soy_redo.lua sunflower_default.lua sunflower_redo.lua
-msgid " Seed"
-msgstr ""
-
 #: asparagus_default.lua asparagus_redo.lua chives_default.lua chives_redo.lua
 #: kohlrabi_default.lua kohlrabi_redo.lua lettuce_redo.lua parsley_default.lua
 #: parsley_redo.lua rice_default.lua rice_redo.lua rosemary_default.lua
 #: rosemary_redo.lua soy_default.lua soy_redo.lua sunflower_default.lua
 #: sunflower_redo.lua
 msgid "Wild "
+msgstr ""
+
+#: asparagus_redo.lua chives_redo.lua kohlrabi_redo.lua lettuce_redo.lua
+#: parsley_redo.lua rice_redo.lua rosemary_redo.lua soy_redo.lua
+#: sunflower_redo.lua
+msgid "Seed"
 msgstr ""
 
 #: chives_default.lua chives_redo.lua items.lua
@@ -224,5 +224,5 @@ msgid "Soy"
 msgstr ""
 
 #: soy_default.lua
-msgid " Beans"
+msgid "Soy Beans"
 msgstr ""

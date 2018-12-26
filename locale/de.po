@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-26 21:04+0100\n"
-"PO-Revision-Date: 2018-12-26 21:02+0100\n"
+"POT-Creation-Date: 2018-12-27 00:03+0100\n"
+"PO-Revision-Date: 2018-12-27 00:03+0100\n"
 "Last-Translator: A.C.M. <undertakers_help@yahoo.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -21,12 +21,6 @@ msgstr ""
 msgid "Asparagus"
 msgstr "Spargel"
 
-#: asparagus_default.lua asparagus_redo.lua chives_redo.lua kohlrabi_redo.lua
-#: lettuce_redo.lua parsley_redo.lua rice_default.lua rice_redo.lua
-#: rosemary_redo.lua soy_redo.lua sunflower_default.lua sunflower_redo.lua
-msgid " Seed"
-msgstr "Samen"
-
 #: asparagus_default.lua asparagus_redo.lua chives_default.lua chives_redo.lua
 #: kohlrabi_default.lua kohlrabi_redo.lua lettuce_redo.lua parsley_default.lua
 #: parsley_redo.lua rice_default.lua rice_redo.lua rosemary_default.lua
@@ -34,6 +28,12 @@ msgstr "Samen"
 #: sunflower_redo.lua
 msgid "Wild "
 msgstr "Wild"
+
+#: asparagus_redo.lua chives_redo.lua kohlrabi_redo.lua lettuce_redo.lua
+#: parsley_redo.lua rice_redo.lua rosemary_redo.lua soy_redo.lua
+#: sunflower_redo.lua
+msgid "Seed"
+msgstr "Samen"
 
 #: chives_default.lua chives_redo.lua items.lua
 msgid "Chives"
@@ -224,8 +224,14 @@ msgid "Soy"
 msgstr "Soja"
 
 #: soy_default.lua
-msgid " Beans"
-msgstr "Bohnen"
+msgid "Soy Beans"
+msgstr "Sojabohnen"
+
+#~ msgid " Seed"
+#~ msgstr "Samen"
+
+#~ msgid " Beans"
+#~ msgstr "Bohnen"
 
 #~ msgid "Wild Parsley"
 #~ msgstr "Wilde Petersilie"

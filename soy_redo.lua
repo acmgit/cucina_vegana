@@ -13,7 +13,7 @@ local MP = minetest.get_modpath(minetest.get_current_modname())
 local S, NS = dofile(MP.."/intllib.lua")
 
 minetest.register_node("cucina_vegana:".. pname .."_seed", {
-	description = S(dname .. " Seed"),
+	description = dname .. " " .. S("Seed"),
 	tiles = {"cucina_vegana_" .. pname .. "_seed.png"},
 	inventory_image = "cucina_vegana_".. pname .. "_seed.png",
 	wield_image = "cucina_vegana_" .. pname .. "_seed.png",

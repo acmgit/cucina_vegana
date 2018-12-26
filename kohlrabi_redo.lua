@@ -14,7 +14,7 @@ local step = 6
 
 	-- kohlrabi
 	minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
-		description = S(dname .. " Seed"),
+		description = dname .. " " .. S("Seed"),
 		tiles = {"cucina_vegana_" .. pname .. "_seed.png"},
 		inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 		wield_image = "cucina_vegana_" .. pname .. "_seed.png",

@@ -15,7 +15,7 @@ local step = 5
 
 -- lettuce
 farming.register_plant("cucina_vegana:" .. pname, {
-	description = "Lettuce",
+	description = dname,
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	steps = step,
 	minlight = 12,

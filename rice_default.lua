@@ -14,7 +14,7 @@ local step = 6
 
 -- rice
 farming.register_plant("cucina_vegana:" .. pname .. "", {
-	description = S(dname .. " Seed"),
+	description = dname,
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	steps = step,
 	minlight = 12,
