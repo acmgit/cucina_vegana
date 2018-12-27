@@ -46,15 +46,17 @@ vessels<br>
 dye<br>
 
 ### optional
-technic<br>
-mobs<br>
-farming_redo<br>
-fishing<br>
+bbq<br>
 bucket<br>
 bushes<br>
 bushes_classic<br>
-bbq<br>
+farming_redo<br>
 farming_nextgen<br>
+fishing<br>
+flowers<br>
+intllib<br>
+mobs<br>
+technic<br>
 
 ## License
 
