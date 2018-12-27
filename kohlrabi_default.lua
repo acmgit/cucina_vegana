@@ -13,7 +13,7 @@ local pname = "kohlrabi"
 local step = 6
 
 -- kohlrabi
-farming.register_plant("cucina_vegana:" .. pname .. "", {
+farming.register_plant("cucina_vegana:" .. pname, {
 	description = dname,
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	steps = step,
@@ -24,14 +24,14 @@ farming.register_plant("cucina_vegana:" .. pname .. "", {
 })
 	
 -- Register for Mapgen
-minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
-	description = S("Wild " .. dname .. ""),
+minetest.register_node("cucina_vegana:wild_" .. pname, {
+	description = S("Wild") .. " " .. dname),
 	paramtype = "light",
 	walkable = false,
 	drop = { 
 			items = { 
 					{items = {"cucina_vegana:seed_" .. pname .. " 3"}},
-					{items = {"cucina_vegana:" .. pname .. ""}},
+					{items = {"cucina_vegana:" .. pname}},
 				}
 			},
 	drawtype = "plantlike",
@@ -48,11 +48,11 @@ minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
 	},
 })
 
-minetest.register_alias("kohlrabi:kohlrabi", "cucina_vegana:" .. pname .. "")
+minetest.register_alias("kohlrabi:kohlrabi", "cucina_vegana:" .. pname)
 minetest.register_alias("kohlrabi:seed", "cucina_vegana:" .. pname .. "_seed")
-minetest.register_alias("kohlrabi:wild_kohlrabi", "cucina_vegana:wild_" .. pname .. "")
+minetest.register_alias("kohlrabi:wild_kohlrabi", "cucina_vegana:wild_" .. pname)
 
 if (minetest.get_modpath("farming_nextgen")) then
-    farmingNG.register_seed("cucina_vegana:seed_" .. pname .. "", "cucina_vegana:" .. pname .. "_1")
+    farmingNG.register_seed("cucina_vegana:seed_" .. pname, "cucina_vegana:" .. pname .. "_1")
     farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step)
 end

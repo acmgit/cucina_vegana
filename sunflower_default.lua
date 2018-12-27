@@ -20,7 +20,7 @@ if(minetest.registered_nodes["flowers:sunflower"]  ~= nil) then
 
 else
 
-	farming.register_plant("cucina_vegana:" .. pname .. "", {
+	farming.register_plant("cucina_vegana:" .. pname, {
 		description = dname,
 		inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 		steps = step,
@@ -31,8 +31,8 @@ else
 	})
 	
 	-- Register for Mapgen
-	minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
-		description = S("Wild " .. dname),
+	minetest.register_node("cucina_vegana:wild_" .. pname, {
+		description = S("Wild") .. " " .. dname),
 		paramtype = "light",
 		walkable = false,
 		drop = { 
@@ -58,6 +58,6 @@ else
 end
 
 if (minetest.get_modpath("farming_nextgen")) then
-    farmingNG.register_seed("cucina_vegana:seed_" .. pname .. "", "cucina_vegana:" .. pname .. "_1")
+    farmingNG.register_seed("cucina_vegana:seed_" .. pname, "cucina_vegana:" .. pname .. "_1")
     farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step .. "")
 end

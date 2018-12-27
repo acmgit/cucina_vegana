@@ -13,7 +13,7 @@ local pname = "soy"
 local step = 8
 
 farming.register_plant("cucina_vegana:".. pname, {
-	description = S("Soy Beans"),
+	description = dname .. S("Beans"),
 	inventory_image = "cucina_vegana_".. pname .. "_seed.png",
 	steps = step,
 	minlight = 12,
@@ -24,7 +24,7 @@ farming.register_plant("cucina_vegana:".. pname, {
 	
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_".. pname, {
-	description = S("Wild " .. dname),
+	description = S("Wild") .. " " .. dname),
 	paramtype = "light",
 	walkable = false,
 	drop = { 

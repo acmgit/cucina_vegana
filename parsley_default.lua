@@ -13,7 +13,7 @@ local pname = "parsley"
 local step = 5
 
 -- Parsley
-farming.register_plant("cucina_vegana:" .. pname .. "", {
+farming.register_plant("cucina_vegana:" .. pname, {
 	description = dname,
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	steps = step,
@@ -25,7 +25,7 @@ farming.register_plant("cucina_vegana:" .. pname .. "", {
 	
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_" .. pname, {
-	description = S("Wild " .. dname),
+	description = S("Wild") .. " " .. dname),
 	paramtype = "light",
 	walkable = false,
 	drop = { 
