@@ -34,7 +34,7 @@ plants = {
 
 			["soy"] = true,
 			["parsley"] = true,
-			["lettuce"] =true,
+			["lettuce"] = true,
 			["chives"] = true,
 			["rosemary"] = true,
 			["sunflower"] = true,
@@ -87,6 +87,7 @@ if (minetest.get_modpath("technic")) then
 					{"cucina_vegana:sunflower_seeds 6", "cucina_vegana:sunflower_seeds_oil"},
 					{"cucina_vegana:lettuce_seed 6", "cucina_vegana:lettuce_oil"},
                     {"cucina_vegana:kohlrabi 6", "cucina_vegana:molasses"},
+                    {"cucina_vegana:soy 8", "cucina_vegana:tofu"},
 				}
 
 	for _, data in pairs(compressor_recipes) do
@@ -114,13 +115,22 @@ if (minetest.get_modpath("technic")) then
         {"cucina_vegana:sunflower", "cucina_vegana:sunflower_seeds 4"},
         {"cucina_vegana:kohlrabi 3", "cucina_vegana:molasses"},
         {"cucina_vegana:molasses", "bushes:sugar 2"},
+        {"cucina_vegana:soy 4", "cucina_vegana:soy_milk"},
 	}
 
 	for _, data in ipairs(extractor_recipes) do
 		technic.register_extractor_recipe({input = {data[1]}, output = data[2]})
 	end
 	
+local recipes = {
+	{"farming:flour 3",           "cucina_vegana:sunflower_seeds",        "cucina_vegana:sunflower_seeds_bread"},
+}
+
+for _, data in pairs(recipes) do
+	technic.register_alloy_recipe({input = {data[1], data[2]}, output = data[3], time = data[4]})
 end
+
+end -- if(minetest.get_modpath("technic"
 
 
 if (cucina_vegana_farming_default) then
