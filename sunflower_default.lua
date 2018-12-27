@@ -32,7 +32,7 @@ else
 	
 	-- Register for Mapgen
 	minetest.register_node("cucina_vegana:wild_" .. pname, {
-		description = S("Wild") .. " " .. dname),
+		description = S("Wild") .. " " .. dname,
 		paramtype = "light",
 		walkable = false,
 		drop = { 
