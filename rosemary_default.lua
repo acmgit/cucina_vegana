@@ -15,7 +15,7 @@ local step = 6
 
 -- rosemary
 farming.register_plant("cucina_vegana:" .. pname, {
-	description = dname,
+	description = dname .. " " .. S("Seed"),
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	steps = 6,
 	minlight = 12,

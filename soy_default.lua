@@ -13,7 +13,7 @@ local pname = "soy"
 local step = 8
 
 farming.register_plant("cucina_vegana:".. pname, {
-	description = dname .. S("Beans"),
+	description = dname .. " " .. S("Seed"),
 	inventory_image = "cucina_vegana_".. pname .. "_seed.png",
 	steps = step,
 	minlight = 12,
