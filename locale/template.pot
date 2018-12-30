@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-27 19:39+0100\n"
+"POT-Creation-Date: 2018-12-30 23:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgid "Chives"
 msgstr ""
 
 #: items.lua
-msgid "Tofu (raw)"
+msgid "Molasses"
 msgstr ""
 
 #: items.lua
@@ -54,27 +54,59 @@ msgid "Soy Milk"
 msgstr ""
 
 #: items.lua
-msgid "Tofu"
+msgid "Tofu (raw)"
 msgstr ""
 
-#: items.lua parsley_default.lua parsley_redo.lua
-msgid "Parsley"
+#: items.lua
+msgid "Sunflower Seeds Dough"
 msgstr ""
 
-#: items.lua lettuce_default.lua lettuce_redo.lua
-msgid "Lettuce"
+#: items.lua
+msgid "Dandelion Honey"
+msgstr ""
+
+#: items.lua
+msgid "Dandelion Suds"
+msgstr ""
+
+#: items.lua
+msgid "Dandelion Suds (cooking)"
+msgstr ""
+
+#: items.lua
+msgid "Imitation Butter"
+msgstr ""
+
+#: items.lua
+msgid "Imitation Fish"
+msgstr ""
+
+#: items.lua
+msgid "Imitation Cheese"
+msgstr ""
+
+#: items.lua
+msgid "Imitation Meat"
 msgstr ""
 
 #: items.lua kohlrabi_default.lua kohlrabi_redo.lua
 msgid "Kohlrabi"
 msgstr ""
 
-#: items.lua
-msgid "Roasted Kohlrabi"
+#: items.lua lettuce_default.lua lettuce_redo.lua
+msgid "Lettuce"
+msgstr ""
+
+#: items.lua parsley_default.lua parsley_redo.lua
+msgid "Parsley"
 msgstr ""
 
 #: items.lua rice_default.lua rice_redo.lua
 msgid "Rice"
+msgstr ""
+
+#: items.lua
+msgid "Rosemary Twig"
 msgstr ""
 
 #: items.lua
@@ -90,7 +122,11 @@ msgid "Sunflower Seeds"
 msgstr ""
 
 #: items.lua
-msgid "Sunflower Seeds Dough"
+msgid "Tofu"
+msgstr ""
+
+#: items.lua
+msgid "Roasted Kohlrabi"
 msgstr ""
 
 #: items.lua
@@ -102,27 +138,7 @@ msgid "Sunflower Seeds Bread"
 msgstr ""
 
 #: items.lua
-msgid "Imitation Meat"
-msgstr ""
-
-#: items.lua
-msgid "Imitation Butter"
-msgstr ""
-
-#: items.lua
-msgid "Imitation Cheese"
-msgstr ""
-
-#: items.lua
-msgid "Imitation Fish"
-msgstr ""
-
-#: items.lua
-msgid "Rosemary Twig"
-msgstr ""
-
-#: items.lua
-msgid "Molasses"
+msgid "Vegan Sushi"
 msgstr ""
 
 #: nodes.lua
@@ -134,46 +150,6 @@ msgid "Glass Bowl"
 msgstr ""
 
 #: nodes.lua
-msgid "Glass Salad Bowl"
-msgstr ""
-
-#: nodes.lua
-msgid "Salad Bowl Hollandaise"
-msgstr ""
-
-#: nodes.lua
-msgid "Kohlrabi Soup (raw)"
-msgstr ""
-
-#: nodes.lua
-msgid "Kohlrabi Soup"
-msgstr ""
-
-#: nodes.lua
-msgid "Soy Soup (raw)"
-msgstr ""
-
-#: nodes.lua
-msgid "Soy Soup"
-msgstr ""
-
-#: nodes.lua
-msgid "Asparagus Soup (raw)"
-msgstr ""
-
-#: nodes.lua
-msgid "Asparagus Soup"
-msgstr ""
-
-#: nodes.lua
-msgid "Asparagus Hollandaise (raw)"
-msgstr ""
-
-#: nodes.lua
-msgid "Asparagus Hollandaise"
-msgstr ""
-
-#: nodes.lua
 msgid "Bottle of Sunflower Seeds Oil"
 msgstr ""
 
@@ -182,27 +158,15 @@ msgid "Sauce Hollandaise"
 msgstr ""
 
 #: nodes.lua
-msgid "Tofu on Chives and Rosemary (raw)"
+msgid "Salad Oil"
 msgstr ""
 
 #: nodes.lua
-msgid "Tofu on Chives and Rosemary"
+msgid "Glass Salad Bowl"
 msgstr ""
 
 #: nodes.lua
-msgid "Fish on Parsley and Rosemary (raw)"
-msgstr ""
-
-#: nodes.lua
-msgid "Fish on Parsley and Rosemary"
-msgstr ""
-
-#: nodes.lua
-msgid "Bowl of Rice (raw)"
-msgstr ""
-
-#: nodes.lua
-msgid "Bowl of Rice"
+msgid "Asparagus Hollandaise (raw)"
 msgstr ""
 
 #: nodes.lua
@@ -210,11 +174,63 @@ msgid "Asparagus on Rice (raw)"
 msgstr ""
 
 #: nodes.lua
+msgid "Asparagus Soup (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Bowl of Rice (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Fish on Parsley and Rosemary (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Kohlrabi Soup (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Salad Bowl Hollandaise"
+msgstr ""
+
+#: nodes.lua
+msgid "Soy Soup (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Tofu on Chives and Rosemary (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Asparagus Hollandaise"
+msgstr ""
+
+#: nodes.lua
 msgid "Asparagus on Rice"
 msgstr ""
 
 #: nodes.lua
-msgid "Salad Oil"
+msgid "Asparagus Soup"
+msgstr ""
+
+#: nodes.lua
+msgid "Bowl of Rice"
+msgstr ""
+
+#: nodes.lua
+msgid "Fish on Parsley and Rosemary"
+msgstr ""
+
+#: nodes.lua
+msgid "Kohlrabi Soup"
+msgstr ""
+
+#: nodes.lua
+msgid "Soy Soup"
+msgstr ""
+
+#: nodes.lua
+msgid "Tofu on Chives and Rosemary"
 msgstr ""
 
 #: rosemary_default.lua rosemary_redo.lua

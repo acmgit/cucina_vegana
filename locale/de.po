@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-27 19:39+0100\n"
-"PO-Revision-Date: 2018-12-27 19:34+0100\n"
+"POT-Creation-Date: 2018-12-30 23:38+0100\n"
+"PO-Revision-Date: 2018-12-30 23:40+0100\n"
 "Last-Translator: A.C.M. <undertakers_help@yahoo.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 18.12.0\n"
+"X-Generator: Poedit 2.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: asparagus_default.lua asparagus_redo.lua items.lua
@@ -46,36 +46,68 @@ msgid "Chives"
 msgstr "Schnittlauch"
 
 #: items.lua
-msgid "Tofu (raw)"
-msgstr "Tofu (roh)"
+msgid "Molasses"
+msgstr "Melasse"
 
 #: items.lua
 msgid "Soy Milk"
 msgstr "Soja Milch"
 
 #: items.lua
-msgid "Tofu"
-msgstr "Tofu"
+msgid "Tofu (raw)"
+msgstr "Tofu (roh)"
 
-#: items.lua parsley_default.lua parsley_redo.lua
-msgid "Parsley"
-msgstr "Petersilie"
+#: items.lua
+msgid "Sunflower Seeds Dough"
+msgstr "Sonnenblumenkern Teig"
 
-#: items.lua lettuce_default.lua lettuce_redo.lua
-msgid "Lettuce"
-msgstr "Salat"
+#: items.lua
+msgid "Dandelion Honey"
+msgstr "Löwenzahn Honig"
+
+#: items.lua
+msgid "Dandelion Suds"
+msgstr "Löwenzahn Lauge"
+
+#: items.lua
+msgid "Dandelion Suds (cooking)"
+msgstr "Löwenzahn Lauge (kochend)"
+
+#: items.lua
+msgid "Imitation Butter"
+msgstr "Analog Butter"
+
+#: items.lua
+msgid "Imitation Fish"
+msgstr "Analog Fisch"
+
+#: items.lua
+msgid "Imitation Cheese"
+msgstr "Analog Käse"
+
+#: items.lua
+msgid "Imitation Meat"
+msgstr "Analog Fleisch"
 
 #: items.lua kohlrabi_default.lua kohlrabi_redo.lua
 msgid "Kohlrabi"
 msgstr "Kohlrabi"
 
-#: items.lua
-msgid "Roasted Kohlrabi"
-msgstr "Gerösteter Kohlrabi"
+#: items.lua lettuce_default.lua lettuce_redo.lua
+msgid "Lettuce"
+msgstr "Salat"
+
+#: items.lua parsley_default.lua parsley_redo.lua
+msgid "Parsley"
+msgstr "Petersilie"
 
 #: items.lua rice_default.lua rice_redo.lua
 msgid "Rice"
 msgstr "Reis"
+
+#: items.lua
+msgid "Rosemary Twig"
+msgstr "Rosmarien Zweig"
 
 #: items.lua
 msgid "Soy Bean"
@@ -90,8 +122,12 @@ msgid "Sunflower Seeds"
 msgstr "Sonnenblumenkerne"
 
 #: items.lua
-msgid "Sunflower Seeds Dough"
-msgstr "Sonnenblumenkern Teig"
+msgid "Tofu"
+msgstr "Tofu"
+
+#: items.lua
+msgid "Roasted Kohlrabi"
+msgstr "Gerösteter Kohlrabi"
 
 #: items.lua
 msgid "Roasted Sunflower Seeds"
@@ -102,28 +138,8 @@ msgid "Sunflower Seeds Bread"
 msgstr "Sonnenblumenkernbrot"
 
 #: items.lua
-msgid "Imitation Meat"
-msgstr "Analog Fleisch"
-
-#: items.lua
-msgid "Imitation Butter"
-msgstr "Analog Butter"
-
-#: items.lua
-msgid "Imitation Cheese"
-msgstr "Analog Käse"
-
-#: items.lua
-msgid "Imitation Fish"
-msgstr "Analog Fisch"
-
-#: items.lua
-msgid "Rosemary Twig"
-msgstr "Rosmarien Zweig"
-
-#: items.lua
-msgid "Molasses"
-msgstr "Melasse"
+msgid "Vegan Sushi"
+msgstr "Veganes Sushi"
 
 #: nodes.lua
 msgid "Plate"
@@ -134,46 +150,6 @@ msgid "Glass Bowl"
 msgstr "Glasschüssel"
 
 #: nodes.lua
-msgid "Glass Salad Bowl"
-msgstr "Schüssel Salat"
-
-#: nodes.lua
-msgid "Salad Bowl Hollandaise"
-msgstr "Schüssel Salat Hollandaise"
-
-#: nodes.lua
-msgid "Kohlrabi Soup (raw)"
-msgstr "Kohlrabi Suppe (roh)"
-
-#: nodes.lua
-msgid "Kohlrabi Soup"
-msgstr "Kohlrabi Suppe"
-
-#: nodes.lua
-msgid "Soy Soup (raw)"
-msgstr "Soja Suppe (roh)"
-
-#: nodes.lua
-msgid "Soy Soup"
-msgstr "Soja Suppe"
-
-#: nodes.lua
-msgid "Asparagus Soup (raw)"
-msgstr "Spargel Suppe (roh)"
-
-#: nodes.lua
-msgid "Asparagus Soup"
-msgstr "Spargel Suppe"
-
-#: nodes.lua
-msgid "Asparagus Hollandaise (raw)"
-msgstr "Spargel Hollandaise (roh)"
-
-#: nodes.lua
-msgid "Asparagus Hollandaise"
-msgstr "Spargel Hollandaise"
-
-#: nodes.lua
 msgid "Bottle of Sunflower Seeds Oil"
 msgstr "Flasche Sonnenblumenkernöl"
 
@@ -182,40 +158,80 @@ msgid "Sauce Hollandaise"
 msgstr "Sauce Hollandaise"
 
 #: nodes.lua
-msgid "Tofu on Chives and Rosemary (raw)"
-msgstr "Tofu auf Schnittlauch und Rosmarien (roh)"
+msgid "Salad Oil"
+msgstr "Salatöl"
 
 #: nodes.lua
-msgid "Tofu on Chives and Rosemary"
-msgstr "Tofu auf Schnittlauch und Rosmarien"
+msgid "Glass Salad Bowl"
+msgstr "Schüssel Salat"
 
 #: nodes.lua
-msgid "Fish on Parsley and Rosemary (raw)"
-msgstr "Fisch auf Petersilie und Rosmarien (roh)"
-
-#: nodes.lua
-msgid "Fish on Parsley and Rosemary"
-msgstr "Fisch auf Petersilie und Rosmarien"
-
-#: nodes.lua
-msgid "Bowl of Rice (raw)"
-msgstr "Schüssel Reis (roh)"
-
-#: nodes.lua
-msgid "Bowl of Rice"
-msgstr "Schüssel Reis"
+msgid "Asparagus Hollandaise (raw)"
+msgstr "Spargel Hollandaise (roh)"
 
 #: nodes.lua
 msgid "Asparagus on Rice (raw)"
 msgstr "Spargel auf Reis (roh)"
 
 #: nodes.lua
+msgid "Asparagus Soup (raw)"
+msgstr "Spargel Suppe (roh)"
+
+#: nodes.lua
+msgid "Bowl of Rice (raw)"
+msgstr "Schüssel Reis (roh)"
+
+#: nodes.lua
+msgid "Fish on Parsley and Rosemary (raw)"
+msgstr "Fisch auf Petersilie und Rosmarien (roh)"
+
+#: nodes.lua
+msgid "Kohlrabi Soup (raw)"
+msgstr "Kohlrabi Suppe (roh)"
+
+#: nodes.lua
+msgid "Salad Bowl Hollandaise"
+msgstr "Schüssel Salat Hollandaise"
+
+#: nodes.lua
+msgid "Soy Soup (raw)"
+msgstr "Soja Suppe (roh)"
+
+#: nodes.lua
+msgid "Tofu on Chives and Rosemary (raw)"
+msgstr "Tofu auf Schnittlauch und Rosmarien (roh)"
+
+#: nodes.lua
+msgid "Asparagus Hollandaise"
+msgstr "Spargel Hollandaise"
+
+#: nodes.lua
 msgid "Asparagus on Rice"
 msgstr "Spargel auf Reis"
 
 #: nodes.lua
-msgid "Salad Oil"
-msgstr "Salatöl"
+msgid "Asparagus Soup"
+msgstr "Spargel Suppe"
+
+#: nodes.lua
+msgid "Bowl of Rice"
+msgstr "Schüssel Reis"
+
+#: nodes.lua
+msgid "Fish on Parsley and Rosemary"
+msgstr "Fisch auf Petersilie und Rosmarien"
+
+#: nodes.lua
+msgid "Kohlrabi Soup"
+msgstr "Kohlrabi Suppe"
+
+#: nodes.lua
+msgid "Soy Soup"
+msgstr "Soja Suppe"
+
+#: nodes.lua
+msgid "Tofu on Chives and Rosemary"
+msgstr "Tofu auf Schnittlauch und Rosmarien"
 
 #: rosemary_default.lua rosemary_redo.lua
 msgid "Rosemary"

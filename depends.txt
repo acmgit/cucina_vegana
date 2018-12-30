@@ -2,8 +2,8 @@ default
 dye
 farming
 vessels
-intllib?
 bbq?
+bees?
 bucket?
 bushes?
 bushes_classic?
@@ -11,6 +11,7 @@ farming_redo?
 farming_nextgen?
 fishing?
 flowers?
+intllib?
 mobs?
 technic?
 hunger_ng?

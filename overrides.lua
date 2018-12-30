@@ -24,9 +24,9 @@ if  minetest.registered_items["farming_food:corn_bread"] ~= nil then
 
 end
 
-if minetest.registered_items["bees:honey_bottle"] ~= nil then
-    minetest.override_item("bees:honey_bottle", {
-        groups = {food_honey},
+if minetest.registered_items["bees:bottle_honey"] ~= nil then
+    minetest.override_item("bees:bottle_honey", {
+        groups = {food=1, food_honey=1},
     })
     
 end
