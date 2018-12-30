@@ -63,6 +63,34 @@ end -- if animalmaterials
 
 if minetest.get_modpath("fishing") then
 
+    minetest.override_item("fishing:fish_raw", {
+                                    groups = {food_fish = 1}
+                        })
+    
+    minetest.override_item("fishing:clownfish_raw", {
+                                    groups = {food_fish = 1}
+                        })
+    
+    minetest.override_item("fishing:bluewhite_raw", {
+                                    groups = {food_fish = 1}
+                        })
+
+    minetest.override_item("fishing:exoticfish_raw", {
+                                    groups = {food_fish = 1}
+                        })
+
+    minetest.override_item("fishing:carp_raw", {
+                                    groups = {food_fish = 1}
+                        })
+
+    minetest.override_item("fishing:perch_raw", {
+                                    groups = {food_fish = 1}
+                        })
+
+    minetest.override_item("fishing:catfish_raw", {
+                                    groups = {food_fish = 1}
+                        })
+
     minetest.register_craft({
 	type = "cooking",
 	output = "fishing:fish",
@@ -101,7 +129,15 @@ if minetest.get_modpath("fishing") then
 		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
 		
 	})
-	
+
+    minetest.register_craft({
+		type = "shapeless",
+		output = "fishing:sushi",
+		recipe = {"group:food_fish","group:food_rice","default:jungleleaves"},
+		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
+		
+	})
+
 end
 
 if minetest.get_modpath("bbq") then

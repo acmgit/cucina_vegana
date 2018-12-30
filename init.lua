@@ -17,7 +17,7 @@
 ]]--
 
 local plants = {}
-local version = "1.2"
+local version = "1.3"
 
 cucina_vegana_farming_default = true
 
@@ -79,7 +79,7 @@ dofile(modpath .. "/overrides.lua")
 --   *****           Technic-Support             ***** 
 --   *******************************************
 
-if (minetest.get_modpath("technic")) then
+if(minetest.get_modpath("technic")) then
 
 
 	-- Support Compressor
@@ -122,16 +122,53 @@ if (minetest.get_modpath("technic")) then
 		technic.register_extractor_recipe({input = {data[1]}, output = data[2]})
 	end
 	
-local recipes = {
-	{"farming:flour 3",           "cucina_vegana:sunflower_seeds",        "cucina_vegana:sunflower_seeds_bread"},
-}
+    -- Support Alloy_Furnace
+    local recipes = {
+        {"farming:flour 3",           "cucina_vegana:sunflower_seeds",        "cucina_vegana:sunflower_seeds_bread"},
+    }
 
-for _, data in pairs(recipes) do
-	technic.register_alloy_recipe({input = {data[1], data[2]}, output = data[3], time = data[4]})
-end
+    for _, data in pairs(recipes) do
+        technic.register_alloy_recipe({input = {data[1], data[2]}, output = data[3], time = data[4]})
+    end
 
 end -- if(minetest.get_modpath("technic"
 
+if(hunger ~= nil) then
+    
+    --                    Name                      Saturation      Replace with    Poison  Heal    Sound
+    -- crops
+    hunger.register_food('cucina_vegana:soy',       1.5,            nil,            nil,    nil,    nil) 
+    hunger.register_food('cucina_vegana:parsley',   1.0,            nil,            nil,    nil,    nil)
+    hunger.register_food('cucina_vegana:lettuce',   1.5,            nil,            nil,    nil,    nil)
+    hunger.register_food('cucina_vegana:chives',    1.0,            nil,            nil,    nil,    nil)
+    hunger.register_food('cucina_vegana:rosemary',  1.0,            nil,            nil,    nil,    nil)
+    hunger.register_food('cucina_vegana:kohlrabi',  1.5,            nil,            nil,    nil,    nil)
+    hunger.register_food('cucina_vegana:asparagus', 1.5,            nil,            nil,    nil,    nil)
+    
+    -- side dishes
+    
+    --                    Name                                          Saturation  Replace with            Poison  Heal    Sound
+    -- dinners
+    hunger.register_food('cucina_vegana:asparagus_hollandaise_cooked',  6,          'cucina_vegana:plate',      nil,    1.5,    nil)
+    hunger.register_food('cucina_vegana:asparagus_rice_cooked',         6,          'cucina_vegana:plate',      nil,    1.5,    nil)
+    hunger.register_food('cucina_vegana:asparagus_soup_cooked',         4,          'cucina_vegana:plate',      nil,    0.5,    nil)
+    hunger.register_food('cucina_vegana:bowl_rice_cooked',              5,          'cucina_vegana:bowl',       nil,    nil,    nil)
+    hunger.register_food('cucina_vegana:dandelion_honey',               3,          'vessels:glass_bottle',     nil,    nil,    nil)
+    hunger.register_food('cucina_vegana:fish_parsley_rosemary_cooked',  6,          'cucina_vegana:plate',      nil,    1.5,    nil)
+    hunger.register_food('cucina_vegana:kohlrabi_roasted',              4,          nil,                        nil,    nil,    nil)
+    hunger.register_food('cucina_vegana:kohlrabi_soup_cooked',          5,          'cucina_vegana:plate',      nil,    1.5,    nil)
+    hunger.register_food('cucina_vegana:salad_bowl',                    4,          'cucina_vegana:salad_bowl', nil,    nil,    nil)
+    hunger.register_food('cucina_vegana:salad_hollandaise',             4,          'cucina_vegana:salad_bowl', nil,    nil,    nil) 
+    hunger.register_food('cucina_vegana:sauce_hollandaise',             2,          'vessels:glass_bottle',     nil,    nil,    nil) 
+    hunger.register_food('cucina_vegana:soy_milk',                      3,          'vessels:drinking_glass',   nil,    0.5,    nil) 
+    hunger.register_food('cucina_vegana:soy_soup_cooked',               4,          'cucina_vegana:plate',      nil,    0.5,    nil) 
+    hunger.register_food('cucina_vegana:sunflower_seeds_bread',         5,          nil,                        nil,    0.5,    nil) 
+    hunger.register_food('cucina_vegana:sunflower_seeds_roasted',       3,          nil,                        nil,    nil,    nil) 
+    hunger.register_food('cucina_vegana:tofu_chives_rosemary_cooked',   4,          'cucina_vegana:plate',      nil,    2.0,    nil)  
+    hunger.register_food('cucina_vegana:tofu_cooked',                   4,          nil,                        nil,    nil,    nil) 
+    hunger.register_food('cucina_vegana:vegan_sushi',                   5,          nil,                        nil,    1.5,    nil) 
+    
+end -- hunger
 
 if (cucina_vegana_farming_default) then
 
