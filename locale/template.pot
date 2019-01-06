@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-30 23:38+0100\n"
+"POT-Creation-Date: 2019-01-06 19:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,22 +46,6 @@ msgid "Chives"
 msgstr ""
 
 #: items.lua
-msgid "Molasses"
-msgstr ""
-
-#: items.lua
-msgid "Soy Milk"
-msgstr ""
-
-#: items.lua
-msgid "Tofu (raw)"
-msgstr ""
-
-#: items.lua
-msgid "Sunflower Seeds Dough"
-msgstr ""
-
-#: items.lua
 msgid "Dandelion Honey"
 msgstr ""
 
@@ -71,6 +55,34 @@ msgstr ""
 
 #: items.lua
 msgid "Dandelion Suds (cooking)"
+msgstr ""
+
+#: items.lua
+msgid "Molasses"
+msgstr ""
+
+#: items.lua
+msgid "Pizzadough"
+msgstr ""
+
+#: items.lua
+msgid "Rice Flour"
+msgstr ""
+
+#: items.lua
+msgid "Soy Milk"
+msgstr ""
+
+#: items.lua
+msgid "Sunflower Seeds Dough"
+msgstr ""
+
+#: items.lua
+msgid "Sunflower Seeds Flour"
+msgstr ""
+
+#: items.lua
+msgid "Tofu (raw)"
 msgstr ""
 
 #: items.lua
@@ -223,6 +235,14 @@ msgstr ""
 
 #: nodes.lua
 msgid "Kohlrabi Soup"
+msgstr ""
+
+#: nodes.lua
+msgid "Pizza Vegana (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Pizza Vegana"
 msgstr ""
 
 #: nodes.lua

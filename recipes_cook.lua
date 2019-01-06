@@ -60,6 +60,13 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "cooking",
+	cooktime = 18,
+	output = "cucina_vegana:pizza_vegana",
+	recipe = "cucina_vegana:pizza_vegana_raw"
+})
+
+minetest.register_craft({
+	type = "cooking",
 	cooktime = 15,
 	output = "cucina_vegana:soy_soup_cooked",
 	recipe = "cucina_vegana:soy_soup"

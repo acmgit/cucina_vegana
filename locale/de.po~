@@ -1,20 +1,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# A.C.M. <undertakers_help@yahoo.com>, 2018, 2019.
+# A.C.M. <undertakers_help@yahoo.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-06 19:06+0100\n"
-"PO-Revision-Date: 2019-01-06 19:07+0100\n"
+"POT-Creation-Date: 2018-12-30 23:38+0100\n"
+"PO-Revision-Date: 2018-12-30 23:40+0100\n"
 "Last-Translator: A.C.M. <undertakers_help@yahoo.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 18.12.0\n"
+"X-Generator: Poedit 2.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: asparagus_default.lua asparagus_redo.lua items.lua
@@ -46,6 +46,22 @@ msgid "Chives"
 msgstr "Schnittlauch"
 
 #: items.lua
+msgid "Molasses"
+msgstr "Melasse"
+
+#: items.lua
+msgid "Soy Milk"
+msgstr "Soja Milch"
+
+#: items.lua
+msgid "Tofu (raw)"
+msgstr "Tofu (roh)"
+
+#: items.lua
+msgid "Sunflower Seeds Dough"
+msgstr "Sonnenblumenkern Teig"
+
+#: items.lua
 msgid "Dandelion Honey"
 msgstr "Löwenzahn Honig"
 
@@ -56,34 +72,6 @@ msgstr "Löwenzahn Lauge"
 #: items.lua
 msgid "Dandelion Suds (cooking)"
 msgstr "Löwenzahn Lauge (kochend)"
-
-#: items.lua
-msgid "Molasses"
-msgstr "Melasse"
-
-#: items.lua
-msgid "Pizzadough"
-msgstr "Pizzateig"
-
-#: items.lua
-msgid "Rice Flour"
-msgstr "Reismehl"
-
-#: items.lua
-msgid "Soy Milk"
-msgstr "Soja Milch"
-
-#: items.lua
-msgid "Sunflower Seeds Dough"
-msgstr "Sonnenblumenkern Teig"
-
-#: items.lua
-msgid "Sunflower Seeds Flour"
-msgstr "Sonnenblumenkern Mehl"
-
-#: items.lua
-msgid "Tofu (raw)"
-msgstr "Tofu (roh)"
 
 #: items.lua
 msgid "Imitation Butter"
@@ -236,14 +224,6 @@ msgstr "Fisch auf Petersilie und Rosmarien"
 #: nodes.lua
 msgid "Kohlrabi Soup"
 msgstr "Kohlrabi Suppe"
-
-#: nodes.lua
-msgid "Pizza Vegana (raw)"
-msgstr "Pizza Vegana (roh)"
-
-#: nodes.lua
-msgid "Pizza Vegana"
-msgstr "Pizza Vegana"
 
 #: nodes.lua
 msgid "Soy Soup"

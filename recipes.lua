@@ -14,6 +14,29 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "cucina_vegana:pizza_dough",
+	recipe = {	{"group:food_milk", "group:food_oil", "group:food_cheese"},
+				{"group:food_flour", "group:food_flour", "group:food_flour"}
+			},
+    replacements = {
+                    {"group:food_milk", "vessels:glass_bottle"},
+                    {"group:food_oil", "vessels:glass_bottle"},
+                    }
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:pizza_vegana_raw",
+	recipe = {	{"", "cucina_vegana:sauce_hollandaise", ""},
+				{"cucina_vegana:asparagus", "cucina_vegana:lettuce", "cucina_vegana:rosemary"},
+                {"", "cucina_vegana:pizza_dough", ""}
+			},
+    replacements = {
+                        {"cucina_vegana:sauce_hollandaise", "vessels:glass_bottle"},
+                    }
+
+})
+
+minetest.register_craft({
 	output = "cucina_vegana:plate 5",
 	recipe = {	{"group:wood", "", "group:wood"},
 				{"group:wood", "group:wood", "group:wood"}

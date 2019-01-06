@@ -36,18 +36,23 @@ minetest.register_craftitem("cucina_vegana:molasses", {
 	groups = {flammable = 1, food = 1},
 })
 
+minetest.register_craftitem("cucina_vegana:pizza_dough", {
+	description = S("Pizzadough"),
+	inventory_image = "cucina_vegana_pizza_dough.png",
+	groups = {food = 1},
+})
+
+minetest.register_craftitem("cucina_vegana:rice_flour", {
+    description = S("Rice Flour"),
+    groups = {food_vegan = 1, food_flour = 1},
+    inventory_image = "cucina_vegana_rice_flour.png",
+})
+
 minetest.register_craftitem("cucina_vegana:soy_milk", {
 	description = S("Soy Milk"),
 	inventory_image = "cucina_vegana_soy_milk.png",
 	groups = {flammable = 1, food = 1, food_milk = 1, eatable = 1, food_vegan = 1},
 	on_use = minetest.item_eat(1, "vessels:drinking_glass"),
-})
-
-minetest.register_craftitem("cucina_vegana:tofu", {
-	description = S("Tofu (raw)"),
-	inventory_image = "cucina_vegana_tofu.png",
-	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1},
-	on_use = minetest.item_eat(2),
 })
 
 minetest.register_craftitem("cucina_vegana:sunflower_seeds_dough", {
@@ -63,10 +68,11 @@ minetest.register_craftitem("cucina_vegana:sunflower_seeds_flour", {
     inventory_image = "cucina_vegana_sunflower_seeds_flour.png",
 })
 
-minetest.register_craftitem("cucina_vegana:rice_flour", {
-    description = S("Rice Flour"),
-    groups = {food_vegan = 1, food_flour = 1},
-    inventory_image = "cucina_vegana_rice_flour.png",
+minetest.register_craftitem("cucina_vegana:tofu", {
+	description = S("Tofu (raw)"),
+	inventory_image = "cucina_vegana_tofu.png",
+	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1},
+	on_use = minetest.item_eat(2),
 })
 
 --   *******************************************
@@ -210,5 +216,3 @@ minetest.register_craftitem("cucina_vegana:vegan_sushi", {
 	inventory_image = "cucina_vegana_vegan_sushi.png",
 	on_use = minetest.item_eat(4),
 })
-
-print("Cucina_Vegana: Vegan Sushi added.")
