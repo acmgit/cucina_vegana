@@ -64,6 +64,110 @@ minetest.register_craft({
 			}
 })
 
+minetest.register_craft({
+	output = "cucina_vegana:sunflower_seeds_flour",
+	recipe = {	{"default:stone", "default:stone", "default:stone"},
+				{"cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds"},
+                {"default:cobble", "default:cobble", "default:cobble"}
+			},
+    replacements = {
+                {"default:stone", "default:stone 3"},
+                {"default:cobble", "default:cobble 3"}
+            }
+
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:sunflower_seeds_flour",
+	recipe = {	{"default:stone", "default:stone", "default:stone"},
+				{"cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds"},
+                {"default:desert_cobble", "default:desert_cobble", "default:desert_cobble"}
+			},
+    replacements = {
+                {"default:stone", "default:stone 3"},
+                {"default:desert_cobble", "default:desert_cobble 3"}
+            }
+
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:sunflower_seeds_flour",
+	recipe = {	{"default:desert_stone", "default:desert_stone", "default:desert_stone"},
+				{"cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds"},
+                {"default:cobble", "default:cobble", "default:cobble"}
+			},
+    replacements = {
+                {"default:desert_stone", "default:desert_stone 3"},
+                {"default:cobble", "default:cobble 3"}
+            }
+
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:sunflower_seeds_flour",
+	recipe = {	{"default:desert_stone", "default:desert_stone", "default:desert_stone"},
+				{"cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds"},
+                {"default:desert_cobble", "default:desert_cobble", "default:desert_cobble"}
+			},
+    replacements = {
+                {"default:desert_stone", "default:desert_stone 3"},
+                {"default:desert_cobble", "default:desert_cobble 3"}
+            }
+
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:rice_flour",
+	recipe = {	{"default:stone", "default:stone", "default:stone"},
+				{"cucina_vegana:rice", "cucina_vegana:rice", "cucina_vegana:rice"},
+                {"default:cobble", "default:cobble", "default:cobble"}
+			},
+    replacements = {
+                {"default:stone", "default:stone 3"},
+                {"default:cobble", "default:cobble 3"}
+            }
+
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:rice_flour",
+	recipe = {	{"default:desert_stone", "default:desert_stone", "default:desert_stone"},
+				{"cucina_vegana:rice", "cucina_vegana:rice", "cucina_vegana:rice"},
+                {"default:cobble", "default:cobble", "default:cobble"}
+			},
+    replacements = {
+                {"default:desert_stone", "default:desert_stone 3"},
+                {"default:cobble", "default:cobble 3"}
+            }
+
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:rice_flour",
+	recipe = {	{"default:desert_stone", "default:desert_stone", "default:desert_stone"},
+				{"cucina_vegana:rice", "cucina_vegana:rice", "cucina_vegana:rice"},
+                {"default:desert_cobble", "default:desert_cobble", "default:desert_cobble"}
+			},
+    replacements = {
+                {"default:desert_stone", "default:desert_stone 3"},
+                {"default:desert_cobble", "default:desert_cobble 3"}
+            }
+
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:rice_flour",
+	recipe = {	{"default:stone", "default:stone", "default:stone"},
+				{"cucina_vegana:rice", "cucina_vegana:rice", "cucina_vegana:rice"},
+                {"default:desert_cobble", "default:desert_cobble", "default:desert_cobble"}
+			},
+    replacements = {
+                {"default:stone", "default:stone 3"},
+                {"default:cobble", "default:cobble 3"}
+            }
+
+})
+
 --   *******************************************
 --   *****           Imitations            *****       
 --   *******************************************
@@ -323,6 +427,13 @@ minetest.register_craft({
 	output = "cucina_vegana:sunflower_seeds_dough",
 	recipe = {	{"", "cucina_vegana:sunflower_seeds", ""},
 				{"farming:flour", "farming:flour", "farming:flour"}
+			}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:sunflower_seeds_dough",
+	recipe = {	{"", "cucina_vegana:sunflower_seeds", ""},
+				{"group:food_flour", "group:food_flour", "group:food_flour"}
 			}
 })
 

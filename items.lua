@@ -11,6 +11,25 @@ local S, NS = dofile(MP.."/intllib.lua")
 --   *****           Supports              *****       
 --   *******************************************
 
+minetest.register_craftitem("cucina_vegana:dandelion_honey", {
+	description = S("Dandelion Honey"),
+	inventory_image = "cucina_vegana_dandelion_honey.png",
+	groups = {flammable = 1, food = 1, food_honey = 1},
+    on_use = minetest.item_eat(3),
+})
+
+minetest.register_craftitem("cucina_vegana:dandelion_suds", {
+	description = S("Dandelion Suds"),
+	inventory_image = "cucina_vegana_dandelion_suds.png",
+	groups = {sud = 1,},
+})
+
+minetest.register_craftitem("cucina_vegana:dandelion_suds_cooking", {
+	description = S("Dandelion Suds (cooking)"),
+	inventory_image = "cucina_vegana_dandelion_suds_cooking.png",
+	groups = {sud = 1,},
+})
+
 minetest.register_craftitem("cucina_vegana:molasses", {
 	description = S("Molasses"),
 	inventory_image = "cucina_vegana_molasses.png",
@@ -38,23 +57,16 @@ minetest.register_craftitem("cucina_vegana:sunflower_seeds_dough", {
     on_use = minetest.item_eat(2),
 })
 
-minetest.register_craftitem("cucina_vegana:dandelion_honey", {
-	description = S("Dandelion Honey"),
-	inventory_image = "cucina_vegana_dandelion_honey.png",
-	groups = {flammable = 1, food = 1, food_honey = 1},
-    on_use = minetest.item_eat(3),
+minetest.register_craftitem("cucina_vegana:sunflower_seeds_flour", {
+    description = S("Sunflower Seeds Flour"),
+    groups = {food_vegan = 1, food_flour = 1},
+    inventory_image = "cucina_vegana_sunflower_seeds_flour.png",
 })
 
-minetest.register_craftitem("cucina_vegana:dandelion_suds", {
-	description = S("Dandelion Suds"),
-	inventory_image = "cucina_vegana_dandelion_suds.png",
-	groups = {sud = 1,},
-})
-
-minetest.register_craftitem("cucina_vegana:dandelion_suds_cooking", {
-	description = S("Dandelion Suds (cooking)"),
-	inventory_image = "cucina_vegana_dandelion_suds_cooking.png",
-	groups = {sud = 1,},
+minetest.register_craftitem("cucina_vegana:rice_flour", {
+    description = S("Rice Flour"),
+    groups = {food_vegan = 1, food_flour = 1},
+    inventory_image = "cucina_vegana_rice_flour.png",
 })
 
 --   *******************************************
