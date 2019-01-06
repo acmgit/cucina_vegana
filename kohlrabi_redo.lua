@@ -19,6 +19,8 @@ local step = 6
 		inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 		wield_image = "cucina_vegana_" .. pname .. "_seed.png",
 		drawtype = "signlike",
+        minlight = 13,
+        maxlight = default.LIGHT_MAX,
 		groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
 		paramtype = "light",
 		paramtype2 = "wallmounted",
@@ -39,6 +41,8 @@ local step = 6
 		walkable = false,
 		buildable_to = true,
 		drop =  "",
+        minlight = 13,
+        maxlight = default.LIGHT_MAX,
 		selection_box = farming.select,
 		groups = {
 			flammable = 4, snappy=3, dig_immediate=1, plant = 1, attached_node = 1,
