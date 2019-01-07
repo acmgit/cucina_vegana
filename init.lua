@@ -17,7 +17,7 @@
 ]]--
 
 local plants = {}
-local version = "1.3"
+local version = "1.4"
 
 cucina_vegana_farming_default = true
 
