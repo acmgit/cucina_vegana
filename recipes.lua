@@ -37,6 +37,18 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "cucina_vegana:pizza_funghi_raw",
+	recipe = {	{"", "group:food_oil", "cucina_vegana:rosemary"},
+				{"flowers:mushroom_brown", "cucina_vegana:imitation_meat", "flowers:mushroom_brown"},
+                {"", "cucina_vegana:pizza_dough", ""}
+			},
+    replacements = {
+                        {"group:food_oil", "vessels:glass_bottle"},
+                    }
+
+})
+
+minetest.register_craft({
 	output = "cucina_vegana:plate 5",
 	recipe = {	{"group:wood", "", "group:wood"},
 				{"group:wood", "group:wood", "group:wood"}
@@ -228,6 +240,14 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "cucina_vegana:imitation_poultry",
+	recipe = {	{"cucina_vegana:tofu", "", "dye:yellow"},
+				{"", "cucina_vegana:tofu", ""},
+				{"cucina_vegana:tofu", "cucina_vegana:tofu", "cucina_vegana:tofu"}
+			},
+})
+
+minetest.register_craft({
 	output = "cucina_vegana:soy_milk",
 	recipe = {
 			{"cucina_vegana:soy", "cucina_vegana:soy", "cucina_vegana:soy"},
@@ -382,6 +402,18 @@ minetest.register_craft({
 			},
 			replacements = {
 							{"group:food_oil", "vessels:glass_bottle"},
+						}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:fryer_raw",
+	recipe = {	
+				{"default:paper","", "default:paper"},
+				{"cucina_vegana:parsley","cucina_vegana:molasses", "cucina_vegana:rosemary"},
+				{"","cucina_vegana:imitation_poultry", ""},
+			},
+			replacements = {
+							{"cucina_vegana:molasses", "vessels:drinking_glass"},
 						}
 })
 

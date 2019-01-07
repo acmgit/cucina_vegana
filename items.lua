@@ -14,7 +14,7 @@ local S, NS = dofile(MP.."/intllib.lua")
 minetest.register_craftitem("cucina_vegana:dandelion_honey", {
 	description = S("Dandelion Honey"),
 	inventory_image = "cucina_vegana_dandelion_honey.png",
-	groups = {flammable = 1, food = 1, food_honey = 1},
+	groups = {flammable = 1, food = 1, food_honey = 1, eatable = 1},
     on_use = minetest.item_eat(3),
 })
 
@@ -57,7 +57,7 @@ minetest.register_craftitem("cucina_vegana:soy_milk", {
 
 minetest.register_craftitem("cucina_vegana:sunflower_seeds_dough", {
     description = S("Sunflower Seeds Dough"),
-    groups = {food = 1, food_vegan = 1},
+    groups = {food = 1, food_vegan = 1, eatable = 1},
     inventory_image = "cucina_vegana_sunflower_seeds_dough.png",
     on_use = minetest.item_eat(2),
 })
@@ -81,30 +81,36 @@ minetest.register_craftitem("cucina_vegana:tofu", {
 
 minetest.register_craftitem("cucina_vegana:imitation_butter", {
 	description = S("Imitation Butter"),
-	groups = {food = 1, food_butter = 1, food_vegan = 1},
+	groups = {food = 1, food_butter = 1, food_vegan = 1, eatable = 1},
 	inventory_image = "cucina_vegana_imitation_butter.png",
 	on_use = minetest.item_eat(2),
 })
 
-minetest.register_craftitem("cucina_vegana:imitation_fish", {
-	description = S("Imitation Fish"),
-	groups = {food = 1, food_fish = 1, food_vegan = 1},
-	inventory_image = "cucina_vegana_imitation_fish.png",
+minetest.register_craftitem("cucina_vegana:imitation_cheese", {
+	description = S("Imitation Cheese"),
+	groups = {food = 1, food_cheese = 1, food_vegan = 1, eatable = 1},
+	inventory_image = "cucina_vegana_imitation_cheese.png",
 	on_use = minetest.item_eat(3),
 })
 
-minetest.register_craftitem("cucina_vegana:imitation_cheese", {
-	description = S("Imitation Cheese"),
-	groups = {food = 1, food_cheese = 1, food_vegan = 1},
-	inventory_image = "cucina_vegana_imitation_cheese.png",
+minetest.register_craftitem("cucina_vegana:imitation_fish", {
+	description = S("Imitation Fish"),
+	groups = {food = 1, food_fish = 1, food_vegan = 1, eatable = 1},
+	inventory_image = "cucina_vegana_imitation_fish.png",
 	on_use = minetest.item_eat(3),
 })
 
 minetest.register_craftitem("cucina_vegana:imitation_meat", {
 	description = S("Imitation Meat"),
-	groups = {food = 1, food_meat = 1, food_vegan = 1},
+	groups = {food = 1, food_meat = 1, food_vegan = 1, eatable = 1},
 	inventory_image = "cucina_vegana_imitation_meat.png",
 	on_use = minetest.item_eat(3),
+})
+
+minetest.register_craftitem("cucina_vegana:imitation_poultry", {
+	description = S("Imitation poultry"),
+	groups = {food = 1, food_bird = 1, food_vegan = 1},
+	inventory_image = "cucina_vegana_imitation_poultry.png",
 })
 
 --   *******************************************
@@ -173,7 +179,7 @@ minetest.register_craftitem("cucina_vegana:sunflower", {
 
 minetest.register_craftitem("cucina_vegana:sunflower_seeds", {
     description = S("Sunflower Seeds"),
-    groups = {seed = 1, food = 1},
+    groups = {seed = 1, food = 1, eatable = 1},
     inventory_image = "cucina_vegana_sunflower_seeds.png",
     on_use = minetest.item_eat(1),
 })
@@ -191,28 +197,28 @@ minetest.register_craftitem("cucina_vegana:tofu_cooked", {
 
 minetest.register_craftitem("cucina_vegana:kohlrabi_roasted", {
 	description = S("Roasted Kohlrabi"),
-	groups = {food = 1},
+	groups = {food = 1, eatable = 1},
 	inventory_image = "cucina_vegana_kohlrabi_roasted.png",
 	on_use = minetest.item_eat(4),
 })
 
 minetest.register_craftitem("cucina_vegana:sunflower_seeds_roasted", {
 	description = S("Roasted Sunflower Seeds"),
-	groups = {food = 1},
+	groups = {food = 1, eatable = 1},
 	inventory_image = "cucina_vegana_sunflower_seeds_roasted.png",
 	on_use = minetest.item_eat(2),
 })
 
 minetest.register_craftitem("cucina_vegana:sunflower_seeds_bread", {
 	description = S("Sunflower Seeds Bread"),
-	groups = {food = 1, food_bread = 1},
+	groups = {food = 1, food_bread = 1, eatable = 1},
 	inventory_image = "cucina_vegana_sunflower_seeds_bread.png",
 	on_use = minetest.item_eat(4),
 })
 
 minetest.register_craftitem("cucina_vegana:vegan_sushi", {
 	description = S("Vegan Sushi"),
-	groups = {food = 1, food_vegan = 1},
+	groups = {food = 1, food_vegan = 1, eatable = 1},
 	inventory_image = "cucina_vegana_vegan_sushi.png",
 	on_use = minetest.item_eat(4),
 })

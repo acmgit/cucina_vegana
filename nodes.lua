@@ -58,7 +58,7 @@ minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_oil = 1, food_vegan = 1},
+	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_oil = 1, food_vegan = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -80,7 +80,7 @@ minetest.register_node("cucina_vegana:sauce_hollandaise", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_sauce = 1, food_vegan = 1},
+	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_sauce = 1, food_vegan = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -98,7 +98,7 @@ minetest.register_node("cucina_vegana:lettuce_oil", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {dig_immediate = 3, attached_node = 1, food_oil=1, food_vegan = 1},
+	groups = {dig_immediate = 3, attached_node = 1, food_oil=1, food_vegan = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -209,6 +209,39 @@ minetest.register_node("cucina_vegana:fish_parsley_rosemary", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
+minetest.register_node("cucina_vegana:fryer_raw", {
+	description = S("Fryer (raw)"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_fryer_raw.png"},
+	inventory_image = "cucina_vegana_fryer_raw.png",
+	wield_image = "cucina_vegana_fryer_raw.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1},
+})
+
+minetest.register_node("cucina_vegana:fryer", {
+	description = S("Fryer"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_fryer.png"},
+	inventory_image = "cucina_vegana_fryer.png",
+	wield_image = "cucina_vegana_fryer.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	on_use = minetest.item_eat(6),
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
+})
+
 minetest.register_node("cucina_vegana:kohlrabi_soup", {
 	description = S("Kohlrabi Soup (raw)"),
 	drawtype = "plantlike",
@@ -240,7 +273,7 @@ minetest.register_node("cucina_vegana:salad_hollandaise", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1},
+	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -275,7 +308,7 @@ minetest.register_node("cucina_vegana:tofu_chives_rosemary", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1},
+	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -297,7 +330,7 @@ minetest.register_node("cucina_vegana:asparagus_hollandaise_cooked", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {dig_immediate = 3, attached_node = 1},
+	groups = {dig_immediate = 3, attached_node = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -315,7 +348,7 @@ minetest.register_node("cucina_vegana:asparagus_rice_cooked", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {dig_immediate = 3, attached_node = 1},
+	groups = {dig_immediate = 3, attached_node = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -333,7 +366,7 @@ minetest.register_node("cucina_vegana:asparagus_soup_cooked", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {dig_immediate = 3, attached_node = 1},
+	groups = {dig_immediate = 3, attached_node = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -351,7 +384,7 @@ minetest.register_node("cucina_vegana:bowl_rice_cooked", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {vessel = 1, dig_immediate = 3, attached_node = 1},
+	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -369,7 +402,7 @@ minetest.register_node("cucina_vegana:fish_parsley_rosemary_cooked", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {dig_immediate = 3, attached_node = 1},
+	groups = {dig_immediate = 3, attached_node = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -387,7 +420,7 @@ minetest.register_node("cucina_vegana:kohlrabi_soup_cooked", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {dig_immediate = 3, attached_node = 1},
+	groups = {dig_immediate = 3, attached_node = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -421,7 +454,40 @@ minetest.register_node("cucina_vegana:pizza_vegana", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
+	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
+})
+
+minetest.register_node("cucina_vegana:pizza_funghi_raw", {
+	description = S("Pizza Funghi (raw)"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_pizza_funghi_raw.png"},
+	inventory_image = "cucina_vegana_pizza_funghi_raw.png",
+	wield_image = "cucina_vegana_pizza_funghi_raw.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1},
+})
+
+minetest.register_node("cucina_vegana:pizza_funghi", {
+	description = S("Pizza Funghi"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_pizza_funghi.png"},
+	inventory_image = "cucina_vegana_pizza_funghi.png",
+	wield_image = "cucina_vegana_pizza_funghi.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	on_use = minetest.item_eat(6),
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
 })
 
 minetest.register_node("cucina_vegana:soy_soup_cooked", {
@@ -438,7 +504,7 @@ minetest.register_node("cucina_vegana:soy_soup_cooked", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {dig_immediate = 3, attached_node = 1},
+	groups = {dig_immediate = 3, attached_node = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -456,6 +522,6 @@ minetest.register_node("cucina_vegana:tofu_chives_rosemary_cooked", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {dig_immediate = 3, attached_node = 1},
+	groups = {dig_immediate = 3, attached_node = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })

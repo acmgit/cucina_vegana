@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-06 19:06+0100\n"
+"POT-Creation-Date: 2019-01-07 20:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,15 +90,19 @@ msgid "Imitation Butter"
 msgstr ""
 
 #: items.lua
-msgid "Imitation Fish"
-msgstr ""
-
-#: items.lua
 msgid "Imitation Cheese"
 msgstr ""
 
 #: items.lua
+msgid "Imitation Fish"
+msgstr ""
+
+#: items.lua
 msgid "Imitation Meat"
+msgstr ""
+
+#: items.lua
+msgid "Imitation poultry"
 msgstr ""
 
 #: items.lua kohlrabi_default.lua kohlrabi_redo.lua
@@ -198,6 +202,14 @@ msgid "Fish on Parsley and Rosemary (raw)"
 msgstr ""
 
 #: nodes.lua
+msgid "Fryer (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Fryer"
+msgstr ""
+
+#: nodes.lua
 msgid "Kohlrabi Soup (raw)"
 msgstr ""
 
@@ -243,6 +255,14 @@ msgstr ""
 
 #: nodes.lua
 msgid "Pizza Vegana"
+msgstr ""
+
+#: nodes.lua
+msgid "Pizza Funghi (raw)"
+msgstr ""
+
+#: nodes.lua
+msgid "Pizza Funghi"
 msgstr ""
 
 #: nodes.lua

@@ -105,6 +105,8 @@ if(hunger ~= nil) then
     hunger.register_food('cucina_vegana:tofu_cooked',                   4,          nil,                        nil,    nil,    nil) 
     hunger.register_food('cucina_vegana:vegan_sushi',                   5,          nil,                        nil,    1.5,    nil) 
     hunger.register_food('cucina_vegana:pizza_vegana',                  6,          nil,                        nil,    2.0,    nil)
+    hunger.register_food('cucina_vegana:pizza_funghi',                  6,          nil,                        nil,    2.0,    nil)
+    hunger.register_food('cucina_vegana:fryer',                         8,          nil,                        nil,    3.0,    nil)
     
 end -- hunger
  
