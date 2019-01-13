@@ -18,17 +18,24 @@
 
 local plants = {}
 local version = "1.3"
-
 cucina_vegana_farming_default = true
 
 local modpath = minetest.get_modpath(minetest.get_current_modname())
+local modname = minetest.get_current_modname()
 
 -- looking if farming_redo is activ?
 if(farming.mod == "redo") then
 
 	cucina_vegana_farming_default = false
-	
+    minetest.log("info", "[MOD] " .. modname .. ": farming_redo mode activated.")
+
+else
+    
+    minetest.log("info", "[MOD] " .. modname .. ": default farming mode activated.")
+
 end
+
+
 
 plants = {
 
@@ -63,25 +70,29 @@ for pname, value in pairs(plants) do
 
 	end -- if(value)
 	
-	print("[MOD] " .. minetest.get_current_modname() .. " Module: " .. pname .. " loaded.")
+	print("[MOD] " .. modname .. " Module: " .. pname .. " loaded.")
+    minetest.log("info", "[MOD] " .. modname .. " Module: " .. pname .. " loaded.")
+    
 end -- for
 
 -- Insert Recipes
+dofile(modpath .. "/overrides.lua")
 dofile(modpath .. "/nodes.lua")
 dofile(modpath .. "/items.lua")
 dofile(modpath .. "/fuels.lua")
 dofile(modpath .. "/recipes.lua")
 dofile(modpath .. "/recipes_cook.lua")
 dofile(modpath .. "/recipes_support.lua")
-dofile(modpath .. "/overrides.lua")
 dofile(modpath .. "/register_mods.lua")
 
 if (cucina_vegana_farming_default) then
 
-	print("[MOD] " .. minetest.get_current_modname() .. " Version " .. version .. " in default-mode loaded.")
-
+	print("[MOD] " .. modname .. " Version " .. version .. " in default-mode loaded.")
+    minetest.log("info", "[MOD] " .. modname .. " Version " .. version .. " in default-mode loaded.")
+    
 else
 
-	print("[MOD] " .. minetest.get_current_modname() .. " Version " .. version .. " in redo-mode loaded.")
-	
+	print("[MOD] " .. modname .. " Version " .. version .. " in redo-mode loaded.")
+	minetest.log("info", "[MOD] " .. modname .. " Version " .. version .. " in redo-mode loaded.")
+    
 end

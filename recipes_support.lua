@@ -2,6 +2,8 @@
 --   **             Recipe differences                 ** 
 --   *******************************************
 
+local modname = minetest.get_current_modname()
+
 if(cucina_vegana_farming_default) then
 
 	minetest.register_craft({
@@ -33,7 +35,7 @@ end -- if(cucina_vegana_farming_default
 --   *******************************************
 
 if minetest.get_modpath("mobs") then
-
+    
 	minetest.register_craft({
 		output = "mobs:meat_raw",
 		recipe = {
@@ -49,7 +51,9 @@ if minetest.get_modpath("mobs") then
 			{"cucina_vegana:tofu", "", ""},
 		}
 	})
-
+                
+    minetest.log("info", "[MOD] " .. modname .. ": mobs supported.")
+                 
 end -- if minetest.get_modpath("mobs"
     
 --   *******************************************
@@ -66,7 +70,9 @@ if minetest.get_modpath("animalmaterials") then
 		},
 		replacements = {{"cucina_vegana:milk", "vessels:drinking_glass"}}
 	})
-	
+
+    minetest.log("info", "[MOD] " .. modname .. ": animalmaterials supported.")
+
 end -- if minetest.get_modpath("animalmaterials"
 
 --   *******************************************
@@ -149,6 +155,8 @@ if minetest.get_modpath("fishing") then
 		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
 		
 	})
+
+    minetest.log("info", "[MOD] " .. modname .. ": fishing supported.")
 
 end -- if minetest.get_modpath("fishing"
 
@@ -359,4 +367,7 @@ if minetest.get_modpath("bbq") then
 			{"bbq:leg_lamb_raw", "default:stick", ""},
         },
     })
+
+    minetest.log("info", "[MOD] " .. modname .. ": bbq supported.")
+
 end -- if minetest.get_modpath("bbq"

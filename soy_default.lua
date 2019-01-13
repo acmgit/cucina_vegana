@@ -11,6 +11,7 @@ local S, NS = dofile(MP.."/intllib.lua")
 local dname = S("Soy")
 local pname = "soy"
 local step = 8
+local modname = minetest.get_current_modname()
 
 farming.register_plant("cucina_vegana:".. pname, {
 	description = dname .. " " .. S("Seed"),
@@ -55,4 +56,6 @@ minetest.register_alias("soy:seed_".. pname, "cucina_vegana:seed_".. pname)
 if (minetest.get_modpath("farming_nextgen")) then
     farmingNG.register_seed("cucina_vegana:seed_".. pname, "cucina_vegana:".. pname .. "_1")
     farmingNG.register_harvest("cucina_vegana:".. pname .. "_" .. step)
+    minetest.log("info", "[MOD] " .. modname .. ": cucina_vegana:seed_" .. pname .. " at farming_nextgen registered.")
+    
 end

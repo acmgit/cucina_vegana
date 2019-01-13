@@ -98,7 +98,7 @@ minetest.register_node("cucina_vegana:lettuce_oil", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {dig_immediate = 3, attached_node = 1, food_oil=1, food_vegan = 1, eatable = 1},
+	groups = {dig_immediate = 3, attached_node = 1, food_oil = 1, food_vegan = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -188,7 +188,7 @@ minetest.register_node("cucina_vegana:bowl_rice", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food_rice=1, food_vegan = 1},
+	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food_rice = 1, food_vegan = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 

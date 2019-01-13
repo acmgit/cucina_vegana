@@ -155,7 +155,7 @@ minetest.register_craftitem("cucina_vegana:parsley", {
 minetest.register_craftitem("cucina_vegana:rice", {
     description = S("Rice"),
     inventory_image = "cucina_vegana_rice.png",
-    groups = {flammable = 4},
+    groups = {food = 1, flammable = 4},
 })
 
 minetest.register_craftitem("cucina_vegana:rosemary", {

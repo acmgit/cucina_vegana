@@ -13,10 +13,12 @@ local S, NS = dofile(MP.."/intllib.lua")
 local dname = S("Sunflower")
 local pname = "sunflower"
 local step = 5
+local modname = minetest.get_current_modname()
 
 if(minetest.registered_nodes["flowers:sunflower"]  ~= nil) then
-	print("[MOD] " .. minetest.get_current_modname() .. " Sunflowers available.")
-	print("[MOD] " .. minetest.get_current_modname() .. " using \"flowers:sunflower\".")
+	print("[MOD] " .. modname .. " Sunflowers available.")
+	print("[MOD] " .. modname .. " using \"flowers:sunflower\".")
+    minetest.log("info", "[MOD] " .. modname .. ": Sunflowers available. Using \"flowers:sunflower\".")
 
 else
 
@@ -60,4 +62,6 @@ end
 if (minetest.get_modpath("farming_nextgen")) then
     farmingNG.register_seed("cucina_vegana:seed_" .. pname, "cucina_vegana:" .. pname .. "_1")
     farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step .. "")
+    minetest.log("info", "[MOD] " .. modname .. ": cucina_vegana:seed_" .. pname .. " at farming_nextgen registered.")
+    
 end

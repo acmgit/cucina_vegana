@@ -382,18 +382,6 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "cucina_vegana:bowl_rice",
-	recipe = {	
-				{"cucina_vegana:rice"},
-				{"bucket:bucket_river_water"},
-				{"group:food_bowl"},
-			},
-			replacements = {
-							{"bucket:bucket_river_water", "bucket:bucket_empty"},
-						}
-})
-
-minetest.register_craft({
 	output = "cucina_vegana:fish_parsley_rosemary",
 	recipe = {	
 				{"cucina_vegana:parsley","group:food_oil", "cucina_vegana:rosemary"},
