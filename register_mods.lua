@@ -70,7 +70,7 @@ if(minetest.get_modpath("technic")) then
 
 end -- if(minetest.get_modpath("technic"
 
-if(hunger ~= nil) then
+if(minetest.get_modpath("hunger")) then
     
     --                    Name                      Saturation      Replace with    Poison  Heal    Sound
     -- crops
