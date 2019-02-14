@@ -371,3 +371,4 @@ if minetest.get_modpath("bbq") then
     minetest.log("info", "[MOD] " .. modname .. ": bbq supported.")
 
 end -- if minetest.get_modpath("bbq"
+    

@@ -17,7 +17,7 @@
 ]]--
 
 local plants = {}
-local version = "1.4"
+local version = "1.5"
 cucina_vegana_farming_default = true
 
 local modpath = minetest.get_modpath(minetest.get_current_modname())
@@ -83,6 +83,7 @@ dofile(modpath .. "/fuels.lua")
 dofile(modpath .. "/recipes.lua")
 dofile(modpath .. "/recipes_cook.lua")
 dofile(modpath .. "/recipes_support.lua")
+dofile(modpath .. "/recipes_5xx.lua") -- New recipes with MT 5.0
 dofile(modpath .. "/register_mods.lua")
 
 if (cucina_vegana_farming_default) then
