@@ -39,7 +39,7 @@ minetest.register_craftitem("cucina_vegana:molasses", {
 minetest.register_craftitem("cucina_vegana:pizza_dough", {
 	description = S("Pizzadough"),
 	inventory_image = "cucina_vegana_pizza_dough.png",
-	groups = {food = 1},
+	groups = {food = 1, pizza_dough = 1},
 })
 
 minetest.register_craftitem("cucina_vegana:rice_flour", {

@@ -372,3 +372,15 @@ if minetest.get_modpath("bbq") then
 
 end -- if minetest.get_modpath("bbq"
     
+if minetest.get_modpath("pizza") then
+    minetest.register_craft({
+        type = "shapeless",
+        output = "pizza:pizza_dough",
+        recipe = {"group:food_flour", "group:food_cheese", "group:food_tomato"},
+        })
+    
+    minetest.override_item("pizza:pizza_dough", {
+                                                    groups = {pizza_dough = 1}
+                                                })
+    
+end

@@ -28,7 +28,7 @@ minetest.register_craft({
 	output = "cucina_vegana:pizza_vegana_raw",
 	recipe = {	{"", "cucina_vegana:sauce_hollandaise", ""},
 				{"cucina_vegana:asparagus", "cucina_vegana:lettuce", "cucina_vegana:rosemary"},
-                {"", "cucina_vegana:pizza_dough", ""}
+                {"", "group:pizza_dough", ""}
 			},
     replacements = {
                         {"cucina_vegana:sauce_hollandaise", "vessels:glass_bottle"},
@@ -40,7 +40,7 @@ minetest.register_craft({
 	output = "cucina_vegana:pizza_funghi_raw",
 	recipe = {	{"", "group:food_oil", "cucina_vegana:rosemary"},
 				{"flowers:mushroom_brown", "cucina_vegana:imitation_meat", "flowers:mushroom_brown"},
-                {"", "cucina_vegana:pizza_dough", ""}
+                {"", "group:pizza_dough", ""}
 			},
     replacements = {
                         {"group:food_oil", "vessels:glass_bottle"},

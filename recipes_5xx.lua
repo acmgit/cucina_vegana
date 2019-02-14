@@ -2,6 +2,7 @@
 --   **       Support for 5.0                 ** 
 --   *******************************************
 
+local modname = minetest.get_current_modname()
 local nodes = {}
 
 nodes = { { name = "default:sand_with_kelp",                                                 -- Name
@@ -24,6 +25,8 @@ for node, value in ipairs(nodes) do
                                     recipe = value.recipe,
                                     replacements = replacements
                                 })
+        
+        minetest.log("info", "[MOD] " .. modname .. " Added a 5.x.x-Recipe with " .. value.name .. "\".")
         print("[MT 5.x.x] " .. value.output .. " Recipe with " .. value.name .. " registered.")
         
     end -- if(minetest.registered_nodes
