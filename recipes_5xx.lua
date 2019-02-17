@@ -23,7 +23,7 @@ for node, value in ipairs(nodes) do
         minetest.register_craft({
                                     output = value.output,
                                     recipe = value.recipe,
-                                    replacements = replacements
+                                    replacements = value.replacements
                                 })
         
         minetest.log("info", "[MOD] " .. modname .. " Added a 5.x.x-Recipe with " .. value.name .. "\".")
