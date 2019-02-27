@@ -296,10 +296,12 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "cucina_vegana:dandelion_honey",
 	recipe = {	{"cucina_vegana:dandelion_suds_cooking", "", ""},
+                {"group:wool", "", ""},
 				{"vessels:glass_bottle", "", ""}
 			},
     replacements = {
-            {"cucina_vegana:dandelion_suds_cooking", "bucket:bucket_empty"}
+            {"cucina_vegana:dandelion_suds_cooking", "bucket:bucket_empty"},
+            {"group:wool", "farming:cotton 2"}
                    }
 })
 
