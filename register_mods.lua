@@ -119,8 +119,9 @@ end -- hunger
 --   *******************************************
 
 if(minetest.get_modpath("wine")) then
-    wine:add_item({"cucina_vegana:molasses", "wine:glass_rum"})
-    wine:add_item({"cucina_vegana:dandelion_honey", "wine:glass_mead"})
-    wine:add_item({"cucina_vegana:rice", "wine:glass_sake"})
+    wine:add_item({ {"cucina_vegana:molasses", "wine:glass_rum"},
+                    {"cucina_vegana:dandelion_honey", "wine:glass_mead"},
+                    {"cucina_vegana:rice", "wine:glass_sake"}
+                  })
     
 end -- wine

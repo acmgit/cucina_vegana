@@ -17,7 +17,7 @@
 ]]--
 
 local plants = {}
-local version = "1.5"
+local version = "1.6"
 cucina_vegana_farming_default = true
 
 local modpath = minetest.get_modpath(minetest.get_current_modname())
