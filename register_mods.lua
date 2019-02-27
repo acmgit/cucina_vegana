@@ -70,6 +70,10 @@ if(minetest.get_modpath("technic")) then
 
 end -- if(minetest.get_modpath("technic"
 
+--   *******************************************
+--   *****           Hunger-Support        ***** 
+--   *******************************************
+
 if(minetest.get_modpath("hunger")) then
     
     --                    Name                      Saturation      Replace with    Poison  Heal    Sound
@@ -109,4 +113,14 @@ if(minetest.get_modpath("hunger")) then
     hunger.register_food('cucina_vegana:fryer',                         8,          nil,                        nil,    3.0,    nil)
     
 end -- hunger
- 
+
+--   *******************************************
+--   *****           Wine-Support          ***** 
+--   *******************************************
+
+if(minetest.get_modpath("wine")) then
+    wine:add_item({"cucina_vegana:molasses", "wine:glass_rum"})
+    wine:add_item({"cucina_vegana:dandelion_honey", "wine:glass_mead"})
+    wine:add_item({"cucina_vegana:rice", "wine:glass_sake"})
+    
+end -- wine
