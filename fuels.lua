@@ -11,6 +11,13 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "fuel",
+	recipe = "cucina_vegana:flex_seed_oil",
+	burntime = 20,
+	replacements = {{ "cucina_vegana:flex_seed_oil", "vessels:glass_bottle"}}
+})
+
+minetest.register_craft({
+	type = "fuel",
 	recipe = "cucina_vegana:sunflower_seeds",
 	burntime = 2
 })

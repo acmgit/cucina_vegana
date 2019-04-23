@@ -47,8 +47,8 @@ plants = {
 			["sunflower"] = true,
 			["kohlrabi"] = true,
 			["asparagus"] = true,
-			["rice"] = true
-			
+			["rice"] = true,
+			["flex"] = true
 		}
 		
 

@@ -203,6 +203,13 @@ minetest.register_craft({
 
 })
 
+minetest.register_craft({
+	output = "wool:white",
+	recipe = {	{"cucina_vegana:flex", "cucina_vegana:flex", "cucina_vegana:flex"},
+				{"cucina_vegana:flex", "cucina_vegana:flex", "cucina_vegana:flex"},
+			}
+})
+
 --   *******************************************
 --   *****           Imitations            *****       
 --   *******************************************
@@ -303,6 +310,14 @@ minetest.register_craft({
             {"cucina_vegana:dandelion_suds_cooking", "bucket:bucket_empty"},
             {"group:wool", "farming:cotton 2"}
                    }
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:flex_seed_oil",
+	recipe = {	{"cucina_vegana:flex_seed", "cucina_vegana:flex_seed", "cucina_vegana:flex_seed"},
+				{"cucina_vegana:flex_seed", "cucina_vegana:flex_seed", "cucina_vegana:flex_seed"},
+				{"", "vessels:glass_bottle", ""}
+			}
 })
 
 minetest.register_craft({

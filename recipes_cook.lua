@@ -121,3 +121,9 @@ minetest.register_craft({
 	cooktime = 5,
 })
 
+minetest.register_craft({
+	type = "cooking",
+	output = "cucina_vegana:flex",
+	recipe = "cucina_vegana:flex_raw",
+	cooktime = 10,
+})
