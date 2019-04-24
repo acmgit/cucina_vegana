@@ -5,15 +5,21 @@
 minetest.register_craft({
 	type = "fuel",
 	recipe = "cucina_vegana:sunflower_seeds_oil",
-	burntime = 20,
+	burntime = 30,
 	replacements = {{ "cucina_vegana:sunflower_seeds_oil", "vessels:glass_bottle"}}
 })
 
 minetest.register_craft({
 	type = "fuel",
 	recipe = "cucina_vegana:flex_seed_oil",
-	burntime = 20,
+	burntime = 30,
 	replacements = {{ "cucina_vegana:flex_seed_oil", "vessels:glass_bottle"}}
+})
+
+minetest.register_craft({
+	type = "fuel",
+	recipe = "cucina_vegana:flex",
+	burntime = 10
 })
 
 minetest.register_craft({
@@ -49,7 +55,7 @@ minetest.register_craft({
 minetest.register_craft({
 	type = "fuel",
 	recipe = "cucina_vegana:lettuce_oil",
-	burntime = 20,
+	burntime = 30,
 	replacements = {{ "cucina_vegana:lettuce_oil", "vessels:glass_bottle"}}
 })
 
@@ -86,5 +92,5 @@ minetest.register_craft({
 minetest.register_craft({
 	type = "fuel",
 	recipe = "cucina_vegana:molasses",
-	burntime = 3,
+	burntime = 10,
 })

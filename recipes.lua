@@ -512,3 +512,98 @@ minetest.register_craft({
 			},
 })
 
+minetest.register_craft({
+	output = "default:paper 4",
+	recipe = {	{"default:stone", "cucina_vegana:flex", "default:stone"},
+				{"default:stone", "cucina_vegana:flex", "default:stone"},
+                {"", "bucket:water", ""},
+			},
+    replacements = {
+                    {"default:stone", "default:stone 4"},
+                    {"bucket:water", "bucket:empty"},
+                    }
+})
+
+minetest.register_craft({
+	output = "default:paper 4",
+	recipe = {	{"default:desert_stone", "cucina_vegana:flex", "default:desert_stone"},
+				{"default:desert_stone", "cucina_vegana:flex", "default:desert_stone"},
+                {"", "bucket:bucket_water", ""},
+			},
+    replacements = {
+                    {"default:desert_stone", "default:desert_stone 4"},
+                    {"bucket:bucket_water", "bucket:empty"},
+                    }
+})
+
+minetest.register_craft({
+	output = "default:paper 4",
+	recipe = {	{"default:cobble", "cucina_vegana:flex", "default:cobble"},
+				{"default:cobble", "cucina_vegana:flex", "default:cobble"},
+                {"", "bucket:bucket_water", ""},
+			},
+    replacements = {
+                    {"default:cobble", "default:cobble 4"},
+                    {"bucket:bucket_water", "bucket:empty"},
+                    }
+})
+
+minetest.register_craft({
+	output = "default:paper 4",
+	recipe = {	{"default:desert_cobble", "cucina_vegana:flex", "default:desert_cobble"},
+				{"default:desert_cobble", "cucina_vegana:flex", "default:desert_cobble"},
+                {"", "bucket:bucket_water", ""},
+			},
+    replacements = {
+                    {"default:desert_cobble", "default:desert_cobble 4"},
+                    {"bucket:bucket_water", "bucket:empty"},
+                    }
+})
+
+minetest.register_craft({
+	output = "default:paper 4",
+	recipe = {	{"default:stone", "cucina_vegana:flex", "default:stone"},
+				{"default:stone", "cucina_vegana:flex", "default:stone"},
+                {"", "bucket:bucket_river_water", ""},
+			},
+    replacements = {
+                    {"default:stone", "default:stone 4"},
+                    {"bucket:bucket_river_water", "bucket:empty"},
+                    }
+})
+
+minetest.register_craft({
+	output = "default:paper 4",
+	recipe = {	{"default:desert_stone", "cucina_vegana:flex", "default:desert_stone"},
+				{"default:desert_stone", "cucina_vegana:flex", "default:desert_stone"},
+                {"", "bucket:bucket_river_water", ""},
+			},
+    replacements = {
+                    {"default:desert_stone", "default:desert_stone 4"},
+                    {"bucket:bucket_river_water", "bucket:empty"},
+                    }
+})
+
+minetest.register_craft({
+	output = "default:paper 4",
+	recipe = {	{"default:cobble", "cucina_vegana:flex", "default:cobble"},
+				{"default:cobble", "cucina_vegana:flex", "default:cobble"},
+                {"", "bucket:bucket_river_water", ""},
+			},
+    replacements = {
+                    {"default:cobble", "default:cobble 4"},
+                    {"bucket:bucket_river_water", "bucket:empty"},
+                    }
+})
+
+minetest.register_craft({
+	output = "default:paper 4",
+	recipe = {	{"default:desert_cobble", "cucina_vegana:flex", "default:desert_cobble"},
+				{"default:desert_cobble", "cucina_vegana:flex", "default:desert_cobble"},
+                {"", "bucket:bucket_river_water", ""},
+			},
+    replacements = {
+                    {"default:desert_cobble", "default:desert_cobble 4"},
+                    {"bucket:bucket_river_water", "bucket:empty"},
+                    }
+})

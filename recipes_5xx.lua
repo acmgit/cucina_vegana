@@ -27,7 +27,7 @@ for node, value in ipairs(nodes) do
                                 })
         
         minetest.log("info", "[MOD] " .. modname .. " Added a 5.x.x-Recipe with " .. value.name .. "\".")
-        print("[MT 5.x.x] " .. value.output .. " Recipe with " .. value.name .. " registered.")
+        --print("[MT 5.x.x] " .. value.output .. " Recipe with " .. value.name .. " registered.")
         
     end -- if(minetest.registered_nodes
 

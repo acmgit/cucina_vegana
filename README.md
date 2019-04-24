@@ -31,6 +31,10 @@ It supports farming and farming_redo from TenPlus.
 ![Screenshot 1](textures/cucina_vegana_rice_screenshot.jpg)
 <br>
 
+## Flex
+![Screenshot 1](textures/cucina_vegana_flex_screenshot.jpg)
+<br>
+
 ## The Mod vegan_sunflower is integrated in Cucina Vegana.
 ![Screenshot 1](textures/cucina_vegana_sunflower_screenshot.jpg)
 
@@ -41,23 +45,33 @@ Move your Download to the Mods-Folder.
 ## Depends
 
 default<br>
+dye<br>
 farming<br>
 vessels<br>
-dye<br>
 
 ### optional
+
+basic_materials<br>
 bbq<br>
+bees<br>
 bucket<br>
+building_blocks<br>
 bushes<br>
 bushes_classic<br>
+cottages<br>
 farming_redo<br>
 farming_nextgen<br>
 fishing<br>
 flowers<br>
+homedecor<br>
 intllib<br>
 mobs<br>
+moreblocks<br>
+pizza<br>
+ropes<br>
 technic<br>
 wine<br>
+wool<br>
 
 ## License
 

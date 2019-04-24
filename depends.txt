@@ -16,3 +16,10 @@ mobs?
 technic?
 pizza?
 wine?
+wool?
+basic_materials?
+homedecor?
+building_blocks?
+ropes?
+cottages?
+moreblocks?

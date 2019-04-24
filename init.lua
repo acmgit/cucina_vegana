@@ -9,15 +9,10 @@
     ***  License: LGPL 3.0 by A.C.M.           ***
     ***                                        ***
 	**********************************************
-	
-	If you want use cucina vegana with farming_redo from TenPlus, then set
-	farming_default = false
-	else true.
-		
 ]]--
 
 local plants = {}
-local version = "1.6"
+local version = "1.7"
 cucina_vegana_farming_default = true
 
 local modpath = minetest.get_modpath(minetest.get_current_modname())
