@@ -5,7 +5,7 @@ minetest.register_decoration({
 	sidelen = 16,
 	noise_params = {
 		offset = 0,
-		scale = 0.01,
+		scale = cucina_vegana_plant_settings.lettuce_scale,
 		spread = {x = 10, y = 10, z = 10},
 		seed = 7133,
 		octaves = 3,

@@ -31,8 +31,8 @@ It supports farming and farming_redo from TenPlus.
 ![Screenshot 1](textures/cucina_vegana_rice_screenshot.jpg)
 <br>
 
-## Flex
-![Screenshot 1](textures/cucina_vegana_flex_screenshot.jpg)
+## Flax
+![Screenshot 1](textures/cucina_vegana_flax_screenshot.jpg)
 <br>
 
 ## The Mod vegan_sunflower is integrated in Cucina Vegana.

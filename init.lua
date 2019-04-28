@@ -14,9 +14,12 @@
 local plants = {}
 local version = "1.7"
 cucina_vegana_farming_default = true
+cucina_vegana_plant_settings = {}
 
 local modpath = minetest.get_modpath(minetest.get_current_modname())
 local modname = minetest.get_current_modname()
+
+dofile(modpath .. "/settingtypes.lua")
 
 -- looking if farming_redo is activ?
 if(farming.mod == "redo") then
@@ -43,7 +46,7 @@ plants = {
 			["kohlrabi"] = true,
 			["asparagus"] = true,
 			["rice"] = true,
-			["flex"] = true
+			["flax"] = true
 		}
 		
 

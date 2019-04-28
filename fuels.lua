@@ -11,14 +11,14 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "fuel",
-	recipe = "cucina_vegana:flex_seed_oil",
+	recipe = "cucina_vegana:flax_seed_oil",
 	burntime = 30,
-	replacements = {{ "cucina_vegana:flex_seed_oil", "vessels:glass_bottle"}}
+	replacements = {{ "cucina_vegana:flax_seed_oil", "vessels:glass_bottle"}}
 })
 
 minetest.register_craft({
 	type = "fuel",
-	recipe = "cucina_vegana:flex",
+	recipe = "cucina_vegana:flax_seed",
 	burntime = 10
 })
 

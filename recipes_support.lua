@@ -390,9 +390,9 @@ if minetest.get_modpath("homedecor") then
     minetest.register_craft( {
         output = "homedecor:cobweb_corner 5",
         recipe = {
-			{ "cucina_vegana:flex", "", "cucina_vegana:flex" },
-			{ "", "cucina_vegana:flex", "" },
-			{ "cucina_vegana:flex", "", "cucina_vegana:flex" }
+			{ "cucina_vegana:flax", "", "cucina_vegana:flax" },
+			{ "", "cucina_vegana:flax", "" },
+			{ "cucina_vegana:flax", "", "cucina_vegana:flax" }
         },
     })
 
@@ -400,7 +400,7 @@ if minetest.get_modpath("homedecor") then
         output = "homedecor:oil_lamp",
         recipe = {
             { "", "vessels:glass_bottle", "" },
-            { "", "cucina_vegana:flex", "" },
+            { "", "cucina_vegana:flax", "" },
             { "default:steel_ingot", "group:food_oil", "default:steel_ingot" }
         }
     })
@@ -409,7 +409,7 @@ if minetest.get_modpath("homedecor") then
         output = "homedecor:oil_lamp_tabletop",
         recipe = {
             { "", "vessels:glass_bottle", "" },
-            { "", "cucina_vegana:flex", "" },
+            { "", "cucina_vegana:flax", "" },
             { "default:iron_lump", "group:food_oil", "default:iron_lump" }
         }
     })
@@ -417,7 +417,7 @@ if minetest.get_modpath("homedecor") then
     minetest.register_craft({
         output = "homedecor:candle_thin 4",
         recipe = {
-            {"cucina_vegana:flex" },
+            {"cucina_vegana:flax" },
             {"basic_materials:paraffin" }
         }
     })
@@ -425,7 +425,7 @@ if minetest.get_modpath("homedecor") then
     minetest.register_craft({
         output = "homedecor:candle 2",
         recipe = {
-            {"cucina_vegana:flex" },
+            {"cucina_vegana:flax" },
             {"basic_materials:paraffin" },
             {"basic_materials:paraffin" }
         }
@@ -436,7 +436,7 @@ if minetest.get_modpath("building_blocks") then
     minetest.register_craft({
         output = 'building_blocks:terrycloth_towel 2',
         recipe = {
-            {"cucina_vegana:flex", "cucina_vegana:flex", "cucina_vegana:flex"},
+            {"cucina_vegana:flax", "cucina_vegana:flax", "cucina_vegana:flax"},
         }
     })
     
@@ -446,9 +446,9 @@ if minetest.get_modpath("ropes") then
 	minetest.register_craft({
 		output = 'ropes:ropesegment',
 		recipe = {
-			{'cucina_vegana:flex','cucina_vegana:flex'},
-			{'cucina_vegana:flex','cucina_vegana:flex'},
-			{'cucina_vegana:flex','cucina_vegana:flex'},
+			{'cucina_vegana:flax','cucina_vegana:flax'},
+			{'cucina_vegana:flax','cucina_vegana:flax'},
+			{'cucina_vegana:flax','cucina_vegana:flax'},
 		}
 	})
 
@@ -459,7 +459,7 @@ if minetest.get_modpath("cottages") then
     minetest.register_craft({
         output = "cottages:rope",
         recipe = {
-            {"cucina_vegana:flex","cucina_vegana:flex","cucina_vegana:flex"}
+            {"cucina_vegana:flax","cucina_vegana:flax","cucina_vegana:flax"}
             }
     })
     
@@ -469,9 +469,9 @@ if minetest.get_modpath("moreblocks") then
     minetest.register_craft({
         output = "moreblocks:rope 3",
         recipe = {
-            {"cucina_vegana:flex"},
-            {"cucina_vegana:flex"},
-            {"cucina_vegana:flex"},
+            {"cucina_vegana:flax"},
+            {"cucina_vegana:flax"},
+            {"cucina_vegana:flax"},
         }
     })
     

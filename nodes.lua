@@ -62,12 +62,12 @@ minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:flex_seed_oil", {
-	description = S("Bottle of Flexseed Oil"),
+minetest.register_node("cucina_vegana:flax_seed_oil", {
+	description = S("Bottle of Flaxseed Oil"),
 	drawtype = "plantlike",
-	tiles = {"cucina_vegana_flex_seed_oil.png"},
-	inventory_image = "cucina_vegana_flex_seed_oil.png",
-	wield_image = "cucina_vegana_flex_seed_oil.png",
+	tiles = {"cucina_vegana_flax_seed_oil.png"},
+	inventory_image = "cucina_vegana_flax_seed_oil.png",
+	wield_image = "cucina_vegana_flax_seed_oil.png",
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,

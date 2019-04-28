@@ -205,8 +205,8 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "wool:white",
-	recipe = {	{"cucina_vegana:flex", "cucina_vegana:flex", "cucina_vegana:flex"},
-				{"cucina_vegana:flex", "cucina_vegana:flex", "cucina_vegana:flex"},
+	recipe = {	{"cucina_vegana:flax", "cucina_vegana:flax", "cucina_vegana:flax"},
+				{"cucina_vegana:flax", "cucina_vegana:flax", "cucina_vegana:flax"},
 			}
 })
 
@@ -313,9 +313,9 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "cucina_vegana:flex_seed_oil",
-	recipe = {	{"cucina_vegana:flex_seed", "cucina_vegana:flex_seed", "cucina_vegana:flex_seed"},
-				{"cucina_vegana:flex_seed", "cucina_vegana:flex_seed", "cucina_vegana:flex_seed"},
+	output = "cucina_vegana:flax_seed_oil",
+	recipe = {	{"cucina_vegana:flax_seed", "cucina_vegana:flax_seed", "cucina_vegana:flax_seed"},
+				{"cucina_vegana:flax_seed", "cucina_vegana:flax_seed", "cucina_vegana:flax_seed"},
 				{"", "vessels:glass_bottle", ""}
 			}
 })
@@ -514,8 +514,8 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "default:paper 4",
-	recipe = {	{"default:stone", "cucina_vegana:flex", "default:stone"},
-				{"default:stone", "cucina_vegana:flex", "default:stone"},
+	recipe = {	{"default:stone", "cucina_vegana:flax", "default:stone"},
+				{"default:stone", "cucina_vegana:flax", "default:stone"},
                 {"", "bucket:water", ""},
 			},
     replacements = {
@@ -526,8 +526,8 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "default:paper 4",
-	recipe = {	{"default:desert_stone", "cucina_vegana:flex", "default:desert_stone"},
-				{"default:desert_stone", "cucina_vegana:flex", "default:desert_stone"},
+	recipe = {	{"default:desert_stone", "cucina_vegana:flax", "default:desert_stone"},
+				{"default:desert_stone", "cucina_vegana:flax", "default:desert_stone"},
                 {"", "bucket:bucket_water", ""},
 			},
     replacements = {
@@ -538,8 +538,8 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "default:paper 4",
-	recipe = {	{"default:cobble", "cucina_vegana:flex", "default:cobble"},
-				{"default:cobble", "cucina_vegana:flex", "default:cobble"},
+	recipe = {	{"default:cobble", "cucina_vegana:flax", "default:cobble"},
+				{"default:cobble", "cucina_vegana:flax", "default:cobble"},
                 {"", "bucket:bucket_water", ""},
 			},
     replacements = {
@@ -550,8 +550,8 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "default:paper 4",
-	recipe = {	{"default:desert_cobble", "cucina_vegana:flex", "default:desert_cobble"},
-				{"default:desert_cobble", "cucina_vegana:flex", "default:desert_cobble"},
+	recipe = {	{"default:desert_cobble", "cucina_vegana:flax", "default:desert_cobble"},
+				{"default:desert_cobble", "cucina_vegana:flax", "default:desert_cobble"},
                 {"", "bucket:bucket_water", ""},
 			},
     replacements = {
@@ -562,8 +562,8 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "default:paper 4",
-	recipe = {	{"default:stone", "cucina_vegana:flex", "default:stone"},
-				{"default:stone", "cucina_vegana:flex", "default:stone"},
+	recipe = {	{"default:stone", "cucina_vegana:flax", "default:stone"},
+				{"default:stone", "cucina_vegana:flax", "default:stone"},
                 {"", "bucket:bucket_river_water", ""},
 			},
     replacements = {
@@ -574,8 +574,8 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "default:paper 4",
-	recipe = {	{"default:desert_stone", "cucina_vegana:flex", "default:desert_stone"},
-				{"default:desert_stone", "cucina_vegana:flex", "default:desert_stone"},
+	recipe = {	{"default:desert_stone", "cucina_vegana:flax", "default:desert_stone"},
+				{"default:desert_stone", "cucina_vegana:flax", "default:desert_stone"},
                 {"", "bucket:bucket_river_water", ""},
 			},
     replacements = {
@@ -586,8 +586,8 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "default:paper 4",
-	recipe = {	{"default:cobble", "cucina_vegana:flex", "default:cobble"},
-				{"default:cobble", "cucina_vegana:flex", "default:cobble"},
+	recipe = {	{"default:cobble", "cucina_vegana:flax", "default:cobble"},
+				{"default:cobble", "cucina_vegana:flax", "default:cobble"},
                 {"", "bucket:bucket_river_water", ""},
 			},
     replacements = {
@@ -598,8 +598,8 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "default:paper 4",
-	recipe = {	{"default:desert_cobble", "cucina_vegana:flex", "default:desert_cobble"},
-				{"default:desert_cobble", "cucina_vegana:flex", "default:desert_cobble"},
+	recipe = {	{"default:desert_cobble", "cucina_vegana:flax", "default:desert_cobble"},
+				{"default:desert_cobble", "cucina_vegana:flax", "default:desert_cobble"},
                 {"", "bucket:bucket_river_water", ""},
 			},
     replacements = {

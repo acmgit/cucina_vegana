@@ -11,7 +11,7 @@ if(minetest.get_modpath("technic")) then
 					{"cucina_vegana:lettuce_seed 6", "cucina_vegana:lettuce_oil"},
                     {"cucina_vegana:kohlrabi 6", "cucina_vegana:molasses"},
                     {"cucina_vegana:soy 8", "cucina_vegana:tofu"},
-                    {"cucina_vegana:flex_seed 6", "cucina_vegana:flex_seed_oil"},
+                    {"cucina_vegana:flax_seed 6", "cucina_vegana:flax_seed_oil"},
 				}
 
 	for _, data in pairs(compressor_recipes) do
@@ -41,7 +41,7 @@ if(minetest.get_modpath("technic")) then
         {"cucina_vegana:kohlrabi 3", "cucina_vegana:molasses"},
         {"cucina_vegana:molasses", "bushes:sugar 2"},
         {"cucina_vegana:soy 4", "cucina_vegana:soy_milk"},
-        {"cucina_vegana:flex_seed 6", "cucina_vegana:flex_seed_oil"},
+        {"cucina_vegana:flax_seed 6", "cucina_vegana:flax_seed_oil"},
 	}
 
 	for _, data in ipairs(extractor_recipes) do

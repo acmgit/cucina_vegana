@@ -5,7 +5,7 @@ minetest.register_decoration({
 	sidelen = 16,
 	noise_params = {
 		offset = 0,
-		scale = cucina_vegana_plant_settings.parsley_scale,
+		scale = cucina_vegana_plant_settings.flax_scale,
 		spread = {x = 70, y = 70, z = 70},
 		seed = 7133,
 		octaves = 3,
@@ -13,5 +13,5 @@ minetest.register_decoration({
 	},
 	y_min = 0,
 	y_max = 100,
-	decoration = "cucina_vegana:wild_parsley",
+	decoration = "cucina_vegana:wild_flax",
 })
