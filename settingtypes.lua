@@ -1,3 +1,7 @@
+-- Settings are: 
+-- Lower value  = easy to find (like 0.0005)
+-- Higher value = hard to find (like 0.002) 
+
 -- Asparagus
 cucina_vegana_plant_settings.asparagus_scale = 0.0006
 
@@ -11,7 +15,7 @@ cucina_vegana_plant_settings.flax_scale = 0.0006
 cucina_vegana_plant_settings.kohlrabi_scale = 0.0007
 
 -- Lettuce
-cucina_vegana_plant_settings.lettuce_scale = 0.0004
+cucina_vegana_plant_settings.lettuce_scale = 0.0002
 
 -- Parsley
 cucina_vegana_plant_settings.parsley_scale = 0.0005

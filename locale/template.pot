@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 01:26+0200\n"
+"POT-Creation-Date: 2019-04-29 18:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,20 +22,20 @@ msgid "Asparagus"
 msgstr ""
 
 #: asparagus_default.lua asparagus_redo.lua chives_default.lua chives_redo.lua
-#: flex_default.lua flex_redo.lua kohlrabi_default.lua kohlrabi_redo.lua
+#: flax_default.lua flax_redo.lua kohlrabi_default.lua kohlrabi_redo.lua
 #: lettuce_default.lua lettuce_redo.lua parsley_default.lua parsley_redo.lua
 #: rice_default.lua rice_redo.lua rosemary_default.lua rosemary_redo.lua
 #: soy_default.lua soy_redo.lua sunflower_default.lua sunflower_redo.lua
 msgid "Seed"
 msgstr ""
 
-#: asparagus_default.lua chives_default.lua flex_default.lua
+#: asparagus_default.lua chives_default.lua flax_default.lua
 #: kohlrabi_default.lua lettuce_default.lua parsley_default.lua
 #: rice_default.lua rosemary_default.lua soy_default.lua sunflower_default.lua
 msgid "Wild"
 msgstr ""
 
-#: asparagus_redo.lua chives_redo.lua flex_redo.lua kohlrabi_redo.lua
+#: asparagus_redo.lua chives_redo.lua flax_redo.lua kohlrabi_redo.lua
 #: lettuce_redo.lua parsley_redo.lua rice_redo.lua rosemary_redo.lua
 #: soy_redo.lua sunflower_redo.lua
 msgid "Wild "
@@ -45,8 +45,8 @@ msgstr ""
 msgid "Chives"
 msgstr ""
 
-#: flex_default.lua flex_redo.lua items.lua
-msgid "Flex"
+#: flax_default.lua flax_redo.lua items.lua
+msgid "Flax"
 msgstr ""
 
 #: items.lua
@@ -110,7 +110,7 @@ msgid "Imitation poultry"
 msgstr ""
 
 #: items.lua
-msgid "Flex (raw)"
+msgid "Flax (raw)"
 msgstr ""
 
 #: items.lua kohlrabi_default.lua kohlrabi_redo.lua
@@ -178,7 +178,7 @@ msgid "Bottle of Sunflower Seeds Oil"
 msgstr ""
 
 #: nodes.lua
-msgid "Bottle of Flexseed Oil"
+msgid "Bottle of Flaxseed Oil"
 msgstr ""
 
 #: nodes.lua

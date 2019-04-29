@@ -132,7 +132,7 @@ minetest.register_craftitem("cucina_vegana:chives", {
 })
 
 minetest.register_craftitem("cucina_vegana:flax_raw", {
-	description = S("Flx (raw)"),
+	description = S("Flax (raw)"),
 	inventory_image = "cucina_vegana_flax_raw.png",
 	groups = {flammable = 1, string = 1},
 })
