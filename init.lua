@@ -23,44 +23,42 @@ dofile(modpath .. "/settingtypes.lua")
 
 -- looking if farming_redo is activ?
 if(farming.mod == "redo") then
-
 	cucina_vegana_farming_default = false
     minetest.log("info", "[MOD] " .. modname .. ": farming_redo mode activated.")
 
 else
-    
     minetest.log("info", "[MOD] " .. modname .. ": default farming mode activated.")
 
-end
+end -- if(farming.mod
 
 
 
 plants = {
 
-			["soy"] = true,
-			["parsley"] = true,
-			["lettuce"] = true,
-			["chives"] = true,
-			["rosemary"] = true,
-			["sunflower"] = true,
-			["kohlrabi"] = true,
-			["asparagus"] = true,
-			["rice"] = true,
-			["flax"] = true
+			["asparagus"] = cucina_vegana_plant_settings.asparagus,
+			["chives"] = cucina_vegana_plant_settings.chives,
+			["flax"] = cucina_vegana_plant_settings.flax,
+			["kohlrabi"] = cucina_vegana_plant_settings.kohlrabi,
+			["lettuce"] = cucina_vegana_plant_settings.lettuce,
+			["rosemary"] = cucina_vegana_plant_settings.rosemary,
+			["rice"] = cucina_vegana_plant_settings.rice,
+			["soy"] = cucina_vegana_plant_settings.soy,
+			["sunflower"] = cucina_vegana_plant_settings.sunflower,
+			["parsley"] = cucina_vegana_plant_settings.parsley,
 		}
 		
 
--- Load all flowers in default-mode
+
 for pname, value in pairs(plants) do
 	
 	if(value) then
+        -- Load all flowers in default-mode
 		if (cucina_vegana_farming_default) then
-			
 			dofile(modpath .. "/" .. pname .. "_default.lua")
 			dofile(modpath .. "/".. pname .. ".lua")
 			
 		else
-				
+        -- Load all flowers in redo-mode
 			dofile(modpath .. "/" .. pname .. "_redo.lua")
 			dofile(modpath .. "/".. pname .. ".lua")
 			
@@ -85,12 +83,10 @@ dofile(modpath .. "/recipes_5xx.lua") -- New recipes with MT 5.0
 dofile(modpath .. "/register_mods.lua")
 
 if (cucina_vegana_farming_default) then
-
 	print("[MOD] " .. modname .. " Version " .. version .. " in default-mode loaded.")
     minetest.log("info", "[MOD] " .. modname .. " Version " .. version .. " in default-mode loaded.")
     
 else
-
 	print("[MOD] " .. modname .. " Version " .. version .. " in redo-mode loaded.")
 	minetest.log("info", "[MOD] " .. modname .. " Version " .. version .. " in redo-mode loaded.")
     
