@@ -287,7 +287,7 @@ if minetest.get_modpath("bbq") then
 	minetest.register_craft( {
 		output = "bbq:bacon_raw 3",
 		recipe = {
-			{"bbq:basting_brush", "dye:red", "dye:white"},
+			{"bbq:basting_brush", "group:dye,color_red", "group:dye,color_white"},
 			{"cucina_vegana:tofu", "cucina_vegana:tofu", "cucina_vegana:tofu"},
 		},
         replacements = {{"bbq:basting_brush", "bbq:basting_brush"}}        
@@ -306,7 +306,7 @@ if minetest.get_modpath("bbq") then
 	minetest.register_craft( {
 		output = "bbq:beef_raw",
 		recipe = {
-			{"bbq:basting_brush", "dye:red", "bbq:sea_salt"},
+			{"bbq:basting_brush", "group:dye,color_red", "bbq:sea_salt"},
 			{"cucina_vegana:imitation_meat", "cucina_vegana:imitation_meat", ""},
         },
         replacements = {{"bbq:basting_brush", "bbq:basting_brush"}}

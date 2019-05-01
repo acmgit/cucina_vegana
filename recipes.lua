@@ -216,7 +216,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:imitation_butter",
-	recipe = {	{"dye:yellow", "cucina_vegana:soy_milk",  "cucina_vegana:soy_milk"}
+	recipe = {	{"group:dye,color_yellow", "cucina_vegana:soy_milk",  "cucina_vegana:soy_milk"}
 			},
 			replacements = {{"cucina_vegana:soy_milk", "vessels:drinking_glass 2"}
 						}
@@ -224,14 +224,14 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:imitation_cheese",
-	recipe = {	{"dye:orange","cucina_vegana:imitation_butter", "cucina_vegana:imitation_butter", ""}
+	recipe = {	{"group:dye,color_orange","cucina_vegana:imitation_butter", "cucina_vegana:imitation_butter", ""}
 			},
 })
 
 minetest.register_craft({
 	output = "cucina_vegana:imitation_fish",
 	recipe = {	
-				{"dye:blue","cucina_vegana:tofu", "dye:blue"},
+				{"group:dye,color_blue","cucina_vegana:tofu", "group:dye,color_blue"},
 				{"cucina_vegana:tofu","cucina_vegana:tofu", "cucina_vegana:tofu"},
 				{"","cucina_vegana:tofu", ""},
 			
@@ -240,7 +240,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:imitation_meat",
-	recipe = {	{"dye:red", "cucina_vegana:tofu", "dye:white"},
+	recipe = {	{"group:dye,color_red", "cucina_vegana:tofu", "group:dye,color_white"},
 				{"", "cucina_vegana:tofu", ""},
 				{"", "cucina_vegana:tofu", ""}
 			},
@@ -248,7 +248,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:imitation_poultry",
-	recipe = {	{"cucina_vegana:tofu", "", "dye:yellow"},
+	recipe = {	{"cucina_vegana:tofu", "", "group:dye,color_yellow"},
 				{"", "cucina_vegana:tofu", ""},
 				{"cucina_vegana:tofu", "cucina_vegana:tofu", "cucina_vegana:tofu"}
 			},
@@ -479,7 +479,7 @@ minetest.register_craft({
 	output = "cucina_vegana:sunflower_seeds 4",
 	recipe = {"flowers:sunflower"},
 	replacements = {
-		{"flowers:sunflower", "dye:yellow"}
+		{"flowers:sunflower", "group:dye,color_yellow"}
 	}
 })
 
