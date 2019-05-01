@@ -50,6 +50,11 @@ minetest.register_node("cucina_vegana:wild_" .. pname, {
 	},
 })
 
+if(cucina_vegana_plant_settings.bonemeal) then
+    table.insert(cucina_vegana_plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
+    
+end -- if(cucina_vegana_plant_settings.bonemeal
+
 if (minetest.get_modpath("farming_nextgen")) then
     farmingNG.register_seed("cucina_vegana:seed_" .. pname, "cucina_vegana:" .. pname .. "_1")
     farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step)

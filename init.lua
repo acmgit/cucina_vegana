@@ -15,6 +15,7 @@ local plants = {}
 local version = "1.8"
 cucina_vegana_farming_default = true
 cucina_vegana_plant_settings = {}
+cucina_vegana_plant_settings.bonemeal_list = {}
 
 local modpath = minetest.get_modpath(minetest.get_current_modname())
 local modname = minetest.get_current_modname()
@@ -31,6 +32,11 @@ else
 
 end -- if(farming.mod
 
+cucina_vegana_plant_settings.bonemeal = false         -- Support for bonemeal disabled
+if(minetest.get_modpath("bonemeal")) then
+    cucina_vegana_plant_settings.bonemeal = true
+    
+end -- if(minetest.get_modpath("bonemeal"
 
 
 plants = {
@@ -81,6 +87,11 @@ dofile(modpath .. "/recipes_cook.lua")
 dofile(modpath .. "/recipes_support.lua")
 dofile(modpath .. "/recipes_5xx.lua") -- New recipes with MT 5.0
 dofile(modpath .. "/register_mods.lua")
+
+if(cucina_vegana_plant_settings.bonemeal) then
+    bonemeal:add_crop(cucina_vegana_plant_settings.bonemeal_list)
+    
+end -- if(cucina_vegana_plant_settings.bonemeal
 
 if (cucina_vegana_farming_default) then
 	print("[MOD] " .. modname .. " Version " .. version .. " in default-mode loaded.")
