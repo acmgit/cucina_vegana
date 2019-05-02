@@ -54,6 +54,7 @@ vessels<br>
 basic_materials<br>
 bbq<br>
 bees<br>
+bonemeal<br>
 bucket<br>
 building_blocks<br>
 bushes<br>
