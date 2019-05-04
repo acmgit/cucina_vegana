@@ -51,7 +51,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "cucina_vegana:plate 5",
 	recipe = {	{"group:wood", "", "group:wood"},
-				{"group:wood", "group:wood", "group:wood"}
+				{"group:wood", "default:cobble", "group:wood"}
 			}
 })
 

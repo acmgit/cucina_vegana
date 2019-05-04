@@ -12,12 +12,10 @@ Use and eatable as oil.
 Support for wool, ropes and more.
 
 *** Version 1.4:
-repared for 5.x.x.
+Prepared for 5.x.x.
 New Recipes for Pizza, and Fryer added.
 Recipe for Imitation Poultry added.
 Fixed support for farming_redo. Now the plants have different needs of light like it was without farming_redo.
-Assets 2
-
 
 *** Version 1.2:
 Support for farming_nextgen.
