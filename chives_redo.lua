@@ -19,7 +19,7 @@ minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 	tiles = {"cucina_vegana_" .. pname .. "_seed.png"},
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	wield_image = "cucina_vegana_" .. pname .. "_seed.png",
-	minlight = 10,
+	minlight = cucina_vegana_plant_settings.chives_light,
 	maxlight = default.LIGHT_MAX,
 	drawtype = "signlike",
 	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},

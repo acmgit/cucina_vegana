@@ -17,7 +17,7 @@ farming.register_plant("cucina_vegana:".. pname, {
 	description = dname .. " " .. S("Seed"),
 	inventory_image = "cucina_vegana_".. pname .. "_seed.png",
 	steps = step,
-	minlight = 12,
+	minlight = cucina_vegana_plant_settings.soy_light,
 	maxlight = default.LIGHT_MAX,
 	fertility = {"grassland"},
 	groups = {flammable = 4, attached_node = 1},

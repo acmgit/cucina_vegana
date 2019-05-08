@@ -20,7 +20,7 @@ local modname = minetest.get_current_modname()
 		inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 		wield_image = "cucina_vegana_" .. pname .. "_seed.png",
 		drawtype = "signlike",
-        minlight = 12,
+        minlight = cucina_vegana_plant_settings.rice_light,
         maxlight = default.LIGHT_MAX,
 		groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
 		paramtype = "light",
