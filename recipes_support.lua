@@ -452,7 +452,14 @@ if minetest.get_modpath("ropes") then
 		}
 	})
 
-    
+	minetest.register_craft({
+		output = 'ropes:rope',
+		recipe = {
+			{'cucina_vegana:flax'},
+			{'cucina_vegana:flax'},
+		}
+	})
+
 end
 
 if minetest.get_modpath("cottages") then
