@@ -12,7 +12,7 @@
 ]]--
 
 local plants = {}
-local version = "1.9"
+local version = "2.0"
 cucina_vegana_farming_default = true
 cucina_vegana_plant_settings = {}
 cucina_vegana_plant_settings.bonemeal_list = {}
