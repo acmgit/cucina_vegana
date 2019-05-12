@@ -154,7 +154,7 @@ minetest.register_craftitem("cucina_vegana:lettuce", {
 	description = S("Lettuce"),
 	inventory_image = "cucina_vegana_lettuce.png",
 	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1},
-	on_use = minetest.item_eat(1),
+	on_use = minetest.item_eat(2),
 })
 
 minetest.register_craftitem("cucina_vegana:parsley", {

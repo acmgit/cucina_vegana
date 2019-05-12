@@ -251,7 +251,7 @@ minetest.register_node("cucina_vegana:fryer", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(6),
+	on_use = minetest.item_eat(8),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
