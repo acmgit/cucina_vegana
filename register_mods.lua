@@ -133,7 +133,7 @@ end -- if(minetest.get_modpath("technic"
 --   *******************************************
 
 if(minetest.get_modpath("hunger")) then
-    for key, item in pairs(civ_items) do
+    for key, item in pairs(cv_items) do
         hunger.register_food(item)
         
     end -- for key, data
