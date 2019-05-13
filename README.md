@@ -60,11 +60,13 @@ building_blocks<br>
 bushes<br>
 bushes_classic<br>
 cottages<br>
+diet<br>
 farming_redo<br>
 farming_nextgen<br>
 fishing<br>
 flowers<br>
 homedecor<br>
+hunger<br>
 intllib<br>
 mobs<br>
 moreblocks<br>

@@ -14,6 +14,7 @@ local cv_items = {}
                 --                    Name                          Saturation      Replace with                Poison  Heal    Sound
                 -- side dishes
                     {'cucina_vegana:ciabatta_bred',                 4,              nil,                        nil,    nil,    nil},
+                    {'cucina_vegana:blueberry_jam',                 8,              'vessels:glass_bottle',     nil,    nil,    nil},
                     {'cucina_vegana:blueberry_puree',               4,              nil,                        nil,    nil,    nil},
                     {'cucina_vegana:dandelion_honey',               3,              'vessels:glass_bottle',     nil,    nil,    nil},
                     {'cucina_vegana:flax_seed_oil',                 2,              'vessels:glass_bottle',     nil,    nil,    nil},
