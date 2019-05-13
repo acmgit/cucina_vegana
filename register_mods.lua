@@ -13,6 +13,8 @@ local cv_items = {}
     
                 --                    Name                          Saturation      Replace with                Poison  Heal    Sound
                 -- side dishes
+                    {'cucina_vegana:ciabatta_bred',                 4,              nil,                        nil,    nil,    nil},
+                    {'cucina_vegana:blueberry_puree',               4,              nil,                        nil,    nil,    nil},
                     {'cucina_vegana:dandelion_honey',               3,              'vessels:glass_bottle',     nil,    nil,    nil},
                     {'cucina_vegana:flax_seed_oil',                 2,              'vessels:glass_bottle',     nil,    nil,    nil},
                     {'cucina_vegana:kohlrabi_roasted',              4,              nil,                        nil,    nil,    nil},
@@ -67,6 +69,9 @@ if(minetest.get_modpath("technic")) then
                     {"cucina_vegana:kohlrabi 6", "cucina_vegana:molasses"},
                     {"cucina_vegana:soy 8", "cucina_vegana:tofu"},
                     {"cucina_vegana:flax_seed 6", "cucina_vegana:flax_seed_oil"},
+                    {"default:blueberries 6", "cucina_vegana:blueberry_puree"},
+                    {"farming:blueberries 6", "cucina_vegana:blueberry_puree"},
+                    {"bushes:blueberry 6", "cucina_vegana:blueberry_puree"},
 				}
 
 	for _, data in pairs(compressor_recipes) do

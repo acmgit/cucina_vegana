@@ -7,10 +7,32 @@
 --   *******************************************
 
 minetest.register_craft({
+	output = "cucina_vegana:blueberry_pot",
+	recipe = {	{"group:food_sugar", "default:stick", "group:food_sugar"},
+				{"cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree"},
+                {"", "bucket:bucket_water", ""}
+			},
+    replacements = {
+                    {"default:stick", "default:stick"}
+                   }
+})
+
+minetest.register_craft({
 	output = "cucina_vegana:bowl 5",
 	recipe = {	{"default:glass", "", "default:glass"},
 				{"default:glass", "default:glass", "default:glass"}
 			}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:ciabatta_dough",
+	recipe = {	{"cucina_vegana:soy_milk", "cucina_vegana:sunflower_seeds_oil", ""},
+				{"group:food_flour", "cucina_vegana:rosemary", ""}
+			},
+    replacements = {
+                    {"cucina_vegana:soy_milk", "vessels:drinking_glass"},
+                    {"cucina_vegana:sunflower_seeds_oil", "vessels:glass_bottle"},
+                    }
 })
 
 minetest.register_craft({
@@ -275,6 +297,18 @@ minetest.register_craft({
 --   *******************************************
 --   *****       Síde Dishes               *****       
 --   *******************************************
+
+minetest.register_craft({
+	output = "cucina_vegana:blueberry_jam",
+	recipe = {	{"cucina_vegana:blueberry_pot_cooked", "", ""},
+                {"group:wool", "", ""},
+				{"vessels:glass_bottle", "", ""}
+			},
+    replacements = {
+            {"cucina_vegana:blueberry_pot_cooked", "bucket:bucket_empty"},
+            {"group:wool", "farming:cotton 2"}
+                   }
+})
 
 minetest.register_craft({
 	output = "cucina_vegana:bowl_rice",

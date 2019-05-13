@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-29 18:47+0200\n"
+"POT-Creation-Date: 2019-05-13 22:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,6 +47,22 @@ msgstr ""
 
 #: flax_default.lua flax_redo.lua items.lua
 msgid "Flax"
+msgstr ""
+
+#: items.lua
+msgid "Blueberry purree"
+msgstr ""
+
+#: items.lua
+msgid "Blueberry pot"
+msgstr ""
+
+#: items.lua
+msgid "Blueberry pot (cooked)"
+msgstr ""
+
+#: items.lua
+msgid "Ciabatta dough"
 msgstr ""
 
 #: items.lua
@@ -146,10 +162,6 @@ msgid "Sunflower Seeds"
 msgstr ""
 
 #: items.lua
-msgid "Tofu"
-msgstr ""
-
-#: items.lua
 msgid "Roasted Kohlrabi"
 msgstr ""
 
@@ -159,6 +171,10 @@ msgstr ""
 
 #: items.lua
 msgid "Sunflower Seeds Bread"
+msgstr ""
+
+#: items.lua
+msgid "Tofu"
 msgstr ""
 
 #: items.lua
@@ -182,7 +198,11 @@ msgid "Bottle of Flaxseed Oil"
 msgstr ""
 
 #: nodes.lua
-msgid "Sauce Hollandaise"
+msgid "Ciabatta Bread"
+msgstr ""
+
+#: nodes.lua
+msgid "Blueberry Jam"
 msgstr ""
 
 #: nodes.lua
@@ -191,6 +211,10 @@ msgstr ""
 
 #: nodes.lua
 msgid "Glass Salad Bowl"
+msgstr ""
+
+#: nodes.lua
+msgid "Sauce Hollandaise"
 msgstr ""
 
 #: nodes.lua

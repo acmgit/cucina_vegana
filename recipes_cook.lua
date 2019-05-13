@@ -25,9 +25,23 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "cooking",
+	cooktime = 25,
+	output = "cucina_vegana:blueberry_pot_cooked",
+	recipe = "cucina_vegana:blueberry_pot"
+})
+
+minetest.register_craft({
+	type = "cooking",
 	cooktime = 20,
 	output = "cucina_vegana:bowl_rice_cooked",
 	recipe = "cucina_vegana:bowl_rice"
+})
+
+minetest.register_craft({
+	type = "cooking",
+	cooktime = 17,
+	output = "cucina_vegana:ciabatta_bread",
+	recipe = "cucina_vegana:ciabatta_dough"
 })
 
 minetest.register_craft({

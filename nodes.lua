@@ -83,22 +83,38 @@ minetest.register_node("cucina_vegana:flax_seed_oil", {
 --   *****       Síde Dishes               *****       
 --   *******************************************
 
-minetest.register_node("cucina_vegana:sauce_hollandaise", {
-	description = S("Sauce Hollandaise"),
+minetest.register_node("cucina_vegana:ciabatta_bread", {
+	description = S("Ciabatta Bread"),
 	drawtype = "plantlike",
-	tiles = {"cucina_vegana_sauce_hollandaise.png"},
-	inventory_image = "cucina_vegana_sauce_hollandaise.png",
-	wield_image = "cucina_vegana_sauce_hollandaise.png",
+	tiles = {"cucina_vegana_ciabatta_bread.png"},
+	inventory_image = "cucina_vegana_ciabatta_bread.png",
+	wield_image = "cucina_vegana_ciabatta_bread.png",
 	paramtype = "light",
 	is_ground_content = false,
+	on_use = minetest.item_eat(4),
 	walkable = false,
-	on_use = minetest.item_eat(3, "vessels:glass_bottle"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_sauce = 1, food_vegan = 1, eatable = 1},
-	sounds = default.node_sound_glass_defaults(),
+	groups = {dig_immediate = 3, attached_node = 1, food_bred = 1, food_vegan = 1, eatable = 1},
+})
+
+minetest.register_node("cucina_vegana:blueberry_jam", {
+	description = S("Blueberry Jam"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_blueberry_jam.png"},
+	inventory_image = "cucina_vegana_blueberry_jam.png",
+	wield_image = "cucina_vegana_blueberry_jam.png",
+	paramtype = "light",
+	is_ground_content = false,
+	on_use = minetest.item_eat(8),
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, food_sweet = 1, eatable = 1},
 })
 
 minetest.register_node("cucina_vegana:lettuce_oil", {
@@ -134,6 +150,24 @@ minetest.register_node("cucina_vegana:salad_bowl", {
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
 	groups = {dig_immediate = 3, attached_node = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:sauce_hollandaise", {
+	description = S("Sauce Hollandaise"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_sauce_hollandaise.png"},
+	inventory_image = "cucina_vegana_sauce_hollandaise.png",
+	wield_image = "cucina_vegana_sauce_hollandaise.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	on_use = minetest.item_eat(3, "vessels:glass_bottle"),
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_sauce = 1, food_vegan = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
