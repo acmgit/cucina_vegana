@@ -18,6 +18,16 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "cucina_vegana:blueberry_pot",
+	recipe = {	{"group:food_sugar", "default:stick", "group:food_sugar"},
+				{"cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree"},
+                {"", "bucket:bucket_river_water", ""}
+			},
+    replacements = {
+                    {"default:stick", "default:stick"}
+                   }
+})
+minetest.register_craft({
 	output = "cucina_vegana:bowl 5",
 	recipe = {	{"default:glass", "", "default:glass"},
 				{"default:glass", "default:glass", "default:glass"}
