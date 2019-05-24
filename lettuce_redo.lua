@@ -21,7 +21,6 @@ minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 	wield_image = "cucina_vegana_" .. pname .. "_seed.png",
 	drawtype = "signlike",
 	minlight = cucina_vegana_plant_settings.lettuce_light,
-	maxlight = default.LIGHT_MAX,
 	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
 	paramtype = "light",
 	paramtype2 = "wallmounted",
@@ -42,7 +41,6 @@ local crop_def = {
 	walkable = false,
 	buildable_to = true,
 	minlight = 12,
-	maxlight = default.LIGHT_MAX,
 	drop =  "",
 	selection_box = farming.select,
 	groups = {

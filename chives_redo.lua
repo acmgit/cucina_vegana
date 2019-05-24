@@ -20,7 +20,6 @@ minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	wield_image = "cucina_vegana_" .. pname .. "_seed.png",
 	minlight = cucina_vegana_plant_settings.chives_light,
-	maxlight = default.LIGHT_MAX,
 	drawtype = "signlike",
 	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
 	paramtype = "light",
@@ -42,7 +41,6 @@ local crop_def = {
 	walkable = false,
 	buildable_to = true,
 	minlight = 10,
-	maxlight = default.LIGHT_MAX,
 	drop =  "",
 	selection_box = farming.select,
 	groups = {
