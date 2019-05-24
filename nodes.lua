@@ -97,7 +97,7 @@ minetest.register_node("cucina_vegana:ciabatta_bread", {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {dig_immediate = 3, attached_node = 1, food_bred = 1, food_vegan = 1, eatable = 1},
+	groups = {dig_immediate = 3, attached_node = 1, food_bread = 1, food_vegan = 1, eatable = 1},
 })
 
 minetest.register_node("cucina_vegana:blueberry_jam", {
