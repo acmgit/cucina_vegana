@@ -39,6 +39,7 @@ local modname = minetest.get_current_modname()
 		paramtype = "light",
 		sunlight_propagates = true,
 		walkable = false,
+        waving = 1,
 		buildable_to = true,
         minlight = 12,
 		drop =  "",

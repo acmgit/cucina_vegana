@@ -47,6 +47,7 @@ else
 		paramtype = "light",
 		sunlight_propagates = true,
 		walkable = false,
+        waving = 1,
 		buildable_to = true,
 		drop =  "",
 		minlight = 13,

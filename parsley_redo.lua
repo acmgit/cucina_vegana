@@ -39,6 +39,7 @@ local crop_def = {
 	paramtype = "light",
 	sunlight_propagates = true,
 	walkable = false,
+    waving = 1,
 	minlight = 11,
 	buildable_to = true,
 	drop =  "",
