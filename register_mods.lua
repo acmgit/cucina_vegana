@@ -173,7 +173,7 @@ if(minetest.get_modpath("diet")) then
     end -- local function overwrite
     
     for key,item in pairs(cv_items) do
-        overwrite(item[1], item[2], item[4], item[5], item[6])
+        overwrite(item[1], item[2], item[3], item[4], item[5])
         
     end -- for key,item
         
