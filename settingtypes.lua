@@ -1,6 +1,6 @@
 -- Scalevalues are: 
--- Lower value  = easy to find (like 0.0005)
--- Higher value = hard to find (like 0.002) 
+-- Lower value  = easy to find (like 0.002)
+-- Higher value = hard to find (like 0.0005)
 
 -- Asparagus
 cucina_vegana_plant_settings.asparagus = true               -- Asparagus is on
@@ -34,7 +34,7 @@ cucina_vegana_plant_settings.parsley_light = 11
         
 -- Rice
 cucina_vegana_plant_settings.rice = true                    -- Rice is on
-cucina_vegana_plant_settings.rice_scale = 0.0007
+cucina_vegana_plant_settings.rice_scale = 0.005
 cucina_vegana_plant_settings.rice_light = 12
         
 -- Rosemary
