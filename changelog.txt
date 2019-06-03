@@ -1,3 +1,8 @@
+*** Version 2.1:
+Lower rarity of rice.
+Flag dig_immediate added to all plants.
+Flag attached_node to all plants.
+
 *** Version 2.0:
 Support for Hunger and Diet added.
 Blueberry jam added. Blueberrys accepted in bushes, farming and default (5.x).
