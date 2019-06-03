@@ -21,7 +21,7 @@ minetest.register_node("cucina_vegana:".. pname .."_seed", {
 	wield_image = "cucina_vegana_" .. pname .. "_seed.png",
 	drawtype = "signlike",
 	minlight = cucina_vegana_plant_settings.soy_light,
-	groups = {seed = 1, snappy = 3, attached_node = 1, flammable = 4},
+	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
 	paramtype = "light",
 	paramtype2 = "wallmounted",
 	walkable = false,
@@ -45,7 +45,7 @@ local crop_def = {
 	selection_box = farming.select,
 	minlight = 12,
 	groups = {
-		snappy = 3, flammable = 4, plant = 1, attached_node = 1,
+		snappy = 3, flammable = 4, plant = 1, dig_immediate=1, attached_node = 1,
 		not_in_creative_inventory = 1, growing = 1
 	},
 	sounds = default.node_sound_leaves_defaults()

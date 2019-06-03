@@ -40,7 +40,7 @@ minetest.register_node("cucina_vegana:wild_" .. pname, {
 	paramtype2 = "facedir",
 	tiles = {"cucina_vegana_" .. pname .. "_6.png"},
 	sunlight_propagates = true,
-	groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1},
+	groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1, growing = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 			type = "fixed",
