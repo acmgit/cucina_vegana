@@ -142,9 +142,3 @@ minetest.register_craft({
 	cooktime = 10,
 })
 
-minetest.register_craft({
-	type = "cooking",
-	output = "cucina_vegana:peanut",
-	recipe = "cucina_vegana:peanut_seed",
-	cooktime = 5,
-})

@@ -122,6 +122,13 @@ minetest.register_craft({
 			}
 })
 
+minetest.register_craft({
+	type = "cooking",
+	output = "cucina_vegana:peanut",
+	recipe = "cucina_vegana:peanut_seed",
+	cooktime = 5,
+})
+
 if(cucina_vegana_plant_settings.bonemeal) then
     table.insert(cucina_vegana_plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
     
