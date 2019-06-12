@@ -24,14 +24,19 @@ cucina_vegana_plant_settings.kohlrabi_light = 13
         
 -- Lettuce
 cucina_vegana_plant_settings.lettuce = true                 -- Lettuce is on
-cucina_vegana_plant_settings.lettuce_scale = 0.0002
+cucina_vegana_plant_settings.lettuce_scale = 0.0008
 cucina_vegana_plant_settings.lettuce_light = 12
         
 -- Parsley
 cucina_vegana_plant_settings.parsley = true                 -- Parsley is on
 cucina_vegana_plant_settings.parsley_scale = 0.0005
 cucina_vegana_plant_settings.parsley_light = 11
-        
+
+-- Peanut
+cucina_vegana_plant_settings.peanut = true                 -- Peanut is on
+cucina_vegana_plant_settings.peanut_scale = 0.0006
+cucina_vegana_plant_settings.peanut_light = 12
+
 -- Rice
 cucina_vegana_plant_settings.rice = true                    -- Rice is on
 cucina_vegana_plant_settings.rice_scale = 0.005
@@ -47,7 +52,7 @@ cucina_vegana_plant_settings.soy = true                     -- Soy is on
 cucina_vegana_plant_settings.soy_scale = 0.0007
 cucina_vegana_plant_settings.soy_light = 12
         
--- Sunflowers#
+-- Sunflowers
 cucina_vegana_plant_settings.sunflower = true               -- Sunflower is on
 cucina_vegana_plant_settings.sunflower_scale = 0.0003
 cucina_vegana_plant_settings.sunflower_light = 13

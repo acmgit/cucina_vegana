@@ -4,6 +4,10 @@
 
 local modname = minetest.get_current_modname()
 
+--[[
+Recipes for oil now found at the crops self.
+So the fucking right recipe is automatic choosen.
+
 if(cucina_vegana_farming_default) then
 
 	minetest.register_craft({
@@ -25,7 +29,7 @@ else
 	})
 
 end -- if(cucina_vegana_farming_default
-
+]]--
 --   *******************************************
 --   ** Additional Recipes with other Mods  ** 
 --   *******************************************

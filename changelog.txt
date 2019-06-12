@@ -1,3 +1,8 @@
+*** Version 2.2:
+Peanut added.
+Peanutbutter and Peanut Oil added.
+Fixed Recipes for Oil.
+
 *** Version 2.1:
 Lower rarity of rice.
 Flag dig_immediate added to all plants.

@@ -8,6 +8,7 @@ local cv_items = {}
                     {'cucina_vegana:kohlrabi',                      3,              nil,                        nil,    nil,    nil},
                     {'cucina_vegana:lettuce',                       2,              nil,                        nil,    nil,    nil},
                     {'cucina_vegana:parsley',                       1,              nil,                        nil,    nil,    nil},
+                    {'cucina_vegana:peanut',                        3,              nil,                        nil,    nil,    nil},
                     {'cucina_vegana:rosemary',                      1,              nil,                        nil,    nil,    nil},
                     {'cucina_vegana:sunflower_seeds',               1,              nil,                        nil,    nil,    nil},
     
@@ -20,6 +21,7 @@ local cv_items = {}
                     {'cucina_vegana:flax_seed_oil',                 2,              'vessels:glass_bottle',     nil,    nil,    nil},
                     {'cucina_vegana:kohlrabi_roasted',              4,              nil,                        nil,    nil,    nil},
                     {'cucina_vegana:lettuce_oil',                   2,              'vessels:glass_bottle',     nil,    nil,    nil},
+                    {'cucina_vegana:peanut_oil',                    4,              'vessels:glass_bottle',     nil,    nil,    nil},
                     {'cucina_vegana:salad_bowl',                    4,              'cucina_vegana:salad_bowl', nil,    nil,    nil},
                     {'cucina_vegana:sauce_hollandaise',             3,              'vessels:glass_bottle',     nil,    nil,    nil},
                     {'cucina_vegana:sunflower_seeds_oil',           3,              'vessels:glass_bottle',     nil,    nil,    nil},
@@ -66,13 +68,18 @@ if(minetest.get_modpath("technic")) then
 	-- Support Compressor
 	local compressor_recipes = {
 					{"cucina_vegana:sunflower_seeds 6", "cucina_vegana:sunflower_seeds_oil"},
+                    {"cucina_vegana:seeds_sunflower 6", "cucina_vegana:sunflower_seeds_oil"},
 					{"cucina_vegana:lettuce_seed 6", "cucina_vegana:lettuce_oil"},
+                    {"cucina_vegana:seed_lettuce 6", "cucina_vegana:lettuce_oil"},
                     {"cucina_vegana:kohlrabi 6", "cucina_vegana:molasses"},
                     {"cucina_vegana:soy 8", "cucina_vegana:tofu"},
                     {"cucina_vegana:flax_seed 6", "cucina_vegana:flax_seed_oil"},
+                    {"cucina_vegana:seed_flax 6", "cucina_vegana:flax_seed_oil"},
                     {"default:blueberries 6", "cucina_vegana:blueberry_puree"},
                     {"farming:blueberries 6", "cucina_vegana:blueberry_puree"},
                     {"bushes:blueberry 6", "cucina_vegana:blueberry_puree"},
+                    {"cucina_vegana:peanut_seed 6", "cucina_vegana:peanut_oil"},
+                    {"cucina_vegana:seed_peanut 6", "cucina_vegana:peanut_oil"},
 				}
 
 	for _, data in pairs(compressor_recipes) do
@@ -103,6 +110,9 @@ if(minetest.get_modpath("technic")) then
         {"cucina_vegana:molasses", "bushes:sugar 2"},
         {"cucina_vegana:soy 4", "cucina_vegana:soy_milk"},
         {"cucina_vegana:flax_seed 6", "cucina_vegana:flax_seed_oil"},
+        {"cucina_vegana:seed_flax 6", "cucina_vegana:flax_seed_oil"},
+        {"cucina_vegana:peanut_seed 6", "cucina_vegana:peanut_seed_oil"},
+        {"cucina_vegana:seed_peanut 6", "cucina_vegana:peanut_seed_oil"},
 	}
 
 	for _, data in ipairs(extractor_recipes) do

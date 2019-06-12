@@ -18,6 +18,13 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "fuel",
+	recipe = "cucina_vegana:peanut_oil",
+	burntime = 35,
+	replacements = {{ "cucina_vegana:peanut_oil", "vessels:glass_bottle"}}
+})
+
+minetest.register_craft({
+	type = "fuel",
 	recipe = "cucina_vegana:flax_seed",
 	burntime = 10
 })
@@ -26,6 +33,12 @@ minetest.register_craft({
 	type = "fuel",
 	recipe = "cucina_vegana:sunflower_seeds",
 	burntime = 2
+})
+
+minetest.register_craft({
+	type = "fuel",
+	recipe = "cucina_vegana:peanut",
+	burntime = 5
 })
 
 minetest.register_craft({

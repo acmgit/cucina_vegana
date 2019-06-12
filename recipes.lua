@@ -305,7 +305,7 @@ minetest.register_craft({
 })
 
 --   *******************************************
---   *****       Síde Dishes               *****       
+--   *****       Side Dishes               *****       
 --   *******************************************
 
 minetest.register_craft({
@@ -356,13 +356,6 @@ minetest.register_craft({
                    }
 })
 
-minetest.register_craft({
-	output = "cucina_vegana:flax_seed_oil",
-	recipe = {	{"cucina_vegana:flax_seed", "cucina_vegana:flax_seed", "cucina_vegana:flax_seed"},
-				{"cucina_vegana:flax_seed", "cucina_vegana:flax_seed", "cucina_vegana:flax_seed"},
-				{"", "vessels:glass_bottle", ""}
-			}
-})
 
 minetest.register_craft({
 	output = "cucina_vegana:sauce_hollandaise",
@@ -404,6 +397,18 @@ minetest.register_craft({
 			},
 			replacements = {
 							{"bucket:bucket_river_water", "bucket:bucket_empty"},
+						}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:peanut_butter",
+	recipe = {	
+				{"cucina_vegana:peanut", "default:stick", "cucina_vegana:peanut"},
+				{"cucina_vegana:peanut", "group:food_butter", "cucina_vegana:peanut"},
+                {"", "vessels:glass_bottle", ""},
+			},
+			replacements = {
+							{"default:stick", "default:stick"},
 						}
 })
                         

@@ -8,9 +8,9 @@
 local MP = minetest.get_modpath(minetest.get_current_modname())
 local S, NS = dofile(MP.."/intllib.lua")
 
-local dname = S("Flax")
-local pname = "flax"
-local step = 6
+local dname = S("Peanut")
+local pname = "peanut"
+local step = 7
 local modname = minetest.get_current_modname()
 
 -- chives
@@ -19,7 +19,7 @@ minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 	tiles = {"cucina_vegana_" .. pname .. "_seed.png"},
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	wield_image = "cucina_vegana_" .. pname .. "_seed.png",
-	minlight = cucina_vegana_plant_settings.flax_light,
+	minlight = cucina_vegana_plant_settings.peanut_light,
 	drawtype = "signlike",
 	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
 	paramtype = "light",
@@ -68,20 +68,23 @@ minetest.register_node("cucina_vegana:" .. pname .. "_4", table.copy(crop_def))
 
 -- stage 5
 crop_def.tiles = {"cucina_vegana_" .. pname .. "_5.png"}
+minetest.register_node("cucina_vegana:" .. pname .. "_5", table.copy(crop_def))
+
+-- stage 6
+crop_def.tiles = {"cucina_vegana_" .. pname .. "_6.png"}
 crop_def.drop = {
 	items = {
 		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
 	}
 }
-minetest.register_node("cucina_vegana:" .. pname .. "_5", table.copy(crop_def))
+minetest.register_node("cucina_vegana:" .. pname .. "_6", table.copy(crop_def))
 
--- stage 6
+-- stage 7
 crop_def.tiles = {"cucina_vegana_" .. pname .. "_" .. step .. ".png"}
 crop_def.drop = {
 	items = {
-		{items = {"cucina_vegana:" .. pname .. "_raw 3"}, rarity = 1},
-		{items = {"cucina_vegana:" .. pname .. "_raw 4"}, rarity = 3},
-		{items = {"cucina_vegana:" .. pname .. "_seed 3"}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. "_seed 2"}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. "_seed 3"}, rarity = 2},
 		{items = {"cucina_vegana:" .. pname .. "_seed 4"}, rarity = 3},
 	}
 }
@@ -95,7 +98,6 @@ minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
 	drop = { 
 			items = { 
 					{items = {"cucina_vegana:" .. pname .. "_seed 3"}},
-					{items = {"cucina_vegana:" .. pname .. "_raw 2"}},
 				}
 			},
 	drawtype = "plantlike",
@@ -111,6 +113,15 @@ minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
 	},
 })
 
+-- Register Recipe for Oil
+minetest.register_craft({
+	output = "cucina_vegana:" .. pname .. "_oil",
+	recipe = {	{"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
+				{"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
+				{"", "vessels:glass_bottle", ""}
+			}
+})
+
 if(cucina_vegana_plant_settings.bonemeal) then
     table.insert(cucina_vegana_plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
     
@@ -122,22 +133,3 @@ if (minetest.get_modpath("farming_nextgen")) then
     minetest.log("info", "[MOD] " .. modname .. ": cucina_vegana:seed_" .. pname .. " at farming_nextgen registered.")
     
 end
-
--- Register Recipe for Oil
-minetest.register_craft({
-	output = "cucina_vegana:" .. pname .. "_seed_oil",
-	recipe = {	{"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
-				{"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
-				{"", "vessels:glass_bottle", ""}
-			}
-})
-
-minetest.register_alias("cucina_vegana:flex_1", "cucina_vegana:" .. pname .. "_1")
-minetest.register_alias("cucina_vegana:flex_2", "cucina_vegana:" .. pname .. "_2")
-minetest.register_alias("cucina_vegana:flex_3", "cucina_vegana:" .. pname .. "_3")
-minetest.register_alias("cucina_vegana:flex_4", "cucina_vegana:" .. pname .. "_4")
-minetest.register_alias("cucina_vegana:flex_5", "cucina_vegana:" .. pname .. "_5")
-minetest.register_alias("cucina_vegana:flex_6", "cucina_vegana:" .. pname .. "_" .. step .. "")
-minetest.register_alias("cucina_vegana:flex_seed", "cucina_vegana:" .. pname .. "_seed")
-minetest.register_alias("cucina_vegana:flex_raw", "cucina_vegana:" .. pname .. "_raw")
-minetest.register_alias("cucina_vegana:wild_flex", "cucina_vegana:wild_" .. pname)

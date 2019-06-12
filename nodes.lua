@@ -79,6 +79,25 @@ minetest.register_node("cucina_vegana:flax_seed_oil", {
 	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_oil = 1, food_vegan = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
+
+minetest.register_node("cucina_vegana:peanut_oil", {
+	description = S("Bottle of Peanut Oil"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_peanut_oil.png"},
+	inventory_image = "cucina_vegana_peanut_oil.png",
+	wield_image = "cucina_vegana_peanut_oil.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	on_use = minetest.item_eat(5, "vessels:glass_bottle"),
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_oil = 1, food_vegan = 1, eatable = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
 --   *******************************************
 --   *****       Síde Dishes               *****       
 --   *******************************************
@@ -169,6 +188,23 @@ minetest.register_node("cucina_vegana:sauce_hollandaise", {
 	},
 	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_sauce = 1, food_vegan = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:peanut_butter", {
+	description = S("Peanut Butter"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_peanut_butter.png"},
+	inventory_image = "cucina_vegana_peanut_butter.png",
+	wield_image = "cucina_vegana_peanut_butter.png",
+	paramtype = "light",
+	is_ground_content = false,
+	on_use = minetest.item_eat(10),
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, food_sweet = 1, food_butter = 1, eatable = 1},
 })
 
 --   *******************************************

@@ -12,7 +12,7 @@
 ]]--
 
 local plants = {}
-local version = "2.1"
+local version = "2.2"
 cucina_vegana_farming_default = true
 cucina_vegana_plant_settings = {}
 cucina_vegana_plant_settings.bonemeal_list = {}
@@ -46,11 +46,13 @@ plants = {
 			["flax"] = cucina_vegana_plant_settings.flax,
 			["kohlrabi"] = cucina_vegana_plant_settings.kohlrabi,
 			["lettuce"] = cucina_vegana_plant_settings.lettuce,
-			["rosemary"] = cucina_vegana_plant_settings.rosemary,
+			["parsley"] = cucina_vegana_plant_settings.parsley,
+            ["peanut"] = cucina_vegana_plant_settings.parsley,
+            ["rosemary"] = cucina_vegana_plant_settings.rosemary,
 			["rice"] = cucina_vegana_plant_settings.rice,
 			["soy"] = cucina_vegana_plant_settings.soy,
 			["sunflower"] = cucina_vegana_plant_settings.sunflower,
-			["parsley"] = cucina_vegana_plant_settings.parsley,
+			
 		}
 		
 

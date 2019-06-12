@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-13 22:49+0200\n"
-"PO-Revision-Date: 2019-05-13 22:52+0200\n"
+"POT-Creation-Date: 2019-06-13 01:28+0200\n"
+"PO-Revision-Date: 2019-06-13 01:29+0200\n"
 "Last-Translator: acm <undertakers_help@yahoo.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.04.0\n"
+"X-Generator: Lokalize 19.04.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: asparagus_default.lua asparagus_redo.lua items.lua
@@ -24,20 +24,22 @@ msgstr "Spargel"
 #: asparagus_default.lua asparagus_redo.lua chives_default.lua chives_redo.lua
 #: flax_default.lua flax_redo.lua kohlrabi_default.lua kohlrabi_redo.lua
 #: lettuce_default.lua lettuce_redo.lua parsley_default.lua parsley_redo.lua
-#: rice_default.lua rice_redo.lua rosemary_default.lua rosemary_redo.lua
-#: soy_default.lua soy_redo.lua sunflower_default.lua sunflower_redo.lua
+#: peanut_default.lua peanut_redo.lua rice_default.lua rice_redo.lua
+#: rosemary_default.lua rosemary_redo.lua soy_default.lua soy_redo.lua
+#: sunflower_default.lua sunflower_redo.lua
 msgid "Seed"
 msgstr "Samen"
 
 #: asparagus_default.lua chives_default.lua flax_default.lua
 #: kohlrabi_default.lua lettuce_default.lua parsley_default.lua
-#: rice_default.lua rosemary_default.lua soy_default.lua sunflower_default.lua
+#: peanut_default.lua rice_default.lua rosemary_default.lua soy_default.lua
+#: sunflower_default.lua
 msgid "Wild"
 msgstr "Wild"
 
 #: asparagus_redo.lua chives_redo.lua flax_redo.lua kohlrabi_redo.lua
-#: lettuce_redo.lua parsley_redo.lua rice_redo.lua rosemary_redo.lua
-#: soy_redo.lua sunflower_redo.lua
+#: lettuce_redo.lua parsley_redo.lua peanut_redo.lua rice_redo.lua
+#: rosemary_redo.lua soy_redo.lua sunflower_redo.lua
 msgid "Wild "
 msgstr "Wild"
 
@@ -141,6 +143,10 @@ msgstr "Salat"
 msgid "Parsley"
 msgstr "Petersilie"
 
+#: items.lua peanut_default.lua peanut_redo.lua
+msgid "Peanut"
+msgstr "Erdnuss"
+
 #: items.lua rice_default.lua rice_redo.lua
 msgid "Rice"
 msgstr "Reis"
@@ -198,6 +204,10 @@ msgid "Bottle of Flaxseed Oil"
 msgstr "Flasche Leinsamenöl"
 
 #: nodes.lua
+msgid "Bottle of Peanut Oil"
+msgstr "Flasche Erdnussöl"
+
+#: nodes.lua
 msgid "Ciabatta Bread"
 msgstr "Ciabatta Brot"
 
@@ -216,6 +226,10 @@ msgstr "Schüssel Salat"
 #: nodes.lua
 msgid "Sauce Hollandaise"
 msgstr "Sauce Hollandaise"
+
+#: nodes.lua
+msgid "Peanut Butter"
+msgstr "Erdnussbutter"
 
 #: nodes.lua
 msgid "Asparagus Hollandaise (raw)"

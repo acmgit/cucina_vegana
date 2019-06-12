@@ -19,7 +19,6 @@ farming.register_plant("cucina_vegana:" .. pname, {
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	steps = step,
 	minlight = cucina_vegana_plant_settings.flax_light,
-	maxlight = default.LIGHT_MAX,
 	fertility = {"grassland"},
 	groups = {flammable = 4, attached_node = 1},
 })
@@ -47,6 +46,15 @@ minetest.register_node("cucina_vegana:wild_" .. pname, {
 				{-0.5, -0.5, -0.5, 0.5, -0.35, 0.5}, -- side f
 			},
 	},
+})
+
+-- Register Recipe for Oil
+minetest.register_craft({
+	output = "cucina_vegana:" .. pname .. "_seed_oil", 
+	recipe = {	{"cucina_vegana:seed_".. pname, "cucina_vegana:seed_".. pname, "cucina_vegana:seed_".. pname},
+				{"cucina_vegana:seed_".. pname, "cucina_vegana:seed_".. pname, "cucina_vegana:seed_".. pname},
+				{"", "vessels:glass_bottle", ""}
+			}
 })
 
 if(cucina_vegana_plant_settings.bonemeal) then

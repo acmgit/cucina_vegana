@@ -19,7 +19,6 @@ farming.register_plant("cucina_vegana:" .. pname, {
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	steps = step,
 	minlight = cucina_vegana_plant_settings.asparagus_light,
-	maxlight = default.LIGHT_MAX,
 	fertility = {"grassland"},
 	groups = {flammable = 4, attached_node = 1},
 })
