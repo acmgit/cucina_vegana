@@ -67,21 +67,26 @@ if(minetest.get_modpath("technic")) then
 
 	-- Support Compressor
 	local compressor_recipes = {
-					{"cucina_vegana:sunflower_seeds 6", "cucina_vegana:sunflower_seeds_oil"},
-                    {"cucina_vegana:seeds_sunflower 6", "cucina_vegana:sunflower_seeds_oil"},
-					{"cucina_vegana:lettuce_seed 6", "cucina_vegana:lettuce_oil"},
-                    {"cucina_vegana:seed_lettuce 6", "cucina_vegana:lettuce_oil"},
                     {"cucina_vegana:kohlrabi 6", "cucina_vegana:molasses"},
+                    {"cucina_vegana:sunflower_seeds 6", "cucina_vegana:sunflower_seeds_oil"},
                     {"cucina_vegana:soy 8", "cucina_vegana:tofu"},
-                    {"cucina_vegana:flax_seed 6", "cucina_vegana:flax_seed_oil"},
-                    {"cucina_vegana:seed_flax 6", "cucina_vegana:flax_seed_oil"},
                     {"default:blueberries 6", "cucina_vegana:blueberry_puree"},
                     {"farming:blueberries 6", "cucina_vegana:blueberry_puree"},
                     {"bushes:blueberry 6", "cucina_vegana:blueberry_puree"},
-                    {"cucina_vegana:peanut_seed 6", "cucina_vegana:peanut_oil"},
-                    {"cucina_vegana:seed_peanut 6", "cucina_vegana:peanut_oil"},
-				}
+                }
+    
+    if(cucina_vegana_farming_default) then
+            table.insert(compressor_recipes,{"cucina_vegana:seed_lettuce 6", "cucina_vegana:lettuce_oil"})
+            table.insert(compressor_recipes,{"cucina_vegana:seed_flax 6", "cucina_vegana:flax_seed_oil"})
+            table.insert(compressor_recipes,{"cucina_vegana:seed_peanut 6", "cucina_vegana:peanut_oil"})
 
+    else
+            table.insert(compressor_recipes,{"cucina_vegana:lettuce_seed 6", "cucina_vegana:lettuce_oil"})
+            table.insert(compressor_recipes,{"cucina_vegana:flax_seed 6", "cucina_vegana:flax_seed_oil"})
+            table.insert(compressor_recipes,{"cucina_vegana:peanut_seed 6", "cucina_vegana:peanut_oil"})
+	
+    end -- if(cucina_vegana_farming_default
+        
 	for _, data in pairs(compressor_recipes) do
 
 		technic.register_compressor_recipe({input = {data[1]}, output = data[2]})
@@ -104,16 +109,26 @@ if(minetest.get_modpath("technic")) then
 	-- Support Extractor
 	local extractor_recipes = {
 		{"flowers:sunflower", "cucina_vegana:sunflower_seeds 4"},
-        {"cucina_vegana:sunflower", "cucina_vegana:sunflower_seeds 4"},
         {"cucina_vegana:sunflower_seeds 6", "cucina_vegana:sunflower_seeds_oil"},
+        {"cucina_vegana:sunflower", "cucina_vegana:sunflower_seeds 4"},
         {"cucina_vegana:kohlrabi 3", "cucina_vegana:molasses"},
         {"cucina_vegana:molasses", "bushes:sugar 2"},
         {"cucina_vegana:soy 4", "cucina_vegana:soy_milk"},
-        {"cucina_vegana:flax_seed 6", "cucina_vegana:flax_seed_oil"},
-        {"cucina_vegana:seed_flax 6", "cucina_vegana:flax_seed_oil"},
-        {"cucina_vegana:peanut_seed 6", "cucina_vegana:peanut_seed_oil"},
-        {"cucina_vegana:seed_peanut 6", "cucina_vegana:peanut_seed_oil"},
 	}
+    
+    -- Special Recipes with Seeds
+    if(cucina_vegana_farming_default) then
+        table.insert(extractor_recipes,{"cucina_vegana:seed_lettuce 6", "cucina_vegana:lettuce_oil"})
+        table.insert(extractor_recipes,{"cucina_vegana:seed_flax 6", "cucina_vegana:flax_seed_oil"})
+        table.insert(extractor_recipes,{"cucina_vegana:seed_peanut 6", "cucina_vegana:peanut_oil"})
+        
+    else
+        table.insert(extractor_recipes,{"cucina_vegana:lettuce_seed 6", "cucina_vegana:lettuce_oil"})
+        table.insert(extractor_recipes,{"cucina_vegana:flax_seed 6", "cucina_vegana:flax_seed_oil"})
+        table.insert(extractor_recipes,{"cucina_vegana:peanut_seed 6", "cucina_vegana:peanut_oil"})
+    
+    end -- if(cucina_vegana_farming_default
+
 
 	for _, data in ipairs(extractor_recipes) do
 		technic.register_extractor_recipe({input = {data[1]}, output = data[2]})
