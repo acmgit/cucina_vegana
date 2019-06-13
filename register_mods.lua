@@ -22,6 +22,7 @@ local cv_items = {}
                     {'cucina_vegana:kohlrabi_roasted',              4,              nil,                        nil,    nil,    nil},
                     {'cucina_vegana:lettuce_oil',                   2,              'vessels:glass_bottle',     nil,    nil,    nil},
                     {'cucina_vegana:peanut_oil',                    4,              'vessels:glass_bottle',     nil,    nil,    nil},
+                    {'cucina_vegana:peanut_butter'                  7,              'vessels:glass_bottle',     nil,    nil,    nil},
                     {'cucina_vegana:salad_bowl',                    4,              'cucina_vegana:salad_bowl', nil,    nil,    nil},
                     {'cucina_vegana:sauce_hollandaise',             3,              'vessels:glass_bottle',     nil,    nil,    nil},
                     {'cucina_vegana:sunflower_seeds_oil',           3,              'vessels:glass_bottle',     nil,    nil,    nil},
