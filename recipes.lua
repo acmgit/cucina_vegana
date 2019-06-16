@@ -242,6 +242,15 @@ minetest.register_craft({
 			}
 })
 
+minetest.register_craft({
+        output = "cucina_vegana:mushroomlight_glass 4",
+        recipe = {
+                  {"","default:glass",""},
+                  {"default:glass","default:torch","default:glass"},
+                  {"","default:glass",""},
+                }
+})
+
 --   *******************************************
 --   *****           Imitations            *****       
 --   *******************************************
