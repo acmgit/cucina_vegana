@@ -665,3 +665,13 @@ minetest.register_craft({
                     {"bucket:bucket_river_water", "bucket:bucket_empty"},
                     }
 })
+
+minetest.register_craft({
+	output = "farming:cotton 2",
+	recipe = {
+              {"cucina_vegana:flax","default:stick","cucina_vegana:flax"},
+            },
+    replacements = {
+                    {"default:stick", "default:stick"},
+                },
+})
