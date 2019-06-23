@@ -4,7 +4,7 @@
 
 -- Asparagus
 cucina_vegana_plant_settings.asparagus = true               -- Asparagus is on
-cucina_vegana_plant_settings.asparagus_scale = 0.0006       -- Scalevalue
+cucina_vegana_plant_settings.asparagus_scale = 0.0007       -- Scalevalue
 cucina_vegana_plant_settings.asparagus_light = 11
         
 -- Chives
