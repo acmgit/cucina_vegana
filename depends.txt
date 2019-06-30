@@ -26,3 +26,4 @@ ropes?
 cottages?
 moreblocks?
 bonemeal?
+petz?

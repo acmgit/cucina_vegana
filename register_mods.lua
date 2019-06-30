@@ -204,3 +204,16 @@ if(minetest.get_modpath("diet")) then
     end -- for key,item
         
 end -- if(minetest.get_modpath("diet
+
+--   *******************************************
+--   *****           Petz-Support          ***** 
+--   *******************************************
+
+if(minetest.get_modpath("petz")) then
+    
+    minetest.override_item("petz:bucket_milk", { 
+                                                groups = {food_milk = 1}
+                                               })
+    
+    
+end

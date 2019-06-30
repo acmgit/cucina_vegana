@@ -487,3 +487,25 @@ if minetest.get_modpath("moreblocks") then
     })
     
 end
+
+if minetest.get_modpath("petz") then
+    
+    minetest.register_craft({
+	output = "petz:lasso",
+	recipe = {
+		{"cucina_vegana:flax", "", "cucina_vegana:flax"},
+		{"", "default:diamond", ""},
+		{"cucina_vegana:flax", "", "cucina_vegana:flax"},		
+            }
+    })
+
+    minetest.register_craft({
+        type = "shaped",
+        output = 'petz:pet_bowl',
+        recipe = {        
+            {'group:wood', '', 'group:wood'},
+            {'', 'cucina_vegana:plate', ''},
+        }
+    })
+
+end
