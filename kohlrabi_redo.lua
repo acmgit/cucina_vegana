@@ -20,7 +20,7 @@ local modname = minetest.get_current_modname()
 		inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 		wield_image = "cucina_vegana_" .. pname .. "_seed.png",
 		drawtype = "signlike",
-        minlight = cucina_vegana_plant_settings.kohlrabi_light,
+        minlight = cucina_vegana.plant_settings.kohlrabi_light,
 		groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
 		paramtype = "light",
 		paramtype2 = "wallmounted",
@@ -134,10 +134,10 @@ minetest.register_alias("kohlrabi:kohlrabi", "cucina_vegana:" .. pname .. "")
 minetest.register_alias("kohlrabi:seed", "cucina_vegana:" .. pname .. "_seed")
 minetest.register_alias("kohlrabi:wild_kohlrabi", "cucina_vegana:wild_" .. pname .. "")
 
-if(cucina_vegana_plant_settings.bonemeal) then
-    table.insert(cucina_vegana_plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
+if(cucina_vegana.plant_settings.bonemeal) then
+    table.insert(cucina_vegana.plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
     
-end -- if(cucina_vegana_plant_settings.bonemeal
+end -- if(cucina_vegana.plant_settings.bonemeal
 
 if (minetest.get_modpath("farming_nextgen")) then
     farmingNG.register_seed("cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_1")

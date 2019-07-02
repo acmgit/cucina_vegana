@@ -18,7 +18,7 @@ farming.register_plant("cucina_vegana:" .. pname, {
 	description = dname .. " " .. S("Seed"),
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	steps = step,
-	minlight = cucina_vegana_plant_settings.kohlrabi_light,
+	minlight = cucina_vegana.plant_settings.kohlrabi_light,
 	fertility = {"grassland"},
 	groups = {flammable = 4, attached_node = 1},
 })
@@ -52,10 +52,10 @@ minetest.register_alias("kohlrabi:kohlrabi", "cucina_vegana:" .. pname)
 minetest.register_alias("kohlrabi:seed", "cucina_vegana:" .. pname .. "_seed")
 minetest.register_alias("kohlrabi:wild_kohlrabi", "cucina_vegana:wild_" .. pname)
 
-if(cucina_vegana_plant_settings.bonemeal) then
-    table.insert(cucina_vegana_plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
+if(cucina_vegana.plant_settings.bonemeal) then
+    table.insert(cucina_vegana.plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
     
-end -- if(cucina_vegana_plant_settings.bonemeal
+end -- if(cucina_vegana.plant_settings.bonemeal
 
 if (minetest.get_modpath("farming_nextgen")) then
     farmingNG.register_seed("cucina_vegana:seed_" .. pname, "cucina_vegana:" .. pname .. "_1")

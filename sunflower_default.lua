@@ -26,7 +26,7 @@ else
 		description = dname .. " " .. S("Seed"),
 		inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 		steps = step,
-		minlight = cucina_vegana_plant_settings.sunflower_light,
+		minlight = cucina_vegana.plant_settings.sunflower_light,
 		fertility = {"grassland"},
 		groups = {flammable = 4},
 	})
@@ -58,10 +58,10 @@ else
 
 end
 
-if(cucina_vegana_plant_settings.bonemeal) then
-    table.insert(cucina_vegana_plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
+if(cucina_vegana.plant_settings.bonemeal) then
+    table.insert(cucina_vegana.plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
     
-end -- if(cucina_vegana_plant_settings.bonemeal
+end -- if(cucina_vegana.plant_settings.bonemeal
 
 if (minetest.get_modpath("farming_nextgen")) then
     farmingNG.register_seed("cucina_vegana:seed_" .. pname, "cucina_vegana:" .. pname .. "_1")

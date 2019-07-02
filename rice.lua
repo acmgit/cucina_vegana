@@ -6,7 +6,7 @@ minetest.register_decoration({
 	sidelen = 32,
 	noise_params = {
 		offset = 0,
-		scale = cucina_vegana_plant_settings.rice_scale,
+		scale = cucina_vegana.plant_settings.rice_scale,
 		spread = {x = 40, y = 40, z = 40},
 		seed = 6349,
 		octaves = 3,

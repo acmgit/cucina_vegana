@@ -19,7 +19,7 @@ minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 	tiles = {"cucina_vegana_" .. pname .. "_seed.png"},
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	wield_image = "cucina_vegana_" .. pname .. "_seed.png",
-	minlight = cucina_vegana_plant_settings.peanut_light,
+	minlight = cucina_vegana.plant_settings.peanut_light,
 	drawtype = "signlike",
 	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
 	paramtype = "light",
@@ -129,10 +129,10 @@ minetest.register_craft({
 	cooktime = 5,
 })
 
-if(cucina_vegana_plant_settings.bonemeal) then
-    table.insert(cucina_vegana_plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
+if(cucina_vegana.plant_settings.bonemeal) then
+    table.insert(cucina_vegana.plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
     
-end -- if(cucina_vegana_plant_settings.bonemeal
+end -- if(cucina_vegana.plant_settings.bonemeal
 
 if (minetest.get_modpath("farming_nextgen")) then
     farmingNG.register_seed("cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_1")
