@@ -25,7 +25,7 @@ function cucina_vegana.add_group(node, entry)
     if(minetest.registered_nodes[node] ~= nil) then
         newgroup = cucina_vegana.table_clone(minetest.registered_nodes[node].groups)
     
-    elseif(minetest.registerd_items[node] ~= nil) then
+    elseif(minetest.registered_items[node] ~= nil) then
         newgroup = cucina_vegana.table_clone(minetest.registered_items[node].groups)
         
     elseif(minetest.registered_craftitems[node] ~= nil) then

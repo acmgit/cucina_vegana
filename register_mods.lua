@@ -211,6 +211,8 @@ end -- if(minetest.get_modpath("diet
 
 if(minetest.get_modpath("petz")) then
     cucina_vegana.add_group("petz:bucket_milk", {food_milk = 1})
+    cucina_vegana.add_group("petz:chicken_egg", {food = 2, food_egg = 1})
+    cucina_vegana.add_group("petz:chicken_egg",{food = 2, food_egg = 1})
     
 end
 

@@ -27,3 +27,5 @@ cottages?
 moreblocks?
 bonemeal?
 petz?
+lemontree?
+clementinetree?
