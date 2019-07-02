@@ -210,10 +210,24 @@ end -- if(minetest.get_modpath("diet
 --   *******************************************
 
 if(minetest.get_modpath("petz")) then
+    cucina_vegana.add_group("petz:bucket_milk", {food_milk = 1})
     
-    minetest.override_item("petz:bucket_milk", { 
-                                                groups = {food_milk = 1}
-                                               })
+end
+
+--   *******************************************
+--   *****      Lemontree-Support          ***** 
+--   *******************************************
+
+if(minetest.get_modpath("lemontree")) then
+    cucina_vegana.add_group("lemontree:lemon", {food_lemon = 1, food_fruit = 1})
     
+end
+
+--   *******************************************
+--   *****      Clementinetree-Support          ***** 
+--   *******************************************
+
+if(minetest.get_modpath("clementinetree")) then
+    cucina_vegana.add_group("clementinetree:clementine", {food_orange = 1, food_fruit = 1})
     
 end

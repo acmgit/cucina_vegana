@@ -1,7 +1,8 @@
 Recipe for cotton added.
 Mushroom_light added.
-Spreading for Asparagus added.
+Spreading for Asparagus changed.
 Support for Petz added.
+Function group_add available to better support foreign nodes.
 
 *** Version 2.2:
 Peanut added.

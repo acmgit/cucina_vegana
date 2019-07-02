@@ -22,6 +22,7 @@ local modpath = minetest.get_modpath(minetest.get_current_modname())
 local modname = minetest.get_current_modname()
 
 dofile(modpath .. "/settingtypes.lua")
+dofile(modpath .. "/tools.lua")
 
 -- looking if farming_redo is activ?
 if(farming.mod == "redo") then
