@@ -63,6 +63,7 @@ bucket<br>
 building_blocks<br>
 bushes<br>
 bushes_classic<br>
+clementinetree<br>
 cottages<br>
 diet<br>
 farming_redo<br>
@@ -72,8 +73,10 @@ flowers<br>
 homedecor<br>
 hunger<br>
 intllib<br>
+lemontree<br>
 mobs<br>
 moreblocks<br>
+petz<br>
 pizza<br>
 ropes<br>
 technic<br>
