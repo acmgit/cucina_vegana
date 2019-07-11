@@ -3,6 +3,7 @@ Mushroom_light added.
 Spreading for Asparagus changed.
 Support for Petz added.
 Function group_add available to better support foreign nodes.
+Replaced function minetest.override_item with cucina_vegana.add_group for better compatibility.
 
 *** Version 2.2:
 Peanut added.

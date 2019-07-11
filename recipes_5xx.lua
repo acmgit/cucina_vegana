@@ -13,16 +13,7 @@ nodes = { { name = "default:sand_with_kelp",                                    
                     },
             repclaements = nil                                                                       -- Replacements
             -- replacements = {{"cucina_vegana:molasses", "vessels:drinking_glass"}}
-            },
-            { name = "default:sand_with_kelp",                                                 -- Name
-            output = "cucina_vegana:vegan_sushi", 	                                            -- Output
-            recipe = {	                                                                        -- Recipe
-                        {"cucina_vegana:imitation_fish", "cucina_vegana:bowl_rice", ""},
-                        {"default:sand_with_kelp", "", ""}
-                    },
-            repclaements = nil                                                                       -- Replacements
-            -- replacements = {{"cucina_vegana:molasses", "vessels:drinking_glass"}}
-            },          
+            },        
         }
 
 

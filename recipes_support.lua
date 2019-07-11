@@ -85,63 +85,27 @@ end -- if minetest.get_modpath("animalmaterials"
 
 if minetest.get_modpath("fishing") then
 
-    minetest.override_item("fishing:fish_raw", {
-                                    groups = {food_fish = 1}
-                        })
+    cucina_vegana.add_group("fishing:fish_raw", {food_fish = 1})
+    cucina_vegana.add_group("fishing:clownfish_raw", {food_fish = 1})
+    cucina_vegana.add_group("fishing:bluewhite_raw", {food_fish = 1})
+    cucina_vegana.add_group("fishing:exoticfish_raw", {food_fish = 1})
+    cucina_vegana.add_group("fishing:carp_raw", {food_fish = 1})
+    cucina_vegana.add_group("fishing:perch_raw", {food_fish = 1})
+    cucina_vegana.add_group("fishing:catfish_raw", {food_fish = 1})
     
-    minetest.override_item("fishing:clownfish_raw", {
-                                    groups = {food_fish = 1}
-                        })
-    
-    minetest.override_item("fishing:bluewhite_raw", {
-                                    groups = {food_fish = 1}
-                        })
-
-    minetest.override_item("fishing:exoticfish_raw", {
-                                    groups = {food_fish = 1}
-                        })
-
-    minetest.override_item("fishing:carp_raw", {
-                                    groups = {food_fish = 1}
-                        })
-
-    minetest.override_item("fishing:perch_raw", {
-                                    groups = {food_fish = 1}
-                        })
-
-    minetest.override_item("fishing:catfish_raw", {
-                                    groups = {food_fish = 1}
-                        })
-
-    minetest.register_craft({
-	type = "cooking",
-	output = "fishing:fish",
-	recipe = "group:food_fish",
-	cooktime = 2,
-    })
-
-	minetest.register_craft({
-		type = "shapeless",
-		output = "fishing:sushi",
-		recipe = {"fishing:fish_raw","group:food_rice","flowers:seaweed"},
-		
-		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
-	})
-
-	minetest.register_craft({
-		type = "shapeless",
-		output = "fishing:sushi",
-		recipe = {"fishing:fish_raw","group:food_rice","seaplants:kelpgreen"},
-		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
-		
-	})
-
 	minetest.register_craft({
 		type = "shapeless",
 		output = "fishing:sushi",
 		recipe = {"group:food_fish","group:food_rice","flowers:seaweed"},
-		
 		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
+	})
+
+	minetest.register_craft({
+		type = "shapeless",
+		output = "fishing:sushi",
+		recipe = {"group:food_fish","group:food_rice","seaplants:kelpgreen"},
+		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
+		
 	})
 
 	minetest.register_craft({
@@ -383,9 +347,7 @@ if minetest.get_modpath("pizza") then
         recipe = {"group:food_flour", "group:food_cheese", "group:food_tomato"},
         })
     
-    minetest.override_item("pizza:pizza_dough", {
-                                                    groups = {pizza_dough = 1}
-                                                })
+    cucina_vegana.add_group("pizza:pizza_dough", {pizza_dough = 1})
     
 end
 
