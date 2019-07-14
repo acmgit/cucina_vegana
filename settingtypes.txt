@@ -1,0 +1,54 @@
+#Asparagus
+cucina_vegana.plant_settings.asparagus (Enable Asparagus) bool true
+cucina_vegana.plant_settings.asparagus_scale (Spreadvalue) float 0.0007
+cucina_vegana.plant_settings.asparagus_light (Min. Light) int 11
+
+#Chives
+cucina_vegana.plant_settings.chives (Enable Chives) bool true
+cucina_vegana.plant_settings.chives_scale (Spreadvalue) float 0.0005
+cucina_vegana.plant_settings.chives_light (Min. Light) int 10
+
+#Flax
+cucina_vegana.plant_settings.flax (Enable Flax) bool true
+cucina_vegana.plant_settings.flax_scale (Spreadvalue) float 0.0006
+cucina_vegana.plant_settings.flax_light (Min. Light) int 10
+
+#Kohlrabi
+cucina_vegana.plant_settings.kohlrabi (Enable Kohlrabi) bool true
+cucina_vegana.plant_settings.kohlrabi_scale (Spreadvalue) float 0.0007
+cucina_vegana.plant_settings.kohlrabi_light (Min. Light) int 13
+
+#Lettuce
+cucina_vegana.plant_settings.lettuce (Enable Lettuce) bool true
+cucina_vegana.plant_settings.lettuce_scale (Spreadvalue) float 0.0008
+cucina_vegana.plant_settings.lettuce_light (Min. Light) int 12
+
+#Parsley
+cucina_vegana.plant_settings.parsley (Enable Parsley) bool true
+cucina_vegana.plant_settings.parsley_scale (Spreadvalue) float 0.0005
+cucina_vegana.plant_settings.parsley_light (Min. Light) int 11
+
+#Peanut
+cucina_vegana.plant_settings.peanut (Enable Peanut) bool true
+cucina_vegana.plant_settings.peanut_scale (Spreadvalue) float 0.0006
+cucina_vegana.plant_settings.peanut_light (Min. Light) int 12
+
+#Rice
+cucina_vegana.plant_settings.rice (Enable Rice) bool true
+cucina_vegana.plant_settings.rice_scale (Spreadvalue) float 0.0005
+cucina_vegana.plant_settings.rice_light (Min. Light) int 12
+
+#Rosemary
+cucina_vegana.plant_settings.rosemary (Enable Rosemary) bool true
+cucina_vegana.plant_settings.rosemary_scale (Spreadvalue) float 0.0008
+cucina_vegana.plant_settings.rosemary_light (Min. Light) int 12
+
+#Soy
+cucina_vegana.plant_settings.soy (Enable Soy) bool true
+cucina_vegana.plant_settings.soy_scale (Spreadvalue) float 0.0007
+cucina_vegana.plant_settings.soy_light (Min. Light) int 12
+
+#Sunflower
+cucina_vegana.plant_settings.sunflower (Enable Sunflower) bool true
+cucina_vegana.plant_settings.sunflower_scale (Spreadvalue) float 0.0007
+cucina_vegana.plant_settings.sunflower_light (Min. Light) int 13
