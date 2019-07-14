@@ -471,3 +471,6 @@ if minetest.get_modpath("petz") then
     })
 
 end
+
+cucina_vegana.add_group("default:blueberries", {food_blueberry = 1, food_blueberries = 1})
+cucina_vegana.add_group("bushes:blueberry", {food_blueberries = 1})

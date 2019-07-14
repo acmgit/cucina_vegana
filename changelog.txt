@@ -1,3 +1,7 @@
+default:blueberries added to group food_blueberry and food_blueberries.
+bushes:blueberries added to group food_blueberries.
+Function add_group is doing nothing if the item is unknown.
+
 *** Version 2.3
 Recipe for cotton added.
 Mushroom_light added.
