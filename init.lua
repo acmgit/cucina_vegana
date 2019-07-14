@@ -13,7 +13,7 @@
 
 cucina_vegana = {}
 local plants = {}
-cucina_vegana.version = "2.2"
+cucina_vegana.version = "2.3"
 cucina_vegana.farming_default = true
 cucina_vegana.plant_settings = {}
 cucina_vegana.plant_settings.bonemeal_list = {}
@@ -21,7 +21,7 @@ cucina_vegana.plant_settings.bonemeal_list = {}
 local modpath = minetest.get_modpath(minetest.get_current_modname())
 local modname = minetest.get_current_modname()
 
-dofile(modpath .. "/settingtypes.lua")
+dofile(modpath .. "/settings.lua")
 dofile(modpath .. "/tools.lua")
 
 -- looking if farming_redo is activ?

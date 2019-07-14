@@ -1,9 +1,12 @@
+*** Version 2.3
 Recipe for cotton added.
 Mushroom_light added.
 Spreading for Asparagus changed.
 Support for Petz added.
 Function group_add available to better support foreign nodes.
 Replaced function minetest.override_item with cucina_vegana.add_group for better compatibility.
+Settings now configurable about Main-Menu or minetest.conf.
+Rice grows on default:dirt_with_grass too.
 
 *** Version 2.2:
 Peanut added.
