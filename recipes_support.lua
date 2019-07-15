@@ -1,42 +1,18 @@
 --   *******************************************
---   **             Recipe differences                 ** 
+--   **             Recipe differences        ** 
 --   *******************************************
 
 local modname = minetest.get_current_modname()
 
---[[
-Recipes for oil now found at the crops self.
-So the fucking right recipe is automatic choosen.
-
-if(cucina_vegana_farming_default) then
-
-	minetest.register_craft({
-		output = "cucina_vegana:lettuce_oil",
-		recipe = {	{"cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce"},
-					{"cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce", "cucina_vegana:seed_lettuce"},
-					{"", "vessels:glass_bottle", ""}
-				}
-	})
-
-else
-
-	minetest.register_craft({
-		output = "cucina_vegana:lettuce_oil",
-		recipe = {	{"cucina_vegana:lettuce_seed", "cucina_vegana:lettuce_seed", "cucina_vegana:lettuce_seed"},
-					{"cucina_vegana:lettuce_seed", "cucina_vegana:lettuce_seed", "cucina_vegana:lettuce_seed"},
-					{"", "vessels:glass_bottle", ""}
-				}
-	})
-
-end -- if(cucina_vegana_farming_default
-]]--
 --   *******************************************
 --   ** Additional Recipes with other Mods  ** 
 --   *******************************************
 
---   *******************************************
---   **                 mobs                  ** 
---   *******************************************
+--[[
+        **************************************************
+        ***             Support for mobs               ***
+        **************************************************
+]]--
 
 if minetest.get_modpath("mobs") then
     
@@ -60,9 +36,11 @@ if minetest.get_modpath("mobs") then
                  
 end -- if minetest.get_modpath("mobs"
     
---   *******************************************
---   **           animalmaterials             ** 
---   *******************************************
+--[[
+        **************************************************
+        ***      Support for animalmaterials           ***
+        **************************************************
+]]--
 
 if minetest.get_modpath("animalmaterials") then
 
@@ -79,9 +57,11 @@ if minetest.get_modpath("animalmaterials") then
 
 end -- if minetest.get_modpath("animalmaterials"
 
---   *******************************************
---   **               fishing                 ** 
---   *******************************************
+--[[
+        **************************************************
+        ***             Support for fishing            ***
+        **************************************************
+]]--
 
 if minetest.get_modpath("fishing") then
 
@@ -128,9 +108,11 @@ if minetest.get_modpath("fishing") then
 
 end -- if minetest.get_modpath("fishing"
 
---   *******************************************
---   **                 bbq                   ** 
---   *******************************************
+--[[
+        **************************************************
+        ***               Support for bbq              ***
+        **************************************************
+]]--
 
 if minetest.get_modpath("bbq") then
 
@@ -340,6 +322,12 @@ if minetest.get_modpath("bbq") then
 
 end -- if minetest.get_modpath("bbq"
     
+--[[
+        **************************************************
+        ***             Support for pizza              ***
+        **************************************************
+]]--
+
 if minetest.get_modpath("pizza") then
     minetest.register_craft({
         type = "shapeless",
@@ -350,6 +338,12 @@ if minetest.get_modpath("pizza") then
     cucina_vegana.add_group("pizza:pizza_dough", {pizza_dough = 1})
     
 end
+
+--[[
+        **************************************************
+        ***             Support for homedecor          ***
+        **************************************************
+]]--
 
 if minetest.get_modpath("homedecor") then
 
@@ -398,6 +392,12 @@ if minetest.get_modpath("homedecor") then
     })
 end
 
+--[[
+        **************************************************
+        ***      Support for building_blocks           ***
+        **************************************************
+]]--
+
 if minetest.get_modpath("building_blocks") then
     minetest.register_craft({
         output = 'building_blocks:terrycloth_towel 2',
@@ -407,6 +407,12 @@ if minetest.get_modpath("building_blocks") then
     })
     
 end
+
+--[[
+        **************************************************
+        ***             Support for ropes              ***
+        **************************************************
+]]--
 
 if minetest.get_modpath("ropes") then
 	minetest.register_craft({
@@ -428,6 +434,12 @@ if minetest.get_modpath("ropes") then
 
 end
 
+--[[
+        **************************************************
+        ***             Support for cottages           ***
+        **************************************************
+]]--
+
 if minetest.get_modpath("cottages") then
     minetest.register_craft({
         output = "cottages:rope",
@@ -437,6 +449,12 @@ if minetest.get_modpath("cottages") then
     })
     
 end
+
+--[[
+        **************************************************
+        ***             Support for moreblocks         ***
+        **************************************************
+]]--
 
 if minetest.get_modpath("moreblocks") then
     minetest.register_craft({
@@ -449,6 +467,12 @@ if minetest.get_modpath("moreblocks") then
     })
     
 end
+
+--[[
+        **************************************************
+        ***             Support for petz               ***
+        **************************************************
+]]--
 
 if minetest.get_modpath("petz") then
     
@@ -469,7 +493,49 @@ if minetest.get_modpath("petz") then
             {'', 'cucina_vegana:plate', ''},
         }
     })
+    
+    minetest.register_craft({
+        type = "shapeless",
+        output = "petz:blueberry_cheese_cake",
+        recipe = {"group:food_blueberries", "farming:wheat", "group:food_cheese", "group:food_egg"},
+    })
 
+    minetest.register_craft({
+        type = "shapeless",
+        output = "petz:blueberry_cheese_cake",
+        recipe = {"group:food_blueberry", "farming:wheat", "group:food_cheese", "group:food_egg"},
+    })
+
+    minetest.register_craft({
+        type = "shapeless",
+        output = "petz:blueberry_ice_cream 3",
+        recipe = {"group:food_blueberries", "group:food_milk", "group:food_egg", "default:snow", "group:food_egg", "default:snow", "farming:wheat"},
+        replacements = {{"group:food_milk", "bucket:bucket_empty"}},
+    })
+
+    minetest.register_craft({
+        type = "shapeless",
+        output = "petz:blueberry_ice_cream 3",
+        recipe = {"group:food_blueberry", "group:food_milk", "group:food_egg", "default:snow", "group:food_egg", "default:snow", "farming:wheat"},
+        replacements = {{"group:food_milk", "bucket:bucket_empty"}},
+    })
+
+    minetest.register_craft({
+        type = "shapeless",
+        output = "petz:blueberry_muffin 8",
+        recipe = {"group:food_blueberries", "farming:wheat", "farming:wheat", "petz:chicken_egg", "petz:chicken_egg", "default:paper", "group:food_milk"},
+        replacements = {{"group:food_milk", "bucket:bucket_empty"}},
+    })
+
+    minetest.register_craft({
+        type = "shapeless",
+        output = "petz:blueberry_muffin 8",
+        recipe = {"group:food_blueberry", "farming:wheat", "farming:wheat", "petz:chicken_egg", "petz:chicken_egg", "default:paper", "group:food_milk"},
+        replacements = {{"group:food_milk", "bucket:bucket_empty"}},
+    })
+    
+    cucina_vegana.add_group("petz:cheese", {food_cheese = 1, eatable = 1})
+    cucina_vegana.add_group("petz:milk", {food_milk = 1, eatable = 1})
 end
 
 cucina_vegana.add_group("default:blueberries", {food_blueberry = 1, food_blueberries = 1})
