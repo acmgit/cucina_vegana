@@ -6,7 +6,7 @@
 
 -- Load support for intllib.
 local MP = minetest.get_modpath(minetest.get_current_modname())
-local S, NS = dofile(MP.."/intllib.lua")
+local S = dofile(MP.."/intllib.lua")
 
 local dname = S("Parsley")
 local pname = "parsley"
@@ -21,7 +21,7 @@ minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 	wield_image = "cucina_vegana_" .. pname .. "_seed.png",
 	drawtype = "signlike",
 	minlight = cucina_vegana.plant_settings.parsley_light,
-	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4, attached_node = 1},
+	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
 	paramtype = "light",
 	paramtype2 = "wallmounted",
 	walkable = false,
@@ -125,7 +125,8 @@ minetest.register_alias("parsley:seed", "cucina_vegana:" .. pname .. "_seed")
 minetest.register_alias("parsley:wild_parsley", "cucina_vegana:wild_" .. pname .. "")
 
 if(cucina_vegana.plant_settings.bonemeal) then
-    table.insert(cucina_vegana.plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
+    table.insert(cucina_vegana.plant_settings.bonemeal_list,
+                 {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
 
 end -- if(cucina_vegana.plant_settings.bonemeal
 

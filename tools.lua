@@ -34,7 +34,6 @@ function cucina_vegana.add_group(node, entry)
     end -- if(minetest.registered_nodes
 
     -- add the new groups to the item
-    local key, value
     for key,value in pairs(entry) do
         newgroup[key] = value
 

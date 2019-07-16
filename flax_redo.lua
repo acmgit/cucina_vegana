@@ -6,7 +6,7 @@
 
 -- Load support for intllib.
 local MP = minetest.get_modpath(minetest.get_current_modname())
-local S, NS = dofile(MP.."/intllib.lua")
+local S = dofile(MP.."/intllib.lua")
 
 local dname = S("Flax")
 local pname = "flax"
@@ -126,8 +126,9 @@ end
 -- Register Recipe for Oil
 minetest.register_craft({
 	output = "cucina_vegana:" .. pname .. "_seed_oil",
-	recipe = {	{"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
-				{"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
+	recipe = {	
+                {"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
+                {"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
 				{"", "vessels:glass_bottle", ""}
 			}
 })
