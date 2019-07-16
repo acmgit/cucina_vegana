@@ -29,7 +29,7 @@ else
 	
 	minetest.register_alias("flowers:sunflower", "cucina_vegana:sunflower")
 
-	if (cucina_vegana_farming_default) then
+	if (cucina_vegana.farming_default) then
 	
 		dofile(modpath .. "/sunflower_default.lua")
 		

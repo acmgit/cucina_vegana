@@ -1,3 +1,4 @@
+Fixed typo with farming-default-mode.
 default:blueberries added to group food_blueberry and food_blueberries.
 bushes:blueberries added to group food_blueberries.
 Function add_group is doing nothing if the item is unknown.

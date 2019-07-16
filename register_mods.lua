@@ -76,7 +76,7 @@ if(minetest.get_modpath("technic")) then
                     {"bushes:blueberry 6", "cucina_vegana:blueberry_puree"},
                 }
     
-    if(cucina_vegana_farming_default) then
+    if(cucina_vegana.farming_default) then
             table.insert(compressor_recipes,{"cucina_vegana:seed_lettuce 6", "cucina_vegana:lettuce_oil"})
             table.insert(compressor_recipes,{"cucina_vegana:seed_flax 6", "cucina_vegana:flax_seed_oil"})
             table.insert(compressor_recipes,{"cucina_vegana:seed_peanut 6", "cucina_vegana:peanut_oil"})
@@ -86,7 +86,7 @@ if(minetest.get_modpath("technic")) then
             table.insert(compressor_recipes,{"cucina_vegana:flax_seed 6", "cucina_vegana:flax_seed_oil"})
             table.insert(compressor_recipes,{"cucina_vegana:peanut_seed 6", "cucina_vegana:peanut_oil"})
 	
-    end -- if(cucina_vegana_farming_default
+    end -- if(cucina_vegana.farming_default
         
 	for _, data in pairs(compressor_recipes) do
 
@@ -118,7 +118,7 @@ if(minetest.get_modpath("technic")) then
 	}
     
     -- Special Recipes with Seeds
-    if(cucina_vegana_farming_default) then
+    if(cucina_vegana.farming_default) then
         table.insert(extractor_recipes,{"cucina_vegana:seed_lettuce 6", "cucina_vegana:lettuce_oil"})
         table.insert(extractor_recipes,{"cucina_vegana:seed_flax 6", "cucina_vegana:flax_seed_oil"})
         table.insert(extractor_recipes,{"cucina_vegana:seed_peanut 6", "cucina_vegana:peanut_oil"})
@@ -128,7 +128,7 @@ if(minetest.get_modpath("technic")) then
         table.insert(extractor_recipes,{"cucina_vegana:flax_seed 6", "cucina_vegana:flax_seed_oil"})
         table.insert(extractor_recipes,{"cucina_vegana:peanut_seed 6", "cucina_vegana:peanut_oil"})
     
-    end -- if(cucina_vegana_farming_default
+    end -- if(cucina_vegana.farming_default
 
 
 	for _, data in ipairs(extractor_recipes) do
