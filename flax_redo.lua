@@ -126,7 +126,7 @@ end
 -- Register Recipe for Oil
 minetest.register_craft({
 	output = "cucina_vegana:" .. pname .. "_seed_oil",
-	recipe = {	
+	recipe = {
                 {"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
                 {"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
 				{"", "vessels:glass_bottle", ""}

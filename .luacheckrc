@@ -2,7 +2,7 @@ unused_args = false
 allow_defined_top = true
 
 globals = {
-    "minetest",
+    "minetest","farming", "farmingNG", "technic", "hunger", "wine", "diet", "intllib", "bonemeal",
 }
 
 read_globals = {
