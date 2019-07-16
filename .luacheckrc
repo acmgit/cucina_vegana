@@ -2,7 +2,7 @@ unused_args = false
 allow_defined_top = true
 
 globals = {
-    "minetest","farming", "farmingNG", "technic", "hunger", "wine", "diet", "intllib", "bonemeal",
+    "minetest",
 }
 
 read_globals = {
@@ -14,5 +14,5 @@ read_globals = {
     "dump", "DIR_DELIM", "VoxelArea", "Settings",
 
     -- MTG
-    "default", "sfinv", "creative",
+    "default", "sfinv", "creative", "farming", "farmingNG", "technic", "hunger", "wine", "diet", "intllib", "bonemeal",
 }
