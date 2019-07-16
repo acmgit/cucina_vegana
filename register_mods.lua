@@ -137,9 +137,9 @@ if(minetest.get_modpath("technic")) then
 
     -- Support Alloy_Furnace
     local alloy_recipes = {
-        {"farming:flour 3",                         "cucina_vegana:sunflower_seeds",        "cucina_vegana:sunflower_seeds_bread"},
-        {"cucina_vegana:sunflower_seeds_flour 3",   "cucina_vegana:sunflower_seeds",        "cucina_vegana:sunflower_seeds_bread"},
-        {"cucina_vegana:rice_flour 3",              "cucina_vegana:sunflower_seeds",        "cucina_vegana:sunflower_seeds_bread"},
+    {"farming:flour 3",                      "cucina_vegana:sunflower_seeds","cucina_vegana:sunflower_seeds_bread"},
+    {"cucina_vegana:sunflower_seeds_flour 3","cucina_vegana:sunflower_seeds","cucina_vegana:sunflower_seeds_bread"},
+    {"cucina_vegana:rice_flour 3",           "cucina_vegana:sunflower_seeds","cucina_vegana:sunflower_seeds_bread"},
     }
 
     for _, data in pairs(alloy_recipes) do

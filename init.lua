@@ -12,7 +12,6 @@
 ]]--
 
 cucina_vegana = {}
-local plants = {}
 cucina_vegana.version = "2.3"
 cucina_vegana.farming_default = true
 cucina_vegana.plant_settings = {}
@@ -40,7 +39,7 @@ if(minetest.get_modpath("bonemeal")) then
 
 end -- if(minetest.get_modpath("bonemeal"
 
-
+local plants = {}
 plants = {
 
 			["asparagus"] = cucina_vegana.plant_settings.asparagus,

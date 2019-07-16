@@ -509,7 +509,8 @@ if minetest.get_modpath("petz") then
     minetest.register_craft({
         type = "shapeless",
         output = "petz:blueberry_ice_cream 3",
-        recipe = {"group:food_blueberries", "group:food_milk", "group:food_egg", "default:snow", "group:food_egg", "default:snow", "farming:wheat"},
+        recipe = {"group:food_blueberries", "group:food_milk", "group:food_egg", 
+                  "default:snow", "group:food_egg", "default:snow", "farming:wheat"},
         replacements = {{"group:food_milk", "bucket:bucket_empty"}},
     })
 
@@ -523,14 +524,16 @@ if minetest.get_modpath("petz") then
     minetest.register_craft({
         type = "shapeless",
         output = "petz:blueberry_muffin 8",
-        recipe = {"group:food_blueberries", "farming:wheat", "farming:wheat", "petz:chicken_egg", "petz:chicken_egg", "default:paper", "group:food_milk"},
+        recipe = {"group:food_blueberries", "farming:wheat", "farming:wheat", "petz:chicken_egg", 
+                  "petz:chicken_egg", "default:paper", "group:food_milk"},
         replacements = {{"group:food_milk", "bucket:bucket_empty"}},
     })
 
     minetest.register_craft({
         type = "shapeless",
         output = "petz:blueberry_muffin 8",
-        recipe = {"group:food_blueberry", "farming:wheat", "farming:wheat", "petz:chicken_egg", "petz:chicken_egg", "default:paper", "group:food_milk"},
+        recipe = {"group:food_blueberry", "farming:wheat", "farming:wheat", 
+                  "petz:chicken_egg", "petz:chicken_egg", "default:paper", "group:food_milk"},
         replacements = {{"group:food_milk", "bucket:bucket_empty"}},
     })
 

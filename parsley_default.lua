@@ -6,7 +6,7 @@
 
 -- Load support for intllib.
 local MP = minetest.get_modpath(minetest.get_current_modname())
-local S, NS = dofile(MP.."/intllib.lua")
+local S = dofile(MP.."/intllib.lua")
 
 local dname = S("Parsley")
 local pname = "parsley"
@@ -53,7 +53,8 @@ minetest.register_alias("parsley:seed", "cucina_vegana:" .. pname .. "_seed")
 minetest.register_alias("parsley:wild_parsley", "cucina_vegana:wild_" .. pname)
 
 if(cucina_vegana.plant_settings.bonemeal) then
-    table.insert(cucina_vegana.plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
+    table.insert(cucina_vegana.plant_settings.bonemeal_list,
+                 {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
 
 end -- if(cucina_vegana.plant_settings.bonemeal
 
