@@ -113,8 +113,8 @@ minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
 minetest.register_craft({
 	output = "cucina_vegana:" .. pname .. "_oil",
 	recipe = {
-                {"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
-                {"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
+            {"cucina_vegana:"..pname.."_seed","cucina_vegana:"..pname.."_seed","cucina_vegana:"..pname.."_seed"},
+            {"cucina_vegana:"..pname.."_seed","cucina_vegana:".. pname.."_seed","cucina_vegana:"..pname.."_seed"},
 				{"", "vessels:glass_bottle", ""}
 			}
 })

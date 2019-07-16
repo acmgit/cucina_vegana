@@ -517,7 +517,8 @@ if minetest.get_modpath("petz") then
     minetest.register_craft({
         type = "shapeless",
         output = "petz:blueberry_ice_cream 3",
-        recipe = {"group:food_blueberry", "group:food_milk", "group:food_egg", "default:snow", "group:food_egg", "default:snow", "farming:wheat"},
+        recipe = {"group:food_blueberry", "group:food_milk", "group:food_egg",
+                  "default:snow", "group:food_egg", "default:snow", "farming:wheat"},
         replacements = {{"group:food_milk", "bucket:bucket_empty"}},
     })
 

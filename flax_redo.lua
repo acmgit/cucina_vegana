@@ -112,7 +112,8 @@ minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
 })
 
 if(cucina_vegana.plant_settings.bonemeal) then
-    table.insert(cucina_vegana.plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
+    table.insert(cucina_vegana.plant_settings.bonemeal_list,
+								 {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
 
 end -- if(cucina_vegana.plant_settings.bonemeal
 
@@ -127,8 +128,8 @@ end
 minetest.register_craft({
 	output = "cucina_vegana:" .. pname .. "_seed_oil",
 	recipe = {
-                {"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
-                {"cucina_vegana:".. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_seed"},
+              {"cucina_vegana:"..pname.."_seed","cucina_vegana:"..pname.."_seed","cucina_vegana:".. pname.."_seed"},
+              {"cucina_vegana:"..pname.."_seed","cucina_vegana:"..pname.."_seed","cucina_vegana:".. pname.."_seed"},
 				{"", "vessels:glass_bottle", ""}
 			}
 })
