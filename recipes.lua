@@ -1,9 +1,9 @@
 --   *******************************************
---   *****                 Crafts          ***** 
+--   *****                 Crafts          *****
 --   *******************************************
 
 --   *******************************************
---   *****           Supports              *****       
+--   *****           Supports              *****
 --   *******************************************
 
 minetest.register_craft({
@@ -252,7 +252,7 @@ minetest.register_craft({
 })
 
 --   *******************************************
---   *****           Imitations            *****       
+--   *****           Imitations            *****
 --   *******************************************
 
 minetest.register_craft({
@@ -271,11 +271,11 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:imitation_fish",
-	recipe = {	
+	recipe = {
 				{"group:dye,color_blue","cucina_vegana:tofu", "group:dye,color_blue"},
 				{"cucina_vegana:tofu","cucina_vegana:tofu", "cucina_vegana:tofu"},
 				{"","cucina_vegana:tofu", ""},
-			
+
 			},
 })
 
@@ -314,7 +314,7 @@ minetest.register_craft({
 })
 
 --   *******************************************
---   *****       Side Dishes               *****       
+--   *****       Side Dishes               *****
 --   *******************************************
 
 minetest.register_craft({
@@ -331,7 +331,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:bowl_rice",
-	recipe = {	
+	recipe = {
 				{"cucina_vegana:rice"},
 				{"bucket:bucket_water"},
 				{"group:food_bowl"},
@@ -343,7 +343,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:bowl_rice",
-	recipe = {	
+	recipe = {
 				{"cucina_vegana:rice"},
 				{"bucket:bucket_river_water"},
 				{"group:food_bowl"},
@@ -387,7 +387,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:molasses",
-	recipe = {	
+	recipe = {
 				{"", "default:stick", ""},
 				{"cucina_vegana:kohlrabi", "vessels:drinking_glass", "cucina_vegana:kohlrabi"},
                 {"", "bucket:bucket_water", ""},
@@ -399,7 +399,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:molasses",
-	recipe = {	
+	recipe = {
 				{"", "default:stick", ""},
 				{"cucina_vegana:kohlrabi", "vessels:drinking_glass", "cucina_vegana:kohlrabi"},
                 {"", "bucket:bucket_river_water", ""},
@@ -411,7 +411,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:peanut_butter",
-	recipe = {	
+	recipe = {
 				{"cucina_vegana:peanut", "default:stick", "cucina_vegana:peanut"},
 				{"cucina_vegana:peanut", "group:food_butter", "cucina_vegana:peanut"},
                 {"", "vessels:glass_bottle", ""},
@@ -420,9 +420,9 @@ minetest.register_craft({
 							{"default:stick", "default:stick"},
 						}
 })
-                        
+
 --   *******************************************
---   *****           Dinners               *****       
+--   *****           Dinners               *****
 --   *******************************************
 
 minetest.register_craft({
@@ -436,7 +436,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:asparagus_rice",
-	recipe = {	
+	recipe = {
 				{"cucina_vegana:asparagus", "group:food_rice", "group:food_butter"},
 				{"", "group:food_plate", ""}
 			},
@@ -458,7 +458,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:fish_parsley_rosemary",
-	recipe = {	
+	recipe = {
 				{"cucina_vegana:parsley","group:food_oil", "cucina_vegana:rosemary"},
 				{"","group:food_fish", ""},
 				{"","group:food_plate", ""},
@@ -470,7 +470,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:fryer_raw",
-	recipe = {	
+	recipe = {
 				{"default:paper","", "default:paper"},
 				{"cucina_vegana:parsley","cucina_vegana:molasses", "cucina_vegana:rosemary"},
 				{"","cucina_vegana:imitation_poultry", ""},

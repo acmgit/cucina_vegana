@@ -9,7 +9,7 @@ else
 	print("[MOD] " .. minetest.get_current_modname() .. " no Sunflowers available.")
 	print("[MOD] " .. minetest.get_current_modname() .. " use own Sunflowers.")
 
-	
+
 	minetest.register_decoration({
 		deco_type = "simple",
 		place_on = {"default:dirt_with_grass", "default:dirt_with_dry_grass"},
@@ -26,19 +26,19 @@ else
 		y_max = 150,
 		decoration = "cucina_vegana:wild_sunflower",
 		})
-	
+
 	minetest.register_alias("flowers:sunflower", "cucina_vegana:sunflower")
 
 	if (cucina_vegana.farming_default) then
-	
+
 		dofile(modpath .. "/sunflower_default.lua")
-		
+
 	else
-		
+
 		dofile(modpath .. "/sunflower_redo.lua")
-		
+
 	end
-	
+
 end
 
 -- to import the old mod in cucina_vegana

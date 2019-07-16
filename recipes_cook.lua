@@ -1,5 +1,5 @@
 --   *******************************************
---   *****                 Cookings        ***** 
+--   *****                 Cookings        *****
 --   *******************************************
 
 minetest.register_craft({
@@ -141,4 +141,3 @@ minetest.register_craft({
 	recipe = "cucina_vegana:flax_raw",
 	cooktime = 10,
 })
-

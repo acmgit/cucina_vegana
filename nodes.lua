@@ -1,5 +1,5 @@
 --   *******************************************
---   *****                 Nodes           ***** 
+--   *****                 Nodes           *****
 --   *******************************************
 
 -- Load support for intllib.
@@ -7,7 +7,7 @@ local MP = minetest.get_modpath(minetest.get_current_modname())
 local S, NS = dofile(MP.."/intllib.lua")
 
 --   *******************************************
---   *****           Supports              *****       
+--   *****           Supports              *****
 --   *******************************************
 
 minetest.register_node("cucina_vegana:plate", {
@@ -112,7 +112,7 @@ minetest.register_node("cucina_vegana:mushroomlight_glass", {
 })
 
 --   *******************************************
---   *****       Síde Dishes               *****       
+--   *****       Síde Dishes               *****
 --   *******************************************
 
 minetest.register_node("cucina_vegana:ciabatta_bread", {
@@ -221,7 +221,7 @@ minetest.register_node("cucina_vegana:peanut_butter", {
 })
 
 --   *******************************************
---   *****           Dinners               *****       
+--   *****           Dinners               *****
 --   *******************************************
 
 minetest.register_node("cucina_vegana:asparagus_hollandaise", {
@@ -413,7 +413,7 @@ minetest.register_node("cucina_vegana:tofu_chives_rosemary", {
 })
 
 --   *******************************************
---   *****       Dinners cooked            *****       
+--   *****       Dinners cooked            *****
 --   *******************************************
 
 minetest.register_node("cucina_vegana:asparagus_hollandaise_cooked", {

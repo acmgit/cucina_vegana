@@ -1,5 +1,5 @@
 --   *******************************************
---   *****                 Items           ***** 
+--   *****                 Items           *****
 --   *******************************************
 
 -- Load support for intllib.
@@ -8,7 +8,7 @@ local S, NS = dofile(MP.."/intllib.lua")
 
 
 --   *******************************************
---   *****           Supports              *****       
+--   *****           Supports              *****
 --   *******************************************
 
 minetest.register_craftitem("cucina_vegana:blueberry_puree", {
@@ -101,7 +101,7 @@ minetest.register_craftitem("cucina_vegana:tofu", {
 })
 
 --   *******************************************
---   *****           Imitations            *****       
+--   *****           Imitations            *****
 --   *******************************************
 
 minetest.register_craftitem("cucina_vegana:imitation_butter", {
@@ -139,7 +139,7 @@ minetest.register_craftitem("cucina_vegana:imitation_poultry", {
 })
 
 --   *******************************************
---   *****             Crops               *****       
+--   *****             Crops               *****
 --   *******************************************
 
 minetest.register_craftitem("cucina_vegana:asparagus", {
@@ -229,7 +229,7 @@ minetest.register_craftitem("cucina_vegana:sunflower_seeds", {
 })
 
 --   *******************************************
---   *****              Food               *****       
+--   *****              Food               *****
 --   *******************************************
 
 minetest.register_craftitem("cucina_vegana:kohlrabi_roasted", {

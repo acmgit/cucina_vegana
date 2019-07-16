@@ -30,14 +30,14 @@ else
 		fertility = {"grassland"},
 		groups = {flammable = 4},
 	})
-	
+
 	-- Register for Mapgen
 	minetest.register_node("cucina_vegana:wild_" .. pname, {
 		description = S("Wild") .. " " .. dname,
 		paramtype = "light",
 		walkable = false,
-		drop = { 
-				items = { 
+		drop = {
+				items = {
 						{items = {"cucina_vegana:seed_" .. pname .. " 2"}},
 						{items = {"cucina_vegana:" .. pname .. ""}},
 					}
@@ -60,12 +60,12 @@ end
 
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
-    
+
 end -- if(cucina_vegana.plant_settings.bonemeal
 
 if (minetest.get_modpath("farming_nextgen")) then
     farmingNG.register_seed("cucina_vegana:seed_" .. pname, "cucina_vegana:" .. pname .. "_1")
     farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step .. "")
     minetest.log("info", "[MOD] " .. modname .. ": cucina_vegana:seed_" .. pname .. " at farming_nextgen registered.")
-    
+
 end

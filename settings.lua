@@ -1,4 +1,4 @@
--- Scalevalues are: 
+-- Scalevalues are:
 -- Lower value  = easy to find (like 0.002)
 -- Higher value = hard to find (like 0.0005)
 
@@ -11,7 +11,7 @@
 cucina_vegana.plant_settings.asparagus = minetest.settings:get_bool("cucina_vegana.plant_settings.asparagus") or true
 cucina_vegana.plant_settings.asparagus_scale = minetest.settings:get("cucina_vegana.plant_settings.asparagus_scale") or 0.0007
 cucina_vegana.plant_settings.asparagus_light = minetest.settings:get("cucina_vegana.plant_settings.asparagus_light") or 11
-        
+
 -- Chives
 cucina_vegana.plant_settings.chives = minetest.settings:get_bool("cucina_vegana.plant_settings.chives") or true
 cucina_vegana.plant_settings.chives_scale = minetest.settings:get("cucina_vegana.plant_settings.chives_scale") or 0.0005
@@ -27,7 +27,7 @@ cucina_vegana.plant_settings.kohlrabi = minetest.settings:get_bool("cucina_vegan
 cucina_vegana.plant_settings.kohlrabi_scale = minetest.settings:get("cucina_vegana.plant_settings.kohlrabi_scale") or 0.0007
 cucina_vegana.plant_settings.kohlrabi_light = minetest.settings:get("cucina_vegana.plant_settings.kohlrabi_light") or 13
 
--- Lettuce        
+-- Lettuce
 cucina_vegana.plant_settings.lettuce = minetest.settings:get_bool("cucina_vegana.plant_settings.lettuce") or true
 cucina_vegana.plant_settings.lettuce_scale = minetest.settings:get("cucina_vegana.plant_settings.lettuce_scale") or 0.0008
 cucina_vegana.plant_settings.lettuce_light = minetest.settings:get("cucina_vegana.plant_settings.lettuce_light") or 12
@@ -61,4 +61,3 @@ cucina_vegana.plant_settings.soy_light = minetest.settings:get("cucina_vegana.pl
 cucina_vegana.plant_settings.sunflower = minetest.settings:get_bool("cucina_vegana.plant_settings.sunflower") or true
 cucina_vegana.plant_settings.sunflower_scale = minetest.settings:get("cucina_vegana.plant_settings.sunflower") or 0.0007
 cucina_vegana.plant_settings.sunflower_light = minetest.settings:get("cucina_vegana.plant_settings.sunflower") or 13
-

@@ -31,7 +31,7 @@ local modname = minetest.get_current_modname()
 			return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:" .. pname .. "_1")
 		end,
 	})
-	
+
 	-- rice definition
 	local crop_def = {
 		drawtype = "plantlike",
@@ -101,8 +101,8 @@ local modname = minetest.get_current_modname()
 		description = S("Wild " .. dname),
 		paramtype = "light",
 		walkable = false,
-		drop = { 
-				items = { 
+		drop = {
+				items = {
 						{items = {"cucina_vegana:" .. pname .. "_seed 3"}},
 						{items = {"cucina_vegana:" .. pname}},
 					}
@@ -122,12 +122,12 @@ local modname = minetest.get_current_modname()
 
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
-    
+
 end -- if(cucina_vegana.plant_settings.bonemeal
 
 if (minetest.get_modpath("farming_nextgen")) then
     farmingNG.register_seed("cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_1")
     farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step)
     minetest.log("info", "[MOD] " .. modname .. ": cucina_vegana:seed_" .. pname .. " at farming_nextgen registered.")
-    
+
 end

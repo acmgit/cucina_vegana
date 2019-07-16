@@ -1,5 +1,5 @@
 --   *******************************************
---   **       Support for 5.0                 ** 
+--   **       Support for 5.0                 **
 --   *******************************************
 
 local modname = minetest.get_current_modname()
@@ -13,7 +13,7 @@ nodes = { { name = "default:sand_with_kelp",                                    
                     },
             repclaements = nil                                                                       -- Replacements
             -- replacements = {{"cucina_vegana:molasses", "vessels:drinking_glass"}}
-            },        
+            },
         }
 
 
@@ -25,21 +25,21 @@ for node, value in ipairs(nodes) do
                                     recipe = value.recipe,
                                     replacements = value.replacements
                                 })
-        
+
         minetest.log("info", "[MOD] " .. modname .. " Added a 5.x.x-Recipe with " .. value.name .. "\".")
         --print("[MT 5.x.x] " .. value.output .. " Recipe with " .. value.name .. " registered.")
-        
+
     end -- if(minetest.registered_nodes
 
 end -- for node
 
-local berries = { 
+local berries = {
                     "default:blueberries",
                     "farming:blueberries",
                     "bushes:blueberry"
                 }
 
-local press = {     
+local press = {
                     "default:stone",
                     "default:cobble",
                     "default:desert_stone",
@@ -60,7 +60,7 @@ for bkey,berry in ipairs(berries) do
                                                 {mat, mat .. " 3"}
                                             }
         }) -- minetest.register_craft
-            
+
     end -- for mkey, mat
-    
+
 end -- for bkey, berry

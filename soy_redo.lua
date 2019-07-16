@@ -31,7 +31,7 @@ minetest.register_node("cucina_vegana:".. pname .."_seed", {
 		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:" .. pname .. "_1")
 	end,
 })
-	
+
 -- Soy definition
 local crop_def = {
 	drawtype = "plantlike",
@@ -92,7 +92,7 @@ crop_def.drop = {
 		{items = {"cucina_vegana:" .. pname}, rarity = 2},
 		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
 		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
-	}	
+	}
 }
 minetest.register_node("cucina_vegana:" .. pname .. "_7", table.copy(crop_def))
 
@@ -110,14 +110,14 @@ crop_def.drop = {
 	}
 }
 minetest.register_node("cucina_vegana:" .. pname .. "_8", table.copy(crop_def))
-	
+
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_" .. pname, {
 	description = S("Wild " .. dname),
 	paramtype = "light",
 	walkable = false,
-	drop = { 
-			items = { 
+	drop = {
+			items = {
 					{items = {"cucina_vegana:" .. pname .. "_seed 3"}},
 					{items = {"cucina_vegana:" .. pname}},
 				}
@@ -154,12 +154,12 @@ minetest.register_alias("soy:seed_soy", "cucina_vegana:seed_" .. pname)
 
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,{"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
-    
+
 end -- if(cucina_vegana.plant_settings.bonemeal
 
 if (minetest.get_modpath("farming_nextgen")) then
     farmingNG.register_seed("cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_1")
     farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step)
     minetest.log("info", "[MOD] " .. modname .. ": cucina_vegana:seed_" .. pname .. " at farming_nextgen registered.")
-    
+
 end

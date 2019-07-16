@@ -1,11 +1,11 @@
 --   *******************************************
---   **             Recipe differences        ** 
+--   **             Recipe differences        **
 --   *******************************************
 
 local modname = minetest.get_current_modname()
 
 --   *******************************************
---   ** Additional Recipes with other Mods  ** 
+--   ** Additional Recipes with other Mods  **
 --   *******************************************
 
 --[[
@@ -15,7 +15,7 @@ local modname = minetest.get_current_modname()
 ]]--
 
 if minetest.get_modpath("mobs") then
-    
+
 	minetest.register_craft({
 		output = "mobs:meat_raw",
 		recipe = {
@@ -31,11 +31,11 @@ if minetest.get_modpath("mobs") then
 			{"cucina_vegana:tofu", "", ""},
 		}
 	})
-                
+
     minetest.log("info", "[MOD] " .. modname .. ": mobs supported.")
-                 
+
 end -- if minetest.get_modpath("mobs"
-    
+
 --[[
         **************************************************
         ***      Support for animalmaterials           ***
@@ -72,7 +72,7 @@ if minetest.get_modpath("fishing") then
     cucina_vegana.add_group("fishing:carp_raw", {food_fish = 1})
     cucina_vegana.add_group("fishing:perch_raw", {food_fish = 1})
     cucina_vegana.add_group("fishing:catfish_raw", {food_fish = 1})
-    
+
 	minetest.register_craft({
 		type = "shapeless",
 		output = "fishing:sushi",
@@ -85,7 +85,7 @@ if minetest.get_modpath("fishing") then
 		output = "fishing:sushi",
 		recipe = {"group:food_fish","group:food_rice","seaplants:kelpgreen"},
 		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
-		
+
 	})
 
 	minetest.register_craft({
@@ -93,7 +93,7 @@ if minetest.get_modpath("fishing") then
 		output = "fishing:sushi",
 		recipe = {"group:food_fish","group:food_rice","seaplants:kelpgreen"},
 		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
-		
+
 	})
 
     minetest.register_craft({
@@ -101,7 +101,7 @@ if minetest.get_modpath("fishing") then
 		output = "fishing:sushi",
 		recipe = {"group:food_fish","group:food_rice","default:jungleleaves"},
 		replacements = {{"group:food_rice", "cucina_vegana:bowl"}}
-		
+
 	})
 
     minetest.log("info", "[MOD] " .. modname .. ": fishing supported.")
@@ -117,7 +117,7 @@ end -- if minetest.get_modpath("fishing"
 if minetest.get_modpath("bbq") then
 
 	-- *** group:food_meat
-	
+
 	--BBQ Beef Ribs Craft Recipe
 	minetest.register_craft( {
 		output = "bbq:bbq_beef_ribs_raw 2",
@@ -145,7 +145,7 @@ if minetest.get_modpath("bbq") then
 		type = "shapeless",
 		recipe = {"bbq:bacon", "group:food_garlic_clove", "group:food_meat"}
 	})
-	
+
 	--Beef Jerky Craft Recipe
 	minetest.register_craft( {
 		output = "bbq:beef_jerky_raw 3",
@@ -161,14 +161,14 @@ if minetest.get_modpath("bbq") then
 	})
 
 	-- *** group:food_bread
-	
+
 	--Cheese Steak Craft Recipe
 	minetest.register_craft( {
 		output = "bbq:cheese_steak 2",
 		type = "shapeless",
 		recipe = {"group:food_bread", "group:food_pepper", "bbq:beef", "group:food_cheese", "group:food_onion"}
 	})
-	
+
 	--Bacon Cheeseburger Craft Recipe
 	minetest.register_craft( {
 		output = "bbq:bacon_cheeseburger 3",
@@ -196,7 +196,7 @@ if minetest.get_modpath("bbq") then
 		type = "shapeless",
 		recipe = {"group:food_bread", "group:food_meat"}
 	})
-	
+
 	--Hotdog Craft Recipe
 	minetest.register_craft( {
 		output = "bbq:hotdog 2",
@@ -232,7 +232,7 @@ if minetest.get_modpath("bbq") then
 		type = "shapeless",
 		recipe = {"group:food_cheese", "group:food_bread", "group:food_pepper"}
 	})
-    
+
     -- bbq:bacon_raw
 	minetest.register_craft( {
 		output = "bbq:bacon_raw 3",
@@ -240,7 +240,7 @@ if minetest.get_modpath("bbq") then
 			{"bbq:basting_brush", "group:dye,color_red", "group:dye,color_white"},
 			{"cucina_vegana:tofu", "cucina_vegana:tofu", "cucina_vegana:tofu"},
 		},
-        replacements = {{"bbq:basting_brush", "bbq:basting_brush"}}        
+        replacements = {{"bbq:basting_brush", "bbq:basting_brush"}}
     })
 
 	minetest.register_craft( {
@@ -250,7 +250,7 @@ if minetest.get_modpath("bbq") then
 			{"", "cucina_vegana:tofu", ""},
 			{"cucina_vegana:tofu", "", ""},
 		},
-        replacements = {{"bbq:basting_brush", "bbq:basting_brush"}}        
+        replacements = {{"bbq:basting_brush", "bbq:basting_brush"}}
     })
 
 	minetest.register_craft( {
@@ -287,7 +287,7 @@ if minetest.get_modpath("bbq") then
         },
         replacements = {{"bbq:basting_brush", "bbq:basting_brush"}}
     })
-    
+
     minetest.register_craft( {
     output = "bbq:leg_lamb_raw",
     recipe = {
@@ -321,7 +321,7 @@ if minetest.get_modpath("bbq") then
     minetest.log("info", "[MOD] " .. modname .. ": bbq supported.")
 
 end -- if minetest.get_modpath("bbq"
-    
+
 --[[
         **************************************************
         ***             Support for pizza              ***
@@ -334,9 +334,9 @@ if minetest.get_modpath("pizza") then
         output = "pizza:pizza_dough",
         recipe = {"group:food_flour", "group:food_cheese", "group:food_tomato"},
         })
-    
+
     cucina_vegana.add_group("pizza:pizza_dough", {pizza_dough = 1})
-    
+
 end
 
 --[[
@@ -405,7 +405,7 @@ if minetest.get_modpath("building_blocks") then
             {"cucina_vegana:flax", "cucina_vegana:flax", "cucina_vegana:flax"},
         }
     })
-    
+
 end
 
 --[[
@@ -447,7 +447,7 @@ if minetest.get_modpath("cottages") then
             {"cucina_vegana:flax","cucina_vegana:flax","cucina_vegana:flax"}
             }
     })
-    
+
 end
 
 --[[
@@ -465,7 +465,7 @@ if minetest.get_modpath("moreblocks") then
             {"cucina_vegana:flax"},
         }
     })
-    
+
 end
 
 --[[
@@ -475,25 +475,25 @@ end
 ]]--
 
 if minetest.get_modpath("petz") then
-    
+
     minetest.register_craft({
 	output = "petz:lasso",
 	recipe = {
 		{"cucina_vegana:flax", "", "cucina_vegana:flax"},
 		{"", "default:diamond", ""},
-		{"cucina_vegana:flax", "", "cucina_vegana:flax"},		
+		{"cucina_vegana:flax", "", "cucina_vegana:flax"},
             }
     })
 
     minetest.register_craft({
         type = "shaped",
         output = 'petz:pet_bowl',
-        recipe = {        
+        recipe = {
             {'group:wood', '', 'group:wood'},
             {'', 'cucina_vegana:plate', ''},
         }
     })
-    
+
     minetest.register_craft({
         type = "shapeless",
         output = "petz:blueberry_cheese_cake",
@@ -533,7 +533,7 @@ if minetest.get_modpath("petz") then
         recipe = {"group:food_blueberry", "farming:wheat", "farming:wheat", "petz:chicken_egg", "petz:chicken_egg", "default:paper", "group:food_milk"},
         replacements = {{"group:food_milk", "bucket:bucket_empty"}},
     })
-    
+
     cucina_vegana.add_group("petz:cheese", {food_cheese = 1, eatable = 1})
     cucina_vegana.add_group("petz:milk", {food_milk = 1, eatable = 1})
 end

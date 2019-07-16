@@ -37,8 +37,8 @@ Flex = Flax.
 Settingstypes added.
 
 *** Version 1.7:
-Flex added to cucina-vegana. 
-Use and eatable as oil. 
+Flex added to cucina-vegana.
+Use and eatable as oil.
 Support for wool, ropes and more.
 
 *** Version 1.4:
