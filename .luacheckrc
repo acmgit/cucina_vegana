@@ -15,4 +15,5 @@ read_globals = {
 
     -- MTG
     "default", "sfinv", "creative", "farming", "farmingNG", "technic", "hunger", "wine", "diet", "intllib", "bonemeal",
+    "cucina_vegana",
 }

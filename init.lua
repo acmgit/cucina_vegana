@@ -39,8 +39,7 @@ if(minetest.get_modpath("bonemeal")) then
 
 end -- if(minetest.get_modpath("bonemeal"
 
-local plants = {}
-plants = {
+local plants = {
 
 			["asparagus"] = cucina_vegana.plant_settings.asparagus,
 			["chives"] = cucina_vegana.plant_settings.chives,

@@ -1,63 +1,62 @@
-local cv_items = {}
 
-    cv_items = {
-                --                    Name                          Saturation      Replace with                Poison  Heal    Sound
-                -- crops
-                    {'cucina_vegana:asparagus',                     3,              nil,                        nil,    nil,    nil},
-                    {'cucina_vegana:chives',                        1,              nil,                        nil,    nil,    nil},
-                    {'cucina_vegana:kohlrabi',                      3,              nil,                        nil,    nil,    nil},
-                    {'cucina_vegana:lettuce',                       2,              nil,                        nil,    nil,    nil},
-                    {'cucina_vegana:parsley',                       1,              nil,                        nil,    nil,    nil},
-                    {'cucina_vegana:peanut',                        3,              nil,                        nil,    nil,    nil},
-                    {'cucina_vegana:rosemary',                      1,              nil,                        nil,    nil,    nil},
-                    {'cucina_vegana:sunflower_seeds',               1,              nil,                        nil,    nil,    nil},
+    local cv_items = {
+      --                Name                          Saturation      Replace with                Poison  Heal    Sound
+      -- crops
+      {'cucina_vegana:asparagus',                     3,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:chives',                        1,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:kohlrabi',                      3,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:lettuce',                       2,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:parsley',                       1,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:peanut',                        3,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:rosemary',                      1,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:sunflower_seeds',               1,              nil,                        nil,    nil,    nil},
 
-                --                    Name                          Saturation      Replace with                Poison  Heal    Sound
-                -- side dishes
-                    {'cucina_vegana:ciabatta_bred',                 4,              nil,                        nil,    nil,    nil},
-                    {'cucina_vegana:blueberry_jam',                 8,              'vessels:glass_bottle',     nil,    nil,    nil},
-                    {'cucina_vegana:blueberry_puree',               4,              nil,                        nil,    nil,    nil},
-                    {'cucina_vegana:dandelion_honey',               3,              'vessels:glass_bottle',     nil,    nil,    nil},
-                    {'cucina_vegana:flax_seed_oil',                 2,              'vessels:glass_bottle',     nil,    nil,    nil},
-                    {'cucina_vegana:kohlrabi_roasted',              4,              nil,                        nil,    nil,    nil},
-                    {'cucina_vegana:lettuce_oil',                   2,              'vessels:glass_bottle',     nil,    nil,    nil},
-                    {'cucina_vegana:peanut_oil',                    4,              'vessels:glass_bottle',     nil,    nil,    nil},
-                    {'cucina_vegana:peanut_butter',                 7,              'vessels:glass_bottle',     nil,    nil,    nil},
-                    {'cucina_vegana:salad_bowl',                    4,              'cucina_vegana:salad_bowl', nil,    nil,    nil},
-                    {'cucina_vegana:sauce_hollandaise',             3,              'vessels:glass_bottle',     nil,    nil,    nil},
-                    {'cucina_vegana:sunflower_seeds_oil',           3,              'vessels:glass_bottle',     nil,    nil,    nil},
-                    {'cucina_vegana:soy_milk',                      1,              'vessels:drinking_glass',   nil,    0.5,    nil},
+      --               Name                          Saturation      Replace with                Poison  Heal    Sound
+      -- side dishes
+      {'cucina_vegana:ciabatta_bred',                 4,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:blueberry_jam',                 8,              'vessels:glass_bottle',     nil,    nil,    nil},
+      {'cucina_vegana:blueberry_puree',               4,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:dandelion_honey',               3,              'vessels:glass_bottle',     nil,    nil,    nil},
+      {'cucina_vegana:flax_seed_oil',                 2,              'vessels:glass_bottle',     nil,    nil,    nil},
+      {'cucina_vegana:kohlrabi_roasted',              4,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:lettuce_oil',                   2,              'vessels:glass_bottle',     nil,    nil,    nil},
+      {'cucina_vegana:peanut_oil',                    4,              'vessels:glass_bottle',     nil,    nil,    nil},
+      {'cucina_vegana:peanut_butter',                 7,              'vessels:glass_bottle',     nil,    nil,    nil},
+      {'cucina_vegana:salad_bowl',                    4,              'cucina_vegana:salad_bowl', nil,    nil,    nil},
+      {'cucina_vegana:sauce_hollandaise',             3,              'vessels:glass_bottle',     nil,    nil,    nil},
+      {'cucina_vegana:sunflower_seeds_oil',           3,              'vessels:glass_bottle',     nil,    nil,    nil},
+      {'cucina_vegana:soy_milk',                      1,              'vessels:drinking_glass',   nil,    0.5,    nil},
 
 
-                --                    Name                          Saturation      Replace with                Poison  Heal    Sound
-                -- eatable raws
-                    {'cucina_vegana:imitation_butter',              2,              nil,                        nil,    0.5,    nil},
-                    {'cucina_vegana:imitation_cheese',              3,              nil,                        nil,    0.5,    nil},
-                    {'cucina_vegana:imitation_fish',                3,              nil,                        nil,    0.5,    nil},
-                    {'cucina_vegana:imitation_meat',                3,              nil,                        nil,    0.5,    nil},
-                    {'cucina_vegana:sunflower_seeds_dough',         2,              nil,                        nil,    0.5,    nil},
-                    {'cucina_vegana:tofu',                          2,              nil,                        nil,    0.5,    nil},
+      --               Name                          Saturation      Replace with                Poison  Heal    Sound
+      -- eatable raws
+      {'cucina_vegana:imitation_butter',              2,              nil,                        nil,    0.5,    nil},
+      {'cucina_vegana:imitation_cheese',              3,              nil,                        nil,    0.5,    nil},
+      {'cucina_vegana:imitation_fish',                3,              nil,                        nil,    0.5,    nil},
+      {'cucina_vegana:imitation_meat',                3,              nil,                        nil,    0.5,    nil},
+      {'cucina_vegana:sunflower_seeds_dough',         2,              nil,                        nil,    0.5,    nil},
+      {'cucina_vegana:tofu',                          2,              nil,                        nil,    0.5,    nil},
 
-                --                    Name                          Saturation      Replace with                Poison  Heal    Sound
+      --               Name                          Saturation      Replace with                Poison  Heal    Sound
                 -- dinners
-                    {'cucina_vegana:asparagus_hollandaise_cooked',  5,              'cucina_vegana:plate',      nil,    1.5,    nil},
-                    {'cucina_vegana:asparagus_rice_cooked',         6,              'cucina_vegana:plate',      nil,    1.5,    nil},
-                    {'cucina_vegana:asparagus_soup_cooked',         5,              'cucina_vegana:plate',      nil,    0.5,    nil},
-                    {'cucina_vegana:bowl_rice_cooked',              4,              'cucina_vegana:bowl',       nil,    nil,    nil},
-                    {'cucina_vegana:fish_parsley_rosemary_cooked',  6,              'cucina_vegana:plate',      nil,    1.5,    nil},
-                    {'cucina_vegana:fryer',                         8,              nil,                        nil,    3.0,    nil},
-                    {'cucina_vegana:kohlrabi_soup_cooked',          5,              'cucina_vegana:plate',      nil,    1.5,    nil},
-                    {'cucina_vegana:pizza_vegana',                  6,              nil,                        nil,    2.0,    nil},
-                    {'cucina_vegana:pizza_funghi',                  6,              nil,                        nil,    2.0,    nil},
-                    {'cucina_vegana:salad_hollandaise',             4,              'cucina_vegana:salad_bowl', nil,    nil,    nil},
-                    {'cucina_vegana:soy_soup_cooked',               5,              'cucina_vegana:plate',      nil,    0.5,    nil},
-                    {'cucina_vegana:sunflower_seeds_bread',         4,              nil,                        nil,    0.5,    nil},
-                    {'cucina_vegana:sunflower_seeds_roasted',       3,              nil,                        nil,    nil,    nil},
-                    {'cucina_vegana:tofu_chives_rosemary_cooked',   6,              'cucina_vegana:plate',      nil,    2.0,    nil},
-                    {'cucina_vegana:tofu_cooked',                   3,              nil,                        nil,    nil,    nil},
-                    {'cucina_vegana:vegan_sushi',                   4,              nil,                        nil,    1.5,    nil},
+      {'cucina_vegana:asparagus_hollandaise_cooked',  5,              'cucina_vegana:plate',      nil,    1.5,    nil},
+      {'cucina_vegana:asparagus_rice_cooked',         6,              'cucina_vegana:plate',      nil,    1.5,    nil},
+      {'cucina_vegana:asparagus_soup_cooked',         5,              'cucina_vegana:plate',      nil,    0.5,    nil},
+      {'cucina_vegana:bowl_rice_cooked',              4,              'cucina_vegana:bowl',       nil,    nil,    nil},
+      {'cucina_vegana:fish_parsley_rosemary_cooked',  6,              'cucina_vegana:plate',      nil,    1.5,    nil},
+      {'cucina_vegana:fryer',                         8,              nil,                        nil,    3.0,    nil},
+      {'cucina_vegana:kohlrabi_soup_cooked',          5,              'cucina_vegana:plate',      nil,    1.5,    nil},
+      {'cucina_vegana:pizza_vegana',                  6,              nil,                        nil,    2.0,    nil},
+      {'cucina_vegana:pizza_funghi',                  6,              nil,                        nil,    2.0,    nil},
+      {'cucina_vegana:salad_hollandaise',             4,              'cucina_vegana:salad_bowl', nil,    nil,    nil},
+      {'cucina_vegana:soy_soup_cooked',               5,              'cucina_vegana:plate',      nil,    0.5,    nil},
+      {'cucina_vegana:sunflower_seeds_bread',         4,              nil,                        nil,    0.5,    nil},
+      {'cucina_vegana:sunflower_seeds_roasted',       3,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:tofu_chives_rosemary_cooked',   6,              'cucina_vegana:plate',      nil,    2.0,    nil},
+      {'cucina_vegana:tofu_cooked',                   3,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:vegan_sushi',                   4,              nil,                        nil,    1.5,    nil},
 
-        } -- civ_items
+    } -- civ_items
 
 --   *******************************************
 --   *****           Technic-Support       *****

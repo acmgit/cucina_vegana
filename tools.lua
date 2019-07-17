@@ -17,7 +17,7 @@ end -- function cucina_vegana.table_clone
 
 function cucina_vegana.add_group(node, entry)
 
-    local newgroup = {}
+    local newgroup
 
     if(type(node) ~= "string") then return end
 

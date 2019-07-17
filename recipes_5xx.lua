@@ -3,9 +3,8 @@
 --   *******************************************
 
 local modname = minetest.get_current_modname()
-local nodes = {}
 
-nodes = { { name = "default:sand_with_kelp",                                                 -- Name
+local nodes = { { name = "default:sand_with_kelp",                                                 -- Name
             output = "cucina_vegana:vegan_sushi", 	                                            -- Output
             recipe = {	                                                                        -- Recipe
                         {"cucina_vegana:imitation_fish", "cucina_vegana:bowl_rice", ""},
