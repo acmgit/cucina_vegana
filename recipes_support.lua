@@ -444,8 +444,10 @@ if minetest.get_modpath("cottages") then
     minetest.register_craft({
         output = "cottages:rope",
         recipe = {
-            {"cucina_vegana:flax","cucina_vegana:flax","cucina_vegana:flax"}
-            }
+                    {"cucina_vegana:flax","",""},
+                    {"","cucina_vegana:flax",""},
+                    {"","","cucina_vegana:flax"},
+                }
     })
 
 end
