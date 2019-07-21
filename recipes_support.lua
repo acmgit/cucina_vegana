@@ -390,6 +390,24 @@ if minetest.get_modpath("homedecor") then
             {"basic_materials:paraffin" }
         }
     })
+    
+    minetest.register_craft({
+        output = "homedecor:blinds_thin",
+        recipe = {
+            { "group:stick", "basic_materials:plastic_sheet", "group:stick" },
+            { "cucina_vegana:flax", "basic_materials:plastic_strip", "" },
+            { "", "basic_materials:plastic_strip", "" },
+        },
+    })
+
+    minetest.register_craft({
+        output = "homedecor:blinds_thick",
+        recipe = {
+            { "group:stick", "basic_materials:plastic_sheet", "group:stick" },
+            { "cucina_vegana:flax", "basic_materials:plastic_strip", "basic_materials:plastic_strip" },
+            { "", "basic_materials:plastic_strip", "basic_materials:plastic_strip" },
+        },
+    })
 end
 
 --[[
