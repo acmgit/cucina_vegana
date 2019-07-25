@@ -390,7 +390,7 @@ if minetest.get_modpath("homedecor") then
             {"basic_materials:paraffin" }
         }
     })
-    
+
     minetest.register_craft({
         output = "homedecor:blinds_thin",
         recipe = {
@@ -408,6 +408,7 @@ if minetest.get_modpath("homedecor") then
             { "", "basic_materials:plastic_strip", "basic_materials:plastic_strip" },
         },
     })
+
 end
 
 --[[
@@ -462,10 +463,10 @@ if minetest.get_modpath("cottages") then
     minetest.register_craft({
         output = "cottages:rope",
         recipe = {
-                    {"cucina_vegana:flax","",""},
-                    {"","cucina_vegana:flax",""},
-                    {"","","cucina_vegana:flax"},
-                }
+            {"cucina_vegana:flax","",""},
+            {"","cucina_vegana:flax",""},
+            {"","","cucina_vegana:flax"},
+            }
     })
 
 end
@@ -558,9 +559,32 @@ if minetest.get_modpath("petz") then
         replacements = {{"group:food_milk", "bucket:bucket_empty"}},
     })
 
+    -- Dreamcatcher
+    minetest.register_craft({
+        type = "shaped",
+        output = "petz:dreamcatcher",
+        recipe = {
+                    {"", "group:wood", ""},
+                    {"cucina_vegana:flax", "cucina_vegana:flax", "cucina_vegana:flax"},
+                    {"petz:ducky_feather", "petz:ducky_feather", "petz:ducky_feather"},
+                }
+    })
+    
+    minetest.register_craft({
+        type = "shaped",
+        output = "petz:ducky_feather",
+        recipe = {
+                    {"cucina_vegana:flax", "default:stick", "cucina_vegana:flax"},
+                    {"cucina_vegana:flax", "default:stick", "cucina_vegana:flax"},
+                    {"", "default:stick", ""},
+                }
+    })
+
     cucina_vegana.add_group("petz:cheese", {food_cheese = 1, eatable = 1})
     cucina_vegana.add_group("petz:milk", {food_milk = 1, eatable = 1})
-end
+    
+    
+end -- if minetest.get_modpath("petz"
 
 cucina_vegana.add_group("default:blueberries", {food_blueberry = 1, food_blueberries = 1})
 cucina_vegana.add_group("bushes:blueberry", {food_blueberries = 1})

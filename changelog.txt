@@ -1,3 +1,5 @@
+Support for dreamcatcher (petz) added.
+Ducky-Feather (petz) craftable.
 Added more support for homedecor with recipes of blinds.
 Fixed recipe-collision between buildingblocks:towel and cottages:rope.
 Fixed typo with farming-default-mode.
