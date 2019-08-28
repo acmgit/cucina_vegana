@@ -109,15 +109,7 @@ minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
 	},
 })
 
--- Register Recipe for Oil
-minetest.register_craft({
-	output = "cucina_vegana:" .. pname .. "_oil",
-	recipe = {
-            {"cucina_vegana:"..pname.."_seed","cucina_vegana:"..pname.."_seed","cucina_vegana:"..pname.."_seed"},
-            {"cucina_vegana:"..pname.."_seed","cucina_vegana:".. pname.."_seed","cucina_vegana:"..pname.."_seed"},
-				{"", "vessels:glass_bottle", ""}
-			}
-})
+cucina_vegana.add_group("cucina_vegana:" .. pname .. "_seed", {seed_lettuce = 1})
 
 -- to import the old mod in cucina_vegana
 -- can deleted if you have a clean world.

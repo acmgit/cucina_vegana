@@ -48,14 +48,7 @@ minetest.register_node("cucina_vegana:wild_" .. pname, {
 	},
 })
 
--- Register Recipe for Oil
-minetest.register_craft({
-	output = "cucina_vegana:" .. pname .. "_seed_oil",
-	recipe = {	{"cucina_vegana:seed_".. pname, "cucina_vegana:seed_".. pname, "cucina_vegana:seed_".. pname},
-				{"cucina_vegana:seed_".. pname, "cucina_vegana:seed_".. pname, "cucina_vegana:seed_".. pname},
-				{"", "vessels:glass_bottle", ""}
-			}
-})
+cucina_vegana.add_group("cucina_vegana:seed_" .. pname, {seed_flax = 1})
 
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,

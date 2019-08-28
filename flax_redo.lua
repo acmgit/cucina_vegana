@@ -111,6 +111,8 @@ minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
 	},
 })
 
+cucina_vegana.add_group("cucina_vegana:" .. pname .. "_seed", {seed_flax = 1})
+
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,
 								 {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
@@ -123,16 +125,6 @@ if (minetest.get_modpath("farming_nextgen")) then
     minetest.log("info", "[MOD] " .. modname .. ": cucina_vegana:seed_" .. pname .. " at farming_nextgen registered.")
 
 end
-
--- Register Recipe for Oil
-minetest.register_craft({
-	output = "cucina_vegana:" .. pname .. "_seed_oil",
-	recipe = {
-              {"cucina_vegana:"..pname.."_seed","cucina_vegana:"..pname.."_seed","cucina_vegana:".. pname.."_seed"},
-              {"cucina_vegana:"..pname.."_seed","cucina_vegana:"..pname.."_seed","cucina_vegana:".. pname.."_seed"},
-				{"", "vessels:glass_bottle", ""}
-			}
-})
 
 minetest.register_alias("cucina_vegana:flex_1", "cucina_vegana:" .. pname .. "_1")
 minetest.register_alias("cucina_vegana:flex_2", "cucina_vegana:" .. pname .. "_2")

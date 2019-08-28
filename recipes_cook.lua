@@ -53,6 +53,13 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "cooking",
+	cooktime = 7,
+	output = "cucina_vegana:edamame_cooked",
+	recipe = "cucina_vegana:edamame"
+})
+
+minetest.register_craft({
+	type = "cooking",
 	cooktime = 25,
 	output = "cucina_vegana:fryer",
 	recipe = "cucina_vegana:fryer_raw"
@@ -77,6 +84,14 @@ minetest.register_craft({
 	cooktime = 15,
 	output = "cucina_vegana:kohlrabi_soup_cooked",
 	recipe = "cucina_vegana:kohlrabi_soup"
+})
+
+
+minetest.register_craft({
+	type = "cooking",
+	output = "cucina_vegana:peanut",
+	recipe = "group:seed_peanut",
+	cooktime = 5,
 })
 
 minetest.register_craft({

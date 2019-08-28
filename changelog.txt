@@ -1,3 +1,5 @@
+Added recipe for edamame.
+Changed recipes for oils with groups.
 Changed the recipes for plates (prevent recipe-collisions).
 Support for dreamcatcher (petz) added.
 Ducky-Feather (petz) craftable.

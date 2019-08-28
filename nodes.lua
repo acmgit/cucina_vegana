@@ -10,23 +10,6 @@ local S = dofile(MP.."/intllib.lua")
 --   *****           Supports              *****
 --   *******************************************
 
-minetest.register_node("cucina_vegana:plate", {
-	description = S("Plate"),
-	drawtype = "plantlike",
-	tiles = {"cucina_vegana_plate.png"},
-	inventory_image = "cucina_vegana_plate.png",
-	wield_image = "cucina_vegana_plate.png",
-	paramtype = "light",
-	is_ground_content = false,
-	walkable = false,
-	selection_box = {
-		type = "fixed",
-		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
-	},
-	groups = {dig_immediate = 3, attached_node = 1, food_plate=1},
-	sounds = default.node_sound_glass_defaults(),
-})
-
 minetest.register_node("cucina_vegana:bowl", {
 	description = S("Glass Bowl"),
 	drawtype = "plantlike",
@@ -41,24 +24,6 @@ minetest.register_node("cucina_vegana:bowl", {
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
 	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food_bowl=1},
-	sounds = default.node_sound_glass_defaults(),
-})
-
-minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
-	description = S("Bottle of Sunflower Seeds Oil"),
-	drawtype = "plantlike",
-	tiles = {"cucina_vegana_sunflower_seeds_oil.png"},
-	inventory_image = "cucina_vegana_sunflower_seeds_oil.png",
-	wield_image = "cucina_vegana_sunflower_seeds_oil.png",
-	paramtype = "light",
-	is_ground_content = false,
-	walkable = false,
-	on_use = minetest.item_eat(2, "vessels:glass_bottle"),
-	selection_box = {
-		type = "fixed",
-		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
-	},
-	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_oil = 1, food_vegan = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -80,6 +45,19 @@ minetest.register_node("cucina_vegana:flax_seed_oil", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
+minetest.register_node("cucina_vegana:mushroomlight_glass", {
+	description = S("Mushroomlight Glass"),
+	drawtype = "glasslike_framed_optional",
+	tiles = {"cucina_vegana_mushroom_light.png","cucina_vegana_mushroom_light_detail.png"},
+	paramtype = "light",
+    light_source = 3,
+	paramtype2 = "glasslikeliquidlevel",
+	sunlight_propagates = true,
+	is_ground_content = false,
+	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	sounds = default.node_sound_glass_defaults()
+})
+
 minetest.register_node("cucina_vegana:peanut_oil", {
 	description = S("Bottle of Peanut Oil"),
 	drawtype = "plantlike",
@@ -98,39 +76,44 @@ minetest.register_node("cucina_vegana:peanut_oil", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:mushroomlight_glass", {
-	description = S("Mushroomlight Glass"),
-	drawtype = "glasslike_framed_optional",
-	tiles = {"cucina_vegana_mushroom_light.png","cucina_vegana_mushroom_light_detail.png"},
-	paramtype = "light",
-    light_source = 3,
-	paramtype2 = "glasslikeliquidlevel",
-	sunlight_propagates = true,
-	is_ground_content = false,
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
-	sounds = default.node_sound_glass_defaults()
-})
-
---   *******************************************
---   *****       Síde Dishes               *****
---   *******************************************
-
-minetest.register_node("cucina_vegana:ciabatta_bread", {
-	description = S("Ciabatta Bread"),
+minetest.register_node("cucina_vegana:plate", {
+	description = S("Plate"),
 	drawtype = "plantlike",
-	tiles = {"cucina_vegana_ciabatta_bread.png"},
-	inventory_image = "cucina_vegana_ciabatta_bread.png",
-	wield_image = "cucina_vegana_ciabatta_bread.png",
+	tiles = {"cucina_vegana_plate.png"},
+	inventory_image = "cucina_vegana_plate.png",
+	wield_image = "cucina_vegana_plate.png",
 	paramtype = "light",
 	is_ground_content = false,
-	on_use = minetest.item_eat(4),
 	walkable = false,
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
-	groups = {dig_immediate = 3, attached_node = 1, food_bread = 1, food_vegan = 1, eatable = 1},
+	groups = {dig_immediate = 3, attached_node = 1, food_plate=1},
+	sounds = default.node_sound_glass_defaults(),
 })
+
+minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
+	description = S("Bottle of Sunflower Seeds Oil"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_sunflower_seeds_oil.png"},
+	inventory_image = "cucina_vegana_sunflower_seeds_oil.png",
+	wield_image = "cucina_vegana_sunflower_seeds_oil.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	on_use = minetest.item_eat(2, "vessels:glass_bottle"),
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_oil = 1, food_vegan = 1, eatable = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+--   *******************************************
+--   *****       Síde Dishes               *****
+--   *******************************************
 
 minetest.register_node("cucina_vegana:blueberry_jam", {
 	description = S("Blueberry Jam"),
@@ -149,6 +132,58 @@ minetest.register_node("cucina_vegana:blueberry_jam", {
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, food_sweet = 1, eatable = 1},
 })
 
+minetest.register_node("cucina_vegana:ciabatta_bread", {
+	description = S("Ciabatta Bread"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_ciabatta_bread.png"},
+	inventory_image = "cucina_vegana_ciabatta_bread.png",
+	wield_image = "cucina_vegana_ciabatta_bread.png",
+	paramtype = "light",
+	is_ground_content = false,
+	on_use = minetest.item_eat(4),
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1, food_bread = 1, food_vegan = 1, eatable = 1},
+})
+
+minetest.register_node("cucina_vegana:edamame", {
+	description = S("Edamame (raw)"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_edamame.png"},
+	inventory_image = "cucina_vegana_edamame.png",
+	wield_image = "cucina_vegana_edamame.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:edamame_cooked", {
+	description = S("Edamame"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_edamame_cooked.png"},
+	inventory_image = "cucina_vegana_edamame_cooked.png",
+	wield_image = "cucina_vegana_edamame_cooked.png",
+	on_use = minetest.item_eat(4, "cucina_vegana:plate"),
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
 minetest.register_node("cucina_vegana:lettuce_oil", {
 	description = S("Salad Oil"),
 	drawtype = "plantlike",
@@ -165,6 +200,23 @@ minetest.register_node("cucina_vegana:lettuce_oil", {
 	},
 	groups = {dig_immediate = 3, attached_node = 1, food_oil = 1, food_vegan = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:peanut_butter", {
+	description = S("Peanut Butter"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_peanut_butter.png"},
+	inventory_image = "cucina_vegana_peanut_butter.png",
+	wield_image = "cucina_vegana_peanut_butter.png",
+	paramtype = "light",
+	is_ground_content = false,
+	on_use = minetest.item_eat(10),
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, food_sweet = 1, food_butter = 1, eatable = 1},
 })
 
 minetest.register_node("cucina_vegana:salad_bowl", {
@@ -201,23 +253,6 @@ minetest.register_node("cucina_vegana:sauce_hollandaise", {
 	},
 	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_sauce = 1, food_vegan = 1, eatable = 1},
 	sounds = default.node_sound_glass_defaults(),
-})
-
-minetest.register_node("cucina_vegana:peanut_butter", {
-	description = S("Peanut Butter"),
-	drawtype = "plantlike",
-	tiles = {"cucina_vegana_peanut_butter.png"},
-	inventory_image = "cucina_vegana_peanut_butter.png",
-	wield_image = "cucina_vegana_peanut_butter.png",
-	paramtype = "light",
-	is_ground_content = false,
-	on_use = minetest.item_eat(10),
-	walkable = false,
-	selection_box = {
-		type = "fixed",
-		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
-	},
-	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, food_sweet = 1, food_butter = 1, eatable = 1},
 })
 
 --   *******************************************

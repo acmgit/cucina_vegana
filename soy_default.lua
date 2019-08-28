@@ -48,6 +48,8 @@ minetest.register_node("cucina_vegana:wild_".. pname, {
 })
 
 
+cucina_vegana.add_group("cucina_vegana:seed_"..pname, {seed_soy = 1})
+
 minetest.register_alias("soy:wild_".. pname, "cucina_vegana:wild_".. pname)
 minetest.register_alias("soy:".. pname, "cucina_vegana:".. pname)
 minetest.register_alias("soy:seed_".. pname, "cucina_vegana:seed_".. pname)

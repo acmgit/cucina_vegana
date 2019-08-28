@@ -46,6 +46,55 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "cucina_vegana:dandelion_suds",
+	recipe = {	{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
+				{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
+                {"", "bucket:bucket_water", ""}
+			}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:dandelion_suds",
+	recipe = {	{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
+				{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
+                {"", "bucket:bucket_river_water", ""}
+			}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:flax_seed_oil",
+	recipe = {	{"group:seed_flax", "group:seed_flax", "group:seed_flax"},
+				{"group:seed_flax", "group:seed_flax", "group:seed_flax"},
+				{"", "vessels:glass_bottle", ""}
+			}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:lettuce_oil",
+	recipe = {	{"group:seed_lettuce", "group:seed_lettuce", "group:seed_lettuce"},
+				{"group:seed_lettuce", "group:seed_lettuce", "group:seed_lettuce"},
+				{"", "vessels:glass_bottle", ""}
+			}
+})
+
+minetest.register_craft({
+        output = "cucina_vegana:mushroomlight_glass 4",
+        recipe = {
+                  {"","default:glass",""},
+                  {"default:glass","default:torch","default:glass"},
+                  {"","default:glass",""},
+                }
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:peanut_oil",
+	recipe = {	{"group:seed_peanut", "group:seed_peanut", "group:seed_peanut"},
+				{"group:seed_peanut", "group:seed_peanut", "group:seed_peanut"},
+				{"", "vessels:glass_bottle", ""}
+			}
+})
+
+minetest.register_craft({
 	output = "cucina_vegana:pizza_dough",
 	recipe = {	{"group:food_milk", "group:food_oil", "group:food_cheese"},
 				{"group:food_flour", "group:food_flour", "group:food_flour"}
@@ -112,22 +161,6 @@ minetest.register_craft({
 	output = "cucina_vegana:plate 10",
 	recipe = {	{"default:tin_ingot", "", "default:tin_ingot"},
 				{"default:tin_ingot", "default:cobble", "default:tin_ingot"}
-			}
-})
-
-minetest.register_craft({
-	output = "cucina_vegana:dandelion_suds",
-	recipe = {	{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
-				{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
-                {"", "bucket:bucket_water", ""}
-			}
-})
-
-minetest.register_craft({
-	output = "cucina_vegana:dandelion_suds",
-	recipe = {	{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
-				{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
-                {"", "bucket:bucket_river_water", ""}
 			}
 })
 
@@ -240,15 +273,6 @@ minetest.register_craft({
 	recipe = {	{"cucina_vegana:flax", "cucina_vegana:flax", "cucina_vegana:flax"},
 				{"cucina_vegana:flax", "cucina_vegana:flax", "cucina_vegana:flax"},
 			}
-})
-
-minetest.register_craft({
-        output = "cucina_vegana:mushroomlight_glass 4",
-        recipe = {
-                  {"","default:glass",""},
-                  {"default:glass","default:torch","default:glass"},
-                  {"","default:glass",""},
-                }
 })
 
 --   *******************************************
@@ -365,6 +389,13 @@ minetest.register_craft({
                    }
 })
 
+minetest.register_craft({
+	output = "cucina_vegana:edamame",
+	recipe = {	{"cucina_vegana:rosemary", "group:seed_soy", "cucina_vegana:peanut"},
+                {"group:seed_soy", "group:seed_soy", "group:seed_soy"},
+				{"", "group:food_plate", ""}
+			}
+})
 
 minetest.register_craft({
 	output = "cucina_vegana:sauce_hollandaise",

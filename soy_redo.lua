@@ -135,6 +135,8 @@ minetest.register_node("cucina_vegana:wild_" .. pname, {
 	},
 })
 
+cucina_vegana.add_group("cucina_vegana:" ..pname .. "_seed", {seed_soy = 1})
+
 -- to import the old mod in cucina_vegana
 -- can deleted if you have a clean world.
 

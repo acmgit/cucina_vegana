@@ -17,6 +17,7 @@
       {'cucina_vegana:blueberry_jam',                 8,              'vessels:glass_bottle',     nil,    nil,    nil},
       {'cucina_vegana:blueberry_puree',               4,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:dandelion_honey',               3,              'vessels:glass_bottle',     nil,    nil,    nil},
+      {'cucina_vegana:edamame_cooked',                3,              'cucina_vegana:plate',      nil,    0.1,    nil},
       {'cucina_vegana:flax_seed_oil',                 2,              'vessels:glass_bottle',     nil,    nil,    nil},
       {'cucina_vegana:kohlrabi_roasted',              4,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:lettuce_oil',                   2,              'vessels:glass_bottle',     nil,    nil,    nil},
