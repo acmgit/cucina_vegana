@@ -33,7 +33,7 @@ Flag attached_node to all plants.
 *** Version 2.0:
 Support for Hunger and Diet added.
 Blueberry jam added. Blueberrys accepted in bushes, farming and default (5.x).
-Chiabatta bred added.
+Chiabatta bread added.
 
 *** Version 1.9:
 Support for bonemeal from Tenplus added.

@@ -33,7 +33,7 @@ minetest.register_craftitem("cucina_vegana:blueberry_pot_cooked", {
 minetest.register_craftitem("cucina_vegana:ciabatta_dough", {
 	description = S("Ciabatta dough"),
 	inventory_image = "cucina_vegana_ciabatta_dough.png",
-	groups = {food = 1, bred_dough = 1},
+	groups = {food = 1, bread_dough = 1},
 })
 
 minetest.register_craftitem("cucina_vegana:dandelion_honey", {
@@ -82,7 +82,7 @@ minetest.register_craftitem("cucina_vegana:soy_milk", {
 
 minetest.register_craftitem("cucina_vegana:sunflower_seeds_dough", {
     description = S("Sunflower Seeds Dough"),
-    groups = {food = 1, food_vegan = 1, eatable = 1, bred_dough = 1},
+    groups = {food = 1, food_vegan = 1, eatable = 1, bread_dough = 1},
     inventory_image = "cucina_vegana_sunflower_seeds_dough.png",
     on_use = minetest.item_eat(2),
 })
