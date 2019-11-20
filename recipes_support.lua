@@ -350,9 +350,9 @@ if minetest.get_modpath("homedecor") then
     minetest.register_craft( {
         output = "homedecor:cobweb_corner 5",
         recipe = {
-			{ "cucina_vegana:flax", "", "cucina_vegana:flax" },
-			{ "", "cucina_vegana:flax", "" },
-			{ "cucina_vegana:flax", "", "cucina_vegana:flax" }
+			{ "cucina_vegana:flax_roasted", "", "cucina_vegana:flax_roasted" },
+			{ "", "cucina_vegana:flax_roasted", "" },
+			{ "cucina_vegana:flax_roasted", "", "cucina_vegana:flax_roasted" }
         },
     })
 
@@ -360,7 +360,7 @@ if minetest.get_modpath("homedecor") then
         output = "homedecor:oil_lamp",
         recipe = {
             { "", "vessels:glass_bottle", "" },
-            { "", "cucina_vegana:flax", "" },
+            { "", "cucina_vegana:flax_roasted", "" },
             { "default:steel_ingot", "group:food_oil", "default:steel_ingot" }
         }
     })
@@ -369,7 +369,7 @@ if minetest.get_modpath("homedecor") then
         output = "homedecor:oil_lamp_tabletop",
         recipe = {
             { "", "vessels:glass_bottle", "" },
-            { "", "cucina_vegana:flax", "" },
+            { "", "cucina_vegana:flax_roasted", "" },
             { "default:iron_lump", "group:food_oil", "default:iron_lump" }
         }
     })
@@ -377,7 +377,7 @@ if minetest.get_modpath("homedecor") then
     minetest.register_craft({
         output = "homedecor:candle_thin 4",
         recipe = {
-            {"cucina_vegana:flax" },
+            {"cucina_vegana:flax_roasted" },
             {"basic_materials:paraffin" }
         }
     })
@@ -385,7 +385,7 @@ if minetest.get_modpath("homedecor") then
     minetest.register_craft({
         output = "homedecor:candle 2",
         recipe = {
-            {"cucina_vegana:flax" },
+            {"cucina_vegana:flax_roasted" },
             {"basic_materials:paraffin" },
             {"basic_materials:paraffin" }
         }
@@ -395,7 +395,7 @@ if minetest.get_modpath("homedecor") then
         output = "homedecor:blinds_thin",
         recipe = {
             { "group:stick", "basic_materials:plastic_sheet", "group:stick" },
-            { "cucina_vegana:flax", "basic_materials:plastic_strip", "" },
+            { "cucina_vegana:flax_roasted", "basic_materials:plastic_strip", "" },
             { "", "basic_materials:plastic_strip", "" },
         },
     })
@@ -404,7 +404,7 @@ if minetest.get_modpath("homedecor") then
         output = "homedecor:blinds_thick",
         recipe = {
             { "group:stick", "basic_materials:plastic_sheet", "group:stick" },
-            { "cucina_vegana:flax", "basic_materials:plastic_strip", "basic_materials:plastic_strip" },
+            { "cucina_vegana:flax_roasted", "basic_materials:plastic_strip", "basic_materials:plastic_strip" },
             { "", "basic_materials:plastic_strip", "basic_materials:plastic_strip" },
         },
     })
@@ -421,7 +421,7 @@ if minetest.get_modpath("building_blocks") then
     minetest.register_craft({
         output = 'building_blocks:terrycloth_towel 2',
         recipe = {
-            {"cucina_vegana:flax", "cucina_vegana:flax", "cucina_vegana:flax"},
+            {"cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted"},
         }
     })
 
@@ -437,17 +437,17 @@ if minetest.get_modpath("ropes") then
 	minetest.register_craft({
 		output = 'ropes:ropesegment',
 		recipe = {
-			{'cucina_vegana:flax','cucina_vegana:flax'},
-			{'cucina_vegana:flax','cucina_vegana:flax'},
-			{'cucina_vegana:flax','cucina_vegana:flax'},
+			{'cucina_vegana:flax_roasted','cucina_vegana:flax_roasted'},
+			{'cucina_vegana:flax_roasted','cucina_vegana:flax_roasted'},
+			{'cucina_vegana:flax_roasted','cucina_vegana:flax_roasted'},
 		}
 	})
 
 	minetest.register_craft({
 		output = 'ropes:rope',
 		recipe = {
-			{'cucina_vegana:flax'},
-			{'cucina_vegana:flax'},
+			{'cucina_vegana:flax_roasted'},
+			{'cucina_vegana:flax_roasted'},
 		}
 	})
 
@@ -463,9 +463,9 @@ if minetest.get_modpath("cottages") then
     minetest.register_craft({
         output = "cottages:rope",
         recipe = {
-            {"cucina_vegana:flax","",""},
-            {"","cucina_vegana:flax",""},
-            {"","","cucina_vegana:flax"},
+            {"cucina_vegana:flax_roasted","",""},
+            {"","cucina_vegana:flax_roasted",""},
+            {"","","cucina_vegana:flax_roasted"},
             }
     })
 
@@ -481,9 +481,9 @@ if minetest.get_modpath("moreblocks") then
     minetest.register_craft({
         output = "moreblocks:rope 3",
         recipe = {
-            {"cucina_vegana:flax"},
-            {"cucina_vegana:flax"},
-            {"cucina_vegana:flax"},
+            {"cucina_vegana:flax_roasted"},
+            {"cucina_vegana:flax_roasted"},
+            {"cucina_vegana:flax_roasted"},
         }
     })
 
@@ -500,9 +500,9 @@ if minetest.get_modpath("petz") then
     minetest.register_craft({
 	output = "petz:lasso",
 	recipe = {
-		{"cucina_vegana:flax", "", "cucina_vegana:flax"},
+		{"cucina_vegana:flax_roasted", "", "cucina_vegana:flax_roasted"},
 		{"", "default:diamond", ""},
-		{"cucina_vegana:flax", "", "cucina_vegana:flax"},
+		{"cucina_vegana:flax_roasted", "", "cucina_vegana:flax_roasted"},
             }
     })
 
@@ -565,7 +565,7 @@ if minetest.get_modpath("petz") then
         output = "petz:dreamcatcher",
         recipe = {
                     {"", "group:wood", ""},
-                    {"cucina_vegana:flax", "cucina_vegana:flax", "cucina_vegana:flax"},
+                    {"cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted"},
                     {"petz:ducky_feather", "petz:ducky_feather", "petz:ducky_feather"},
                 }
     })
@@ -574,8 +574,8 @@ if minetest.get_modpath("petz") then
         type = "shaped",
         output = "petz:ducky_feather",
         recipe = {
-                    {"cucina_vegana:flax", "default:stick", "cucina_vegana:flax"},
-                    {"cucina_vegana:flax", "default:stick", "cucina_vegana:flax"},
+                    {"cucina_vegana:flax_roasted", "default:stick", "cucina_vegana:flax_roasted"},
+                    {"cucina_vegana:flax_roasted", "default:stick", "cucina_vegana:flax_roasted"},
                     {"", "default:stick", ""},
                 }
     })

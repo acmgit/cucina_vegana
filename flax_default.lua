@@ -31,7 +31,7 @@ minetest.register_node("cucina_vegana:wild_" .. pname, {
 	drop = {
 			items = {
 					{items = {"cucina_vegana:seed_" .. pname .. " 4"}},
-					{items = {"cucina_vegana:" .. pname .. "_raw 2"}},
+					{items = {"cucina_vegana:" .. pname .. " 2"}},
 				}
 			},
 	drawtype = "plantlike",
@@ -71,4 +71,4 @@ minetest.register_alias("cucina_vegana:flex_5", "cucina_vegana:" .. pname .. "_5
 minetest.register_alias("cucina_vegana:flex_6", "cucina_vegana:" .. pname .. "_" .. step)
 minetest.register_alias("cucina_vegana:wild_flex", "cucina_vegana:wild_" .. pname)
 minetest.register_alias("cucina_vegana:seed_flex", "cucina_vegana:seed_" .. pname)
-minetest.register_alias("cucina_vegana:flex_raw", "cucina_vegana:" .. pname .. "_raw")
+minetest.register_alias("cucina_vegana:flex_raw", "cucina_vegana:" .. pname)

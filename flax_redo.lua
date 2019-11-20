@@ -79,8 +79,8 @@ minetest.register_node("cucina_vegana:" .. pname .. "_5", table.copy(crop_def))
 crop_def.tiles = {"cucina_vegana_" .. pname .. "_" .. step .. ".png"}
 crop_def.drop = {
 	items = {
-		{items = {"cucina_vegana:" .. pname .. "_raw 3"}, rarity = 1},
-		{items = {"cucina_vegana:" .. pname .. "_raw 4"}, rarity = 3},
+		{items = {"cucina_vegana:" .. pname .. " 3"}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. " 4"}, rarity = 3},
 		{items = {"cucina_vegana:" .. pname .. "_seed 3"}, rarity = 1},
 		{items = {"cucina_vegana:" .. pname .. "_seed 4"}, rarity = 3},
 	}
@@ -95,7 +95,7 @@ minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
 	drop = {
 			items = {
 					{items = {"cucina_vegana:" .. pname .. "_seed 3"}},
-					{items = {"cucina_vegana:" .. pname .. "_raw 2"}},
+					{items = {"cucina_vegana:" .. pname .. " 2"}},
 				}
 			},
 	drawtype = "plantlike",
@@ -133,5 +133,5 @@ minetest.register_alias("cucina_vegana:flex_4", "cucina_vegana:" .. pname .. "_4
 minetest.register_alias("cucina_vegana:flex_5", "cucina_vegana:" .. pname .. "_5")
 minetest.register_alias("cucina_vegana:flex_6", "cucina_vegana:" .. pname .. "_" .. step .. "")
 minetest.register_alias("cucina_vegana:flex_seed", "cucina_vegana:" .. pname .. "_seed")
-minetest.register_alias("cucina_vegana:flex_raw", "cucina_vegana:" .. pname .. "_raw")
+minetest.register_alias("cucina_vegana:flex_raw", "cucina_vegana:" .. pname)
 minetest.register_alias("cucina_vegana:wild_flex", "cucina_vegana:wild_" .. pname)

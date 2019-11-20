@@ -156,13 +156,13 @@ minetest.register_craftitem("cucina_vegana:chives", {
 	on_use = minetest.item_eat(1),
 })
 
-minetest.register_craftitem("cucina_vegana:flax_raw", {
+minetest.register_craftitem("cucina_vegana:flax", {
 	description = S("Flax (raw)"),
 	inventory_image = "cucina_vegana_flax_raw.png",
 	groups = {flammable = 1, string = 1},
 })
 
-minetest.register_craftitem("cucina_vegana:flax", {
+minetest.register_craftitem("cucina_vegana:flax_roasted", {
 	description = S("Flax"),
 	inventory_image = "cucina_vegana_flax.png",
 	groups = {flammable = 1, string = 1},

@@ -31,6 +31,12 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "fuel",
+	recipe = "cucina_vegana:flax_roasted",
+	burntime = 7
+})
+
+minetest.register_craft({
+	type = "fuel",
 	recipe = "cucina_vegana:sunflower_seeds",
 	burntime = 2
 })
