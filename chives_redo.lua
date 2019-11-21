@@ -87,7 +87,7 @@ minetest.register_node("cucina_vegana:" .. pname .. "_" .. step, table.copy(crop
 
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
-	description = S("Wild " .. dname),
+	description = S("Wild ") .. dname,
 	paramtype = "light",
 	walkable = false,
 	drop = {
