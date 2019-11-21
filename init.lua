@@ -22,6 +22,19 @@ local modname = minetest.get_current_modname()
 
 dofile(modpath .. "/settings.lua")
 dofile(modpath .. "/tools.lua")
+local S
+
+if(minetest.get_modpath("intllib")) then
+    S = dofile(modpath .."/intllib.lua")
+    print("[MOD] " .. modname .. ": translating in intllib-mode.")
+    
+else
+    S = minetest.get_translator("cucina_vegana")
+    print("[MOD] " .. modname .. ": translating in minetest-mode.")
+    
+end -- if(minetest.get_modpath(
+
+cucina_vegana.get_translator = S
 
 -- looking if farming_redo is activ?
 if(farming.mod == "redo") then

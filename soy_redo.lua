@@ -6,8 +6,7 @@
 
 
 -- Load support for intllib.
-local MP = minetest.get_modpath(minetest.get_current_modname())
-local S = dofile(MP.."/intllib.lua")
+local S = cucina_vegana.get_translator
 
 local dname = S("Soy")
 local pname = "soy"
