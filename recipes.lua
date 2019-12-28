@@ -171,8 +171,8 @@ minetest.register_craft({
                 {"default:cobble", "default:cobble", "default:cobble"}
 			},
     replacements = {
-                {"default:stone", "default:stone 3"},
-                {"default:cobble", "default:cobble 3"}
+                {"default:stone", "default:stone"},
+                {"default:cobble", "default:cobble"}
             }
 
 })
@@ -184,8 +184,8 @@ minetest.register_craft({
                 {"default:desert_cobble", "default:desert_cobble", "default:desert_cobble"}
 			},
     replacements = {
-                {"default:stone", "default:stone 3"},
-                {"default:desert_cobble", "default:desert_cobble 3"}
+                {"default:stone", "default:stone"},
+                {"default:desert_cobble", "default:desert_cobble"}
             }
 
 })
@@ -197,8 +197,8 @@ minetest.register_craft({
                 {"default:cobble", "default:cobble", "default:cobble"}
 			},
     replacements = {
-                {"default:desert_stone", "default:desert_stone 3"},
-                {"default:cobble", "default:cobble 3"}
+                {"default:desert_stone", "default:desert_stone"},
+                {"default:cobble", "default:cobble"}
             }
 
 })
@@ -210,8 +210,8 @@ minetest.register_craft({
                 {"default:desert_cobble", "default:desert_cobble", "default:desert_cobble"}
 			},
     replacements = {
-                {"default:desert_stone", "default:desert_stone 3"},
-                {"default:desert_cobble", "default:desert_cobble 3"}
+                {"default:desert_stone", "default:desert_stone"},
+                {"default:desert_cobble", "default:desert_cobble"}
             }
 
 })
@@ -223,8 +223,8 @@ minetest.register_craft({
                 {"default:cobble", "default:cobble", "default:cobble"}
 			},
     replacements = {
-                {"default:stone", "default:stone 3"},
-                {"default:cobble", "default:cobble 3"}
+                {"default:stone", "default:stone"},
+                {"default:cobble", "default:cobble"}
             }
 
 })
@@ -236,8 +236,8 @@ minetest.register_craft({
                 {"default:cobble", "default:cobble", "default:cobble"}
 			},
     replacements = {
-                {"default:desert_stone", "default:desert_stone 3"},
-                {"default:cobble", "default:cobble 3"}
+                {"default:desert_stone", "default:desert_stone"},
+                {"default:cobble", "default:cobble"}
             }
 
 })
@@ -249,8 +249,8 @@ minetest.register_craft({
                 {"default:desert_cobble", "default:desert_cobble", "default:desert_cobble"}
 			},
     replacements = {
-                {"default:desert_stone", "default:desert_stone 3"},
-                {"default:desert_cobble", "default:desert_cobble 3"}
+                {"default:desert_stone", "default:desert_stone"},
+                {"default:desert_cobble", "default:desert_cobble"}
             }
 
 })
@@ -262,8 +262,8 @@ minetest.register_craft({
                 {"default:desert_cobble", "default:desert_cobble", "default:desert_cobble"}
 			},
     replacements = {
-                {"default:stone", "default:stone 3"},
-                {"default:cobble", "default:cobble 3"}
+                {"default:stone", "default:stone"},
+                {"default:cobble", "default:cobble"}
             }
 
 })
@@ -283,7 +283,7 @@ minetest.register_craft({
 	output = "cucina_vegana:imitation_butter",
 	recipe = {	{"group:dye,color_yellow", "cucina_vegana:soy_milk",  "cucina_vegana:soy_milk"}
 			},
-			replacements = {{"cucina_vegana:soy_milk", "vessels:drinking_glass 2"}
+			replacements = {{"cucina_vegana:soy_milk", "vessels:drinking_glass"}
 						}
 })
 
@@ -349,7 +349,7 @@ minetest.register_craft({
 			},
     replacements = {
             {"cucina_vegana:blueberry_pot_cooked", "bucket:bucket_empty"},
-            {"group:wool", "farming:cotton 2"}
+            {"group:wool", "farming:cotton"}
                    }
 })
 
@@ -608,7 +608,7 @@ minetest.register_craft({
                 {"", "bucket:bucket_water", ""},
 			},
     replacements = {
-                    {"default:stone", "default:stone 4"},
+                    {"default:stone", "default:stone"},
                     {"bucket:bucket_water", "bucket:bucket_empty"},
                     }
 })
@@ -620,7 +620,7 @@ minetest.register_craft({
                 {"", "bucket:bucket_water", ""},
 			},
     replacements = {
-                    {"default:desert_stone", "default:desert_stone 4"},
+                    {"default:desert_stone", "default:desert_stone"},
                     {"bucket:bucket_water", "bucket:bucket_empty"},
                     }
 })
@@ -632,7 +632,7 @@ minetest.register_craft({
                 {"", "bucket:bucket_water", ""},
 			},
     replacements = {
-                    {"default:cobble", "default:cobble 4"},
+                    {"default:cobble", "default:cobble"},
                     {"bucket:bucket_water", "bucket:bucket_empty"},
                     }
 })
@@ -644,7 +644,7 @@ minetest.register_craft({
                 {"", "bucket:bucket_water", ""},
 			},
     replacements = {
-                    {"default:desert_cobble", "default:desert_cobble 4"},
+                    {"default:desert_cobble", "default:desert_cobble"},
                     {"bucket:bucket_water", "bucket:bucket_empty"},
                     }
 })
@@ -656,7 +656,7 @@ minetest.register_craft({
                 {"", "bucket:bucket_river_water", ""},
 			},
     replacements = {
-                    {"default:stone", "default:stone 4"},
+                    {"default:stone", "default:stone"},
                     {"bucket:bucket_river_water", "bucket:bucket_empty"},
                     }
 })
@@ -668,7 +668,7 @@ minetest.register_craft({
                 {"", "bucket:bucket_river_water", ""},
 			},
     replacements = {
-                    {"default:desert_stone", "default:desert_stone 4"},
+                    {"default:desert_stone", "default:desert_stone"},
                     {"bucket:bucket_river_water", "bucket:bucket_empty"},
                     }
 })
@@ -680,7 +680,7 @@ minetest.register_craft({
                 {"", "bucket:bucket_river_water", ""},
 			},
     replacements = {
-                    {"default:cobble", "default:cobble 4"},
+                    {"default:cobble", "default:cobble"},
                     {"bucket:bucket_river_water", "bucket:bucket_empty"},
                     }
 })
@@ -692,7 +692,7 @@ minetest.register_craft({
                 {"", "bucket:bucket_river_water", ""},
 			},
     replacements = {
-                    {"default:desert_cobble", "default:desert_cobble 4"},
+                    {"default:desert_cobble", "default:desert_cobble"},
                     {"bucket:bucket_river_water", "bucket:bucket_empty"},
                     }
 })
