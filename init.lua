@@ -26,7 +26,7 @@ local S
 
 if(minetest.get_modpath("intllib")) then
     S = dofile(modpath .."/intllib.lua")
-    print("[MOD] " .. modname .. ": translating in intllib-mode."
+    print("[MOD] " .. modname .. ": translating in intllib-mode.")
 
 else
     S = minetest.get_translator("cucina_vegana")
