@@ -23,7 +23,7 @@
       {'cucina_vegana:lettuce_oil',                   2,              'vessels:glass_bottle',     nil,    nil,    nil},
       {'cucina_vegana:peanut_oil',                    4,              'vessels:glass_bottle',     nil,    nil,    nil},
       {'cucina_vegana:peanut_butter',                 7,              'vessels:glass_bottle',     nil,    nil,    nil},
-      {'cucina_vegana:salad_bowl',                    4,              'cucina_vegana:salad_bowl', nil,    nil,    nil},
+      {'cucina_vegana:salad_bowl',                    4,              'cucina_vegana:bowl',       nil,    nil,    nil},
       {'cucina_vegana:sauce_hollandaise',             3,              'vessels:glass_bottle',     nil,    nil,    nil},
       {'cucina_vegana:sunflower_seeds_oil',           3,              'vessels:glass_bottle',     nil,    nil,    nil},
       {'cucina_vegana:soy_milk',                      1,              'vessels:drinking_glass',   nil,    0.5,    nil},
@@ -49,7 +49,7 @@
       {'cucina_vegana:kohlrabi_soup_cooked',          5,              'cucina_vegana:plate',      nil,    1.5,    nil},
       {'cucina_vegana:pizza_vegana',                  6,              nil,                        nil,    2.0,    nil},
       {'cucina_vegana:pizza_funghi',                  6,              nil,                        nil,    2.0,    nil},
-      {'cucina_vegana:salad_hollandaise',             4,              'cucina_vegana:salad_bowl', nil,    nil,    nil},
+      {'cucina_vegana:salad_hollandaise',             4,              'cucina_vegana:bowl',       nil,    nil,    nil},
       {'cucina_vegana:soy_soup_cooked',               5,              'cucina_vegana:plate',      nil,    0.5,    nil},
       {'cucina_vegana:sunflower_seeds_bread',         4,              nil,                        nil,    0.5,    nil},
       {'cucina_vegana:sunflower_seeds_roasted',       3,              nil,                        nil,    nil,    nil},
@@ -171,6 +171,21 @@ if(minetest.get_modpath("hunger")) then
     end -- for key, data
 
 end -- hunger
+
+--   **********************************************
+--   *****           Hunger_ng-Support        *****
+--   **********************************************
+
+if(minetest.get_modpath("hunger_ng")) then
+    local add = hunger_ng.add_hunger_data
+    
+    for key, item in pairs(cv_items) do
+        add(item[1], {satiates = item[2], returns = item[3], heals = math.floor((item[5] or 0)), timeout = 0})
+                                    
+    end -- for key, data
+
+end -- hunger_ng
+
 
 --   *******************************************
 --   *****           Wine-Support          *****

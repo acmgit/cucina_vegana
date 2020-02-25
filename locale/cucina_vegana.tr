@@ -30,6 +30,7 @@ Seed=
 ### asparagus_redo.lua ###
 ### items.lua ###
 
+# textdomain: cucina_vegana
 Asparagus=
 
 ### asparagus_default.lua ###

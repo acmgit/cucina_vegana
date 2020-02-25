@@ -1,80 +1,191 @@
 # textdomain: cucina_vegana
-Asparagus=Spargel
+
+
+### asparagus_default.lua ###
+### asparagus_redo.lua ###
+### chives_default.lua ###
+### chives_redo.lua ###
+### flax_default.lua ###
+### flax_redo.lua ###
+### kohlrabi_default.lua ###
+### kohlrabi_redo.lua ###
+### lettuce_default.lua ###
+### lettuce_redo.lua ###
+### parsley_default.lua ###
+### parsley_redo.lua ###
+### peanut_default.lua ###
+### peanut_redo.lua ###
+### rice_default.lua ###
+### rice_redo.lua ###
+### rosemary_default.lua ###
+### rosemary_redo.lua ###
+### soy_default.lua ###
+### soy_redo.lua ###
+### sunflower_default.lua ###
+### sunflower_redo.lua ###
+
 Seed=Samen
+
+### asparagus_default.lua ###
+### asparagus_redo.lua ###
+### items.lua ###
+
+# textdomain: cucina_vegana
+Asparagus=Spargel
+
+### asparagus_default.lua ###
+### chives_default.lua ###
+### flax_default.lua ###
+### kohlrabi_default.lua ###
+### lettuce_default.lua ###
+### parsley_default.lua ###
+### peanut_default.lua ###
+### rice_default.lua ###
+### rosemary_default.lua ###
+### soy_default.lua ###
+### sunflower_default.lua ###
+
 Wild=Wilde(r)
+
+### asparagus_redo.lua ###
+### chives_redo.lua ###
+### flax_redo.lua ###
+### kohlrabi_redo.lua ###
+### lettuce_redo.lua ###
+### parsley_redo.lua ###
+### peanut_redo.lua ###
+### rice_redo.lua ###
+### rosemary_redo.lua ###
+### soy_redo.lua ###
+### sunflower_redo.lua ###
+
 Wild =Wilde(r) 
+
+### chives_default.lua ###
+### chives_redo.lua ###
+### items.lua ###
+
 Chives=Schnittlauch
+
+### flax_default.lua ###
+### flax_redo.lua ###
+### items.lua ###
+
 Flax=Flachs
-Blueberry purree=Blaubeermus
+
+### items.lua ###
+
 Blueberry pot=Topf Blaubeermus
 Blueberry pot (cooked)=Topf Blaubeermus (gekocht)
+Blueberry purree=Blaubeermus
 Ciabatta dough=Ciabatta Teig
 Dandelion Honey=Löwenzahn Honig
 Dandelion Suds=Löwenzahn Lauge
 Dandelion Suds (cooking)=Löwenzahn Lauge (kochend)
-Molasses=Melasse
-Pizzadough=Pizzateig
-Rice Flour=Reismehl
-Soy Milk=Soja Milch
-Sunflower Seeds Dough=Sonnenblumenkern Teig
-Sunflower Seeds Flour=Sonnenblumenkern Mehl
-Tofu (raw)=Tofu (roh)
+Flax (raw)=Flachs (roh)
 Imitation Butter=Analog Butter
 Imitation Cheese=Analog Käse
 Imitation Fish=Analog Fisch
 Imitation Meat=Analog Fleisch
 Imitation poultry=Analog Geflügel
-Flax (raw)=Flachs (roh)
-Kohlrabi=Kohlrabi
-Lettuce=Salat
-Parsley=Petersilie
-Peanut=Erdnuss
-Rice=Reis
-Rosemary Twig=Rosemarien Zweig
-Soy Bean=Sojabohnen
-Sunflower=Sonnenblume
-Sunflower Seeds=Sonnenblumenkerne
+Molasses=Melasse
+Pizzadough=Pizzateig
+Rice Flour=Reismehl
 Roasted Kohlrabi=Gerösteter Kohlrabi
 Roasted Sunflower Seeds=Geröstete Sonnenblumenkerne
+Rosemary Twig=Rosemarien Zweig
+Soy Bean=Sojabohnen
+Soy Milk=Soja Milch
+Sunflower Seeds=Sonnenblumenkerne
 Sunflower Seeds Bread=Sonnenblumenkernbrot
+Sunflower Seeds Dough=Sonnenblumenkern Teig
+Sunflower Seeds Flour=Sonnenblumenkern Mehl
 Tofu=Tofu
+Tofu (raw)=Tofu (roh)
 Vegan Sushi=Veganes Sushi
-Glass Bowl=Glasschüssel
-Bottle of Flaxseed Oil=Flasche Leinsamenöl
-Mushroomlight Glass=Leuchtendes Pilzglas
-Bottle of Peanut Oil=Flasche Erdnussöl
-Plate=Teller
-Bottle of Sunflower Seeds Oil=Flasche Sonnenblumenkernöl
-Blueberry Jam=Blaubeer Marmelade
-Ciabatta Bread=Ciabatta Brot
-Edamame (raw)=Edamame (roh)
-Edamame=Edamame
-Salad Oil=Salatöl
-Peanut Butter=Erdnussbutter
-Glass Salad Bowl=Schüssel Salat
-Sauce Hollandaise=Sauce Hollandaise
-Asparagus Hollandaise (raw)=Spargel Hollandaise
-Asparagus on Rice (raw)=Spargel mit Reis (roh)
-Asparagus Soup (raw)=Spargelsuppe (roh)
-Bowl of Rice (raw)=Schüssel Reis (roh)
-Fish on Parsley and Rosemary (raw)=Fisch mit Petersilie und Rosemarien (roh)
-Fryer (raw)=Brathuhn (roh)
-Fryer=Brathuhn
-Kohlrabi Soup (raw)=Kohlrabi Suppe (roh)
-Salad Bowl Hollandaise=Schüssel Salat Hollandaise
-Soy Soup (raw)=Soja Suppe (roh)
-Tofu on Chives and Rosemary (raw)=Tofu mit Schnittlauch und Rosemarien (roh)
+
+### items.lua ###
+### kohlrabi_default.lua ###
+### kohlrabi_redo.lua ###
+
+Kohlrabi=Kohlrabi
+
+### items.lua ###
+### lettuce_default.lua ###
+### lettuce_redo.lua ###
+
+Lettuce=Salat
+
+### items.lua ###
+### parsley_default.lua ###
+### parsley_redo.lua ###
+
+Parsley=Petersilie
+
+### items.lua ###
+### peanut_default.lua ###
+### peanut_redo.lua ###
+
+Peanut=Erdnuss
+
+### items.lua ###
+### rice_default.lua ###
+### rice_redo.lua ###
+
+Rice=Reis
+
+### items.lua ###
+### sunflower_default.lua ###
+### sunflower_redo.lua ###
+
+Sunflower=Sonnenblume
+
+### nodes.lua ###
+
 Asparagus Hollandaise=Spargel Hollandaise
-Asparagus on Rice=Spargel mit Reis
+Asparagus Hollandaise (raw)=Spargel Hollandaise
 Asparagus Soup=Spargel Suppe
+Asparagus Soup (raw)=Spargelsuppe (roh)
+Asparagus on Rice=Spargel mit Reis
+Asparagus on Rice (raw)=Spargel mit Reis (roh)
+Blueberry Jam=Blaubeer Marmelade
+Bottle of Flaxseed Oil=Flasche Leinsamenöl
+Bottle of Peanut Oil=Flasche Erdnussöl
+Bottle of Sunflower Seeds Oil=Flasche Sonnenblumenkernöl
 Bowl of Rice=Schüssel Reis
+Bowl of Rice (raw)=Schüssel Reis (roh)
+Ciabatta Bread=Ciabatta Brot
+Edamame=Edamame
+Edamame (raw)=Edamame (roh)
 Fish on Parsley and Rosemary=Fisch mit Petersilie und Rosemarien
+Fish on Parsley and Rosemary (raw)=Fisch mit Petersilie und Rosemarien (roh)
+Fryer=Brathuhn
+Fryer (raw)=Brathuhn (roh)
+Glass Bowl=Glasschüssel
+Glass Salad Bowl=Schüssel Salat
 Kohlrabi Soup=Kohlrabi Suppe
-Pizza Vegana (raw)=Pizza Vegana (roh)
-Pizza Vegana=Pizza Vegana
-Pizza Funghi (raw)=Pizza Funghi (roh)
+Kohlrabi Soup (raw)=Kohlrabi Suppe (roh)
+Mushroomlight Glass=Leuchtendes Pilzglas
+Peanut Butter=Erdnussbutter
 Pizza Funghi=Pizza Funghi
+Pizza Funghi (raw)=Pizza Funghi (roh)
+Pizza Vegana=Pizza Vegana
+Pizza Vegana (raw)=Pizza Vegana (roh)
+Plate=Teller
+Salad Bowl Hollandaise=Schüssel Salat Hollandaise
+Salad Oil=Salatöl
+Sauce Hollandaise=Sauce Hollandaise
 Soy Soup=Soja Suppe
+Soy Soup (raw)=Soja Suppe (roh)
 Tofu on Chives and Rosemary=Tofu mit Schnittlauch und Rosemarien
+Tofu on Chives and Rosemary (raw)=Tofu mit Schnittlauch und Rosemarien (roh)
+
+### rosemary_default.lua ###
+### rosemary_redo.lua ###
+
 Rosemary=Rosemarien
+
+### soy_default.lua ###
+### soy_redo.lua ###
+
 Soy=Soja

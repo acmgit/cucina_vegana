@@ -1,4 +1,5 @@
-Lines of Settings shorened.
+hunger_ng support added.
+Lines of Settings shortened.
 
 *** Version 2.4
 Fix replacement #s in recipes #3 by fluxionary.
