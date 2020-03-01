@@ -578,6 +578,17 @@ minetest.register_craft({
 			}
 })
 
+minetest.register_craft({
+	output = "cucina_vegana:salad_hollandaise",
+	recipe = {	{"cucina_vegana:parsley", "cucina_vegana:lettuce", "cucina_vegana:chives"},
+				{"cucina_vewgana:sauce_hollandaise", "group:food_oil", ""},
+				{"", "group:food_bowl", ""}
+			},
+    replacements = {
+				{"cucina_vegana:sauce_hollandaise", "vessels:glass_bottle"},
+			}
+
+})
 
 minetest.register_craft({
 	output = "cucina_vegana:soy_soup",
