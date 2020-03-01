@@ -27,11 +27,24 @@ minetest.register_craft({
                     {"default:stick", "default:stick"}
                    }
 })
+
+minetest.register_craft({
+	output = "cucina_vegana:blueberry_pot",
+	recipe = {	{"cucina_vegana:molasses", "default:stick", "cucina_vegana:molasses"},
+				{"cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree"},
+                {"", "bucket:bucket_water", ""}
+			},
+    replacements = {
+                        {"default:stick", "default:stick"},
+                        {"cucina_vegana:molasses", "vessels:drinking_glass 2"},
+                   }
+})
+                        
 minetest.register_craft({
 	output = "cucina_vegana:bowl 5",
 	recipe = {	{"default:glass", "", "default:glass"},
-				{"default:glass", "default:glass", "default:glass"}
-			}
+				{"default:glass", "default:glass", "default:glass"},
+             }
 })
 
 minetest.register_craft({
@@ -40,8 +53,8 @@ minetest.register_craft({
 				{"group:food_flour", "cucina_vegana:rosemary", ""}
 			},
     replacements = {
-                    {"cucina_vegana:soy_milk", "vessels:drinking_glass"},
-                    {"cucina_vegana:sunflower_seeds_oil", "vessels:glass_bottle"},
+                        {"cucina_vegana:soy_milk", "vessels:drinking_glass"},
+                        {"cucina_vegana:sunflower_seeds_oil", "vessels:glass_bottle"},
                     }
 })
 
