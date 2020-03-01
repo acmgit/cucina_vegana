@@ -56,7 +56,7 @@ for bkey,berry in ipairs(berries) do
                                         {mat, berry, berry},
                                     },
                             replacements = {
-                                                {mat, mat}
+                                                {mat, mat .. " 3"}
                                             }
         }) -- minetest.register_craft
 
