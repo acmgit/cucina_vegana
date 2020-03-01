@@ -565,7 +565,10 @@ minetest.register_craft({
 	recipe = {	{"cucina_vegana:parsley", "cucina_vegana:lettuce", "cucina_vegana:chives"},
 				{"", "group:food_oil", ""},
 				{"", "group:food_bowl", ""}
-			}
+			},
+            replacements = {
+                            {"group:food_oil", "vessels:glas_bottle"}
+                           }
 })
 
 minetest.register_craft({
@@ -573,19 +576,20 @@ minetest.register_craft({
 	recipe = {
 				{"cucina_vegana:sauce_hollandaise", "cucina_vegana:salad_bowl", ""}
 			},
-	replacements = {
-				{"cucina_vegana:sauce_hollandaise", "vessels:glass_bottle"},
-			}
+            replacements = {
+                            {"cucina_vegana:sauce_hollandaise", "vessels:glass_bottle"},
+                           }
 })
 
 minetest.register_craft({
 	output = "cucina_vegana:salad_hollandaise",
 	recipe = {	{"cucina_vegana:parsley", "cucina_vegana:lettuce", "cucina_vegana:chives"},
-				{"cucina_vewgana:sauce_hollandaise", "group:food_oil", ""},
+				{"cucina_vegana:sauce_hollandaise", "group:food_oil", ""},
 				{"", "group:food_bowl", ""}
 			},
     replacements = {
-				{"cucina_vegana:sauce_hollandaise", "vessels:glass_bottle"},
+                {"group:food_oil", "vessels:glas_bottle"},
+				{"cucina_vegana:sauce_hollandaise", "vessels:glass_bottle"}
 			}
 
 })
