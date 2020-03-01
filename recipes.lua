@@ -36,7 +36,7 @@ minetest.register_craft({
 			},
     replacements = {
                         {"default:stick", "default:stick"},
-                        {"cucina_vegana:molasses", "vessels:drinking_glass 2"},
+                        {"cucina_vegana:molasses", "vessels:drinking_glass 2"}
                    }
 })
 
@@ -48,7 +48,7 @@ minetest.register_craft({
 			},
     replacements = {
                         {"default:stick", "default:stick"},
-                        {"cucina_vegana:molasses", "vessels:drinking_glass 2"},
+                        {"cucina_vegana:molasses", "vessels:drinking_glass 2"}
                    }
 })
 
@@ -450,6 +450,7 @@ minetest.register_craft({
 			},
 			replacements = {
 							{"bucket:bucket_water", "bucket:bucket_empty"},
+                            {"default:stick", "default:stick"}
 						}
 })
 
@@ -462,6 +463,7 @@ minetest.register_craft({
 			},
 			replacements = {
 							{"bucket:bucket_river_water", "bucket:bucket_empty"},
+                            {"default:stick", "default:stick"}
 						}
 })
 
