@@ -336,6 +336,18 @@ if minetest.get_modpath("pizza") then
         })
 
     cucina_vegana.add_group("pizza:pizza_dough", {pizza_dough = 1})
+    
+    minetest.register_craft({
+        type = "shapeless",
+        output = "pizza:pizza_dough",
+        recipe = {"cucina_vegana:pizza_dough"}
+                            })
+
+    minetest.register_craft({
+        type = "shapeless",
+        output = "cucina_vegana:pizza_dough",
+        recipe = {"pizza:pizza_dough"}
+                            })
 
 end
 
