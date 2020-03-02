@@ -308,7 +308,8 @@ minetest.register_craft({
 	output = "cucina_vegana:imitation_butter",
 	recipe = {	{"group:dye,color_yellow", "cucina_vegana:soy_milk",  "cucina_vegana:soy_milk"}
 			},
-			replacements = {{"cucina_vegana:soy_milk", "vessels:drinking_glass 2"}
+			replacements = {
+                            {"cucina_vegana:soy_milk", "vessels:drinking_glas"}
 						}
 })
 

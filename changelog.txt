@@ -4,6 +4,7 @@ Lines of Settings shortened.
 Recipes for Blueberry-Jam extended.
 Fixed Recipe for Molasses.
 Added new Recipe for salad_hollandaise.
+Fixed Replacement for Soy-Milk.
 
 *** Version 2.4
 Fix replacement #s in recipes #3 by fluxionary.
