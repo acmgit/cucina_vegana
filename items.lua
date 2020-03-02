@@ -37,7 +37,7 @@ minetest.register_craftitem("cucina_vegana:ciabatta_dough", {
 minetest.register_craftitem("cucina_vegana:dandelion_honey", {
 	description = S("Dandelion Honey"),
 	inventory_image = "cucina_vegana_dandelion_honey.png",
-	groups = {flammable = 1, food = 1, food_honey = 1, eatable = 1},
+	groups = {flammable = 1, food = 1, food_honey = 1, food_sugar = 1, eatable = 1},
     on_use = minetest.item_eat(3),
 })
 
