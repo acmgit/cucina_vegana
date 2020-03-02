@@ -594,7 +594,8 @@ if minetest.get_modpath("petz") then
 
     cucina_vegana.add_group("petz:cheese", {food_cheese = 1, eatable = 1})
     cucina_vegana.add_group("petz:milk", {food_milk = 1, eatable = 1})
-
+    cucina_vegana.add_group("petz:honey_bottle", {food_sugar = 1, food_honey = 1}
+                            
 end -- if minetest.get_modpath("petz"
 
 cucina_vegana.add_group("default:blueberries", {food_blueberry = 1, food_blueberries = 1})
