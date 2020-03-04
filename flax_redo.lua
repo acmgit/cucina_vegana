@@ -12,6 +12,16 @@ local pname = "flax"
 local step = 6
 local modname = minetest.get_current_modname()
 
+local germ = tonumber(cucina_vegana.plant_settings.germ_launch)
+
+if germ == 0 then
+    germ = "_seed"
+    
+else
+    germ = "_" .. germ
+    
+end
+
 -- chives
 minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 	description = dname .. " " .. S("Seed"),
@@ -27,7 +37,7 @@ minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 	sunlight_propagates = true,
 	selection_box = farming.select,
 	on_place = function(itemstack, placer, pointed_thing)
-		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:" .. pname .. "_1")
+		return farming.place_seed(itemstack, placer, pointed_thing, "cucina_vegana:" .. pname .. germ)
 	end,
 })
 
@@ -118,12 +128,11 @@ if(cucina_vegana.plant_settings.bonemeal) then
 
 end -- if(cucina_vegana.plant_settings.bonemeal
 
-if (minetest.get_modpath("farming_nextgen")) then
-    farmingNG.register_seed("cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_1")
-    farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step)
-    minetest.log("info", "[MOD] " .. modname .. ": cucina_vegana:seed_" .. pname .. " at farming_nextgen registered.")
+-- Register @ farming_nextgen
+if cucina_vegana.farming_ng then
+    cucina_vegana.register_farming_ng(pname, step)
 
-end
+end -- if(cucina_vegana.farming_ng
 
 minetest.register_alias("cucina_vegana:flex_1", "cucina_vegana:" .. pname .. "_1")
 minetest.register_alias("cucina_vegana:flex_2", "cucina_vegana:" .. pname .. "_2")

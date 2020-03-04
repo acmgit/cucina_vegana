@@ -57,9 +57,8 @@ if(cucina_vegana.plant_settings.bonemeal) then
 
 end -- if(cucina_vegana.plant_settings.bonemeal
 
-if (minetest.get_modpath("farming_nextgen")) then
-    farmingNG.register_seed("cucina_vegana:seed_" .. pname, "cucina_vegana:" .. pname .. "_1")
-    farmingNG.register_harvest("cucina_vegana:" .. pname .. "_" .. step)
-    minetest.log("info", "[MOD] " .. modname .. ": cucina_vegana:seed_" .. pname .. " at farming_nextgen registered.")
+-- Register @ farming_nextgen
+if cucina_vegana.farming_ng then
+    cucina_vegana.register_farming_ng(pname, step)
 
-end
+end -- if(cucina_vegana.farming_ng

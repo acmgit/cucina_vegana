@@ -1,3 +1,7 @@
+#Germ launch
+# 0 = start as seed
+cucina_vegana.plant_settings.germ_launch (Start germ @) int 0
+
 #Asparagus
 cucina_vegana.plant_settings.asparagus (Enable Asparagus) bool true
 cucina_vegana.plant_settings.asparagus_scale (Spreadvalue) float 0.0007
