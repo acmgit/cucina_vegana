@@ -15,10 +15,10 @@ local germ = tonumber(cucina_vegana.plant_settings.germ_launch)
 
 if germ == 0 then
     germ = "_seed"
-    
+
 else
     germ = "_" .. germ
-    
+
 end
 
 if(minetest.registered_nodes["flowers:sunflower"]  ~= nil) then

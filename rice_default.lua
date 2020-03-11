@@ -10,7 +10,6 @@ local S = cucina_vegana.get_translator
 local dname = S("Rice")
 local pname = "rice"
 local step = 6
-local modname = minetest.get_current_modname()
 
 -- rice
 farming.register_plant("cucina_vegana:" .. pname .. "", {

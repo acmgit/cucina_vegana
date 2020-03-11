@@ -37,7 +37,7 @@ elseif minetest.get_translator ~= nil then
 
 else
     S = function ( s ) return s end
-        
+
 end -- if(minetest.get_modpath(
 
 cucina_vegana.get_translator = S

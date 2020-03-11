@@ -10,15 +10,14 @@ local S = cucina_vegana.get_translator
 local dname = S("Kohlrabi")
 local pname = "kohlrabi"
 local step = 6
-local modname = minetest.get_current_modname()
 local germ = tonumber(cucina_vegana.plant_settings.germ_launch)
 
 if germ == 0 then
     germ = "_seed"
-    
+
 else
     germ = "_" .. germ
-    
+
 end
 
 	-- kohlrabi

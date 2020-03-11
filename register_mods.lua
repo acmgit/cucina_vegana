@@ -178,10 +178,10 @@ end -- hunger
 
 if(minetest.get_modpath("hunger_ng")) then
     local add = hunger_ng.add_hunger_data
-    
+
     for key, item in pairs(cv_items) do
         add(item[1], {satiates = item[2], returns = item[3], heals = math.floor((item[5] or 0)), timeout = 0})
-                                    
+
     end -- for key, data
 
 end -- hunger_ng

@@ -10,7 +10,6 @@ local S = cucina_vegana.get_translator
 local dname = S("Flax")
 local pname = "flax"
 local step = 6
-local modname = minetest.get_current_modname()
 
 -- flex
 farming.register_plant("cucina_vegana:" .. pname, {
