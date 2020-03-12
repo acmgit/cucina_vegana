@@ -642,6 +642,9 @@ minetest.register_craft({
 	recipe = {	{"cucina_vegana:imitation_fish", "cucina_vegana:bowl_rice", ""},
 				{"default:papyrus", "", ""}
 			},
+	replacements = {
+		{"cucina_vegana:bowl_rice", "cucina_vegana:bowl"}
+	}
 })
 
 minetest.register_craft({
