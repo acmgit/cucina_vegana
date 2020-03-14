@@ -598,5 +598,35 @@ if minetest.get_modpath("petz") then
 
 end -- if minetest.get_modpath("petz"
 
+--[[
+        **************************************************
+        ***         Support for aqua_farming           ***
+        **************************************************
+]]--
+
+if minetest.get_modpath("aqua_farming") then
+
+    minetest.register_craft({
+        output = "cucina_vegana:vegan_sushi",
+        recipe = {	{"cucina_vegana:imitation_fish", "cucina_vegana:bowl_rice", ""},
+                    {"aqua_farming:alga_item", "", ""}
+                },
+        replacements = {
+            {"cucina_vegana:bowl_rice", "cucina_vegana:bowl"}
+        }
+    })
+
+    minetest.register_craft({
+        output = "cucina_vegana:imitation_fish",
+        recipe = {
+                    {"aqua_farming:sea_grass_item","cucina_vegana:tofu", "group:dye,color_blue"},
+                    {"cucina_vegana:tofu","aqua_farming:sea_grass_item", "cucina_vegana:tofu"},
+                    {"","cucina_vegana:tofu", ""},
+
+                },
+    })
+
+end
+
 cucina_vegana.add_group("default:blueberries", {food_blueberry = 1, food_blueberries = 1})
 cucina_vegana.add_group("bushes:blueberry", {food_blueberries = 1})
