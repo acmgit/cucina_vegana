@@ -30,3 +30,4 @@ petz?
 lemontree?
 clementinetree?
 hunger_ng?
+signs_bot?

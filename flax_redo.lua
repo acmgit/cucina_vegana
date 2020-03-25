@@ -133,6 +133,16 @@ if cucina_vegana.farming_ng then
 
 end -- if(cucina_vegana.farming_ng
 
+-- Register @ Signs_bot
+if(signs_bot) then
+    
+    local fs = signs_bot.register_farming_seed
+    local fc = signs_bot.register_farming_crop
+	fs("cucina_vegana:seed_"..pname,  "cucina_vegana:" .. pname .. "_1")
+	fc("cucina_vegana:".. pname .. "_" .. step,     "cucina_vegana:" .. pname,         "cucina_vegana:" .. pname .. "seed")
+    
+end
+
 minetest.register_alias("cucina_vegana:flex_1", "cucina_vegana:" .. pname .. "_1")
 minetest.register_alias("cucina_vegana:flex_2", "cucina_vegana:" .. pname .. "_2")
 minetest.register_alias("cucina_vegana:flex_3", "cucina_vegana:" .. pname .. "_3")
