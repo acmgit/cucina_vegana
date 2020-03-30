@@ -248,3 +248,18 @@ if(minetest.get_modpath("clementinetree")) then
     cucina_vegana.add_group("clementinetree:clementine", {food_orange = 1, food_fruit = 1})
 
 end
+
+--   *******************************************
+--   *****      Techage-Support          *****
+--   *******************************************
+if(techage.register_plant) then
+	for name,ndef in pairs(minetest.registered_nodes) do
+		if type(name) == "string" then
+			local mod = string.split(name, ":")[1]
+			if mod == "cucina_vegana" then
+				if ndef.on_timer then -- probably a plant that still needs to grow
+					techage.register_plant(name)
+				end
+			end
+		end
+end
