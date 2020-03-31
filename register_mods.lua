@@ -262,4 +262,5 @@ if(techage.register_plant) then
 				end
 			end
 		end
+    end
 end
