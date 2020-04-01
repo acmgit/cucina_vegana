@@ -626,6 +626,16 @@ if minetest.get_modpath("aqua_farming") then
                 },
     })
 
+    minetest.register_craft({
+        output = "cucina_vegana:sea_salad",
+        recipe = {
+                    {"aqua_farming:sea_cucumber_item","cucina_vegana:parsley", "cucina_vegana:lettuce"},
+                    {"cucina_vegana:chives","aqua_farming:sea_anemone_item", "cucina_vegana:asparagus"},
+                    {"","cucina_vegana:bowl", ""},
+
+                },
+    })
+
 end
 
 cucina_vegana.add_group("default:blueberries", {food_blueberry = 1, food_blueberries = 1})

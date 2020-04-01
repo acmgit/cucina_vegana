@@ -28,7 +28,6 @@
       {'cucina_vegana:sunflower_seeds_oil',           3,              'vessels:glass_bottle',     nil,    nil,    nil},
       {'cucina_vegana:soy_milk',                      1,              'vessels:drinking_glass',   nil,    0.5,    nil},
 
-
       --               Name                          Saturation      Replace with                Poison  Heal    Sound
       -- eatable raws
       {'cucina_vegana:imitation_butter',              2,              nil,                        nil,    0.5,    nil},
@@ -50,6 +49,7 @@
       {'cucina_vegana:pizza_vegana',                  6,              nil,                        nil,    2.0,    nil},
       {'cucina_vegana:pizza_funghi',                  6,              nil,                        nil,    2.0,    nil},
       {'cucina_vegana:salad_hollandaise',             4,              'cucina_vegana:bowl',       nil,    nil,    nil},
+      {'cucina_vegana:sea_salad',                     5,              'cucina_vegana:bowl',       nil,    1.5,    nil},
       {'cucina_vegana:soy_soup_cooked',               5,              'cucina_vegana:plate',      nil,    0.5,    nil},
       {'cucina_vegana:sunflower_seeds_bread',         4,              nil,                        nil,    0.5,    nil},
       {'cucina_vegana:sunflower_seeds_roasted',       3,              nil,                        nil,    nil,    nil},
