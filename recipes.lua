@@ -294,6 +294,32 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "cucina_vegana:rice_starch 2",
+	recipe = {	{"wool:white", "cucina_vegana:rice", "wool:white"},
+				{"wool:white", "cucina_vegana:rice", "wool:white"},
+                {"", "bucket:bucket_water", ""}
+			},
+    replacements = {
+                {"wool:white", "farming:cotton 2"},
+                {"bucket:bucket_water", "bucket:bucket_empty"}
+            }
+
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:rice_starch 2",
+	recipe = {	{"wool:white", "cucina_vegana:rice", "wool:white"},
+				{"wool:white", "cucina_vegana:rice", "wool:white"},
+                {"", "bucket:bucket_river_water", ""}
+			},
+    replacements = {
+                {"wool:white", "farming:cotton 2"},
+                {"bucket:bucket_river_water", "bucket:bucket_empty"}
+            }
+
+})
+
+minetest.register_craft({
 	output = "wool:white",
 	recipe = {	{"cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted"},
 				{"cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted"},

@@ -71,6 +71,12 @@ minetest.register_craftitem("cucina_vegana:rice_flour", {
     inventory_image = "cucina_vegana_rice_flour.png",
 })
 
+minetest.register_craftitem("cucina_vegana:rice_starch", {
+    description = S("Rice Starch"),
+    groups = {food_vegan = 1, food_starch = 1},
+    inventory_image = "cucina_vegana_rice_starch.png",
+})
+
 minetest.register_craftitem("cucina_vegana:soy_milk", {
 	description = S("Soy Milk"),
 	inventory_image = "cucina_vegana_soy_milk.png",
