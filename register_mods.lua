@@ -252,7 +252,7 @@ end
 --   *******************************************
 --   *****      Techage-Support          *****
 --   *******************************************
-if(techage.register_plant) then
+if(minetest.get_modpath("techage") and techage.register_plant) then
 	for name,ndef in pairs(minetest.registered_nodes) do
 		if type(name) == "string" then
 			local mod = string.split(name, ":")[1]
