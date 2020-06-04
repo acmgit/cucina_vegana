@@ -17,6 +17,7 @@ cucina_vegana.farming_default = true
 cucina_vegana.plant_settings = {}
 cucina_vegana.plant_settings.bonemeal_list = {}
 cucina_vegana.farming_ng = minetest.get_modpath("farming_nextgen")
+cucina_vegana.signs_bot = minetest.get_modpath("signs_bot")
 cucina_vegana.plant_settings.germ_launch = 0
 cucina_vegana.modname = minetest.get_current_modname()
 
@@ -25,6 +26,8 @@ local modname = cucina_vegana.modname
 
 dofile(modpath .. "/settings.lua")
 dofile(modpath .. "/tools.lua")
+
+
 local S
 
 if(minetest.get_modpath("intllib")) then
@@ -73,6 +76,7 @@ local plants = {
 			["sunflower"] = cucina_vegana.plant_settings.sunflower,
 
 		}
+
 
 
 
