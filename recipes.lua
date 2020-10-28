@@ -637,7 +637,7 @@ minetest.register_craft({
 	output = "cucina_vegana:sunflower_seeds 4",
 	recipe = {"flowers:sunflower"},
 	replacements = {
-		{"flowers:sunflower", "group:dye,color_yellow"}
+		{"flowers:sunflower", "dye:yellow"}
 	}
 })
 
