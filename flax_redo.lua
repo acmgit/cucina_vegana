@@ -134,12 +134,8 @@ if cucina_vegana.farming_ng then
 end -- if(cucina_vegana.farming_ng
 
 -- Register @ Signs_bot
-if(cucina_vegana.signs_bot) then
-    
-    local fs = signs_bot.register_farming_seed
-    local fc = signs_bot.register_farming_crop
-	fs("cucina_vegana:"..pname .. "_seed",  "cucina_vegana:" .. pname .. "_1")
-	fc("cucina_vegana:".. pname .. "_" .. step,     "cucina_vegana:" .. pname,         "cucina_vegana:" .. pname .. "_seed")
+if(cucina_vegana.sign_bot) then
+    cucina_vegana.register_sign_bot(pname, step)
     
 end
 
