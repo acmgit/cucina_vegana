@@ -55,6 +55,7 @@ vessels<br>
 
 ### optional
 
+aqua_farming<br>
 basic_materials<br>
 bbq<br>
 bees<br>
@@ -72,6 +73,7 @@ fishing<br>
 flowers<br>
 homedecor<br>
 hunger<br>
+hunger_ng<br>
 intllib<br>
 lemontree<br>
 mobs<br>
@@ -79,6 +81,8 @@ moreblocks<br>
 petz<br>
 pizza<br>
 ropes<br>
+signs_bot<br>
+techage<br>
 technic<br>
 wine<br>
 wool<br>
