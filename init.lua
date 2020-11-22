@@ -12,13 +12,13 @@
 ]]--
 
 cucina_vegana = {}
-cucina_vegana.version = "2.6"
+cucina_vegana.version = "2.7"
 cucina_vegana.farming_default = true
 cucina_vegana.plant_settings = {}
 cucina_vegana.plant_settings.bonemeal_list = {}
 cucina_vegana.farming_ng = minetest.get_modpath("farming_nextgen")
 cucina_vegana.signs_bot = minetest.get_modpath("signs_bot")
-cucina_vegana.register_sign_bot = nil
+cucina_vegana.register_signs_bot = nil
 cucina_vegana.plant_settings.germ_launch = 0
 cucina_vegana.modname = minetest.get_current_modname()
 
@@ -29,7 +29,7 @@ dofile(modpath .. "/settings.lua")
 dofile(modpath .. "/tools.lua")
 
 if(cucina_vegana.signs_bot) then
-	dofile(modpath .. "/register_sign_bot.lua")
+	dofile(modpath .. "/register_signs_bot.lua")
 end
 
 

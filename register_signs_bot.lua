@@ -1,4 +1,4 @@
-function cucina_vegana.register_sign_bot(pname, step)
+function cucina_vegana.register_signs_bot(pname, step)
 	local fp = signs_bot.register_farming_plant
 	local mname = cucina_vegana.modname
 	
