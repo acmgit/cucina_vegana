@@ -583,7 +583,7 @@ minetest.register_craft({
 				{"", "group:food_plate", ""}
 			},
 			replacements = {{"bucket:bucket_river_water", "bucket:bucket_empty"},
-						   {"group:food_oil", "vessels:glas_bottle"},
+						   {"group:food_oil", "vessels:glass_bottle"},
 						}
 })
 
@@ -594,7 +594,7 @@ minetest.register_craft({
 				{"", "group:food_bowl", ""}
 			},
             replacements = {
-                            {"group:food_oil", "vessels:glas_bottle"}
+                            {"group:food_oil", "vessels:glass_bottle"}
                            }
 })
 
@@ -615,7 +615,7 @@ minetest.register_craft({
 				{"", "group:food_bowl", ""}
 			},
     replacements = {
-                {"group:food_oil", "vessels:glas_bottle"},
+                {"group:food_oil", "vessels:glass_bottle"},
 				{"cucina_vegana:sauce_hollandaise", "vessels:glass_bottle"}
 			}
 
