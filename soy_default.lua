@@ -52,11 +52,8 @@ minetest.register_alias("soy:wild_".. pname, "cucina_vegana:wild_".. pname)
 minetest.register_alias("soy:".. pname, "cucina_vegana:".. pname)
 minetest.register_alias("soy:seed_".. pname, "cucina_vegana:seed_".. pname)
 
-if(cucina_vegana.plant_settings.bonemeal) then
-    table.insert(cucina_vegana.plant_settings.bonemeal_list,
-                 {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
-
-end -- if(cucina_vegana.plant_settings.bonemeal
+table.insert(cucina_vegana.plant_settings.bonemeal_list,
+             {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
 
 -- Register @ farming_nextgen
 if cucina_vegana.farming_ng then

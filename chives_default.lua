@@ -46,11 +46,8 @@ minetest.register_node("cucina_vegana:wild_" .. pname, {
 	},
 })
 
-if(cucina_vegana.plant_settings.bonemeal) then
-    table.insert(cucina_vegana.plant_settings.bonemeal_list,
-                 {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
-
-end -- if(cucina_vegana.plant_settings.bonemeal
+table.insert(cucina_vegana.plant_settings.bonemeal_list,
+             {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
 
 -- Register @ farming_nextgen
 if cucina_vegana.farming_ng then
