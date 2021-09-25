@@ -50,11 +50,8 @@ minetest.register_alias("kohlrabi:kohlrabi", "cucina_vegana:" .. pname)
 minetest.register_alias("kohlrabi:seed", "cucina_vegana:" .. pname .. "_seed")
 minetest.register_alias("kohlrabi:wild_kohlrabi", "cucina_vegana:wild_" .. pname)
 
-if(cucina_vegana.plant_settings.bonemeal) then
-    table.insert(cucina_vegana.plant_settings.bonemeal_list,
-                 {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
-
-end -- if(cucina_vegana.plant_settings.bonemeal
+table.insert(cucina_vegana.plant_settings.bonemeal_list,
+             {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
 
 -- Register @ farming_nextgen
 if cucina_vegana.farming_ng then
