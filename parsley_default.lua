@@ -14,6 +14,7 @@ local step = 5
 -- Parsley
 farming.register_plant("cucina_vegana:" .. pname, {
 	description = dname .. " " .. S("Seed"),
+    harvest_description = dname,
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	steps = step,
 	minlight = cucina_vegana.plant_settings.parsley_light,
@@ -50,8 +51,11 @@ minetest.register_alias("parsley:parsley", "cucina_vegana:" .. pname)
 minetest.register_alias("parsley:seed", "cucina_vegana:" .. pname .. "_seed")
 minetest.register_alias("parsley:wild_parsley", "cucina_vegana:wild_" .. pname)
 
-table.insert(cucina_vegana.plant_settings.bonemeal_list,
-             {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
+if(cucina_vegana.plant_settings.bonemeal) then
+    table.insert(cucina_vegana.plant_settings.bonemeal_list,
+                 {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
+
+end -- if(cucina_vegana.plant_settings.bonemeal
 
 -- Register @ farming_nextgen
 if cucina_vegana.farming_ng then
@@ -61,6 +65,6 @@ end -- if(cucina_vegana.farming_ng
 
 -- Register @ Signs_bot
 if(cucina_vegana.signs_bot) then
-    cucina_vegana.register_signs_bot(pname, step)
+        cucina_vegana.register_signs_bot(pname, 1, step)
 
 end

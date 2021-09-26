@@ -1,6 +1,6 @@
 --[[
 	**********************************************
-	***           Flex default                 ***
+	***           Peanut default               ***
 	**********************************************
 ]]--
 
@@ -11,9 +11,10 @@ local dname = S("Peanut")
 local pname = "peanut"
 local step = 7
 
--- flex
+-- Peanut
 farming.register_plant("cucina_vegana:" .. pname, {
 	description = dname .. " " .. S("Seed"),
+    harvest_description = dname,
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	steps = step,
 	minlight = cucina_vegana.plant_settings.peanut_light,
@@ -47,8 +48,11 @@ minetest.register_node("cucina_vegana:wild_" .. pname, {
 
 cucina_vegana.add_group("cucina_vegana:seed_" .. pname, {seed_peanut = 1})
 
-table.insert(cucina_vegana.plant_settings.bonemeal_list,
-             {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
+if(cucina_vegana.plant_settings.bonemeal) then
+    table.insert(cucina_vegana.plant_settings.bonemeal_list,
+                 {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})
+
+end -- if(cucina_vegana.plant_settings.bonemeal
 
 -- Register @ farming_nextgen
 if cucina_vegana.farming_ng then
@@ -58,6 +62,6 @@ end -- if(cucina_vegana.farming_ng
 
 -- Register @ Signs_bot
 if(cucina_vegana.sign_bot) then
-    cucina_vegana.register_sign_bot(pname, step)
+    cucina_vegana.register_signs_bot(pname, 1, step) 
 
 end
