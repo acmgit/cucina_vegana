@@ -131,7 +131,7 @@ minetest.register_craftitem("cucina_vegana:imitation_fish", {
 
 minetest.register_craftitem("cucina_vegana:imitation_meat", {
 	description = S("Imitation Meat"),
-	groups = {food = 1, food_meat = 1, food_vegan = 1, eatable = 1, foot_meat_raw},
+	groups = {food = 1, food_meat = 1, food_vegan = 1, eatable = 1, food_meat_raw = 1},
 	inventory_image = "cucina_vegana_imitation_meat.png",
 	on_use = minetest.item_eat(3),
 })
