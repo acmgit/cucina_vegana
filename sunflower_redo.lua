@@ -56,7 +56,7 @@ else
         waving = 1,
 		buildable_to = true,
 		drop =  "",
-		minlight = 13,
+		minlight = cucina_vegana.plant_settings.sunflower_light,
 		selection_box = farming.select,
 		groups = {
 			flammable = 4, snappy=3, dig_immediate=1, plant = 1, attached_node = 1,

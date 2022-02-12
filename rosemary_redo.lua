@@ -49,7 +49,7 @@ local crop_def = {
     waving = 1,
 	buildable_to = true,
 	drop =  "",
-	minlight = 12,
+	minlight = cucina_vegana.plant_settings.rosemary_light,
 	selection_box = farming.select,
 	groups = {
 		flammable = 4, snappy=3, dig_immediate=1, plant = 1, attached_node = 1,

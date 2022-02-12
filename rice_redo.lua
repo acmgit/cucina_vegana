@@ -48,7 +48,7 @@ end
 		walkable = false,
         waving = 1,
 		buildable_to = true,
-        minlight = 12,
+        minlight = cucina_vegana.plant_settings.rice_light,
 		drop =  "",
 		selection_box = farming.select,
 		groups = {

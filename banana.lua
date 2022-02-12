@@ -1,7 +1,7 @@
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = {"default:dirt_with_rainforest_litter"},
-	spawn_by = {"default:jungletree"},
+	spawn_by = {"default:jungletree", "group:water"},
 	num_spawn_by = 2,
 	sidelen = 32,
 	noise_params = {

@@ -48,7 +48,7 @@ end
 		walkable = false,
         waving = 1,
 		buildable_to = true,
-        minlight = 11,
+        minlight = cucina_vegana.plant_settings.asparagus_light,
 		drop =  "",
 		selection_box = farming.select,
 		groups = {

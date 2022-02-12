@@ -50,7 +50,7 @@ local crop_def = {
 	buildable_to = true,
 	drop =  "",
 	selection_box = farming.select,
-	minlight = 12,
+	minlight = cucina_vegana.plant_settings.soy_light,
 	groups = {
 		snappy = 3, flammable = 4, plant = 1, dig_immediate=1, attached_node = 1,
 		not_in_creative_inventory = 1, growing = 1
