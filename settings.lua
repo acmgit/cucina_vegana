@@ -19,7 +19,7 @@ cucina_vegana.plant_settings.asparagus_light = minetest.settings:get(cv_setting 
 
 -- Banana
 cucina_vegana.plant_settings.banana = minetest.settings:get_bool(cv_setting .. "banana", true)
-cucina_vegana.plant_settings.banana_scale = minetest.settings:get(cv_setting .."banana_scale") or 0.0006
+cucina_vegana.plant_settings.banana_scale = minetest.settings:get(cv_setting .."banana_scale") or 0.009
 cucina_vegana.plant_settings.banana_light = minetest.settings:get(cv_setting .."banana") or 12
 
 -- Chives
