@@ -7,6 +7,11 @@ cucina_vegana.plant_settings.asparagus (Enable Asparagus) bool true
 cucina_vegana.plant_settings.asparagus_scale (Spreadvalue) float 0.0007
 cucina_vegana.plant_settings.asparagus_light (Min. Light) int 11
 
+#Banana
+cucina_vegana.plant_settings.banana (Enable Banana) bool true
+cucina_vegana.plant_settings.banana_scale (Spreadvalue) float 0.0006
+cucina_vegana.plant_settings.banana_light (Min. Light) int 12
+
 #Chives
 cucina_vegana.plant_settings.chives (Enable Chives) bool true
 cucina_vegana.plant_settings.chives_scale (Spreadvalue) float 0.0005

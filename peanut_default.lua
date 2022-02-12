@@ -62,6 +62,6 @@ end -- if(cucina_vegana.farming_ng
 
 -- Register @ Signs_bot
 if(cucina_vegana.sign_bot) then
-    cucina_vegana.register_signs_bot(pname, 1, step) 
+    cucina_vegana.register_signs_bot(pname, 1, step)
 
 end

@@ -3,6 +3,8 @@
 
 ### asparagus_default.lua ###
 ### asparagus_redo.lua ###
+### banana_default.lua ###
+### banana_redo.lua ###
 ### chives_default.lua ###
 ### chives_redo.lua ###
 ### flax_default.lua ###
@@ -34,6 +36,7 @@ Seed=
 Asparagus=
 
 ### asparagus_default.lua ###
+### banana_default.lua ###
 ### chives_default.lua ###
 ### flax_default.lua ###
 ### kohlrabi_default.lua ###
@@ -48,6 +51,7 @@ Asparagus=
 Wild=
 
 ### asparagus_redo.lua ###
+### banana_redo.lua ###
 ### chives_redo.lua ###
 ### flax_redo.lua ###
 ### kohlrabi_redo.lua ###
@@ -60,6 +64,12 @@ Wild=
 ### sunflower_redo.lua ###
 
 Wild =
+
+### banana_default.lua ###
+### banana_redo.lua ###
+### items.lua ###
+
+Banana=
 
 ### chives_default.lua ###
 ### chives_redo.lua ###

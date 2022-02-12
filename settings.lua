@@ -17,6 +17,11 @@ cucina_vegana.plant_settings.asparagus = minetest.settings:get_bool(cv_setting .
 cucina_vegana.plant_settings.asparagus_scale = minetest.settings:get(cv_setting .."asparagus_scale") or 0.0007
 cucina_vegana.plant_settings.asparagus_light = minetest.settings:get(cv_setting .."asparagus_light") or 11
 
+-- Banana
+cucina_vegana.plant_settings.asparagus = minetest.settings:get_bool(cv_setting .. "banana", true)
+cucina_vegana.plant_settings.asparagus_scale = minetest.settings:get(cv_setting .."banana_scale") or 0.0006
+cucina_vegana.plant_settings.asparagus_light = minetest.settings:get(cv_setting .."banana") or 12
+
 -- Chives
 cucina_vegana.plant_settings.chives = minetest.settings:get_bool(cv_setting .."chives", true)
 cucina_vegana.plant_settings.chives_scale = minetest.settings:get(cv_setting .."chives_scale") or 0.0005

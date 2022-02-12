@@ -8,11 +8,13 @@ function cucina_vegana.register_signs_bot(pname, start, steps)
 	local mname = cucina_vegana.modname
 
     if(cucina_vegana.farming_default) then
-        fp("cucina_vegana:seed_" .. pname, "cucina_vegana:" .. pname .. "_" .. start, "cucina_vegana:" .. pname .. "_" .. steps)
-        
+        fp("cucina_vegana:seed_" .. pname, "cucina_vegana:" .. pname .. "_"
+        .. start, "cucina_vegana:" .. pname .. "_" .. steps)
+
     else
-        fp("cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_" .. start, "cucina_vegana:" .. pname .. "_" .. steps)
-        
+        fp("cucina_vegana:" .. pname .. "_seed", "cucina_vegana:" .. pname .. "_"
+        .. start, "cucina_vegana:" .. pname .. "_" .. steps)
+
     end
-    
+
 end
