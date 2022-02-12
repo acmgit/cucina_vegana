@@ -103,6 +103,33 @@ end
 	}
 	minetest.register_node("cucina_vegana:" .. pname .. "_" .. step, table.copy(crop_def))
 
+-- stage 7
+crop_def.tiles = {"cucina_vegana_" .. pname .. "_7.png"}
+crop_def.drop = {
+	items = {
+		{items = {"cucina_vegana:" .. pname}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname}, rarity = 2},
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
+	}
+}
+minetest.register_node("cucina_vegana:" .. pname .. "_7", table.copy(crop_def))
+
+-- stage 8 (final)
+crop_def.tiles = {"cucina_vegana_" .. pname .. "_8.png"}
+crop_def.groups.growing = 0
+crop_def.drop = {
+	items = {
+		{items = {"cucina_vegana:" .. pname}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname}, rarity = 2},
+		{items = {"cucina_vegana:" .. pname}, rarity = 3},
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
+	}
+}
+minetest.register_node("cucina_vegana:" .. pname .. "_8", table.copy(crop_def))
+
 	-- Register for Mapgen
 	minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
 		description = S("Wild ") .. dname,

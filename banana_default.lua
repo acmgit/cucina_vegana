@@ -11,13 +11,13 @@ local dname = S("Banana")
 local pname = "banana"
 local step = 8
 
--- asparagus
+-- banana
 farming.register_plant("cucina_vegana:" .. pname, {
 	description = dname .. " " .. S("Seed"),
     harvest_description = dname,
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	steps = step,
-	minlight = cucina_vegana.plant_settings.asparagus_light,
+	minlight = cucina_vegana.plant_settings.banana_light,
 	fertility = {"grassland"},
 	groups = {flammable = 4, attached_node = 1},
 })
