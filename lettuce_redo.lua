@@ -118,19 +118,6 @@ minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
 
 cucina_vegana.add_group("cucina_vegana:" .. pname .. "_seed", {seed_lettuce = 1})
 
--- to import the old mod in cucina_vegana
--- can deleted if you have a clean world.
-
-minetest.register_alias("lettuce:lettuce_1", "cucina_vegana:" .. pname .. "_1")
-minetest.register_alias("lettuce:lettuce_2", "cucina_vegana:" .. pname .. "_2")
-minetest.register_alias("lettuce:lettuce_3", "cucina_vegana:" .. pname .. "_3")
-minetest.register_alias("lettuce:lettuce_4", "cucina_vegana:" .. pname .. "_4")
-minetest.register_alias("lettuce:lettuce_5", "cucina_vegana:" .. pname .. "_" .. step .. "")
-
-minetest.register_alias("lettuce:lettuce", "cucina_vegana:" .. pname .. "")
-minetest.register_alias("lettuce:seed", "cucina_vegana:" .. pname .. "_seed")
-minetest.register_alias("lettuce:wild_lettuce", "cucina_vegana:wild_" .. pname .. "")
-
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,
                  {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})

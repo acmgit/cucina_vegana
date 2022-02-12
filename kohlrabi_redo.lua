@@ -127,20 +127,6 @@ end
 		},
 	})
 
-
--- to import the old mod in cucina_vegana
--- can deleted if you have a clean world.
-
-minetest.register_alias("kohlrabi:kohlrabi_1", "cucina_vegana:" .. pname .. "_1")
-minetest.register_alias("kohlrabi:kohlrabi_2", "cucina_vegana:" .. pname .. "_2")
-minetest.register_alias("kohlrabi:kohlrabi_3", "cucina_vegana:" .. pname .. "_3")
-minetest.register_alias("kohlrabi:kohlrabi_4", "cucina_vegana:" .. pname .. "_4")
-minetest.register_alias("kohlrabi:kohlrabi_5", "cucina_vegana:" .. pname .. "_5")
-
-minetest.register_alias("kohlrabi:kohlrabi", "cucina_vegana:" .. pname .. "")
-minetest.register_alias("kohlrabi:seed", "cucina_vegana:" .. pname .. "_seed")
-minetest.register_alias("kohlrabi:wild_kohlrabi", "cucina_vegana:wild_" .. pname .. "")
-
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,
                  {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})

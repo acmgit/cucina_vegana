@@ -139,13 +139,3 @@ if(cucina_vegana.signs_bot) then
 
 
 end
-
-minetest.register_alias("cucina_vegana:flex_1", "cucina_vegana:" .. pname .. "_1")
-minetest.register_alias("cucina_vegana:flex_2", "cucina_vegana:" .. pname .. "_2")
-minetest.register_alias("cucina_vegana:flex_3", "cucina_vegana:" .. pname .. "_3")
-minetest.register_alias("cucina_vegana:flex_4", "cucina_vegana:" .. pname .. "_4")
-minetest.register_alias("cucina_vegana:flex_5", "cucina_vegana:" .. pname .. "_5")
-minetest.register_alias("cucina_vegana:flex_6", "cucina_vegana:" .. pname .. "_" .. step .. "")
-minetest.register_alias("cucina_vegana:flex_seed", "cucina_vegana:" .. pname .. "_seed")
-minetest.register_alias("cucina_vegana:flex_raw", "cucina_vegana:" .. pname)
-minetest.register_alias("cucina_vegana:wild_flex", "cucina_vegana:wild_" .. pname)

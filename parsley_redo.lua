@@ -118,18 +118,6 @@ minetest.register_node("cucina_vegana:wild_" .. pname, {
 	},
 })
 
--- to import the old mod in cucina_vegana
--- can deleted if you have a clean world.
-
-minetest.register_alias("parsley:parsley_1", "cucina_vegana:" .. pname .. "_1")
-minetest.register_alias("parsley:parsley_2", "cucina_vegana:" .. pname .. "_2")
-minetest.register_alias("parsley:parsley_3", "cucina_vegana:" .. pname .. "_3")
-minetest.register_alias("parsley:parsley_4", "cucina_vegana:" .. pname .. "_4")
-minetest.register_alias("parsley:parsley_5", "cucina_vegana:" .. pname .. "_" .. step)
-
-minetest.register_alias("parsley:parsley", "cucina_vegana:" .. pname .. "")
-minetest.register_alias("parsley:seed", "cucina_vegana:" .. pname .. "_seed")
-minetest.register_alias("parsley:wild_parsley", "cucina_vegana:wild_" .. pname .. "")
 
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,
