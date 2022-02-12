@@ -12,7 +12,7 @@ minetest.register_decoration({
 		octaves = 4,
 		persist = 0.6
 	},
-	y_min = 10,
+	y_min = 1,
 	y_max = 120,
 	decoration = "cucina_vegana:wild_banana",
 })
