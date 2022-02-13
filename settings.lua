@@ -76,3 +76,13 @@ cucina_vegana.plant_settings.sunflower_light = minetest.settings:get(cv_setting 
 cucina_vegana.plant_settings.tomato = minetest.settings:get_bool(cv_setting .."tomato", true)
 cucina_vegana.plant_settings.tomato_scale = minetest.settings:get(cv_setting .."tomato_scale") or 0.0006
 cucina_vegana.plant_settings.tomato_light = minetest.settings:get(cv_setting .."tomato_light") or 11
+
+-- Potato
+cucina_vegana.plant_settings.potato = minetest.settings:get_bool(cv_setting .."potato", true)
+cucina_vegana.plant_settings.potato_scale = minetest.settings:get(cv_setting .."potato_scale") or 0.0006
+cucina_vegana.plant_settings.potato_light = minetest.settings:get(cv_setting .."potato_light") or 11
+
+-- Carrot
+cucina_vegana.plant_settings.carrot = minetest.settings:get_bool(cv_setting .."carrot", true)
+cucina_vegana.plant_settings.carrot_scale = minetest.settings:get(cv_setting .."carrot_scale") or 0.0005
+cucina_vegana.plant_settings.carrot_light = minetest.settings:get(cv_setting .."carrot_light") or 11

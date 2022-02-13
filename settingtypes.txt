@@ -66,3 +66,13 @@ cucina_vegana.plant_settings.sunflower_light (Min. Light) int 13
 cucina_vegana.plant_settings.tomato (Enable Tomato) bool true
 cucina_vegana.plant_settings.tomato_scale (Spreadvalue) float 0.0006
 cucina_vegana.plant_settings.tomato_light (Min. Light) int 11
+
+#Potato
+cucina_vegana.plant_settings.potato (Enable Potato) bool true
+cucina_vegana.plant_settings.potato_scale (Spreadvalue) float 0.0006
+cucina_vegana.plant_settings.potato_light (Min. Light) int 11
+
+#Carrot
+cucina_vegana.plant_settings.carrot (Enable Carrot) bool true
+cucina_vegana.plant_settings.carrot_scale (Spreadvalue) float 0.0005
+cucina_vegana.plant_settings.carrot_light (Min. Light) int 11

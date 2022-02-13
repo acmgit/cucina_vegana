@@ -81,7 +81,9 @@ local plants = {
 			["sunflower"] = cucina_vegana.plant_settings.sunflower,
             ["banana"] = cucina_vegana.plant_settings.banana,
             ["tomato"] = cucina_vegana.plant_settings.tomato,
-            
+            ["potato"] = cucina_vegana.plant_settings.tomato,
+            ["carrot"] = cucina_vegana.plant_settings.tomato,
+
 		}
 
 

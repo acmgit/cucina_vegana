@@ -1,15 +1,15 @@
 --[[
 	**********************************************
-	***            Chives redo                 ***
+	***             Potato redo                ***
 	**********************************************
 ]]--
 
 -- Load support for intllib.
 local S = cucina_vegana.get_translator
 
-local dname = S("Chives")
-local pname = "chives"
-local step = 5
+local dname = S("Potato")
+local pname = "potato"
+local step = 7
 
 local germ = tonumber(cucina_vegana.plant_settings.germ_launch)
 
@@ -21,13 +21,13 @@ else
 
 end
 
--- chives
+-- potato
 minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 	description = dname .. " " .. S("Seed"),
 	tiles = {"cucina_vegana_" .. pname .. "_seed.png"},
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	wield_image = "cucina_vegana_" .. pname .. "_seed.png",
-	minlight = cucina_vegana.plant_settings.chives_light,
+	minlight = cucina_vegana.plant_settings.potato_light,
 	drawtype = "signlike",
 	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
 	paramtype = "light",
@@ -40,7 +40,7 @@ minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 	end,
 })
 
--- chives definition
+-- potato definition
 local crop_def = {
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_" .. pname .. "_1.png"},
@@ -49,7 +49,7 @@ local crop_def = {
 	walkable = false,
     waving = 1,
 	buildable_to = true,
-	minlight = cucina_vegana.plant_settings.chives_light,
+	minlight = cucina_vegana.plant_settings.potato_light,
 	drop =  "",
 	selection_box = farming.select,
 	groups = {
@@ -72,25 +72,34 @@ minetest.register_node("cucina_vegana:" .. pname .. "_3", table.copy(crop_def))
 
 -- stage 4
 crop_def.tiles = {"cucina_vegana_" .. pname .. "_4.png"}
+minetest.register_node("cucina_vegana:" .. pname .. "_4", table.copy(crop_def))
+
+-- stage 5
+crop_def.tiles = {"cucina_vegana_" .. pname .. "_5.png"}
 crop_def.drop = {
 	items = {
 		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
 	}
 }
-minetest.register_node("cucina_vegana:" .. pname .. "_4", table.copy(crop_def))
+minetest.register_node("cucina_vegana:" .. pname .. "_5", table.copy(crop_def))
 
--- stage 5 (final)
+-- stage 6
+crop_def.tiles = {"cucina_vegana_" .. pname .. "_6.png"}
+crop_def.drop = {
+	items = {
+		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname}, rarity = 2},
+	}	}
+minetest.register_node("cucina_vegana:" .. pname .. "_6", table.copy(crop_def))
+
+-- stage 7 (final)
 crop_def.tiles = {"cucina_vegana_" .. pname .. "_" .. step .. ".png"}
 crop_def.groups.growing = 0
 crop_def.drop = {
 	items = {
-		{items = {"cucina_vegana:" .. pname}, rarity = 1},
-		{items = {"cucina_vegana:" .. pname}, rarity = 2},
-		{items = {"cucina_vegana:" .. pname}, rarity = 3},
-		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
-		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
-		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
-
+		{items = {"cucina_vegana:" .. pname .. "_seed 2"}, rarity = 1},
+		{items = {"cucina_vegana:" .. pname .. "_seed 3"}, rarity = 2},
+		{items = {"cucina_vegana:" .. pname .. "_seed 4"}, rarity = 3},
 	}
 }
 minetest.register_node("cucina_vegana:" .. pname .. "_" .. step, table.copy(crop_def))
@@ -103,7 +112,7 @@ minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
 	drop = {
 			items = {
 					{items = {"cucina_vegana:" .. pname .. "_seed 3"}},
-					{items = {"cucina_vegana:" .. pname .. ""}},
+					{items = {"cucina_vegana:" .. pname .. " 2"}},
 				}
 			},
 	drawtype = "plantlike",
@@ -119,9 +128,11 @@ minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
 	},
 })
 
+cucina_vegana.add_group("cucina_vegana:" .. pname .. "_seed", {seed_potato = 1})
+
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,
-                 {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
+								 {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:" .. pname .. "_seed"})
 
 end -- if(cucina_vegana.plant_settings.bonemeal
 
@@ -134,5 +145,6 @@ end -- if(cucina_vegana.farming_ng
 -- Register @ Signs_bot
 if(cucina_vegana.signs_bot) then
         cucina_vegana.register_signs_bot(pname, 1, step)
+
 
 end

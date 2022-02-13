@@ -5,6 +5,8 @@
 ### asparagus_redo.lua ###
 ### banana_default.lua ###
 ### banana_redo.lua ###
+### carrot_default.lua ###
+### carrot_redo.lua ###
 ### chives_default.lua ###
 ### chives_redo.lua ###
 ### flax_default.lua ###
@@ -17,6 +19,8 @@
 ### parsley_redo.lua ###
 ### peanut_default.lua ###
 ### peanut_redo.lua ###
+### potato_default.lua ###
+### potato_redo.lua ###
 ### rice_default.lua ###
 ### rice_redo.lua ###
 ### rosemary_default.lua ###
@@ -25,6 +29,8 @@
 ### soy_redo.lua ###
 ### sunflower_default.lua ###
 ### sunflower_redo.lua ###
+### tomato_default.lua ###
+### tomato_redo.lua ###
 
 Seed=
 
@@ -37,31 +43,37 @@ Asparagus=
 
 ### asparagus_default.lua ###
 ### banana_default.lua ###
+### carrot_default.lua ###
 ### chives_default.lua ###
 ### flax_default.lua ###
 ### kohlrabi_default.lua ###
 ### lettuce_default.lua ###
 ### parsley_default.lua ###
 ### peanut_default.lua ###
+### potato_default.lua ###
 ### rice_default.lua ###
 ### rosemary_default.lua ###
 ### soy_default.lua ###
 ### sunflower_default.lua ###
+### tomato_default.lua ###
 
 Wild=
 
 ### asparagus_redo.lua ###
 ### banana_redo.lua ###
+### carrot_redo.lua ###
 ### chives_redo.lua ###
 ### flax_redo.lua ###
 ### kohlrabi_redo.lua ###
 ### lettuce_redo.lua ###
 ### parsley_redo.lua ###
 ### peanut_redo.lua ###
+### potato_redo.lua ###
 ### rice_redo.lua ###
 ### rosemary_redo.lua ###
 ### soy_redo.lua ###
 ### sunflower_redo.lua ###
+### tomato_redo.lua ###
 
 Wild =
 
@@ -70,6 +82,12 @@ Wild =
 ### items.lua ###
 
 Banana=
+
+### carrot_default.lua ###
+### carrot_redo.lua ###
+### items.lua ###
+
+Carrot=
 
 ### chives_default.lua ###
 ### chives_redo.lua ###
@@ -140,6 +158,12 @@ Parsley=
 Peanut=
 
 ### items.lua ###
+### potato_default.lua ###
+### potato_redo.lua ###
+
+Potato=
+
+### items.lua ###
 ### rice_default.lua ###
 ### rice_redo.lua ###
 
@@ -150,6 +174,12 @@ Rice=
 ### sunflower_redo.lua ###
 
 Sunflower=
+
+### items.lua ###
+### tomato_default.lua ###
+### tomato_redo.lua ###
+
+Tomato=
 
 ### nodes.lua ###
 

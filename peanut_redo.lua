@@ -86,8 +86,9 @@ crop_def.drop = {
 }
 minetest.register_node("cucina_vegana:" .. pname .. "_6", table.copy(crop_def))
 
--- stage 7
+-- stage 7 (final)
 crop_def.tiles = {"cucina_vegana_" .. pname .. "_" .. step .. ".png"}
+crop_def.groups.growing = 0
 crop_def.drop = {
 	items = {
 		{items = {"cucina_vegana:" .. pname .. "_seed 2"}, rarity = 1},

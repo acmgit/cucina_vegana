@@ -246,6 +246,20 @@ minetest.register_craftitem("cucina_vegana:tomato", {
 	on_use = minetest.item_eat(4),
 })
 
+minetest.register_craftitem("cucina_vegana:potato", {
+	description = S("Potato"),
+	inventory_image = "cucina_vegana_potato.png",
+	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1, food_potato = 1},
+	on_use = minetest.item_eat(5),
+})
+
+minetest.register_craftitem("cucina_vegana:carrot", {
+	description = S("Carrot"),
+	inventory_image = "cucina_vegana_carrot.png",
+	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1, food_carrot = 1},
+	on_use = minetest.item_eat(3),
+})
+
 --   *******************************************
 --   *****              Food               *****
 --   *******************************************
