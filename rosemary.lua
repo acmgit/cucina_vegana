@@ -6,7 +6,7 @@ minetest.register_decoration({
 		offset = 0,
 		scale = cucina_vegana.plant_settings.rosemary_scale,
 		spread = {x = 30, y = 30, z = 30},
-		seed = 7133,
+		seed = 264,
 		octaves = 2,
 		persist = 0.3
 	},

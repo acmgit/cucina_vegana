@@ -6,7 +6,7 @@ minetest.register_decoration({
 		offset = 0,
 		scale = cucina_vegana.plant_settings.kohlrabi_scale,
 		spread = {x = 100, y = 100, z = 100},
-		seed = 6349,
+		seed = 2197,
 		octaves = 4,
 		persist = 0.6
 	},
@@ -14,7 +14,3 @@ minetest.register_decoration({
 	y_max = 120,
 	decoration = "cucina_vegana:wild_kohlrabi",
 })
-
-minetest.register_alias("kohlrabi:kohlrabi_roasted", "cucina_vegana:kohlrabi_roasted")
-minetest.register_alias("kohlrabi:soup", "cucina_vegana:kohlrabi_soup")
-minetest.register_alias("kohlrabi:soup_cooked", "cucina_vegana:kohlrabi_soup_cooked")

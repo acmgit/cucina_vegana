@@ -69,7 +69,7 @@ cucina_vegana.plant_settings.tomato_light (Min. Light) int 11
 
 #Potato
 cucina_vegana.plant_settings.potato (Enable Potato) bool true
-cucina_vegana.plant_settings.potato_scale (Spreadvalue) float 0.0006
+cucina_vegana.plant_settings.potato_scale (Spreadvalue) float 0.0005
 cucina_vegana.plant_settings.potato_light (Min. Light) int 11
 
 #Carrot

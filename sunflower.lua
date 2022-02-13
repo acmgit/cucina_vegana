@@ -18,7 +18,7 @@ else
 			offset = 0,
 			scale = cucina_vegana.plant_settings.sunflower_scale,
 			spread = {x = 10, y = 10, z = 10},
-			seed = 7133,
+			seed = 8756,
 			octaves = 3,
 			persist = 0.6
 		},
@@ -40,12 +40,3 @@ else
 	end
 
 end
-
--- to import the old mod in cucina_vegana
--- can deleted if you have a clean world.
-
-minetest.register_alias("vegan_sunflower:seeds_dough", "cucina_vegana:sunflower_seeds_dough")
-minetest.register_alias("vegan_sunflower:seeds", "cucina_vegana:sunflower_seeds")
-minetest.register_alias("vegan_sunflower:seeds_oil", "cucina_vegana:sunflower_seeds_oil")
-minetest.register_alias("vegan_sunflower:seeds_roasted", "cucina_vegana:sunflower_seeds_roasted")
-minetest.register_alias("vegan_sunflower:seeds_bread", "cucina_vegana:sunflower_seeds_bread")

@@ -79,7 +79,7 @@ cucina_vegana.plant_settings.tomato_light = minetest.settings:get(cv_setting .."
 
 -- Potato
 cucina_vegana.plant_settings.potato = minetest.settings:get_bool(cv_setting .."potato", true)
-cucina_vegana.plant_settings.potato_scale = minetest.settings:get(cv_setting .."potato_scale") or 0.0006
+cucina_vegana.plant_settings.potato_scale = minetest.settings:get(cv_setting .."potato_scale") or 0.0005
 cucina_vegana.plant_settings.potato_light = minetest.settings:get(cv_setting .."potato_light") or 11
 
 -- Carrot

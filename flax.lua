@@ -7,7 +7,7 @@ minetest.register_decoration({
 		offset = 0,
 		scale = cucina_vegana.plant_settings.flax_scale,
 		spread = {x = 70, y = 70, z = 70},
-		seed = 7133,
+		seed = 6357,
 		octaves = 3,
 		persist = 0.6
 	},

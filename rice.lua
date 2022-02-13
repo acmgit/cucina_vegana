@@ -10,7 +10,7 @@ minetest.register_decoration({
 		offset = 0,
 		scale = cucina_vegana.plant_settings.rice_scale,
 		spread = {x = 40, y = 40, z = 40},
-		seed = 6349,
+		seed = 56814,
 		octaves = 3,
 		persist = 0.6
 	},

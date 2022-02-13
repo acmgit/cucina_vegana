@@ -8,7 +8,7 @@ minetest.register_decoration({
 		offset = 0,
 		scale = cucina_vegana.plant_settings.asparagus_scale,
 		spread = {x = 10, y = 10, z = 10},
-		seed = 6349,
+		seed = 8164,
 		octaves = 4,
 		persist = 0.6
 	},
