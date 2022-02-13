@@ -21,7 +21,7 @@ else
 
 end
 
--- chives
+-- tomato
 minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 	description = dname .. " " .. S("Seed"),
 	tiles = {"cucina_vegana_" .. pname .. "_seed.png"},
@@ -40,7 +40,7 @@ minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 	end,
 })
 
--- chives definition
+-- tomato definition
 local crop_def = {
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_" .. pname .. "_1.png"},

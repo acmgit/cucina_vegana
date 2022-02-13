@@ -239,6 +239,13 @@ minetest.register_craftitem("cucina_vegana:sunflower_seeds", {
     on_use = minetest.item_eat(1),
 })
 
+minetest.register_craftitem("cucina_vegana:tomato", {
+	description = S("Tomato"),
+	inventory_image = "cucina_vegana_tomato.png",
+	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1, food_tomato = 1},
+	on_use = minetest.item_eat(4),
+})
+
 --   *******************************************
 --   *****              Food               *****
 --   *******************************************

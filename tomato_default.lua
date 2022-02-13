@@ -1,6 +1,6 @@
 --[[
 	**********************************************
-	***           Tomato default                 ***
+	***           Tomato default               ***
 	**********************************************
 ]]--
 
@@ -11,7 +11,7 @@ local dname = S("Tomato")
 local pname = "tomato"
 local step = 8
 
--- flex
+-- tomato
 farming.register_plant("cucina_vegana:" .. pname, {
 	description = dname .. " " .. S("Seed"),
     harvest_description = dname,
@@ -30,7 +30,7 @@ minetest.register_node("cucina_vegana:wild_" .. pname, {
 	drop = {
 			items = {
 					{items = {"cucina_vegana:seed_" .. pname .. " 4"}},
-					{items = {"cucina_vegana:" .. pname .. " 2"}},
+					{items = {"cucina_vegana:" .. pname .. " 3"}},
 				}
 			},
 	drawtype = "plantlike",
