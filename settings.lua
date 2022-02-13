@@ -71,3 +71,8 @@ cucina_vegana.plant_settings.soy_light = minetest.settings:get(cv_setting .."soy
 cucina_vegana.plant_settings.sunflower = minetest.settings:get_bool(cv_setting .."sunflower", true)
 cucina_vegana.plant_settings.sunflower_scale = minetest.settings:get(cv_setting .."sunflower") or 0.0007
 cucina_vegana.plant_settings.sunflower_light = minetest.settings:get(cv_setting .."sunflower") or 13
+
+-- Tomato
+cucina_vegana.plant_settings.tomato = minetest.settings:get_bool(cv_setting .."tomato", true)
+cucina_vegana.plant_settings.tomato_scale = minetest.settings:get(cv_setting .."tomato_scale") or 0.0006
+cucina_vegana.plant_settings.tomato_light = minetest.settings:get(cv_setting .."tomato_light") or 11

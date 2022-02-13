@@ -11,6 +11,7 @@
       {'cucina_vegana:rosemary',                      1,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:sunflower_seeds',               1,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:banana',                        4,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:tomato',                        4,              nil,                        nil,    nil,    nil},
 
       --               Name                          Saturation      Replace with                Poison  Heal    Sound
       -- side dishes

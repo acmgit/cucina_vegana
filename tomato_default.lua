@@ -1,15 +1,15 @@
 --[[
 	**********************************************
-	***           Flex default                 ***
+	***           Tomato default                 ***
 	**********************************************
 ]]--
 
 -- Load support for intllib.
 local S = cucina_vegana.get_translator
 
-local dname = S("Flax")
-local pname = "flax"
-local step = 6
+local dname = S("Tomato")
+local pname = "tomato"
+local step = 8
 
 -- flex
 farming.register_plant("cucina_vegana:" .. pname, {
@@ -17,7 +17,7 @@ farming.register_plant("cucina_vegana:" .. pname, {
     harvest_description = dname,
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	steps = step,
-	minlight = cucina_vegana.plant_settings.flax_light,
+	minlight = cucina_vegana.plant_settings.tomato_light,
 	fertility = {"grassland"},
 	groups = {flammable = 4, attached_node = 1},
 })
@@ -47,7 +47,7 @@ minetest.register_node("cucina_vegana:wild_" .. pname, {
 	},
 })
 
-cucina_vegana.add_group("cucina_vegana:seed_" .. pname, {seed_flax = 1})
+cucina_vegana.add_group("cucina_vegana:seed_" .. pname, {seed_tomato = 1})
 
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,
