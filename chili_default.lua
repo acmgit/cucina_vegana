@@ -9,7 +9,7 @@ local S = cucina_vegana.get_translator
 
 local dname = S("Chili")
 local pname = "chili"
-local step = 6
+local step = 7
 
 -- chili
 farming.register_plant("cucina_vegana:" .. pname, {
