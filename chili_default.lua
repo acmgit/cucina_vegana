@@ -9,9 +9,9 @@ local S = cucina_vegana.get_translator
 
 local dname = S("Chili")
 local pname = "chili"
-local step = 7
+local step = 6
 
--- Chili
+-- chili
 farming.register_plant("cucina_vegana:" .. pname, {
 	description = dname .. " " .. S("Seed"),
     harvest_description = dname,
@@ -30,6 +30,7 @@ minetest.register_node("cucina_vegana:wild_" .. pname, {
 	drop = {
 			items = {
 					{items = {"cucina_vegana:seed_" .. pname .. " 4"}},
+					{items = {"cucina_vegana:" .. pname .. " 2"}},
 				}
 			},
 	drawtype = "plantlike",
@@ -61,7 +62,7 @@ if cucina_vegana.farming_ng then
 end -- if(cucina_vegana.farming_ng
 
 -- Register @ Signs_bot
-if(cucina_vegana.sign_bot) then
-    cucina_vegana.register_signs_bot(pname, 1, step)
+if(cucina_vegana.signs_bot) then
+        cucina_vegana.register_signs_bot(pname, 1, step)
 
 end
