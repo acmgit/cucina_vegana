@@ -1,17 +1,19 @@
 # textdomain: cucina_vegana
 
 
-###  garlic_default.lua ###
 ### asparagus_default.lua ###
 ### asparagus_redo.lua ###
 ### banana_default.lua ###
 ### banana_redo.lua ###
 ### carrot_default.lua ###
 ### carrot_redo.lua ###
+### chili_default.lua ###
+### chili_redo.lua ###
 ### chives_default.lua ###
 ### chives_redo.lua ###
 ### flax_default.lua ###
 ### flax_redo.lua ###
+### garlic_default.lua ###
 ### garlic_redo.lua ###
 ### kohlrabi_default.lua ###
 ### kohlrabi_redo.lua ###
@@ -36,12 +38,20 @@
 
 Seed=Samen
 
-###  garlic_default.lua ###
+### asparagus_default.lua ###
+### asparagus_redo.lua ###
+### items.lua ###
+
+# textdomain: cucina_vegana
+Asparagus=Spargel
+
 ### asparagus_default.lua ###
 ### banana_default.lua ###
 ### carrot_default.lua ###
+### chili_default.lua ###
 ### chives_default.lua ###
 ### flax_default.lua ###
+### garlic_default.lua ###
 ### kohlrabi_default.lua ###
 ### lettuce_default.lua ###
 ### parsley_default.lua ###
@@ -55,22 +65,10 @@ Seed=Samen
 
 Wild=Wilde(r)
 
-###  garlic_default.lua ###
-### garlic_redo.lua ###
-### items.lua ###
-
-Garlic=Knoblauch
-
-### asparagus_default.lua ###
-### asparagus_redo.lua ###
-### items.lua ###
-
-# textdomain: cucina_vegana
-Asparagus=Spargel
-
 ### asparagus_redo.lua ###
 ### banana_redo.lua ###
 ### carrot_redo.lua ###
+### chili_redo.lua ###
 ### chives_redo.lua ###
 ### flax_redo.lua ###
 ### garlic_redo.lua ###
@@ -99,6 +97,12 @@ Banana=Banane
 
 Carrot=Karotte
 
+### chili_default.lua ###
+### chili_redo.lua ###
+### items.lua ###
+
+Chili=Chili
+
 ### chives_default.lua ###
 ### chives_redo.lua ###
 ### items.lua ###
@@ -110,6 +114,12 @@ Chives=Schnittlauch
 ### items.lua ###
 
 Flax=Flachs
+
+### garlic_default.lua ###
+### garlic_redo.lua ###
+### items.lua ###
+
+Garlic=Knoblauch
 
 ### items.lua ###
 

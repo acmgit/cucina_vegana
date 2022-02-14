@@ -84,5 +84,5 @@ cucina_vegana.plant_settings.garlic_light (Min. Light) int 12
 
 #Chili
 cucina_vegana.plant_settings.chili (Enable Chili) bool true
-cucina_vegana.plant_settings.chili_scale (Spreadvalue) float 0.0003
+cucina_vegana.plant_settings.chili_scale (Spreadvalue) float 0.0002
 cucina_vegana.plant_settings.chili_light (Min. Light) int 13
