@@ -266,6 +266,13 @@ minetest.register_craftitem("cucina_vegana:garlic", {
 	groups = {flammable = 1, food = 1, food_vegan = 1, food_garlic = 1},
 })
 
+minetest.register_craftitem("cucina_vegana:chili", {
+	description = S("Chili"),
+	inventory_image = "cucina_vegana_chili.png",
+	groups = {flammable = 1, food = 1, food_vegan = 1, food_chili = 1},
+	on_use = minetest.item_eat(1),
+})
+
 --   *******************************************
 --   *****              Food               *****
 --   *******************************************

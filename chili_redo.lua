@@ -1,14 +1,14 @@
 --[[
 	**********************************************
-	***             Peanut redo                ***
+	***             Chili redo                 ***
 	**********************************************
 ]]--
 
 -- Load support for intllib.
 local S = cucina_vegana.get_translator
 
-local dname = S("Peanut")
-local pname = "peanut"
+local dname = S("Chili")
+local pname = "chili"
 local step = 7
 local germ = tonumber(cucina_vegana.plant_settings.germ_launch)
 
@@ -26,7 +26,7 @@ minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 	tiles = {"cucina_vegana_" .. pname .. "_seed.png"},
 	inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 	wield_image = "cucina_vegana_" .. pname .. "_seed.png",
-	minlight = cucina_vegana.plant_settings.peanut_light,
+	minlight = cucina_vegana.plant_settings.chili_light,
 	drawtype = "signlike",
 	groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
 	paramtype = "light",
@@ -48,7 +48,7 @@ local crop_def = {
 	walkable = false,
     waving = 1,
 	buildable_to = true,
-	minlight = cucina_vegana.plant_settings.peanut_light,
+	minlight = cucina_vegana.plant_settings.chili_light,
 	drop =  "",
 	selection_box = farming.select,
 	groups = {
@@ -121,7 +121,7 @@ minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
 	},
 })
 
-cucina_vegana.add_group("cucina_vegana:" .. pname .. "_seed", {seed_peanut = 1})
+cucina_vegana.add_group("cucina_vegana:" .. pname .. "_seed", {seed_chili = 1})
 
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,
