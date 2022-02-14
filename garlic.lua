@@ -1,17 +1,17 @@
 
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = {"default:dirt_with_grass", "default:dry_dirt_with_dry_grass"},
+	place_on = {"default:dirt_with_grass", "default:dirt"},
 	sidelen = 16,
 	noise_params = {
 		offset = 0,
-		scale = cucina_vegana.plant_settings.flax_scale,
+		scale = cucina_vegana.plant_settings.garlic_scale,
 		spread = {x = 70, y = 70, z = 70},
-		seed = 6357,
+		seed = 2570,
 		octaves = 3,
 		persist = 0.6
 	},
 	y_min = 0,
 	y_max = 100,
-	decoration = "cucina_vegana:wild_flax",
+	decoration = "cucina_vegana:wild_garlic",
 })

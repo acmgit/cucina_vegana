@@ -260,6 +260,12 @@ minetest.register_craftitem("cucina_vegana:carrot", {
 	on_use = minetest.item_eat(3),
 })
 
+minetest.register_craftitem("cucina_vegana:garlic", {
+	description = S("Garlic"),
+	inventory_image = "cucina_vegana_garlic.png",
+	groups = {flammable = 1, food = 1, food_vegan = 1, food_garlic = 1},
+})
+
 --   *******************************************
 --   *****              Food               *****
 --   *******************************************

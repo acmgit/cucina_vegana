@@ -86,3 +86,8 @@ cucina_vegana.plant_settings.potato_light = minetest.settings:get(cv_setting .."
 cucina_vegana.plant_settings.carrot = minetest.settings:get_bool(cv_setting .."carrot", true)
 cucina_vegana.plant_settings.carrot_scale = minetest.settings:get(cv_setting .."carrot_scale") or 0.0005
 cucina_vegana.plant_settings.carrot_light = minetest.settings:get(cv_setting .."carrot_light") or 11
+
+-- Garlic
+cucina_vegana.plant_settings.garlic = minetest.settings:get_bool(cv_setting .."garlic", true)
+cucina_vegana.plant_settings.garlic_scale = minetest.settings:get(cv_setting .."garlic_scale") or 0.0006
+cucina_vegana.plant_settings.garlic_light = minetest.settings:get(cv_setting .."garlic_light") or 12
