@@ -19,6 +19,8 @@
 ### kohlrabi_redo.lua ###
 ### lettuce_default.lua ###
 ### lettuce_redo.lua ###
+### onion_default.lua ###
+### onion_redo.lua ###
 ### parsley_default.lua ###
 ### parsley_redo.lua ###
 ### peanut_default.lua ###
@@ -53,6 +55,7 @@ Asparagus=
 ### garlic_default.lua ###
 ### kohlrabi_default.lua ###
 ### lettuce_default.lua ###
+### onion_default.lua ###
 ### parsley_default.lua ###
 ### peanut_default.lua ###
 ### potato_default.lua ###
@@ -73,6 +76,7 @@ Wild=
 ### garlic_redo.lua ###
 ### kohlrabi_redo.lua ###
 ### lettuce_redo.lua ###
+### onion_redo.lua ###
 ### parsley_redo.lua ###
 ### peanut_redo.lua ###
 ### potato_redo.lua ###
@@ -163,6 +167,12 @@ Kohlrabi=
 ### lettuce_redo.lua ###
 
 Lettuce=
+
+### items.lua ###
+### onion_default.lua ###
+### onion_redo.lua ###
+
+Onion=
 
 ### items.lua ###
 ### parsley_default.lua ###

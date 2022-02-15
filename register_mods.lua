@@ -15,6 +15,7 @@
       {'cucina_vegana:potato',                        5,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:carrot',                        3,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:chili',                         1,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:onion',                         3,              nil,                        nil,    nil,    nil},
 
       --               Name                          Saturation      Replace with                Poison  Heal    Sound
       -- side dishes
