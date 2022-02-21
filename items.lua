@@ -149,7 +149,7 @@ minetest.register_craftitem("cucina_vegana:imitation_poultry", {
 minetest.register_craftitem("cucina_vegana:asparagus", {
 	description = S("Asparagus"),
 	inventory_image = "cucina_vegana_asparagus.png",
-	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1},
+	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1, food_asparagus = 1},
 	on_use = minetest.item_eat(3),
 })
 
@@ -163,7 +163,7 @@ minetest.register_craftitem("cucina_vegana:banana", {
 minetest.register_craftitem("cucina_vegana:chives", {
 	description = S("Chives"),
 	inventory_image = "cucina_vegana_chives.png",
-	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1},
+	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1, food_chives = 1},
 	on_use = minetest.item_eat(1),
 })
 
@@ -182,48 +182,48 @@ minetest.register_craftitem("cucina_vegana:flax_roasted", {
 minetest.register_craftitem("cucina_vegana:kohlrabi", {
 	description = S("Kohlrabi"),
 	inventory_image = "cucina_vegana_kohlrabi.png",
-	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1},
+	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1, food_kohlrabi = 1},
 	on_use = minetest.item_eat(3),
 })
 
 minetest.register_craftitem("cucina_vegana:lettuce", {
 	description = S("Lettuce"),
 	inventory_image = "cucina_vegana_lettuce.png",
-	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1},
+	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1, food_lettuce = 1},
 	on_use = minetest.item_eat(2),
 })
 
 minetest.register_craftitem("cucina_vegana:parsley", {
 	description = S("Parsley"),
 	inventory_image = "cucina_vegana_parsley.png",
-	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1},
+	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1, food_parsley = 1},
 	on_use = minetest.item_eat(1),
 })
 
 minetest.register_craftitem("cucina_vegana:peanut", {
 	description = S("Peanut"),
 	inventory_image = "cucina_vegana_peanut.png",
-	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1},
+	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1, food_peanut = 1},
 	on_use = minetest.item_eat(4),
 })
 
 minetest.register_craftitem("cucina_vegana:rice", {
     description = S("Rice"),
     inventory_image = "cucina_vegana_rice.png",
-    groups = {food = 1, flammable = 4},
+    groups = {food = 1, flammable = 4, food_rice = 1},
 })
 
 minetest.register_craftitem("cucina_vegana:rosemary", {
 	description = S("Rosemary Twig"),
 	inventory_image = "cucina_vegana_rosemary.png",
-	groups = {flammable = 1, food = 1, eatable = 1},
+	groups = {flammable = 1, food = 1, eatable = 1, food_rosemary = 1},
 	on_use = minetest.item_eat(1),
 })
 
 minetest.register_craftitem("cucina_vegana:soy", {
 	description = S("Soy Bean"),
 	inventory_image = "cucina_vegana_soy.png",
-	groups = {flammable = 4},
+	groups = {flammable = 4, food_soy = 1},
 })
 
 minetest.register_craftitem("cucina_vegana:sunflower", {
@@ -234,7 +234,7 @@ minetest.register_craftitem("cucina_vegana:sunflower", {
 
 minetest.register_craftitem("cucina_vegana:sunflower_seeds", {
     description = S("Sunflower Seeds"),
-    groups = {seed = 1, food = 1, eatable = 1},
+    groups = {seed = 1, food = 1, eatable = 1, food_sunflower = 1},
     inventory_image = "cucina_vegana_sunflower_seeds.png",
     on_use = minetest.item_eat(1),
 })
@@ -308,7 +308,7 @@ minetest.register_craftitem("cucina_vegana:sunflower_seeds_bread", {
 minetest.register_craftitem("cucina_vegana:tofu_cooked", {
 	description = S("Tofu"),
 	inventory_image = "cucina_vegana_tofu_cooked.png",
-	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1},
+	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1, food_tofu = 1},
 	on_use = minetest.item_eat(3),
 })
 
