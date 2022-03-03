@@ -90,7 +90,7 @@ end
 	minetest.register_node("cucina_vegana:" .. pname .. "_5", table.copy(crop_def))
 
 	-- stage 6
-	crop_def.tiles = {"cucina_vegana_" .. pname .. "_" .. step .. ".png"}
+	crop_def.tiles = {"cucina_vegana_" .. pname .. "_6.png"}
 	crop_def.drop = {
 		items = {
 			{items = {"cucina_vegana:" .. pname .. ""}, rarity = 1},
@@ -101,7 +101,7 @@ end
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
 		}
 	}
-	minetest.register_node("cucina_vegana:" .. pname .. "_" .. step, table.copy(crop_def))
+	minetest.register_node("cucina_vegana:" .. pname .. "_6", table.copy(crop_def))
 
 -- stage 7
 crop_def.tiles = {"cucina_vegana_" .. pname .. "_7.png"}
