@@ -341,7 +341,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:imitation_cheese",
-	recipe = {	{"group:dye,color_orange","cucina_vegana:imitation_butter", "cucina_vegana:imitation_butter", ""}
+	recipe = {	{"group:dye,color_orange","cucina_vegana:imitation_butter", "cucina_vegana:imitation_butter"}
 			},
 })
 
