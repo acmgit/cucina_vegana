@@ -91,7 +91,7 @@ crop_def.tiles = {"cucina_vegana_" .. pname .. "_" .. step .. ".png"}
 crop_def.groups.growing = 0
 crop_def.drop = {
 	items = {
-		{items = {"cucina_vegana:" .. pname .. " 3"}}
+		{items = {"cucina_vegana:" .. pname .. " 3"}},
 		{items = {"cucina_vegana:" .. pname .. "_seed 2"}, rarity = 1},
 		{items = {"cucina_vegana:" .. pname .. "_seed 3"}, rarity = 2},
 		{items = {"cucina_vegana:" .. pname .. "_seed 4"}, rarity = 3},
