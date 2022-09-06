@@ -61,7 +61,7 @@ else
 end -- if(farming.mod
 
 cucina_vegana.plant_settings.bonemeal = false         -- Support for bonemeal disabled
-if(minetest.get_modpath("bonemeal")) then
+if(minetest.get_modpath("bonemeal")) or minetest.get_modpath("maidroid") then
     cucina_vegana.plant_settings.bonemeal = true
 
 end -- if(minetest.get_modpath("bonemeal"
@@ -125,7 +125,7 @@ dofile(modpath .. "/recipes_support.lua")
 dofile(modpath .. "/recipes_5xx.lua") -- New recipes with MT 5.0
 dofile(modpath .. "/register_mods.lua")
 
-if(cucina_vegana.plant_settings.bonemeal) then
+if(minetest.get_modpath("bonemeal")) then
     bonemeal:add_crop(cucina_vegana.plant_settings.bonemeal_list)
 
 end -- if(cucina_vegana.plant_settings.bonemeal
