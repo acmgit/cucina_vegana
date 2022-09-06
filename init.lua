@@ -95,15 +95,19 @@ local plants = {
 for pname, value in pairs(plants) do
 
 	if(value) then
+		local n_default = modname .. ":seed_" .. pname
+		local n_redo    = modname .. ":" .. pname .. "_seed"
         -- Load all flowers in default-mode
 		if (cucina_vegana.farming_default) then
 			dofile(modpath .. "/" .. pname .. "_default.lua")
 			dofile(modpath .. "/".. pname .. ".lua")
+			minetest.register_alias(n_redo, n_default)
 
 		else
         -- Load all flowers in redo-mode
 			dofile(modpath .. "/" .. pname .. "_redo.lua")
 			dofile(modpath .. "/".. pname .. ".lua")
+			minetest.register_alias(n_default, n_redo)
 
 		end -- if(cucina_vegana...)
 
