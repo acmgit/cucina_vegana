@@ -12,7 +12,7 @@
 ]]--
 
 cucina_vegana = {}
-cucina_vegana.version = "3.0"
+cucina_vegana.version = "3.1"
 cucina_vegana.farming_default = true
 cucina_vegana.plant_settings = {}
 cucina_vegana.plant_settings.bonemeal_list = {}
