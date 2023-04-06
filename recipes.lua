@@ -623,14 +623,14 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:sea_salad",
-	recipe = {
-				{"default:jungleleaves","cucina_vegana:parsley", "cucina_vegana:lettuce"},
-				{"cucina_vegana:chives","bucket:bucket_water", "cucina_vegana:asparagus"},
-				{"","group:food_bowl", ""},
-	replacements = {
-						{"bucket:bucket_water", "bucket:bucket_empty"},
-					},
+	recipe = {	{"default:jungleleaves", "cucina_vegana:parsley", "cucina_vegana:lettuce"},
+				{"cucina_vegana:chives", "bucket:bucket_water", "cucina_vegana:asparagus"},
+				{"", "group:food_bowl", ""}
+			},
+    replacements = {
+                {"bucket:bucket_water", "bucket:bucket_empty"},
 			}
+
 })
 
 minetest.register_craft({

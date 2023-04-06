@@ -19,15 +19,18 @@ local nodes = {
                     name = "flowers:waterlily",                                                         -- Name
                     output = "cucina_vegana:sea_salad",
                     recipe = {
-                        {"flowers:waterlily","cucina_vegana:parsley", "cucina_vegana:lettuce"},
-                        {"cucina_vegana:chives","flowers:waterlily", "cucina_vegana:asparagus"},
-                        {"","cucina_vegana:bowl", ""},
-                    },
+                            {"flowers:waterlily","cucina_vegana:parsley", "cucina_vegana:lettuce"},
+                            {"cucina_vegana:chives","bucket:bucket_water", "cucina_vegana:asparagus"},
+                            {"","cucina_vegana:bowl", ""},
+                        },
+                    replacements = {
+                            {"bucket:bucket_water", "bucket:bucket_empty"},
+                        },
+                },
 
             --repclaements = nil                                                                       -- Replacements
             -- replacements = {{"cucina_vegana:molasses", "vessels:drinking_glass"}}
-                },
-        }
+                }
 
 
 for node, value in ipairs(nodes) do
