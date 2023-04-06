@@ -335,7 +335,7 @@ minetest.register_craft({
 	recipe = {	{"group:dye,color_yellow", "cucina_vegana:soy_milk",  "cucina_vegana:soy_milk"}
 			},
 			replacements = {
-                            {"cucina_vegana:soy_milk", "vessels:drinking_glass"}
+                            {"cucina_vegana:soy_milk", "vessels:drinking_glass 2"}
 						}
 })
 
@@ -619,6 +619,18 @@ minetest.register_craft({
 				{"cucina_vegana:sauce_hollandaise", "vessels:glass_bottle"}
 			}
 
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:sea_salad",
+	recipe = {
+				{"default:jungleleaves","cucina_vegana:parsley", "cucina_vegana:lettuce"},
+				{"cucina_vegana:chives","bucket:bucket_water", "cucina_vegana:asparagus"},
+				{"","group:food_bowl", ""},
+	replacements = {
+						{"bucket:bucket_water", "bucket:bucket_empty"},
+					},
+			}
 })
 
 minetest.register_craft({

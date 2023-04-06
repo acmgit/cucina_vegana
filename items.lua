@@ -10,7 +10,7 @@ local S = cucina_vegana.get_translator
 --   *******************************************
 
 minetest.register_craftitem("cucina_vegana:blueberry_puree", {
-	description = S("Blueberry purree"),
+	description = S("Blueberry puree"),
 	inventory_image = "cucina_vegana_blueberry_puree.png",
 	groups = {food = 1, food_blueberry = 1, food_berry = 1},
     on_use = minetest.item_eat(4)

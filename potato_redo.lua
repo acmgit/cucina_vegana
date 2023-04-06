@@ -52,9 +52,8 @@ local crop_def = {
 	minlight = cucina_vegana.plant_settings.potato_light,
 	drop =  "",
 	selection_box = farming.select,
-	groups = {
-		flammable = 4, snappy=3, dig_immediate=1, plant = 1, attached_node = 1,
-		not_in_creative_inventory = 1, growing = 1
+	groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1,
+                growing = 1, not_in_creative_inventory = 1
 	},
 	sounds = default.node_sound_leaves_defaults()
 }

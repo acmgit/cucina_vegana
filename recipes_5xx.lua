@@ -4,15 +4,29 @@
 
 local modname = minetest.get_current_modname()
 
-local nodes = { { name = "default:sand_with_kelp",                                                 -- Name
-            output = "cucina_vegana:vegan_sushi", 	                                            -- Output
-            recipe = {	                                                                        -- Recipe
-                        {"cucina_vegana:imitation_fish", "cucina_vegana:bowl_rice", ""},
-                        {"default:sand_with_kelp", "", ""}
-                    },
-            repclaements = nil                                                                       -- Replacements
+local nodes = {
+                {
+                    name = "default:sand_with_kelp",                                                    -- Name
+                    output = "cucina_vegana:vegan_sushi", 	                                            -- Output
+                    recipe = {	                                                                        -- Recipe
+                                {"cucina_vegana:imitation_fish", "cucina_vegana:bowl_rice", ""},
+                                {"default:sand_with_kelp", "", ""}
+                            },
+            --repclaements = nil                                                                       -- Replacements
             -- replacements = {{"cucina_vegana:molasses", "vessels:drinking_glass"}}
-            },
+                },
+                {
+                    name = "flowers:waterlily",                                                         -- Name
+                    output = "cucina_vegana:sea_salad",
+                    recipe = {
+                        {"flowers:waterlily","cucina_vegana:parsley", "cucina_vegana:lettuce"},
+                        {"cucina_vegana:chives","flowers:waterlily", "cucina_vegana:asparagus"},
+                        {"","cucina_vegana:bowl", ""},
+                    },
+
+            --repclaements = nil                                                                       -- Replacements
+            -- replacements = {{"cucina_vegana:molasses", "vessels:drinking_glass"}}
+                },
         }
 
 
