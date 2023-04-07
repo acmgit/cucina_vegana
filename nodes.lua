@@ -131,6 +131,23 @@ minetest.register_node("cucina_vegana:blueberry_jam", {
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, food_sweet = 1, eatable = 1},
 })
 
+minetest.register_node("cucina_vegana:cucumber_in_glass", {
+	description = S("Cucumber in Glass"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_cucumber_in_glass.png"},
+	inventory_image = "cucina_vegana_cucumber_in_glass.png",
+	wield_image = "cucina_vegana_cucumber_in_glass.png",
+	paramtype = "light",
+	is_ground_content = false,
+	on_use = minetest.item_eat(5),
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
+})
+
 minetest.register_node("cucina_vegana:ciabatta_bread", {
 	description = S("Ciabatta Bread"),
 	drawtype = "plantlike",

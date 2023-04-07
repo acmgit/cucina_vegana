@@ -11,6 +11,8 @@
 ### chili_redo.lua ###
 ### chives_default.lua ###
 ### chives_redo.lua ###
+### cucumber_default.lua ###
+### cucumber_redo.lua ###
 ### flax_default.lua ###
 ### flax_redo.lua ###
 ### garlic_default.lua ###
@@ -51,6 +53,7 @@ Asparagus=
 ### carrot_default.lua ###
 ### chili_default.lua ###
 ### chives_default.lua ###
+### cucumber_default.lua ###
 ### flax_default.lua ###
 ### garlic_default.lua ###
 ### kohlrabi_default.lua ###
@@ -72,6 +75,7 @@ Wild=
 ### carrot_redo.lua ###
 ### chili_redo.lua ###
 ### chives_redo.lua ###
+### cucumber_redo.lua ###
 ### flax_redo.lua ###
 ### garlic_redo.lua ###
 ### kohlrabi_redo.lua ###
@@ -112,6 +116,12 @@ Chili=
 
 Chives=
 
+### cucumber_default.lua ###
+### cucumber_redo.lua ###
+### items.lua ###
+
+Cucumber=
+
 ### flax_default.lua ###
 ### flax_redo.lua ###
 ### items.lua ###
@@ -128,7 +138,7 @@ Garlic=
 
 Blueberry pot=
 Blueberry pot (cooked)=
-Blueberry purree=
+Blueberry puree=
 Ciabatta dough=
 Dandelion Honey=
 Dandelion Suds=
@@ -225,6 +235,7 @@ Bottle of Sunflower Seeds Oil=
 Bowl of Rice=
 Bowl of Rice (raw)=
 Ciabatta Bread=
+Cucumber in Glass=
 Edamame=
 Edamame (raw)=
 Fish on Parsley and Rosemary=

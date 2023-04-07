@@ -12,7 +12,7 @@
 ]]--
 
 cucina_vegana = {}
-cucina_vegana.version = "3.1"
+cucina_vegana.version = "3.2"
 cucina_vegana.farming_default = true
 cucina_vegana.plant_settings = {}
 cucina_vegana.plant_settings.bonemeal_list = {}
@@ -86,6 +86,7 @@ local plants = {
             ["garlic"] = cucina_vegana.plant_settings.garlic,
             ["chili"] = cucina_vegana.plant_settings.chili,
             ["onion"] = cucina_vegana.plant_settings.onion,
+            ["cucumber"] = cucina_vegana.plant_settings.cucumber,
 
 		}
 

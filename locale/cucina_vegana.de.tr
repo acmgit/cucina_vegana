@@ -11,6 +11,8 @@
 ### chili_redo.lua ###
 ### chives_default.lua ###
 ### chives_redo.lua ###
+### cucumber_default.lua ###
+### cucumber_redo.lua ###
 ### flax_default.lua ###
 ### flax_redo.lua ###
 ### garlic_default.lua ###
@@ -52,6 +54,7 @@ Asparagus=Spargel
 ### carrot_default.lua ###
 ### chili_default.lua ###
 ### chives_default.lua ###
+### cucumber_default.lua ###
 ### flax_default.lua ###
 ### garlic_default.lua ###
 ### kohlrabi_default.lua ###
@@ -73,6 +76,7 @@ Wild=Wilde(r)
 ### carrot_redo.lua ###
 ### chili_redo.lua ###
 ### chives_redo.lua ###
+### cucumber_redo.lua ###
 ### flax_redo.lua ###
 ### garlic_redo.lua ###
 ### kohlrabi_redo.lua ###
@@ -113,6 +117,12 @@ Chili=Chili
 
 Chives=Schnittlauch
 
+### cucumber_default.lua ###
+### cucumber_redo.lua ###
+### items.lua ###
+
+Cucumber=Gurke
+
 ### flax_default.lua ###
 ### flax_redo.lua ###
 ### items.lua ###
@@ -129,7 +139,7 @@ Garlic=Knoblauch
 
 Blueberry pot=Topf Blaubeermus
 Blueberry pot (cooked)=Topf Blaubeermus (gekocht)
-Blueberry purree=Blaubeermus
+Blueberry puree=Blaubeermus
 Ciabatta dough=Ciabatta Teig
 Dandelion Honey=Löwenzahn Honig
 Dandelion Suds=Löwenzahn Lauge
@@ -226,6 +236,7 @@ Bottle of Sunflower Seeds Oil=Flasche Sonnenblumenkernöl
 Bowl of Rice=Schüssel Reis
 Bowl of Rice (raw)=Schüssel Reis (roh)
 Ciabatta Bread=Ciabatta Brot
+Cucumber in Glass=Gurken im Glas
 Edamame=Edamame
 Edamame (raw)=Edamame (roh)
 Fish on Parsley and Rosemary=Fisch mit Petersilie und Rosemarien
@@ -261,3 +272,4 @@ Rosemary=Rosemarien
 ### soy_redo.lua ###
 
 Soy=Soja
+

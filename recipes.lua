@@ -406,6 +406,14 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "cucina_vegana:cucumber_in_glass",
+	recipe = {	{"cucina_vegana:cucumber", "cucina_vegana:cucumber", "cucina_vegana:cucumber"},
+                {"", "cucina_vegana:cucumber", ""},
+				{"", "vessels:glass_bottle", ""}
+			},
+})
+
+minetest.register_craft({
 	output = "cucina_vegana:bowl_rice",
 	recipe = {
 				{"cucina_vegana:rice"},
