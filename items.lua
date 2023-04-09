@@ -81,7 +81,7 @@ minetest.register_craftitem("cucina_vegana:soy_milk", {
 	description = S("Soy Milk"),
 	inventory_image = "cucina_vegana_soy_milk.png",
 	groups = {flammable = 1, food = 1, food_milk = 1, eatable = 1, food_vegan = 1},
-	on_use = minetest.item_eat(1, "vessels:drinking_glass"),
+	on_use = minetest.item_eat(2, "vessels:drinking_glass"),
 })
 
 minetest.register_craftitem("cucina_vegana:sunflower_seeds_dough", {
@@ -291,7 +291,7 @@ minetest.register_craftitem("cucina_vegana:strawberry", {
 	description = S("Strawberry"),
 	inventory_image = "cucina_vegana_strawberry.png",
 	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1, food_strawberry = 1},
-	on_use = minetest.item_eat(4),
+	on_use = minetest.item_eat(2),
 })
 
 --   *******************************************
@@ -337,5 +337,5 @@ minetest.register_craftitem("cucina_vegana:vegan_strawberry_milk", {
 	description = S("Vegan Strawberry Milk"),
 	groups = {food = 1, food_vegan = 1, eatable = 1},
 	inventory_image = "cucina_vegana_vegan_strawberry_milk.png",
-	on_use = minetest.item_eat(6, "vessels:drinking_glass"),
+	on_use = minetest.item_eat(3, "vessels:drinking_glass"),
 })
