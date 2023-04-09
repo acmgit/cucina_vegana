@@ -35,6 +35,8 @@
 ### rosemary_redo.lua ###
 ### soy_default.lua ###
 ### soy_redo.lua ###
+### strawberry_default.lua ###
+### strawberry_redo.lua ###
 ### sunflower_default.lua ###
 ### sunflower_redo.lua ###
 ### tomato_default.lua ###
@@ -66,6 +68,7 @@ Asparagus=Spargel
 ### rice_default.lua ###
 ### rosemary_default.lua ###
 ### soy_default.lua ###
+### strawberry_default.lua ###
 ### sunflower_default.lua ###
 ### tomato_default.lua ###
 
@@ -88,6 +91,7 @@ Wild=Wilde(r)
 ### rice_redo.lua ###
 ### rosemary_redo.lua ###
 ### soy_redo.lua ###
+### strawberry_redo.lua ###
 ### sunflower_redo.lua ###
 ### tomato_redo.lua ###
 
@@ -165,6 +169,7 @@ Sunflower Seeds Dough=Sonnenblumenkern Teig
 Sunflower Seeds Flour=Sonnenblumenkern Mehl
 Tofu=Tofu
 Tofu (raw)=Tofu (roh)
+Vegan Strawberry Milk=Vegane Erdbeermilch
 Vegan Sushi=Veganes Sushi
 
 ### items.lua ###
@@ -208,6 +213,12 @@ Potato=Kartoffel
 ### rice_redo.lua ###
 
 Rice=Reis
+
+### items.lua ###
+### strawberry_default.lua ###
+### strawberry_redo.lua ###
+
+Strawberry=Erdbeere
 
 ### items.lua ###
 ### sunflower_default.lua ###
@@ -272,4 +283,3 @@ Rosemary=Rosemarien
 ### soy_redo.lua ###
 
 Soy=Soja
-
