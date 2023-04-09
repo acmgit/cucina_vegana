@@ -87,6 +87,7 @@ local plants = {
             ["chili"] = cucina_vegana.plant_settings.chili,
             ["onion"] = cucina_vegana.plant_settings.onion,
             ["cucumber"] = cucina_vegana.plant_settings.cucumber,
+            ["strawberry"] = cucina_vegana.plant_settings.strawberry,
 
 		}
 

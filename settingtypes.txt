@@ -96,3 +96,8 @@ cucina_vegana.plant_settings.onion_light (Min. Light) int 12
 cucina_vegana.plant_settings.cucumber (Enable Cucumber) bool true
 cucina_vegana.plant_settings.cucumber_scale (Spreadvalue) float 0.0003
 cucina_vegana.plant_settings.cucumber_light (Min. Light) int 12
+
+#Strawberry
+cucina_vegana.plant_settings.strawberry (Enable Strawberry) bool true
+cucina_vegana.plant_settings.strawberry_scale (Spreadvalue) float 0.006
+cucina_vegana.plant_settings.strawberry_light (Min. Light) int 10

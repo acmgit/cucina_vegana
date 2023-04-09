@@ -106,3 +106,8 @@ cucina_vegana.plant_settings.onion_light = minetest.settings:get(cv_setting .."o
 cucina_vegana.plant_settings.cucumber = minetest.settings:get_bool(cv_setting .."cucumber", true)
 cucina_vegana.plant_settings.cucumber_scale = minetest.settings:get(cv_setting .."cucumber_scale") or 0.0004
 cucina_vegana.plant_settings.cucumber_light = minetest.settings:get(cv_setting .."cucumber_light") or 12
+
+-- Strawberry
+cucina_vegana.plant_settings.strawberry = minetest.settings:get_bool(cv_setting .. "strawberry", true)
+cucina_vegana.plant_settings.strawberry_scale = minetest.settings:get(cv_setting .."strawberry_scale") or 0.006
+cucina_vegana.plant_settings.strawberry_light = minetest.settings:get(cv_setting .."strawberry_light") or 10
