@@ -525,6 +525,18 @@ minetest.register_craft({
 							{"default:stick", "default:stick"},
 						}
 })
+
+minetest.register_craft({
+	output = "cucina_vegana:vegan_strawberry_milk",
+	recipe = {
+				{"group:food_strawberry", "default:stick", "group:food_strawberry"},
+				{"group:food_strawberry", "group:food_strawberry", "group:food_strawberry"},
+                {"", "cucina_vegana:soy_milk", ""},
+			},
+			replacements = {
+							{"default:stick", "default:stick"},
+						}
+})
 --   *******************************************
 --   *****           Dinners               *****
 --   *******************************************
