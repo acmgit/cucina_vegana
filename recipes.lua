@@ -597,6 +597,15 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "cucina_vegana:fryer_raw",
+	recipe = {
+				{"default:paper","", "default:paper"},
+				{"cucina_vegana:potato","cucina_vegana:parsley", "cucina_vegana:potato"},
+				{"cucina_vegana:carrot","cucina_vegana:imitation_poultry", "cucina_vegana:carrot"},
+			},
+})
+
+minetest.register_craft({
 	output = "cucina_vegana:kohlrabi_soup",
 	recipe = {	{"cucina_vegana:kohlrabi", "group:food_oil", "cucina_vegana:parsley"},
 				{"", "bucket:bucket_water", ""},
