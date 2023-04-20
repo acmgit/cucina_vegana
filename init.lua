@@ -56,7 +56,7 @@ if(farming.mod == "redo") then
     minetest.log("info", "[MOD] " .. modname .. ": farming_redo mode activated.")
 
 else
-    minetest.log("info", "[MOD] " .. modname .. ": default farming mode activated.")
+	    minetest.log("info", "[MOD] " .. modname .. ": default farming mode activated.")
 
 end -- if(farming.mod
 
@@ -90,9 +90,6 @@ local plants = {
             ["strawberry"] = cucina_vegana.plant_settings.strawberry,
 
 		}
-
-
-
 
 for pname, value in pairs(plants) do
 

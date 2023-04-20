@@ -73,7 +73,7 @@ end
 	crop_def.tiles = {"cucina_vegana_" .. pname .. "_4.png"}
 	crop_def.drop = {
 		items = {
-			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
 		}
 	}
 	minetest.register_node("cucina_vegana:" .. pname .. "_4", table.copy(crop_def))
@@ -82,11 +82,12 @@ end
 	crop_def.tiles = {"cucina_vegana_" .. pname .. "_5.png"}
 	crop_def.drop = {
 		items = {
-			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
-			{items = {"cucina_vegana:" .. pname .. ""}, rarity = 3}
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
+			{items = {"cucina_vegana:" .. pname .. ""}, rarity = 4}
 		}
 	}
+
 	minetest.register_node("cucina_vegana:" .. pname .. "_5", table.copy(crop_def))
 
 	-- stage 6
@@ -97,41 +98,53 @@ end
 			{items = {"cucina_vegana:" .. pname .. ""}, rarity = 2},
 			{items = {"cucina_vegana:" .. pname .. ""}, rarity = 3},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
-			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
 		}
 	}
+	crop_def.visual_scale = 1.3
+
 	minetest.register_node("cucina_vegana:" .. pname .. "_6", table.copy(crop_def))
 
 -- stage 7
-crop_def.tiles = {"cucina_vegana_" .. pname .. "_7.png"}
-crop_def.drop = {
-	items = {
-		{items = {"cucina_vegana:" .. pname}, rarity = 1},
-		{items = {"cucina_vegana:" .. pname}, rarity = 2},
-		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
-		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
+	crop_def.tiles = {"cucina_vegana_" .. pname .. "_7.png"}
+	crop_def.drop = {
+		items = {
+			{items = {"cucina_vegana:" .. pname}, rarity = 1},
+			{items = {"cucina_vegana:" .. pname}, rarity = 2},
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
+		}
 	}
-}
-minetest.register_node("cucina_vegana:" .. pname .. "_7", table.copy(crop_def))
+	crop_def.visual_scale = 1.6
+
+	minetest.register_node("cucina_vegana:" .. pname .. "_7", table.copy(crop_def))
 
 -- stage 8 (final)
-crop_def.tiles = {"cucina_vegana_" .. pname .. "_8.png"}
-crop_def.groups.growing = 0
-crop_def.drop = {
-	items = {
-		{items = {"cucina_vegana:" .. pname}, rarity = 1},
-		{items = {"cucina_vegana:" .. pname}, rarity = 2},
-		{items = {"cucina_vegana:" .. pname}, rarity = 3},
-		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
-		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
-		{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
+	crop_def.tiles = {"cucina_vegana_" .. pname .. "_8.png"}
+	crop_def.groups.growing = 0
+	crop_def.drop = {
+		items = {
+			{items = {"cucina_vegana:" .. pname}, rarity = 1},
+			{items = {"cucina_vegana:" .. pname}, rarity = 2},
+			{items = {"cucina_vegana:" .. pname}, rarity = 3},
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
+		}
 	}
-}
-minetest.register_node("cucina_vegana:" .. pname .. "_8", table.copy(crop_def))
+	crop_def.visual_scale = 1.9
+
+	minetest.register_node("cucina_vegana:" .. pname .. "_8", table.copy(crop_def))
+
+--[[
+minetest.override_item("cucina_vegana:" .. pname .. "_6", {visual_scale = 1.3})
+minetest.override_item("cucina_vegana:" .. pname .. "_7", {visual_scale = 1.6})
+minetest.override_item("cucina_vegana:" .. pname .. "_8", {visual_scale = 1.9})
+]]--
 
 	-- Register for Mapgen
-	minetest.register_node("cucina_vegana:wild_" .. pname .. "", {
+	minetest.register_node("cucina_vegana:wild_" .. pname, {
 		description = S("Wild ") .. dname,
 		paramtype = "light",
 		walkable = false,
@@ -153,6 +166,7 @@ minetest.register_node("cucina_vegana:" .. pname .. "_8", table.copy(crop_def))
 					{-0.5, -0.5, -0.5, 0.5, -0.35, 0.5}, -- side f
 				},
 		},
+		visual_scale = 1.9,
 	})
 
 if(cucina_vegana.plant_settings.bonemeal) then

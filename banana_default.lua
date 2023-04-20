@@ -20,7 +20,12 @@ farming.register_plant("cucina_vegana:" .. pname, {
 	minlight = cucina_vegana.plant_settings.banana_light,
 	fertility = {"grassland"},
 	groups = {flammable = 4, attached_node = 1},
+	visual_scale = 1,
 })
+
+minetest.override_item("cucina_vegana:" .. pname .. "_6", {visual_scale = 1.3})
+minetest.override_item("cucina_vegana:" .. pname .. "_7", {visual_scale = 1.6})
+minetest.override_item("cucina_vegana:" .. pname .. "_8", {visual_scale = 1.9})
 
 -- Register for Mapgen
 minetest.register_node("cucina_vegana:wild_" .. pname, {
@@ -46,6 +51,7 @@ minetest.register_node("cucina_vegana:wild_" .. pname, {
 				{-0.5, -0.5, -0.5, 0.5, -0.35, 0.5}, -- side f
 			},
 	},
+	visual_scale = 1.9,
 })
 
 if(cucina_vegana.plant_settings.bonemeal) then
