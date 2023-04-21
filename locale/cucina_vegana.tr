@@ -11,6 +11,8 @@
 ### chili_redo.lua ###
 ### chives_default.lua ###
 ### chives_redo.lua ###
+### corn_default.lua ###
+### corn_redo.lua ###
 ### cucumber_default.lua ###
 ### cucumber_redo.lua ###
 ### flax_default.lua ###
@@ -56,6 +58,7 @@ Asparagus=
 ### carrot_default.lua ###
 ### chili_default.lua ###
 ### chives_default.lua ###
+### corn_default.lua ###
 ### cucumber_default.lua ###
 ### flax_default.lua ###
 ### garlic_default.lua ###
@@ -79,6 +82,7 @@ Wild=
 ### carrot_redo.lua ###
 ### chili_redo.lua ###
 ### chives_redo.lua ###
+### corn_redo.lua ###
 ### cucumber_redo.lua ###
 ### flax_redo.lua ###
 ### garlic_redo.lua ###
@@ -121,6 +125,11 @@ Chili=
 
 Chives=
 
+### corn_default.lua ###
+### corn_redo.lua ###
+
+Corn=
+
 ### cucumber_default.lua ###
 ### cucumber_redo.lua ###
 ### items.lua ###
@@ -145,6 +154,7 @@ Blueberry pot=
 Blueberry pot (cooked)=
 Blueberry puree=
 Ciabatta dough=
+Corncob=
 Dandelion Honey=
 Dandelion Suds=
 Dandelion Suds (cooking)=
@@ -241,6 +251,7 @@ Asparagus Soup (raw)=
 Asparagus on Rice=
 Asparagus on Rice (raw)=
 Blueberry Jam=
+Bottle of Corn Oil=
 Bottle of Flaxseed Oil=
 Bottle of Peanut Oil=
 Bottle of Sunflower Seeds Oil=
@@ -265,6 +276,7 @@ Pizza Funghi (raw)=
 Pizza Vegana=
 Pizza Vegana (raw)=
 Plate=
+Popcorn=
 Salad Bowl Hollandaise=
 Salad Oil=
 Sauce Hollandaise=

@@ -16,6 +16,9 @@
       {'cucina_vegana:carrot',                        3,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:chili',                         1,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:onion',                         3,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:corn',                          2,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:cucumber',                      3,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:strawberry',                    2,              nil,                        nil,    nil,    nil},
 
       --               Name                          Saturation      Replace with                Poison  Heal    Sound
       -- side dishes
@@ -33,6 +36,7 @@
       {'cucina_vegana:sauce_hollandaise',             3,              'vessels:glass_bottle',     nil,    nil,    nil},
       {'cucina_vegana:sunflower_seeds_oil',           3,              'vessels:glass_bottle',     nil,    nil,    nil},
       {'cucina_vegana:soy_milk',                      1,              'vessels:drinking_glass',   nil,    0.5,    nil},
+      {'cucina_vegana:strawberry_milk',               3,              'vessels:drinking_glass',   nil,    nil,    nil},
 
       --               Name                          Saturation      Replace with                Poison  Heal    Sound
       -- eatable raws
@@ -63,6 +67,7 @@
       {'cucina_vegana:tofu_cooked',                   3,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:vegan_sushi',                   4,              nil,                        nil,    1.5,    nil},
 
+
     } -- civ_items
 
 --   *******************************************
@@ -86,11 +91,13 @@ if(minetest.get_modpath("technic")) then
             table.insert(compressor_recipes,{"cucina_vegana:seed_lettuce 6", "cucina_vegana:lettuce_oil"})
             table.insert(compressor_recipes,{"cucina_vegana:seed_flax 6", "cucina_vegana:flax_seed_oil"})
             table.insert(compressor_recipes,{"cucina_vegana:seed_peanut 6", "cucina_vegana:peanut_oil"})
+            table.insert(compressor_recipes,{"cucina_vegana:seed_corn 6", "cucina_vegana:corn_oil"})
 
     else
             table.insert(compressor_recipes,{"cucina_vegana:lettuce_seed 6", "cucina_vegana:lettuce_oil"})
             table.insert(compressor_recipes,{"cucina_vegana:flax_seed 6", "cucina_vegana:flax_seed_oil"})
             table.insert(compressor_recipes,{"cucina_vegana:peanut_seed 6", "cucina_vegana:peanut_oil"})
+            table.insert(compressor_recipes,{"cucina_vegana:corn_seed 6", "cucina_vegana:corn_oil"})
 
     end -- if(cucina_vegana.farming_default
 
@@ -105,6 +112,7 @@ if(minetest.get_modpath("technic")) then
 					{ "flowers:sunflower",             "cucina_vegana:sunflower_seeds 4",       "dye:yellow"      },
                     { "cucina_vegana:sunflower",       "cucina_vegana:sunflower_seeds 4",       "dye:yellow"      },
                     { "cucina_vegana:kohlrabi 4",      "cucina_vegana:molasses",                "default:leaves"  },
+                    { "cucina_vegana:corn",            "cucina_vegana:seed_corn 10",            "default:leaves"  },
 				}
 
 	for _, data in pairs(centrifuge_recipes) do
@@ -128,11 +136,12 @@ if(minetest.get_modpath("technic")) then
         table.insert(extractor_recipes,{"cucina_vegana:seed_lettuce 6", "cucina_vegana:lettuce_oil"})
         table.insert(extractor_recipes,{"cucina_vegana:seed_flax 6", "cucina_vegana:flax_seed_oil"})
         table.insert(extractor_recipes,{"cucina_vegana:seed_peanut 6", "cucina_vegana:peanut_oil"})
-
+        table.insert(extractor_recipes,{"cucina_vegana:seed_corn 6", "cucina_vegana:corn_oil"})
     else
         table.insert(extractor_recipes,{"cucina_vegana:lettuce_seed 6", "cucina_vegana:lettuce_oil"})
         table.insert(extractor_recipes,{"cucina_vegana:flax_seed 6", "cucina_vegana:flax_seed_oil"})
         table.insert(extractor_recipes,{"cucina_vegana:peanut_seed 6", "cucina_vegana:peanut_oil"})
+        table.insert(extractor_recipes,{"cucina_vegana:corn_seed 6", "cucina_vegana:corn_oil"})
 
     end -- if(cucina_vegana.farming_default
 

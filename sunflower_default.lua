@@ -57,6 +57,9 @@ else
 
 end
 
+minetest.override_item("cucina_vegana:" .. pname .. "_4", {visual_scale = 1.3})
+minetest.override_item("cucina_vegana:" .. pname .. "_5", {visual_scale = 1.5})
+
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,
                  {"cucina_vegana:" .. pname .. "_", step, "cucina_vegana:seed_" .. pname})

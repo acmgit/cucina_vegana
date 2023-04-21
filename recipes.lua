@@ -103,6 +103,22 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "cucina_vegana:peanut_oil",
+	recipe = {	{"group:seed_peanut", "group:seed_peanut", "group:seed_peanut"},
+				{"group:seed_peanut", "group:seed_peanut", "group:seed_peanut"},
+				{"", "vessels:glass_bottle", ""}
+			}
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:corn_oil",
+	recipe = {	{"cucina_vegana:seed_corn", "cucina_vegana:seed_corn", "cucina_vegana:seed_corn"},
+				{"cucina_vegana:seed_corn", "cucina_vegana:seed_corn", "cucina_vegana:seed_corn"},
+				{"", "vessels:glass_bottle", ""}
+			}
+})
+
+minetest.register_craft({
         output = "cucina_vegana:mushroomlight_glass 4",
         recipe = {
                   {"","default:glass",""},
@@ -111,13 +127,6 @@ minetest.register_craft({
                 }
 })
 
-minetest.register_craft({
-	output = "cucina_vegana:peanut_oil",
-	recipe = {	{"group:seed_peanut", "group:seed_peanut", "group:seed_peanut"},
-				{"group:seed_peanut", "group:seed_peanut", "group:seed_peanut"},
-				{"", "vessels:glass_bottle", ""}
-			}
-})
 
 minetest.register_craft({
 	output = "cucina_vegana:pizza_dough",
@@ -685,6 +694,28 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "cucina_vegana:tofu_chives_rosemary",
+	recipe = {	{"cucina_vegana:chives", "", "cucina_vegana:rosemary"},
+				{"", "cucina_vegana:tofu", ""},
+				{"", "group:food_plate", ""}
+			},
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:vegan_sushi",
+	recipe = {	{"cucina_vegana:imitation_fish", "cucina_vegana:bowl_rice", ""},
+				{"default:papyrus", "", ""}
+			},
+	replacements = {
+		{"cucina_vegana:bowl_rice", "cucina_vegana:bowl"}
+	}
+})
+
+--   *******************************************
+--   *****          Miscelanous            *****
+--   *******************************************
+
+minetest.register_craft({
 	type = "shapeless",
 	output = "cucina_vegana:sunflower_seeds 4",
 	recipe = {"flowers:sunflower"},
@@ -707,23 +738,6 @@ minetest.register_craft({
 			}
 })
 
-minetest.register_craft({
-	output = "cucina_vegana:tofu_chives_rosemary",
-	recipe = {	{"cucina_vegana:chives", "", "cucina_vegana:rosemary"},
-				{"", "cucina_vegana:tofu", ""},
-				{"", "group:food_plate", ""}
-			},
-})
-
-minetest.register_craft({
-	output = "cucina_vegana:vegan_sushi",
-	recipe = {	{"cucina_vegana:imitation_fish", "cucina_vegana:bowl_rice", ""},
-				{"default:papyrus", "", ""}
-			},
-	replacements = {
-		{"cucina_vegana:bowl_rice", "cucina_vegana:bowl"}
-	}
-})
 
 minetest.register_craft({
 	output = "default:paper 4",
@@ -829,4 +843,10 @@ minetest.register_craft({
     replacements = {
                     {"default:stick", "default:stick"},
                 },
+})
+
+minetest.register_craft({
+	type = "shapeless",
+	output = "cucina_vegana:seed_corn 10",
+	recipe = {"cucina_vegana:corn"},
 })

@@ -88,7 +88,7 @@ local plants = {
             ["onion"] = cucina_vegana.plant_settings.onion,
             ["cucumber"] = cucina_vegana.plant_settings.cucumber,
             ["strawberry"] = cucina_vegana.plant_settings.strawberry,
-
+			["corn"] = cucina_vegana.plant_settings.corn
 		}
 
 for pname, value in pairs(plants) do

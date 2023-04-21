@@ -1,16 +1,15 @@
 --[[
 	**********************************************
-	***           Sunflower redo               ***
+	***              Corn redo                 ***
 	**********************************************
 ]]--
 
 -- Load support for intllib.
 local S = cucina_vegana.get_translator
 
-local dname = S("Sunflower")
-local pname = "sunflower"
-local step = 5
-local modname = minetest.get_current_modname()
+local dname = S("Corn")
+local pname = "corn"
+local step = 8
 local germ = tonumber(cucina_vegana.plant_settings.germ_launch)
 
 if germ == 0 then
@@ -21,21 +20,15 @@ else
 
 end
 
-if(minetest.registered_nodes["flowers:sunflower"]  ~= nil) then
-	print("[MOD] " .. modname .. " Sunflowers available.")
-	print("[MOD] " .. modname .. " using \"flowers:sunflower\".")
-    minetest.log("info", "[MOD] " .. modname .. ": Sunflowers available. Using \"flowers:sunflower\".")
-
-else
-
+	-- banana
 	minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 		description = dname .. " " .. S("Seed"),
 		tiles = {"cucina_vegana_" .. pname .. "_seed.png"},
 		inventory_image = "cucina_vegana_" .. pname .. "_seed.png",
 		wield_image = "cucina_vegana_" .. pname .. "_seed.png",
 		drawtype = "signlike",
-		minlight = cucina_vegana.plant_settings.sunflower_light,
-        groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
+        minlight = cucina_vegana.plant_settings.corn_light,
+		groups = {seed = 1, snappy = 3, attached_node = 1, dig_immediate=1, flammable = 4},
 		paramtype = "light",
 		paramtype2 = "wallmounted",
 		walkable = false,
@@ -46,7 +39,7 @@ else
 		end,
 	})
 
-	-- sunflower definition
+	-- banana definition
 	local crop_def = {
 		drawtype = "plantlike",
 		tiles = {"cucina_vegana_" .. pname .. "_1.png"},
@@ -55,8 +48,8 @@ else
 		walkable = false,
         waving = 1,
 		buildable_to = true,
+        minlight = cucina_vegana.plant_settings.corn_light,
 		drop =  "",
-		minlight = cucina_vegana.plant_settings.sunflower_light,
 		selection_box = farming.select,
 		groups = {
 			flammable = 4, snappy=3, dig_immediate=1, plant = 1, attached_node = 1,
@@ -80,25 +73,54 @@ else
 	crop_def.tiles = {"cucina_vegana_" .. pname .. "_4.png"}
 	crop_def.drop = {
 		items = {
-			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
 		}
 	}
-	crop_def.visual_scale = 1.3,
 	minetest.register_node("cucina_vegana:" .. pname .. "_4", table.copy(crop_def))
 
-	-- stage 5 (final)
+	-- stage 5
 	crop_def.tiles = {"cucina_vegana_" .. pname .. "_5.png"}
-	crop_def.groups.growing = 0
 	crop_def.drop = {
 		items = {
-			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
-			{items = {"cucina_vegana:" .. pname .. ""}, rarity = 1},
-			{items = {"cucina_vegana:" .. pname .. ""}, rarity = 2}
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
+			{items = {"cucina_vegana:" .. pname .. "_cob"}, rarity = 4}
 		}
 	}
-	crop_def.visual_scale = 1.5,
+	crop_def.visual_scale = 1.3
+
 	minetest.register_node("cucina_vegana:" .. pname .. "_5", table.copy(crop_def))
+
+	-- stage 6
+	crop_def.tiles = {"cucina_vegana_" .. pname .. "_6.png"}
+	crop_def.drop = {
+		items = {
+			{items = {"cucina_vegana:" .. pname .. "_cob"}, rarity = 1},
+			{items = {"cucina_vegana:" .. pname .. "_cob"}, rarity = 2},
+			{items = {"cucina_vegana:" .. pname .. "_cob"}, rarity = 3},
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
+		}
+	}
+	crop_def.visual_scale = 1.5
+
+	minetest.register_node("cucina_vegana:" .. pname .. "_6", table.copy(crop_def))
+
+-- stage 7
+	crop_def.tiles = {"cucina_vegana_" .. pname .. "_7.png"}
+	crop_def.drop = {
+		items = {
+			{items = {"cucina_vegana:" .. pname .. "_cob 3"}, rarity = 1},
+			{items = {"cucina_vegana:" .. pname}.. "_cob 3", rarity = 2},
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
+			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
+		}
+	}
+	crop_def.visual_scale = 1.9
+
+	minetest.register_node("cucina_vegana:" .. pname .. "_7", table.copy(crop_def))
+
 
 	-- Register for Mapgen
 	minetest.register_node("cucina_vegana:wild_" .. pname, {
@@ -107,13 +129,13 @@ else
 		walkable = false,
 		drop = {
 				items = {
-						{items = {"cucina_vegana:" .. pname .. "_seed"}},
-						{items = {"cucina_vegana:" .. pname .. ""}},
+						{items = {"cucina_vegana:" .. pname .. "_seed 3"}},
+						{items = {"cucina_vegana:" .. pname .. "_cob 3"}},
 					}
 				},
 		drawtype = "plantlike",
 		paramtype2 = "facedir",
-		tiles = {"cucina_vegana_" .. pname .. "_5.png"},
+		tiles = {"cucina_vegana_" .. pname .. "_" .. step .. ".png"},
 		groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1,
                 growing = 1, not_in_creative_inventory = 1},
 		sounds = default.node_sound_leaves_defaults(),
@@ -123,10 +145,8 @@ else
 					{-0.5, -0.5, -0.5, 0.5, -0.35, 0.5}, -- side f
 				},
 		},
-		visual_scale = 1.5,
+		visual_scale = 1.9,
 	})
-
-end
 
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,
@@ -142,7 +162,6 @@ end -- if(cucina_vegana.farming_ng
 
 -- Register @ Signs_bot
 if(cucina_vegana.signs_bot) then
-    cucina_vegana.register_signs_bot(pname, 1, step)
+        cucina_vegana.register_signs_bot(pname, 1, step)
 
 end
-

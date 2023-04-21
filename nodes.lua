@@ -110,6 +110,24 @@ minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
+minetest.register_node("cucina_vegana:corn_oil", {
+	description = S("Bottle of Corn Oil"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_corn_oil.png"},
+	inventory_image = "cucina_vegana_corn_oil.png",
+	wield_image = "cucina_vegana_corn_oil.png",
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	on_use = minetest.item_eat(2, "vessels:glass_bottle"),
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {vessel = 1, dig_immediate = 3, attached_node = 1, food = 1, food_oil = 1, food_vegan = 1, eatable = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
 --   *******************************************
 --   *****       Síde Dishes               *****
 --   *******************************************
@@ -278,6 +296,25 @@ minetest.register_node("cucina_vegana:sea_salad", {
 	inventory_image = "cucina_vegana_sea_salad.png",
 	wield_image = "cucina_vegana_sea_salad.png",
 	on_use = minetest.item_eat(5, "cucina_vegana:bowl"),
+	paramtype = "light",
+	is_ground_content = false,
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("cucina_vegana:popcorn", {
+	description = S("Popcorn"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_popcorn.png"},
+	inventory_image = "cucina_vegana_popcorn.png",
+	wield_image = "cucina_vegana_popcorn.png",
+	paramtype2 = 3, -- #
+	on_use = minetest.item_eat(3),
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,

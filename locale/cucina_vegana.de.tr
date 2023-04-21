@@ -11,6 +11,8 @@
 ### chili_redo.lua ###
 ### chives_default.lua ###
 ### chives_redo.lua ###
+### corn_default.lua ###
+### corn_redo.lua ###
 ### cucumber_default.lua ###
 ### cucumber_redo.lua ###
 ### flax_default.lua ###
@@ -56,6 +58,7 @@ Asparagus=Spargel
 ### carrot_default.lua ###
 ### chili_default.lua ###
 ### chives_default.lua ###
+### corn_default.lua ###
 ### cucumber_default.lua ###
 ### flax_default.lua ###
 ### garlic_default.lua ###
@@ -79,6 +82,7 @@ Wild=Wilde(r)
 ### carrot_redo.lua ###
 ### chili_redo.lua ###
 ### chives_redo.lua ###
+### corn_redo.lua ###
 ### cucumber_redo.lua ###
 ### flax_redo.lua ###
 ### garlic_redo.lua ###
@@ -121,6 +125,11 @@ Chili=Chili
 
 Chives=Schnittlauch
 
+### corn_default.lua ###
+### corn_redo.lua ###
+
+Corn=Mais
+
 ### cucumber_default.lua ###
 ### cucumber_redo.lua ###
 ### items.lua ###
@@ -145,6 +154,7 @@ Blueberry pot=Topf Blaubeermus
 Blueberry pot (cooked)=Topf Blaubeermus (gekocht)
 Blueberry puree=Blaubeermus
 Ciabatta dough=Ciabatta Teig
+Corncob=Maiskolben
 Dandelion Honey=Löwenzahn Honig
 Dandelion Suds=Löwenzahn Lauge
 Dandelion Suds (cooking)=Löwenzahn Lauge (kochend)
@@ -241,6 +251,7 @@ Asparagus Soup (raw)=Spargelsuppe (roh)
 Asparagus on Rice=Spargel mit Reis
 Asparagus on Rice (raw)=Spargel mit Reis (roh)
 Blueberry Jam=Blaubeer Marmelade
+Bottle of Corn Oil=Maiskeimöl
 Bottle of Flaxseed Oil=Flasche Leinsamenöl
 Bottle of Peanut Oil=Flasche Erdnussöl
 Bottle of Sunflower Seeds Oil=Flasche Sonnenblumenkernöl
@@ -265,6 +276,7 @@ Pizza Funghi (raw)=Pizza Funghi (roh)
 Pizza Vegana=Pizza Vegana
 Pizza Vegana (raw)=Pizza Vegana (roh)
 Plate=Teller
+Popcorn=Popcorn
 Salad Bowl Hollandaise=Schüssel Salat Hollandaise
 Salad Oil=Salatöl
 Sauce Hollandaise=Sauce Hollandaise
