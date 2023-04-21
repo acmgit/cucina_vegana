@@ -110,30 +110,6 @@ end -- if minetest.get_modpath("fishing"
 
 --[[
         **************************************************
-        ***           Support for barbecue             ***
-        **************************************************
-]]--
-
-if minetest.get_modpath("barbecue") then
-
-    minetest.register_craft({
-        type = "shapeless",
-        output = "barbecue:cornsoup_raw",
-        recipe = {"barbecue:pan","cucina_vegana:corn","group:food_milk"},
-    })
-
-    minetest.register_craft({
-        output = "barbecue:skewercorn",
-        recipe = {
-                {"cucina_vegana:corn"},
-                {"default:stick"},
-            },
-    })
-
-end
-
---[[
-        **************************************************
         ***               Support for bbq              ***
         **************************************************
 ]]--
