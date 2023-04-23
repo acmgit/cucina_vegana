@@ -9,7 +9,7 @@ local S = cucina_vegana.get_translator
 
 local dname = S("Corn")
 local pname = "corn"
-local step = 8
+local step = 7
 local germ = tonumber(cucina_vegana.plant_settings.germ_launch)
 
 if germ == 0 then
@@ -20,7 +20,7 @@ else
 
 end
 
-	-- banana
+	-- corn
 	minetest.register_node("cucina_vegana:" .. pname .. "_seed", {
 		description = dname .. " " .. S("Seed"),
 		tiles = {"cucina_vegana_" .. pname .. "_seed.png"},
@@ -112,7 +112,7 @@ end
 	crop_def.drop = {
 		items = {
 			{items = {"cucina_vegana:" .. pname .. "_cob 3"}, rarity = 1},
-			{items = {"cucina_vegana:" .. pname}.. "_cob 3", rarity = 2},
+			{items = {"cucina_vegana:" .. pname .. "_cob 3", rarity = 2},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
 		}
