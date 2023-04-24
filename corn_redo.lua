@@ -112,7 +112,7 @@ end
 	crop_def.drop = {
 		items = {
 			{items = {"cucina_vegana:" .. pname .. "_cob 3"}, rarity = 1},
-			{items = {"cucina_vegana:" .. pname .. "_cob 3", rarity = 2},
+			{items = {"cucina_vegana:" .. pname .. "_cob 3"}, rarity = 2},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
 		}
