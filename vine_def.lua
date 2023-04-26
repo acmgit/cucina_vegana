@@ -16,7 +16,7 @@ local duration = cv.shrub_settings.vine_duration
 local bottom_steps = 4
 local top_steps = 3
 local maxlight = cv.shrub_settings.vine_light
-local percent = 3
+local percent = 10
 
 -- Register for Mapgen
 mt.register_node("cucina_vegana:wild_" .. pname, {

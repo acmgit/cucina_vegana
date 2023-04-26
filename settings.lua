@@ -129,4 +129,4 @@ cucina_vegana.plant_settings.strawberry_light = minetest.settings:get(cv_setting
 cucina_vegana.shrub_settings.vine = minetest.settings:get_bool(cv_setting_shrub .. "vine", true)
 cucina_vegana.shrub_settings.vine_scale = minetest.settings:get(cv_setting_shrub .. "vine_scale") or 0.008
 cucina_vegana.shrub_settings.vine_light = minetest.settings:get(cv_setting_shrub .. "vine_light") or 12
-cucina_vegana.shrub_settings.vine_duration = minetest.settings:get(cv_setting_shrub .. "vine_duration") or 240
+cucina_vegana.shrub_settings.vine_duration = minetest.settings:get(cv_setting_shrub .. "vine_duration") or 180

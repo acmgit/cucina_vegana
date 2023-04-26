@@ -19,6 +19,8 @@
       {'cucina_vegana:corn',                          2,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:cucumber',                      3,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:strawberry',                    2,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:vine'},                         3,              nil,                        nil,    nil,    nil},
+
 
       --               Name                          Saturation      Replace with                Poison  Heal    Sound
       -- side dishes
