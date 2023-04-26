@@ -19,7 +19,7 @@
       {'cucina_vegana:corn',                          2,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:cucumber',                      3,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:strawberry',                    2,              nil,                        nil,    nil,    nil},
-      {'cucina_vegana:vine'},                         3,              nil,                        nil,    nil,    nil},
+      {'cucina_vegana:vine',                          3,              nil,                        nil,    nil,    nil},
 
 
       --               Name                          Saturation      Replace with                Poison  Heal    Sound
@@ -212,7 +212,7 @@ if(minetest.get_modpath("wine")) then
     wine:add_item({ {"cucina_vegana:molasses", "wine:glass_rum"},
                     {"cucina_vegana:dandelion_honey", "wine:glass_mead"},
                     {"cucina_vegana:rice", "wine:glass_sake"},
-                    {"cucina_vegana:vine_grape", "wine:glass_wine"}                    {"cucina_vegana:vine_grape", "wine:glass_wine"}
+                    {"cucina_vegana:vine_grape", "wine:glass_wine"}
                   })
 
 end -- wine
