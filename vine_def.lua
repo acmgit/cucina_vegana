@@ -61,9 +61,9 @@ mt.register_node("cucina_vegana:" .. pname .. "_leaves", {
 		max_items = 1,
 		items = {
 			{
-				-- player will get sapling with 1/20 chance
+				-- player will get sapling with 1/3 chance
 				items = {"cucina_vegana:" .. pname .. "_sapling"},
-				rarity = 20,
+				rarity = 3,
 			},
 			{
 				-- player will get leaves only if he get no saplings,
