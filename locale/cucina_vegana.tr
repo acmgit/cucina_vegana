@@ -74,6 +74,7 @@ Asparagus=
 ### strawberry_default.lua ###
 ### sunflower_default.lua ###
 ### tomato_default.lua ###
+### vine_def.lua ###
 
 Wild=
 
@@ -295,3 +296,11 @@ Rosemary=
 ### soy_redo.lua ###
 
 Soy=
+
+### vine_def.lua ###
+
+Grape=
+Leaves=
+Sapling=
+Stem=
+Vine=
