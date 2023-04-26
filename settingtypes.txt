@@ -106,3 +106,11 @@ cucina_vegana.plant_settings.onion_light (Min. Light) int 12
 cucina_vegana.plant_settings.strawberry (Enable Strawberry) bool true
 cucina_vegana.plant_settings.strawberry_scale (Spreadvalue) float 0.006
 cucina_vegana.plant_settings.strawberry_light (Min. Light) int 10
+
+## Shrubs
+
+#Vine
+cucina_vegana.shrub_settings.vine (Enable vine) bool true
+cucina_vegana.shrub_settings.vine_scale (Spreadvalue) float 0.008
+cucina_vegana.shrub_settings.vine_light (Min. Light) int 12
+cucina_vegana.shrub_settings.vine_duration (Duration in Seconds) int 240

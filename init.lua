@@ -12,9 +12,11 @@
 ]]--
 
 cucina_vegana = {}
+cucina_vegana.lib = {}
 cucina_vegana.version = "3.2"
 cucina_vegana.farming_default = true
 cucina_vegana.plant_settings = {}
+cucina_vegana.shrub_settings = {}
 cucina_vegana.plant_settings.bonemeal_list = {}
 cucina_vegana.farming_ng = minetest.get_modpath("farming_nextgen")
 cucina_vegana.signs_bot = minetest.get_modpath("signs_bot")
@@ -27,6 +29,7 @@ local modname = cucina_vegana.modname
 
 dofile(modpath .. "/settings.lua")
 dofile(modpath .. "/tools.lua")
+dofile(modpath .. "/lib.lua")
 
 if(cucina_vegana.signs_bot) then
 	dofile(modpath .. "/register_signs_bot.lua")
@@ -116,6 +119,23 @@ for pname, value in pairs(plants) do
     minetest.log("info", "[MOD] " .. modname .. " Module: " .. pname .. " loaded.")
 
 end -- for
+
+local shrubs = {
+				["vine"] = cucina_vegana.shrub_settings.vine,
+			}
+
+for sname, value in pairs(shrubs) do
+	print(sname)
+	print(value)
+	if(value) then
+		dofile(modpath .. "/" .. sname .. "_def.lua")
+		dofile(modpath .. "/" .. sname .. ".lua")
+		print("[MOD] " .. modname .. " Module: " .. sname .. " loaded.")
+	    minetest.log("info", "[MOD] " .. modname .. " Module: " .. sname .. " loaded.")
+	end -- if(value)
+
+
+end -- for shrub,
 
 -- Insert Recipes
 dofile(modpath .. "/overrides.lua")
