@@ -16,6 +16,7 @@ function cv.lib.register_bottom_abm(node, nextnode, duration, light)
             nodenames = {node},
             interval = duration,
             chance = percent,
+            catch_up = true,
             action = function(pos, node, active_object_count, active_object_count_wider)
                         local nodepos = pos
                         if(cv.lib.check_soil(nodepos)) then
@@ -42,6 +43,7 @@ function cv.lib.register_top_abm(node, nextnode, duration, light)
             nodenames = {node},
             interval = duration,
             chance = percent,
+            catch_up = true,
             action = function(pos, node, active_object_count, active_object_count_wider)
                         local nodepos = pos
                             if(cv.lib.check_light(nodepos, light)) then
@@ -85,10 +87,6 @@ end -- cv.lib.check_soil
 
 function cv.lib.check_air(pos)
     local air = mt.get_node_or_nil(pos)
-    print(mt.pos_to_string(pos))
-    print("Node:")
-    print(air.name)
-
     if (air) and (string.match(air.name,"air")) then
         return true
 

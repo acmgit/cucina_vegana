@@ -125,8 +125,6 @@ local shrubs = {
 			}
 
 for sname, value in pairs(shrubs) do
-	print(sname)
-	print(value)
 	if(value) then
 		dofile(modpath .. "/" .. sname .. "_def.lua")
 		dofile(modpath .. "/" .. sname .. ".lua")

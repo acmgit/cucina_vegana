@@ -146,6 +146,7 @@ mt.register_abm({
     nodenames = {"cucina_vegana:" .. pname .. "_bottom_4"},
     interval = duration,
     chance = percent,
+    catch_up = true,
     action = function(pos, node, active_object_count, active_object_count_wider)
                 local nodepos = { x = pos.x, y = pos.y+1, z = pos.z}
                 print(mt.pos_to_string(pos))
