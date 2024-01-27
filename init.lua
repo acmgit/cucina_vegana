@@ -53,13 +53,13 @@ end -- if(minetest.get_modpath(
 
 cucina_vegana.get_translator = S
 
--- looking if farming_redo is activ?
-if(farming.mod == "redo") then
+-- looking if farming_redo is really activ? ... \/('')\/
+if(farming.mod ~= nil and farming.mod == "redo") then
 	cucina_vegana.farming_default = false
     minetest.log("info", "[MOD] " .. modname .. ": farming_redo mode activated.")
 
 else
-	    minetest.log("info", "[MOD] " .. modname .. ": default farming mode activated.")
+    minetest.log("info", "[MOD] " .. modname .. ": default farming mode activated.")
 
 end -- if(farming.mod
 
