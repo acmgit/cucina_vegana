@@ -296,7 +296,7 @@ minetest.register_craftitem("cucina_vegana:strawberry", {
 
 minetest.register_craftitem("cucina_vegana:corn", {
 	description = S("Corncob"),
-	inventory_image = "cucina_vegana_corn_cob.png",
+	inventory_image = "cucina_vegana_corn.png",
 	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1, food_corn = 1},
 	on_use = minetest.item_eat(2),
 })

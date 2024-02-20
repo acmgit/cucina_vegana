@@ -145,6 +145,7 @@ dofile(modpath .. "/recipes_cook.lua")
 dofile(modpath .. "/recipes_support.lua")
 dofile(modpath .. "/recipes_5xx.lua") -- New recipes with MT 5.0
 dofile(modpath .. "/register_mods.lua")
+dofile(modpath .. "/aliases.lua")
 
 if(minetest.get_modpath("bonemeal")) then
     bonemeal:add_crop(cucina_vegana.plant_settings.bonemeal_list)

@@ -84,7 +84,7 @@ end
 		items = {
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
-			{items = {"cucina_vegana:" .. pname .. "_cob"}, rarity = 4}
+			{items = {"cucina_vegana:" .. pname }, rarity = 4}
 		}
 	}
 	crop_def.visual_scale = 1.3
@@ -95,9 +95,9 @@ end
 	crop_def.tiles = {"cucina_vegana_" .. pname .. "_6.png"}
 	crop_def.drop = {
 		items = {
-			{items = {"cucina_vegana:" .. pname .. "_cob"}, rarity = 1},
-			{items = {"cucina_vegana:" .. pname .. "_cob"}, rarity = 2},
-			{items = {"cucina_vegana:" .. pname .. "_cob"}, rarity = 3},
+			{items = {"cucina_vegana:" .. pname }, rarity = 1},
+			{items = {"cucina_vegana:" .. pname }, rarity = 2},
+			{items = {"cucina_vegana:" .. pname }, rarity = 3},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 3},
@@ -111,8 +111,8 @@ end
 	crop_def.tiles = {"cucina_vegana_" .. pname .. "_7.png"}
 	crop_def.drop = {
 		items = {
-			{items = {"cucina_vegana:" .. pname .. "_cob 3"}, rarity = 1},
-			{items = {"cucina_vegana:" .. pname .. "_cob 3"}, rarity = 2},
+			{items = {"cucina_vegana:" .. pname .. " 3"}, rarity = 1},
+			{items = {"cucina_vegana:" .. pname .. " 3"}, rarity = 2},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 1},
 			{items = {"cucina_vegana:" .. pname .. "_seed"}, rarity = 2},
 		}
@@ -130,7 +130,7 @@ end
 		drop = {
 				items = {
 						{items = {"cucina_vegana:" .. pname .. "_seed 3"}},
-						{items = {"cucina_vegana:" .. pname .. "_cob 3"}},
+						{items = {"cucina_vegana:" .. pname .. " 3"}},
 					}
 				},
 		drawtype = "plantlike",
