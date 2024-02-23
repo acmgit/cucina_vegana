@@ -163,3 +163,17 @@ minetest.register_craft({
 	recipe = "cucina_vegana:corn",
 	cooktime = 8,
 })
+
+minetest.register_craft({
+	type = "cooking",
+	output = "cucina_vegana:coffee_beans_roasted",
+	recipe = "cucina_vegana:coffee_beans_raw",
+	cooktime = 8,
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "cucina_vegana:coffee_cup_hot",
+	recipe = "cucina_vegana:coffee_cup",
+	cooktime = 10,
+})

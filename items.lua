@@ -167,6 +167,25 @@ minetest.register_craftitem("cucina_vegana:chives", {
 	on_use = minetest.item_eat(1),
 })
 
+minetest.register_craftitem("cucina_vegana:coffee_beans_raw", {
+	description = S("Coffee Beans raw"),
+	inventory_image = "cucina_vegana_coffee_beans_raw.png",
+	groups = {flammable = 1, food_coffee = 1},
+})
+
+minetest.register_craftitem("cucina_vegana:coffee_beans_roasted", {
+	description = S("Coffee Beans"),
+	inventory_image = "cucina_vegana_coffee_beans_roasted.png",
+	groups = {flammable = 1, food = 1, eatable = 1, food_vegan = 1, food_coffee = 1},
+	on_use = minetest.item_eat(.5),
+})
+
+minetest.register_craftitem("cucina_vegana:coffee_powder", {
+	description = S("Coffee Powder"),
+	inventory_image = "cucina_vegana_coffee_powder.png",
+	groups = {flammable = 1, food_coffee = 1},
+})
+
 minetest.register_craftitem("cucina_vegana:flax", {
 	description = S("Flax (raw)"),
 	inventory_image = "cucina_vegana_flax_raw.png",

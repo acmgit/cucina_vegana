@@ -4,6 +4,7 @@
 
 -- Load support for intllib.
 local S = cucina_vegana.get_translator
+local cv = cucina_vegana
 
 --   *******************************************
 --   *****           Supports              *****
@@ -147,6 +148,53 @@ minetest.register_node("cucina_vegana:blueberry_jam", {
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
 	},
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, food_sweet = 1, eatable = 1},
+})
+
+minetest.register_node("cucina_vegana:coffee_cup", {
+	description = S("Cup of Coffee cold"),
+	drawtype = "plantlike",
+	tiles = {"cucina_vegana_coffee_cup.png"},
+	inventory_image = "cucina_vegana_coffee_cup.png",
+	wield_image = "cucina_vegana_coffee_cup.png",
+	paramtype = "light",
+	is_ground_content = false,
+	on_use = minetest.item_eat(2),
+	walkable = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
+	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
+})
+
+minetest.register_node("cucina_vegana:coffee_cup_hot", {
+	description = S("Cup of Coffee hot"),
+	drawtype = "plantlike",
+	tiles = {
+				{
+					image = "cucina_vegana_coffee_cup_hot_animated.png",
+					backface_culling = false,
+					animation = {
+						type = "vertical_frames",
+						aspect_w = 16,
+						aspect_h = 16,
+						length = 2
+					}
+				}
+	},
+	inventory_image = "cucina_vegana_coffee_cup_hot.png",
+	wield_image = "cucina_vegana_coffee_cup_hot.png",
+	paramtype = "light",
+	paramtype2 = "facedir",
+	is_ground_content = false,
+	on_use = function(itemstack, playerobject, pointed_thing)
+				if (not playerobject) then return end
+
+				minetest.item_eat(2)
+				cv.lib.coffee_effect(playerobject)
+			end,
+	walkable = true,
+	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
 })
 
 minetest.register_node("cucina_vegana:cucumber_in_glass", {

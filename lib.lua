@@ -7,6 +7,8 @@
 
 local cv = cucina_vegana
 local mt = minetest
+local S = cv.get_translator
+math.randomseed(os.time())
 
 function cv.lib.register_bottom_abm(node, nextnode, duration, light)
     local percent = 1
@@ -95,3 +97,31 @@ function cv.lib.check_air(pos)
     return false
 
 end -- cv.lib.check_air
+
+function cv.lib.coffee_effect(playerobject)
+    if(not playerobject) then return end
+
+    local playername = playerobject:get_player_name()
+    local seconds = cv.settings.coffee_effect_duration
+    local highspeed = cv.settings.coffee_effect_speed
+    local normalspeed = 1
+
+    playerobject:set_physics_override({speed = highspeed})
+    minetest.chat_send_player(playername, S("Coffeespeed. @1 Seconds left.", seconds))
+
+    minetest.after(seconds/2, function()
+                                    local playerobject = minetest.get_player_by_name(playername)
+                                    if(not playerobject) then return end
+
+                                    minetest.chat_send_player(playername,S("@1 Seconds left.", seconds/2))
+                              end, playername)
+
+    minetest.after(seconds, function()
+                                    local playerobject = minetest.get_player_by_name(playername)
+                                    if(not playerobject) then return end
+
+                                    minetest.chat_send_player(playername,S("You move normal again."))
+                                    playerobject:set_physics_override({speed = normalspeed})
+                           end, playername)
+
+end

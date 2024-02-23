@@ -57,6 +57,7 @@ Asparagus=
 ### carrot_default.lua ###
 ### chili_default.lua ###
 ### chives_default.lua ###
+### coffee_def.lua ###
 ### corn_default.lua ###
 ### cucumber_default.lua ###
 ### flax_default.lua ###
@@ -125,6 +126,22 @@ Chili=
 
 Chives=
 
+### coffee_def.lua ###
+
+Coffee Plant=
+
+### coffee_def.lua ###
+### items.lua ###
+
+Coffee Beans raw=
+
+### coffee_def.lua ###
+### vine_def.lua ###
+
+Leaves=
+Sapling=
+Stem=
+
 ### corn_default.lua ###
 ### corn_redo.lua ###
 
@@ -154,6 +171,8 @@ Blueberry pot=
 Blueberry pot (cooked)=
 Blueberry puree=
 Ciabatta dough=
+Coffee Beans=
+Coffee Powder=
 Corncob=
 Dandelion Honey=
 Dandelion Suds=
@@ -242,6 +261,12 @@ Sunflower=
 
 Tomato=
 
+### lib.lua ###
+
+@1 Seconds left.=
+Coffeespeed. @1 Seconds left.=
+You move normal again.=
+
 ### nodes.lua ###
 
 Asparagus Hollandaise=
@@ -259,6 +284,8 @@ Bowl of Rice=
 Bowl of Rice (raw)=
 Ciabatta Bread=
 Cucumber in Glass=
+Cup of Coffee cold=
+Cup of Coffee hot=
 Edamame=
 Edamame (raw)=
 Fish on Parsley and Rosemary=
@@ -299,7 +326,4 @@ Soy=
 ### vine_def.lua ###
 
 Grape=
-Leaves=
-Sapling=
-Stem=
 Vine=

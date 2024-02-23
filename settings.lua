@@ -9,8 +9,16 @@
 
 local cv_setting_plant = "cucina_vegana.plant_settings."
 local cv_setting_shrub = "cucina_vegana.shrub_settings."
--- Start germ at:
-cucina_vegana.plant_settings.germ_launch = minetest.settings:get(cv_setting_plant .. "germ_launch") or 0
+local cv_setting = "cucina_vegana.settings."
+
+--  ********************************************************
+--  ***               general settings                   ***
+--  ********************************************************
+
+cucina_vegana.settings.coffee_effect_duration = minetest.settings:get(cv_setting .. "coffee_effect_duration") or 10
+cucina_vegana.settings.coffee_effect_speed = minetest.settings:get(cv_setting .. "coffee_effect_speed") or 3
+cucina_vegana.plant_settings.germ_launch = minetest.settings:get(cv_setting_plant .. "germ_launch") or 0 -- Start germ at:
+
 
 --  ********************************************************
 --  ***                    plants                        ***
@@ -129,4 +137,11 @@ cucina_vegana.plant_settings.strawberry_light = minetest.settings:get(cv_setting
 cucina_vegana.shrub_settings.vine = minetest.settings:get_bool(cv_setting_shrub .. "vine", true)
 cucina_vegana.shrub_settings.vine_scale = minetest.settings:get(cv_setting_shrub .. "vine_scale") or 0.008
 cucina_vegana.shrub_settings.vine_light = minetest.settings:get(cv_setting_shrub .. "vine_light") or 12
-cucina_vegana.shrub_settings.vine_duration = minetest.settings:get(cv_setting_shrub .. "vine_duration") or 180
+cucina_vegana.shrub_settings.vine_duration = minetest.settings:get(cv_setting_shrub .. "vine_duration") or 120
+
+-- Coffee
+cucina_vegana.shrub_settings.coffee = minetest.settings:get_bool(cv_setting_shrub .. "coffee", true)
+cucina_vegana.shrub_settings.coffee_scale = minetest.settings:get(cv_setting_shrub .. "coffee_scale") or 0.005
+cucina_vegana.shrub_settings.coffee_light = minetest.settings:get(cv_setting_shrub .. "coffee_light") or 11
+cucina_vegana.shrub_settings.coffee_duration = minetest.settings:get(cv_setting_shrub .. "coffee_duration") or 180
+

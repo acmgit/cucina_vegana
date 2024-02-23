@@ -21,7 +21,6 @@
       {'cucina_vegana:strawberry',                    2,              nil,                        nil,    nil,    nil},
       {'cucina_vegana:vine',                          3,              nil,                        nil,    nil,    nil},
 
-
       --               Name                          Saturation      Replace with                Poison  Heal    Sound
       -- side dishes
       {'cucina_vegana:ciabatta_bread',                4,              nil,                        nil,    nil,    nil},
@@ -39,6 +38,8 @@
       {'cucina_vegana:sunflower_seeds_oil',           3,              'vessels:glass_bottle',     nil,    nil,    nil},
       {'cucina_vegana:soy_milk',                      1,              'vessels:drinking_glass',   nil,    0.5,    nil},
       {'cucina_vegana:strawberry_milk',               3,              'vessels:drinking_glass',   nil,    nil,    nil},
+      {'cucina_vegana:coffee_cup',                    2,              'vessels:drinking_glass',   nil,    nil,    nil},
+      {'cucina_vegana:coffee_cup_hot',                2,              'vessels:drinking_glass',   nil,    nil,    nil},
 
       --               Name                          Saturation      Replace with                Poison  Heal    Sound
       -- eatable raws
@@ -72,6 +73,12 @@
 
     } -- civ_items
 
+    local grinder_recipes = {
+        -- Other
+        {"cucina_vegana:sunflower_seeds 3",             "cucina_vegana:sunflower_seeds_flour"},
+        {"cucina_vegana:rice 3",                        "cucina_vegana:rice_flour"},
+        {"cucina_vegana:coffee_beans_roasted 2",        "cucina_vegana:coffee_powder"},
+    }
 --   *******************************************
 --   *****           Technic-Support       *****
 --   *******************************************
@@ -164,12 +171,6 @@ if(minetest.get_modpath("technic")) then
     end
 
     -- Support Grinder
-    local grinder_recipes = {
-        -- Other
-        {"cucina_vegana:sunflower_seeds 3",             "cucina_vegana:sunflower_seeds_flour"},
-        {"cucina_vegana:rice 3",                        "cucina_vegana:rice_flour"},
-    }
-
     for _, data in pairs(grinder_recipes) do
         technic.register_grinder_recipe({input = {data[1]}, output = data[2]})
 
@@ -281,4 +282,10 @@ if(minetest.get_modpath("techage") and techage.register_plant) then
 			end
 		end
     end
+
+    for _, crop in pairs(grinder_recipes) do
+        techage.add_grinder_recipe({input=crop[1], output=crop[2]})
+
+    end
+
 end

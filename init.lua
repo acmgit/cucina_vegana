@@ -13,8 +13,9 @@
 
 cucina_vegana = {}
 cucina_vegana.lib = {}
-cucina_vegana.version = "3.2"
+cucina_vegana.version = "3.3"
 cucina_vegana.farming_default = true
+cucina_vegana.settings = {}
 cucina_vegana.plant_settings = {}
 cucina_vegana.shrub_settings = {}
 cucina_vegana.plant_settings.bonemeal_list = {}
@@ -27,24 +28,15 @@ cucina_vegana.modname = minetest.get_current_modname()
 local modpath = minetest.get_modpath(minetest.get_current_modname())
 local modname = cucina_vegana.modname
 
-dofile(modpath .. "/settings.lua")
-dofile(modpath .. "/tools.lua")
-dofile(modpath .. "/lib.lua")
-
-if(cucina_vegana.signs_bot) then
-	dofile(modpath .. "/register_signs_bot.lua")
-end
-
-
 local S
 
 if(minetest.get_modpath("intllib")) then
     S = dofile(modpath .."/intllib.lua")
-    print("[MOD] " .. modname .. ": translating in intllib-mode.")
+    minetest.log("info","[MOD] " .. modname .. ": translating in intllib-mode.")
 
 elseif minetest.get_translator ~= nil then
     S = minetest.get_translator("cucina_vegana")
-    print("[MOD] " .. modname .. ": translating in minetest-mode.")
+    minetest.log("info", "[MOD] " .. modname .. ": translating in minetest-mode.")
 
 else
     S = function ( s ) return s end
@@ -52,6 +44,14 @@ else
 end -- if(minetest.get_modpath(
 
 cucina_vegana.get_translator = S
+
+dofile(modpath .. "/settings.lua")
+dofile(modpath .. "/tools.lua")
+dofile(modpath .. "/lib.lua")
+
+if(cucina_vegana.signs_bot) then
+	dofile(modpath .. "/register_signs_bot.lua")
+end
 
 -- looking if farming_redo is really activ? ... \/('')\/
 if(farming.mod ~= nil and farming.mod == "redo") then
@@ -115,20 +115,19 @@ for pname, value in pairs(plants) do
 
 	end -- if(value)
 
-	print("[MOD] " .. modname .. " Module: " .. pname .. " loaded.")
     minetest.log("info", "[MOD] " .. modname .. " Module: " .. pname .. " loaded.")
 
 end -- for
 
 local shrubs = {
 				["vine"] = cucina_vegana.shrub_settings.vine,
+				["coffee"] = cucina_vegana.shrub_settings.coffee
 			}
 
 for sname, value in pairs(shrubs) do
 	if(value) then
 		dofile(modpath .. "/" .. sname .. "_def.lua")
 		dofile(modpath .. "/" .. sname .. ".lua")
-		print("[MOD] " .. modname .. " Module: " .. sname .. " loaded.")
 	    minetest.log("info", "[MOD] " .. modname .. " Module: " .. sname .. " loaded.")
 	end -- if(value)
 
@@ -153,11 +152,9 @@ if(minetest.get_modpath("bonemeal")) then
 end -- if(cucina_vegana.plant_settings.bonemeal
 
 if (cucina_vegana.farming_default) then
-	print("[MOD] " .. modname .. " Version " .. cucina_vegana.version .. " in default-mode loaded.")
     minetest.log("info", "[MOD] " .. modname .. " Version " .. cucina_vegana.version .. " in default-mode loaded.")
 
 else
-	print("[MOD] " .. modname .. " Version " .. cucina_vegana.version .. " in redo-mode loaded.")
 	minetest.log("info", "[MOD] " .. modname .. " Version " .. cucina_vegana.version .. " in redo-mode loaded.")
 
 end

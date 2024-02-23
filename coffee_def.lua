@@ -1,6 +1,6 @@
 --[[
 	**********************************************
-	***                 Vine                   ***
+	***                 Coffee                 ***
 	**********************************************
 ]]--
 
@@ -10,12 +10,12 @@ local mt = minetest
 -- Load support for intllib.
 local S = cv.get_translator
 
-local dname = S("Vine")
-local pname = "vine"
-local duration = cv.shrub_settings.vine_duration
-local bottom_steps = 4
-local top_steps = 3
-local maxlight = cv.shrub_settings.vine_light
+local dname = S("Coffee Plant")
+local pname = "coffee"
+local duration = cv.shrub_settings.coffee_duration
+local bottom_steps = 6
+local top_steps = 6
+local maxlight = cv.shrub_settings.coffee_light
 local percent = 3
 
 -- Register for Mapgen
@@ -27,7 +27,7 @@ mt.register_node("cucina_vegana:wild_" .. pname, {
 	drop = {
 			items = {
 					{items = {"cucina_vegana:" .. pname .. "_sapling 1"}},
-					{items = {"cucina_vegana:" .. pname .. "_grape 2"}},
+					{items = {"cucina_vegana:" .. pname .. "_beans_raw 4"}},
 				}
 			},
 	drawtype = "plantlike",
@@ -78,10 +78,10 @@ mt.register_node("cucina_vegana:" .. pname .. "_leaves", {
 						end,
 })
 
-mt.register_craftitem("cucina_vegana:" .. pname .. "_grape", {
-	description = S("Grape"),
-	inventory_image = "cucina_vegana_" .. pname .. "_grape.png",
-	groups = {food = 1, food_wine = 1},
+mt.register_craftitem("cucina_vegana:" .. pname .. "_beans_raw", {
+	description = S("Coffee Beans raw"),
+	inventory_image = "cucina_vegana_" .. pname .. "_beans_raw.png",
+	groups = {food = 1, food_coffee = 1},
     on_use = mt.item_eat(3)
 
 })
@@ -106,6 +106,7 @@ mt.register_node("cucina_vegana:" .. pname .. "_sapling", {
 			{-0.5, -0.5, -0.5, 0.5, -0.35, 0.5}, -- side f
 		},
 	},
+
 })
 
 cv.lib.register_bottom_abm("cucina_vegana:" .. pname .. "_sapling", "cucina_vegana:" .. pname .. "_bottom_1", duration, maxlight)
@@ -150,11 +151,8 @@ mt.register_abm({
     catch_up = true,
     action = function(pos, node, active_object_count, active_object_count_wider)
                 local nodepos = { x = pos.x, y = pos.y+1, z = pos.z}
-                print(mt.pos_to_string(pos))
-                print(mt.pos_to_string(nodepos))
 	                if(cv.lib.check_light(nodepos, maxlight)) then
                         if(cv.lib.check_air(nodepos)) then
-                            print("Air")
                             mt.set_node(nodepos, {name = "cucina_vegana:" .. pname .. "_top_1"})
 
                         end -- if(check_air)
@@ -172,9 +170,10 @@ for step = 1, top_steps do
 		walkable = false,
 		drop = {
 			items = {
-						{items = {"cucina_vegana:" .. pname .. "_leaves 2"}},
-						{items = {"cucina_vegana:" .. pname .. "_grape " .. step}, rarity = top_steps-step},
-						{items = {"cucina_vegana:" .. pname .. "_sapling"}, rarity = 5},
+						{items = {"cucina_vegana:" .. pname .. "_leaves 3"}},
+						{items = {"cucina_vegana:" .. pname .. "_beans_raw 2"}},
+						{items = {"cucina_vegana:" .. pname .. "_beans_raw 5"}, rarity = top_steps-step},
+						{items = {"cucina_vegana:" .. pname .. "_sapling 2"}, rarity = 4},
 					},
 				},
 		drawtype = "plantlike",

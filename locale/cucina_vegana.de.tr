@@ -58,6 +58,7 @@ Asparagus=Spargel
 ### carrot_default.lua ###
 ### chili_default.lua ###
 ### chives_default.lua ###
+### coffee_def.lua ###
 ### corn_default.lua ###
 ### cucumber_default.lua ###
 ### flax_default.lua ###
@@ -126,6 +127,22 @@ Chili=Chili
 
 Chives=Schnittlauch
 
+### coffee_def.lua ###
+
+Coffee Plant=Kaffepflanze
+
+### coffee_def.lua ###
+### items.lua ###
+
+Coffee Beans raw=Rohe Kaffeebohnen
+
+### coffee_def.lua ###
+### vine_def.lua ###
+
+Leaves=Blätter
+Sapling=Setzling
+Stem=Stamm
+
 ### corn_default.lua ###
 ### corn_redo.lua ###
 
@@ -155,6 +172,8 @@ Blueberry pot=Topf Blaubeermus
 Blueberry pot (cooked)=Topf Blaubeermus (gekocht)
 Blueberry puree=Blaubeermus
 Ciabatta dough=Ciabatta Teig
+Coffee Beans=Kafeebohnen
+Coffee Powder=Kaffeepulver
 Corncob=Maiskolben
 Dandelion Honey=Löwenzahn Honig
 Dandelion Suds=Löwenzahn Lauge
@@ -243,6 +262,12 @@ Sunflower=Sonnenblume
 
 Tomato=Tomate
 
+### lib.lua ###
+
+@1 Seconds left.=Noch @1 Sekunden.
+Coffeespeed. @1 Seconds left.=Kaffeegeschwindigkeit. Noch @1 Sekunden.
+You move normal again.=Du bewegst dich wieder normal.
+
 ### nodes.lua ###
 
 Asparagus Hollandaise=Spargel Hollandaise
@@ -260,6 +285,8 @@ Bowl of Rice=Schüssel Reis
 Bowl of Rice (raw)=Schüssel Reis (roh)
 Ciabatta Bread=Ciabatta Brot
 Cucumber in Glass=Gurken im Glas
+Cup of Coffee cold=Tasse Kaffee kalt
+Cup of Coffee hot=Tasse Kaffee heiß
 Edamame=Edamame
 Edamame (raw)=Edamame (roh)
 Fish on Parsley and Rosemary=Fisch mit Petersilie und Rosemarien
@@ -300,7 +327,4 @@ Soy=Soja
 ### vine_def.lua ###
 
 Grape=Weintraube
-Leaves=Blätter
-Sapling=Setzling
-Stem=Stamm
 Vine=Wein

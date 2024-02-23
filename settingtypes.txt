@@ -1,5 +1,7 @@
-#Germ launch
-# 0 = start as seed
+# General shrub_settings
+cucina_vegana.settings.coffee_effect_speed (How strong is the coffee-effect) int 3
+cucina_vegana.settings.coffee_effect_duration (How long in seconds is the coffee-effect) int 10
+#Germ launch 0 = start as seed
 cucina_vegana.plant_settings.germ_launch (Start germ @) int 0
 
 #Asparagus
@@ -23,7 +25,7 @@ cucina_vegana.plant_settings.chives_scale (Spreadvalue) float 0.0005
 cucina_vegana.plant_settings.chives_light (Min. Light) int 10
 
 #Corn
-cucina_vegana.plant_settings.corn (Enable Cucumber) bool true
+cucina_vegana.plant_settings.corn (Enable Corn) bool true
 cucina_vegana.plant_settings.corn_scale (Spreadvalue) float 0.0004
 cucina_vegana.plant_settings.corn_light (Min. Light) int 13
 
@@ -113,4 +115,10 @@ cucina_vegana.plant_settings.strawberry_light (Min. Light) int 10
 cucina_vegana.shrub_settings.vine (Enable vine) bool true
 cucina_vegana.shrub_settings.vine_scale (Spreadvalue) float 0.008
 cucina_vegana.shrub_settings.vine_light (Min. Light) int 12
-cucina_vegana.shrub_settings.vine_duration (Duration in Seconds) int 180
+cucina_vegana.shrub_settings.vine_duration (Duration in Seconds) int 120
+
+#Coffee
+cucina_vegana.shrub_settings.coffee (Enable coffee) bool true
+cucina_vegana.shrub_settings.coffee_scale (Spreadvalue) float 0.005
+cucina_vegana.shrub_settings.coffee_light (Min. Light) int 11
+cucina_vegana.shrub_settings.coffee_duration (Duration in Seconds) int 180

@@ -71,6 +71,38 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "cucina_vegana:coffe_cup 4",
+	recipe = {	{"cucina_vegana:coffee_powder", "bucket:bucket_water", "default:paper"},
+				{"group:food_milk", "cucina_vegana:coffee_powder", ""}
+			},
+    replacements = {
+                        {"group:food_milk", "vessels:drinking_glass"},
+                        {"bucket:bucket_water", "bucket:bucket_empty"},
+                    }
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:coffee_cup 4",
+	recipe = {	{"cucina_vegana:coffee_powder", "bucket:bucket_river_water", "default:paper"},
+				{"group:food_milk", "cucina_vegana:coffee_powder", ""}
+			},
+    replacements = {
+                        {"group:food_milk", "vessels:drinking_glass"},
+                        {"bucket:bucket_river_water", "bucket:bucket_empty"},
+                    }
+})
+
+minetest.register_craft({
+	output = "cucina_vegana:coffee_powder",
+	recipe = {	{"group:stone", "cucina_vegana:coffee_beans_roasted", "group:stone"},
+				{"group:stone", "cucina_vegana:coffee_beans_roasted", "group:stone"}
+			},
+    replacements = {
+                        {"group:stone", "default:stone"},
+                    }
+})
+
+minetest.register_craft({
 	output = "cucina_vegana:dandelion_suds",
 	recipe = {	{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
 				{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
