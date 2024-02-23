@@ -192,6 +192,8 @@ minetest.register_node("cucina_vegana:coffee_cup_hot", {
 
 				minetest.item_eat(2)
 				cv.lib.coffee_effect(playerobject)
+				itemstack:take_item(1)
+				return itemstack
 			end,
 	walkable = true,
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
