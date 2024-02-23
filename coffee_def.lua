@@ -197,3 +197,8 @@ for step = 1, top_steps do
 	end
 
 end -- for step
+
+if cucina_vegana.farming_ng then
+    cucina_vegana.register_farming_ng(pname, top_steps)
+
+end -- if(cucina_vegana.farming_ng
