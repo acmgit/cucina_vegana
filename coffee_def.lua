@@ -181,7 +181,7 @@ for step = 1, top_steps do
 		sunlight_propagates = true,
 		tiles = {"cucina_vegana_" .. pname .. "_top_" .. step .. ".png"},
 		groups = {	snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1,
-	                growing = 1, not_in_creative_inventory = 1},
+	                growing = 1, not_in_creative_inventory = 1, tree = 1},
 		sounds = default.node_sound_leaves_defaults(),
 		selection_box = {
 			type = "fixed",
@@ -199,6 +199,6 @@ for step = 1, top_steps do
 end -- for step
 
 if cucina_vegana.farming_ng then
-    cucina_vegana.register_farming_ng(pname, top_steps)
+    cucina_vegana.register_farming_ng("cucina_vegana:" .. pname .. "_top_", top_steps)
 
 end -- if(cucina_vegana.farming_ng

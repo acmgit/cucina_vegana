@@ -35,7 +35,7 @@ mt.register_node("cucina_vegana:wild_" .. pname, {
 	sunlight_propagates = true,
 	tiles = {"cucina_vegana_" .. pname .. "_bottom_1.png"},
 	groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1,
-                growing = 1, not_in_creative_inventory = 1},
+                growing = 1, not_in_creative_inventory = 1, tree},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 			type = "fixed",
@@ -150,11 +150,8 @@ mt.register_abm({
     catch_up = true,
     action = function(pos, node, active_object_count, active_object_count_wider)
                 local nodepos = { x = pos.x, y = pos.y+1, z = pos.z}
-                print(mt.pos_to_string(pos))
-                print(mt.pos_to_string(nodepos))
 	                if(cv.lib.check_light(nodepos, maxlight)) then
                         if(cv.lib.check_air(nodepos)) then
-                            print("Air")
                             mt.set_node(nodepos, {name = "cucina_vegana:" .. pname .. "_top_1"})
 
                         end -- if(check_air)
@@ -182,7 +179,7 @@ for step = 1, top_steps do
 		sunlight_propagates = true,
 		tiles = {"cucina_vegana_" .. pname .. "_top_" .. step .. ".png"},
 		groups = {	snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1,
-	                growing = 1, not_in_creative_inventory = 1},
+	                growing = 1, not_in_creative_inventory = 1, tree = 1},
 		sounds = default.node_sound_leaves_defaults(),
 		selection_box = {
 			type = "fixed",
