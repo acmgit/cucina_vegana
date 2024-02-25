@@ -152,13 +152,18 @@ minetest.register_node("cucina_vegana:blueberry_jam", {
 
 minetest.register_node("cucina_vegana:coffee_cup", {
 	description = S("Cup of Coffee cold"),
-	drawtype = "plantlike",
-	tiles = {"cucina_vegana_coffee_cup.png"},
-	inventory_image = "cucina_vegana_coffee_cup.png",
-	wield_image = "cucina_vegana_coffee_cup.png",
+	drawtype = "mesh",
+	mesh = "cucina_vegana_coffee_cup.obj",
+	tiles = {
+				"cucina_vegana_coffee_cup.png",
+			},
+	inventory_image = "cucina_vegana_coffee_cup_inv.png",
+	wield_image = "cucina_vegana_coffee_cup_inv.png",
 	paramtype = "light",
 	is_ground_content = false,
 	on_use = minetest.item_eat(2),
+	paramtype2 = "facedir",
+	param2 = "4dir",
 	walkable = true,
 	selection_box = {
 		type = "fixed",
@@ -169,23 +174,16 @@ minetest.register_node("cucina_vegana:coffee_cup", {
 
 minetest.register_node("cucina_vegana:coffee_cup_hot", {
 	description = S("Cup of Coffee hot"),
-	drawtype = "plantlike",
+	drawtype = "mesh",
+	mesh = "cucina_vegana_coffee_cup.obj",
 	tiles = {
-				{
-					image = "cucina_vegana_coffee_cup_hot_animated.png",
-					backface_culling = false,
-					animation = {
-						type = "vertical_frames",
-						aspect_w = 16,
-						aspect_h = 16,
-						length = 2
-					}
-				}
-	},
-	inventory_image = "cucina_vegana_coffee_cup_hot.png",
-	wield_image = "cucina_vegana_coffee_cup_hot.png",
+				"cucina_vegana_coffee_cup_hot.png"
+			},
+	inventory_image = "cucina_vegana_coffee_cup_hot_inv.png",
+	wield_image = "cucina_vegana_coffee_cup_hot_inv.png",
 	paramtype = "light",
 	paramtype2 = "facedir",
+	param2 = "4dir",
 	is_ground_content = false,
 	on_use = function(itemstack, playerobject, pointed_thing)
 				if (not playerobject) then return end
@@ -196,6 +194,10 @@ minetest.register_node("cucina_vegana:coffee_cup_hot", {
 				return itemstack
 			end,
 	walkable = true,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+	},
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
 })
 
