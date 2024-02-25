@@ -167,7 +167,7 @@ minetest.register_node("cucina_vegana:coffee_cup", {
 	walkable = true,
 	selection_box = {
 		type = "fixed",
-		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
+		fixed = {-0.25, -0.5, -0.25, 0.25, .03, 0.25}
 	},
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
 })
@@ -177,7 +177,20 @@ minetest.register_node("cucina_vegana:coffee_cup_hot", {
 	drawtype = "mesh",
 	mesh = "cucina_vegana_coffee_cup.obj",
 	tiles = {
-				"cucina_vegana_coffee_cup_hot.png"
+				{
+					name = "cucina_vegana_coffee_cup_hot_anim.png",
+					backfaceculling = false,
+					animation =
+					{
+						type = "vertical_frames",
+						aspect_w = 64,
+						aspect_h = 64,
+						length = 3
+
+					}
+
+				}
+
 			},
 	inventory_image = "cucina_vegana_coffee_cup_hot_inv.png",
 	wield_image = "cucina_vegana_coffee_cup_hot_inv.png",
