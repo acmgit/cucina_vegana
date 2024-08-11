@@ -204,19 +204,6 @@ if(minetest.get_modpath("hunger_ng")) then
 
 end -- hunger_ng
 
-
---   *******************************************
---   *****      Voxelgarden-Support        *****
---   *******************************************
-
-if(minetest.get_modpath("vg_hunger")) then
-    for key, item in pairs(cv_items) do
-        hunger.register_food(item)
-
-    end -- for key, data
-
-end -- vg_hunger
-
 --   *******************************************
 --   *****           Wine-Support          *****
 --   *******************************************
