@@ -13,7 +13,7 @@
 
 cucina_vegana = {}
 cucina_vegana.lib = {}
-cucina_vegana.version = "3.3"
+cucina_vegana.version = "3.4"
 cucina_vegana.farming_default = true
 cucina_vegana.settings = {}
 cucina_vegana.plant_settings = {}
