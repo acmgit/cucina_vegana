@@ -13,7 +13,7 @@
 
 cucina_vegana = {}
 cucina_vegana.lib = {}
-cucina_vegana.version = "3.4"
+cucina_vegana.version = "3.5"
 cucina_vegana.farming_default = true
 cucina_vegana.settings = {}
 cucina_vegana.plant_settings = {}
@@ -100,18 +100,9 @@ for pname, value in pairs(plants) do
 		local n_default = modname .. ":seed_" .. pname
 		local n_redo    = modname .. ":" .. pname .. "_seed"
         -- Load all flowers in default-mode
-		if (cucina_vegana.farming_default) then
-			dofile(modpath .. "/" .. pname .. "_default.lua")
+			dofile(modpath .. "/" .. pname .. ".lua")
 			dofile(modpath .. "/".. pname .. ".lua")
 			minetest.register_alias(n_redo, n_default)
-
-		else
-        -- Load all flowers in redo-mode
-			dofile(modpath .. "/" .. pname .. "_redo.lua")
-			dofile(modpath .. "/".. pname .. ".lua")
-			minetest.register_alias(n_default, n_redo)
-
-		end -- if(cucina_vegana...)
 
 	end -- if(value)
 
@@ -151,10 +142,4 @@ if(minetest.get_modpath("bonemeal")) then
 
 end -- if(cucina_vegana.plant_settings.bonemeal
 
-if (cucina_vegana.farming_default) then
-    minetest.log("info", "[MOD] " .. modname .. " Version " .. cucina_vegana.version .. " in default-mode loaded.")
-
-else
-	minetest.log("info", "[MOD] " .. modname .. " Version " .. cucina_vegana.version .. " in redo-mode loaded.")
-
-end
+minetest.log("info", "[MOD] " .. modname .. " Version " .. cucina_vegana.version .. " loaded.")
