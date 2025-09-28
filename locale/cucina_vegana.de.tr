@@ -1,128 +1,78 @@
 # textdomain: cucina_vegana
 
 
-### asparagus_default.lua ###
-### asparagus_redo.lua ###
-### banana_default.lua ###
-### banana_redo.lua ###
-### carrot_default.lua ###
-### carrot_redo.lua ###
-### chili_default.lua ###
-### chili_redo.lua ###
-### chives_default.lua ###
-### chives_redo.lua ###
-### corn_default.lua ###
-### corn_redo.lua ###
-### cucumber_default.lua ###
-### cucumber_redo.lua ###
-### flax_default.lua ###
-### flax_redo.lua ###
-### garlic_default.lua ###
-### garlic_redo.lua ###
-### kohlrabi_default.lua ###
-### kohlrabi_redo.lua ###
-### lettuce_default.lua ###
-### lettuce_redo.lua ###
-### onion_default.lua ###
-### onion_redo.lua ###
-### parsley_default.lua ###
-### parsley_redo.lua ###
-### peanut_default.lua ###
-### peanut_redo.lua ###
-### potato_default.lua ###
-### potato_redo.lua ###
-### rice_default.lua ###
-### rice_redo.lua ###
-### rosemary_default.lua ###
-### rosemary_redo.lua ###
-### soy_default.lua ###
-### soy_redo.lua ###
-### strawberry_default.lua ###
-### strawberry_redo.lua ###
-### sunflower_default.lua ###
-### sunflower_redo.lua ###
-### tomato_default.lua ###
-### tomato_redo.lua ###
+### asparagus.lua ###
+### banana.lua ###
+### carrot.lua ###
+### chili.lua ###
+### chives.lua ###
+### coffee_def.lua ###
+### corn.lua ###
+### cucumber.lua ###
+### flax.lua ###
+### garlic.lua ###
+### kohlrabi.lua ###
+### lettuce.lua ###
+### onion.lua ###
+### parsley.lua ###
+### peanut.lua ###
+### potato.lua ###
+### rice.lua ###
+### rosemary.lua ###
+### soy.lua ###
+### strawberry.lua ###
+### sunflower_def.lua ###
+### tomato.lua ###
+### vine_def.lua ###
+
+Wild=Wilde(r)
+
+### asparagus.lua ###
+### banana.lua ###
+### carrot.lua ###
+### chili.lua ###
+### chives.lua ###
+### corn.lua ###
+### cucumber.lua ###
+### flax.lua ###
+### garlic.lua ###
+### kohlrabi.lua ###
+### lettuce.lua ###
+### onion.lua ###
+### parsley.lua ###
+### peanut.lua ###
+### potato.lua ###
+### rice.lua ###
+### rosemary.lua ###
+### soy.lua ###
+### strawberry.lua ###
+### sunflower_def.lua ###
+### tomato.lua ###
 
 Seed=Samen
 
-### asparagus_default.lua ###
-### asparagus_redo.lua ###
+### asparagus.lua ###
 ### items.lua ###
 
 # textdomain: cucina_vegana
 Asparagus=Spargel
 
-### asparagus_default.lua ###
-### banana_default.lua ###
-### carrot_default.lua ###
-### chili_default.lua ###
-### chives_default.lua ###
-### coffee_def.lua ###
-### corn_default.lua ###
-### cucumber_default.lua ###
-### flax_default.lua ###
-### garlic_default.lua ###
-### kohlrabi_default.lua ###
-### lettuce_default.lua ###
-### onion_default.lua ###
-### parsley_default.lua ###
-### peanut_default.lua ###
-### potato_default.lua ###
-### rice_default.lua ###
-### rosemary_default.lua ###
-### soy_default.lua ###
-### strawberry_default.lua ###
-### sunflower_default.lua ###
-### tomato_default.lua ###
-### vine_def.lua ###
-
-Wild=Wilde(r)
-
-### asparagus_redo.lua ###
-### banana_redo.lua ###
-### carrot_redo.lua ###
-### chili_redo.lua ###
-### chives_redo.lua ###
-### corn_redo.lua ###
-### cucumber_redo.lua ###
-### flax_redo.lua ###
-### garlic_redo.lua ###
-### kohlrabi_redo.lua ###
-### lettuce_redo.lua ###
-### onion_redo.lua ###
-### parsley_redo.lua ###
-### peanut_redo.lua ###
-### potato_redo.lua ###
-### rice_redo.lua ###
-### rosemary_redo.lua ###
-### soy_redo.lua ###
-### strawberry_redo.lua ###
-### sunflower_redo.lua ###
-### tomato_redo.lua ###
-
-Wild =Wilde(r) 
-
-### banana_default.lua ###
-### banana_redo.lua ###
+### banana.lua ###
 ### items.lua ###
 
 Banana=Banane
 
-### carrot_default.lua ###
-### carrot_redo.lua ###
+### carrot.lua ###
 ### items.lua ###
 
 Carrot=Karotte
 
-### chili_default.lua ###
-### chili_redo.lua ###
+### chili.lua ###
 ### items.lua ###
 
 Chili=Chili
 
-### chives_default.lua ###
-### chives_redo.lua ###
+### chives.lua ###
 ### items.lua ###
 
 Chives=Schnittlauch
@@ -143,25 +93,21 @@ Leaves=Blätter
 Sapling=Setzling
 Stem=Stamm
 
-### corn_default.lua ###
-### corn_redo.lua ###
+### corn.lua ###
 
 Corn=Mais
 
-### cucumber_default.lua ###
-### cucumber_redo.lua ###
+### cucumber.lua ###
 ### items.lua ###
 
 Cucumber=Gurke
 
-### flax_default.lua ###
-### flax_redo.lua ###
+### flax.lua ###
 ### items.lua ###
 
 Flax=Flachs
 
-### garlic_default.lua ###
-### garlic_redo.lua ###
+### garlic.lua ###
 ### items.lua ###
 
 Garlic=Knoblauch
@@ -179,6 +125,8 @@ Dandelion Honey=Löwenzahn Honig
 Dandelion Suds=Löwenzahn Lauge
 Dandelion Suds (cooking)=Löwenzahn Lauge (kochend)
 Flax (raw)=Flachs (roh)
+Garlicbread Dough=Knoblauchbrot Teig
+Garlicbread fresh=Knoblauchbrot frisch
 Imitation Butter=Analog Butter
 Imitation Cheese=Analog Käse
 Imitation Fish=Analog Fisch
@@ -203,62 +151,52 @@ Vegan Strawberry Milk=Vegane Erdbeermilch
 Vegan Sushi=Veganes Sushi
 
 ### items.lua ###
-### kohlrabi_default.lua ###
-### kohlrabi_redo.lua ###
+### kohlrabi.lua ###
 
 Kohlrabi=Kohlrabi
 
 ### items.lua ###
-### lettuce_default.lua ###
-### lettuce_redo.lua ###
+### lettuce.lua ###
 
 Lettuce=Salat
 
 ### items.lua ###
-### onion_default.lua ###
-### onion_redo.lua ###
+### onion.lua ###
 
 Onion=Zwiebel
 
 ### items.lua ###
-### parsley_default.lua ###
-### parsley_redo.lua ###
+### parsley.lua ###
 
 Parsley=Petersilie
 
 ### items.lua ###
-### peanut_default.lua ###
-### peanut_redo.lua ###
+### peanut.lua ###
 
 Peanut=Erdnuss
 
 ### items.lua ###
-### potato_default.lua ###
-### potato_redo.lua ###
+### potato.lua ###
 
 Potato=Kartoffel
 
 ### items.lua ###
-### rice_default.lua ###
-### rice_redo.lua ###
+### rice.lua ###
 
 Rice=Reis
 
 ### items.lua ###
-### strawberry_default.lua ###
-### strawberry_redo.lua ###
+### strawberry.lua ###
 
 Strawberry=Erdbeere
 
 ### items.lua ###
-### sunflower_default.lua ###
-### sunflower_redo.lua ###
+### sunflower_def.lua ###
 
 Sunflower=Sonnenblume
 
 ### items.lua ###
-### tomato_default.lua ###
-### tomato_redo.lua ###
+### tomato.lua ###
 
 Tomato=Tomate
 
@@ -314,13 +252,11 @@ Soy Soup (raw)=Soja Suppe (roh)
 Tofu on Chives and Rosemary=Tofu mit Schnittlauch und Rosemarien
 Tofu on Chives and Rosemary (raw)=Tofu mit Schnittlauch und Rosemarien (roh)
 
-### rosemary_default.lua ###
-### rosemary_redo.lua ###
+### rosemary.lua ###
 
 Rosemary=Rosemarien
 
-### soy_default.lua ###
-### soy_redo.lua ###
+### soy.lua ###
 
 Soy=Soja
 
@@ -328,3 +264,9 @@ Soy=Soja
 
 Grape=Weintraube
 Vine=Wein
+
+
+##### not used anymore #####
+
+Garlicbred=Knoblauchbrot
+Wild =Wilde(r) 

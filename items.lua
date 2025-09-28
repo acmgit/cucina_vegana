@@ -28,6 +28,12 @@ minetest.register_craftitem("cucina_vegana:blueberry_pot_cooked", {
 	groups = {sud = 1},
 })
 
+minetest.register_craftitem("cucina_vegana:bread_garlic", {
+	description = S("Garlicbread Dough"),
+	inventory_image = "cucina_vegana_bread_garlic.png",
+	groups = {food = 1, bread_dough = 1},
+})
+
 minetest.register_craftitem("cucina_vegana:ciabatta_dough", {
 	description = S("Ciabatta dough"),
 	inventory_image = "cucina_vegana_ciabatta_dough.png",
@@ -342,6 +348,13 @@ minetest.register_craftitem("cucina_vegana:sunflower_seeds_bread", {
 	description = S("Sunflower Seeds Bread"),
 	groups = {food = 1, food_bread = 1, eatable = 1},
 	inventory_image = "cucina_vegana_sunflower_seeds_bread.png",
+	on_use = minetest.item_eat(4),
+})
+
+minetest.register_craftitem("cucina_vegana:bread_garlic_cooked", {
+	description = S("Garlicbread fresh"),
+	groups = {food = 1, food_bread = 1, eatable = 1},
+	inventory_image = "cucina_vegana_bread_garlic_cooked.png",
 	on_use = minetest.item_eat(4),
 })
 

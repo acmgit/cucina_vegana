@@ -39,6 +39,13 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "cooking",
+	cooktime = 13,
+	output = "cucina_vegana:bread_garlic_cooked",
+	recipe = "cucina_vegana:bread_garlic"
+})
+
+minetest.register_craft({
+	type = "cooking",
 	cooktime = 17,
 	output = "cucina_vegana:ciabatta_bread",
 	recipe = "cucina_vegana:ciabatta_dough"

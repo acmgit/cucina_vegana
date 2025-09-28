@@ -60,6 +60,15 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "cucina_vegana:bread_garlic",
+	recipe = {	{"group:food_flour", "cucina_vegana:sunflower_seeds_oil", ""},
+				{"cucina_vegana:rosemary", "cucina_vegana:garlic", ""}
+			},
+    replacements = {
+                        {"cucina_vegana:sunflower_seeds_oil", "vessels:glass_bottle"},
+                    }
+})
+minetest.register_craft({
 	output = "cucina_vegana:ciabatta_dough",
 	recipe = {	{"cucina_vegana:soy_milk", "cucina_vegana:sunflower_seeds_oil", ""},
 				{"group:food_flour", "cucina_vegana:rosemary", ""}
