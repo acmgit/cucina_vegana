@@ -26,8 +26,8 @@ mt.register_node("cucina_vegana:wild_" .. pname, {
 	climbable = true,
 	drop = {
 			items = {
-					{items = {"cucina_vegana:" .. pname .. "_sapling 1"}},
 					{items = {"cucina_vegana:" .. pname .. "_beans_raw 4"}},
+					{items = {"cucina_vegana:" .. pname .. "_sapling 1"}},
 				}
 			},
 	drawtype = "plantlike",
