@@ -37,7 +37,7 @@
       {'cucina_vegana:sauce_hollandaise',             3,              'vessels:glass_bottle',     nil,    nil,    nil},
       {'cucina_vegana:sunflower_seeds_oil',           3,              'vessels:glass_bottle',     nil,    nil,    nil},
       {'cucina_vegana:soy_milk',                      1,              'vessels:drinking_glass',   nil,    0.5,    nil},
-      {'cucina_vegana:strawberry_milk',               3,              'vessels:drinking_glass',   nil,    nil,    nil},
+      {'cucina_vegana:vegan_strawberry_milk',         3,              'vessels:drinking_glass',   nil,    nil,    nil},
       {'cucina_vegana:coffee_cup',                    2,              'vessels:drinking_glass',   nil,    nil,    nil},
       {'cucina_vegana:coffee_cup_hot',                2,              'vessels:drinking_glass',   nil,    nil,    nil},
       {'cucina_vegana:cucumber_in_glass',             5,              'vessels:glass_bottle',     nil,    0.5,    nil},
