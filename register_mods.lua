@@ -40,6 +40,7 @@
       {'cucina_vegana:strawberry_milk',               3,              'vessels:drinking_glass',   nil,    nil,    nil},
       {'cucina_vegana:coffee_cup',                    2,              'vessels:drinking_glass',   nil,    nil,    nil},
       {'cucina_vegana:coffee_cup_hot',                2,              'vessels:drinking_glass',   nil,    nil,    nil},
+      {'cucina_vegana:cucumber_in_glass',             5,              'vessels:glass_bottle',     nil,    0.5,    nil},
 
       --               Name                          Saturation      Replace with                Poison  Heal    Sound
       -- eatable raws
@@ -55,7 +56,8 @@
       {'cucina_vegana:asparagus_hollandaise_cooked',  5,              'cucina_vegana:plate',      nil,    1.5,    nil},
       {'cucina_vegana:asparagus_rice_cooked',         6,              'cucina_vegana:plate',      nil,    1.5,    nil},
       {'cucina_vegana:asparagus_soup_cooked',         5,              'cucina_vegana:plate',      nil,    0.5,    nil},
-      {'cucina_vegana:bread_garlic_cooked',           4,              nil,                        nil,    0.5,    nil},{'cucina_vegana:bowl_rice_cooked',              4,              'cucina_vegana:bowl',       nil,    nil,    nil},
+      {'cucina_vegana:bread_garlic_cooked',           4,              nil,                        nil,    0.5,    nil},
+      {'cucina_vegana:bowl_rice_cooked',              4,              'cucina_vegana:bowl',       nil,    nil,    nil},
       {'cucina_vegana:fish_parsley_rosemary_cooked',  6,              'cucina_vegana:plate',      nil,    1.5,    nil},
       {'cucina_vegana:fryer',                         8,              nil,                        nil,    3.0,    nil},
       {'cucina_vegana:kohlrabi_soup_cooked',          5,              'cucina_vegana:plate',      nil,    1.5,    nil},
