@@ -8,14 +8,8 @@ local modname = core.get_current_modname()
 --   ** Additional Recipes with other Mods  **
 --   *******************************************
 
---[[
-        **************************************************
-        ***             Support for mobs               ***
-        **************************************************
-]]--
-
+-- Support for mobs
 if core.get_modpath("mobs") then
-
 	core.register_craft({
 		output = "mobs:meat_raw",
 		recipe = {
@@ -33,17 +27,10 @@ if core.get_modpath("mobs") then
 	})
 
     core.log("info", "[MOD] " .. modname .. ": mobs supported.")
+end
 
-end -- if core.get_modpath("mobs"
-
---[[
-        **************************************************
-        ***      Support for animalmaterials           ***
-        **************************************************
-]]--
-
+-- Support for animalmaterials
 if core.get_modpath("animalmaterials") then
-
 	core.register_craft({
 		output = "animalmaterials:milk",
 		recipe = {
@@ -55,16 +42,10 @@ if core.get_modpath("animalmaterials") then
 
     core.log("info", "[MOD] " .. modname .. ": animalmaterials supported.")
 
-end -- if core.get_modpath("animalmaterials"
+end
 
---[[
-        **************************************************
-        ***             Support for fishing            ***
-        **************************************************
-]]--
-
+-- Support for fishing
 if core.get_modpath("fishing") then
-
     cucina_vegana.add_group("fishing:fish_raw", {food_fish = 1})
     cucina_vegana.add_group("fishing:clownfish_raw", {food_fish = 1})
     cucina_vegana.add_group("fishing:bluewhite_raw", {food_fish = 1})
@@ -105,56 +86,49 @@ if core.get_modpath("fishing") then
 	})
 
     core.log("info", "[MOD] " .. modname .. ": fishing supported.")
+end
 
-end -- if core.get_modpath("fishing"
-
---[[
-        **************************************************
-        ***               Support for bbq              ***
-        **************************************************
-]]--
-
+-- Support for bbq
 if core.get_modpath("bbq") then
-
 	-- *** group:food_meat
 
 	--BBQ Beef Ribs Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:bbq_beef_ribs_raw 2",
 		type = "shapeless",
 		recipe = {"bbq:bbq_sauce", "group:food_meat", "group:food_pepper_ground"}
 	})
 
 	--Corned Beef Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:corned_beef_raw",
 		type = "shapeless",
 		recipe = {"group:food_peppercorn", "group:food_meat","bbq:brine",}
 	})
 
 	--BBQ Brisket Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:brisket_raw 2",
 		type = "shapeless",
 		recipe = {"bbq:bbq_sauce", "bbq:molasses", "group:food_meat", "group:food_garlic_clove"}
 	})
 
 	--London Broil Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:london_broil_raw 2",
 		type = "shapeless",
 		recipe = {"bbq:bacon", "group:food_garlic_clove", "group:food_meat"}
 	})
 
 	--Beef Jerky Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:beef_jerky_raw 3",
 		type = "shapeless",
 		recipe = {"bbq:liquid_smoke", "bbq:brine", "group:food_meat"}
 	})
 
 	--Pepper Steak Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:pepper_steak_raw",
 		type = "shapeless",
 		recipe = {"group:food_pepper_ground", "group:food_meat", "group:food_pepper_ground"}
@@ -163,49 +137,49 @@ if core.get_modpath("bbq") then
 	-- *** group:food_bread
 
 	--Cheese Steak Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:cheese_steak 2",
 		type = "shapeless",
 		recipe = {"group:food_bread", "group:food_pepper", "bbq:beef", "group:food_cheese", "group:food_onion"}
 	})
 
 	--Bacon Cheeseburger Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:bacon_cheeseburger 3",
 		type = "shapeless",
 		recipe = {"group:food_bread", "bbq:bacon", "bbq:hamburger_patty", "group:food_cheese"}
 	})
 
 	--Bacon Cheeseburger Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:bacon_cheeseburger 3",
 		type = "shapeless",
 		recipe = {"group:food_bread", "bbq:bacon", "group:food_meat", "group:food_cheese"}
 	})
 
 	--Hamburger Craft Recipe
-	core.register_craft( {
+	core.register_craft({
         output = "bbq:hamburger 2",
 		type = "shapeless",
 		recipe = {"group:food_bread", "bbq:hamburger_patty"}
 	})
 
 	--Hamburger Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:hamburger 2",
 		type = "shapeless",
 		recipe = {"group:food_bread", "group:food_meat"}
 	})
 
 	--Hotdog Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:hotdog 2",
 		type = "shapeless",
 		recipe = {"bbq:hotdog_cooked", "group:food_bread"}
 	})
 
 	--Pulled Pork Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:pulled_pork 2",
 		type = "shapeless",
 		recipe = {"mobs:pork_cooked", "group:food_bread", "bbq:bbq_sauce"}
@@ -213,28 +187,28 @@ if core.get_modpath("bbq") then
 
 
 	--Stuffed Chop Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:stuffed_chop_raw 3",
 		type = "shapeless",
 		recipe = {"group:food_onion", "group:food_bread", "flowers:mushroom_brown", "mobs:pork_raw", "default:apple"}
 	})
 
 	--Stuffed Mushroom Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:stuffed_mushroom_raw 2",
 		type = "shapeless",
 		recipe = {"group:food_tomato", "group:food_bread", "flowers:mushroom_brown"}
 	})
 
 	--Stuffed Pepper Craft Recipe
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:stuffed_pepper_raw 3",
 		type = "shapeless",
 		recipe = {"group:food_cheese", "group:food_bread", "group:food_pepper"}
 	})
 
     -- bbq:bacon_raw
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:bacon_raw 3",
 		recipe = {
 			{"bbq:basting_brush", "group:dye,color_red", "group:dye,color_white"},
@@ -243,7 +217,7 @@ if core.get_modpath("bbq") then
         replacements = {{"bbq:basting_brush", "bbq:basting_brush"}}
     })
 
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:bbq_chicken_raw",
 		recipe = {
 			{"bbq:basting_brush", "bbq:hot_sauce", "cucina_vegana:tofu"},
@@ -253,7 +227,7 @@ if core.get_modpath("bbq") then
         replacements = {{"bbq:basting_brush", "bbq:basting_brush"}}
     })
 
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:beef_raw",
 		recipe = {
 			{"bbq:basting_brush", "group:dye,color_red", "bbq:sea_salt"},
@@ -262,14 +236,14 @@ if core.get_modpath("bbq") then
         replacements = {{"bbq:basting_brush", "bbq:basting_brush"}}
     })
 
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:ham_raw",
 		recipe = {
 			{"cucina_vegana:tofu", "bbq:liquid_smoke", "cucina_vegana:tofu"},
 		}
     })
 
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:hot_wings_raw 2",
 		recipe = {
 			{"cucina_vegana:tofu", "", "cucina_vegana:tofu"},
@@ -278,7 +252,7 @@ if core.get_modpath("bbq") then
         }
     })
 
-	core.register_craft( {
+	core.register_craft({
 		output = "bbq:hotdog_raw 3",
 		recipe = {
 			{"bbq:basting_brush", "group:food_salt", ""},
@@ -288,9 +262,9 @@ if core.get_modpath("bbq") then
         replacements = {{"bbq:basting_brush", "bbq:basting_brush"}}
     })
 
-    core.register_craft( {
-    output = "bbq:leg_lamb_raw",
-    recipe = {
+    core.register_craft({
+        output = "bbq:leg_lamb_raw",
+        recipe = {
 			{"bbq:basting_brush", "cucina_vegana:imitation_butter", "cucina_vegana:soy_milk"},
 			{"cucina_vegana:imitation_meat", "", ""},
 			{"group:food_salt", "", ""},
@@ -298,19 +272,20 @@ if core.get_modpath("bbq") then
         replacements = {{"bbq:basting_brush", "bbq:basting_brush"}}
     })
 
-    core.register_craft( {
+    core.register_craft({
         output = "bbq:rack_lamb_raw",
         recipe = {
 			{"bbq:basting_brush", "", "default:stick"},
 			{"cucina_vegana:imitation_meat", "", "default:stick"},
 			{"bbq:spatula", "", "default:stick"},
         },
-        replacements = {{"bbq:basting_brush", "bbq:basting_brush"},
-                        {"bbq:spatula", "bbq:spatula"},
-                        }
+        replacements = {
+            {"bbq:basting_brush", "bbq:basting_brush"},
+            {"bbq:spatula", "bbq:spatula"},
+        }
     })
 
-    core.register_craft( {
+    core.register_craft({
         output = "bbq:lamb_kebab_raw",
         recipe = {
 			{"bbq:leg_lamb_raw", "default:stick", ""},
@@ -319,21 +294,15 @@ if core.get_modpath("bbq") then
     })
 
     core.log("info", "[MOD] " .. modname .. ": bbq supported.")
+end
 
-end -- if core.get_modpath("bbq"
-
---[[
-        **************************************************
-        ***             Support for pizza              ***
-        **************************************************
-]]--
-
+-- Support for pizza
 if core.get_modpath("pizza") then
     core.register_craft({
         type = "shapeless",
         output = "pizza:pizza_dough",
         recipe = {"group:food_flour", "group:food_cheese", "group:food_tomato"},
-        })
+    })
 
     cucina_vegana.add_group("pizza:pizza_dough", {pizza_dough = 1})
 
@@ -341,25 +310,18 @@ if core.get_modpath("pizza") then
         type = "shapeless",
         output = "pizza:pizza_dough",
         recipe = {"cucina_vegana:pizza_dough"}
-                            })
+    })
 
     core.register_craft({
         type = "shapeless",
         output = "cucina_vegana:pizza_dough",
         recipe = {"pizza:pizza_dough"}
-                            })
-
+    })
 end
 
---[[
-        **************************************************
-        ***             Support for homedecor          ***
-        **************************************************
-]]--
-
+-- Support for homedecor
 if core.get_modpath("homedecor") then
-
-    core.register_craft( {
+    core.register_craft({
         output = "homedecor:cobweb_corner 5",
         recipe = {
 			{ "cucina_vegana:flax_roasted", "", "cucina_vegana:flax_roasted" },
@@ -420,15 +382,9 @@ if core.get_modpath("homedecor") then
             { "", "basic_materials:plastic_strip", "basic_materials:plastic_strip" },
         },
     })
-
 end
 
---[[
-        **************************************************
-        ***      Support for building_blocks           ***
-        **************************************************
-]]--
-
+-- Support for building_blocks
 if core.get_modpath("building_blocks") then
     core.register_craft({
         output = 'building_blocks:terrycloth_towel 2',
@@ -436,7 +392,6 @@ if core.get_modpath("building_blocks") then
             {"cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted"},
         }
     })
-
 end
 
 --[[
@@ -462,15 +417,9 @@ if core.get_modpath("ropes") then
 			{'cucina_vegana:flax_roasted'},
 		}
 	})
-
 end
 
---[[
-        **************************************************
-        ***             Support for cottages           ***
-        **************************************************
-]]--
-
+-- Support for cottages
 if core.get_modpath("cottages") then
     core.register_craft({
         output = "cottages:rope",
@@ -480,15 +429,9 @@ if core.get_modpath("cottages") then
             {"","","cucina_vegana:flax_roasted"},
             }
     })
-
 end
 
---[[
-        **************************************************
-        ***             Support for moreblocks         ***
-        **************************************************
-]]--
-
+-- Support for moreblocks
 if core.get_modpath("moreblocks") then
     core.register_craft({
         output = "moreblocks:rope 3",
@@ -498,24 +441,17 @@ if core.get_modpath("moreblocks") then
             {"cucina_vegana:flax_roasted"},
         }
     })
-
 end
 
---[[
-        **************************************************
-        ***             Support for petz               ***
-        **************************************************
-]]--
-
+-- Support for petz
 if core.get_modpath("petz") then
-
     core.register_craft({
-	output = "petz:lasso",
-	recipe = {
-		{"cucina_vegana:flax_roasted", "", "cucina_vegana:flax_roasted"},
-		{"", "default:diamond", ""},
-		{"cucina_vegana:flax_roasted", "", "cucina_vegana:flax_roasted"},
-            }
+	    output = "petz:lasso",
+	    recipe = {
+		    {"cucina_vegana:flax_roasted", "", "cucina_vegana:flax_roasted"},
+		    {"", "default:diamond", ""},
+		    {"cucina_vegana:flax_roasted", "", "cucina_vegana:flax_roasted"},
+        }
     })
 
     core.register_craft({
@@ -576,36 +512,29 @@ if core.get_modpath("petz") then
         type = "shaped",
         output = "petz:dreamcatcher",
         recipe = {
-                    {"", "group:wood", ""},
-                    {"cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted"},
-                    {"petz:ducky_feather", "petz:ducky_feather", "petz:ducky_feather"},
-                }
+            {"", "group:wood", ""},
+            {"cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted"},
+            {"petz:ducky_feather", "petz:ducky_feather", "petz:ducky_feather"},
+        }
     })
 
     core.register_craft({
         type = "shaped",
         output = "petz:ducky_feather",
         recipe = {
-                    {"cucina_vegana:flax_roasted", "default:stick", "cucina_vegana:flax_roasted"},
-                    {"cucina_vegana:flax_roasted", "default:stick", "cucina_vegana:flax_roasted"},
-                    {"", "default:stick", ""},
-                }
+            {"cucina_vegana:flax_roasted", "default:stick", "cucina_vegana:flax_roasted"},
+            {"cucina_vegana:flax_roasted", "default:stick", "cucina_vegana:flax_roasted"},
+            {"", "default:stick", ""},
+        }
     })
 
     cucina_vegana.add_group("petz:cheese", {food_cheese = 1, eatable = 1})
     cucina_vegana.add_group("petz:milk", {food_milk = 1, eatable = 1})
     cucina_vegana.add_group("petz:honey_bottle", {food_sugar = 1, food_honey = 1})
+end
 
-end -- if core.get_modpath("petz"
-
---[[
-        **************************************************
-        ***         Support for aqua_farming           ***
-        **************************************************
-]]--
-
+-- Support for aqua_farming
 if core.get_modpath("aqua_farming") then
-
     core.register_craft({
         output = "cucina_vegana:vegan_sushi",
         recipe = {	{"cucina_vegana:imitation_fish", "cucina_vegana:bowl_rice", ""},
@@ -619,23 +548,20 @@ if core.get_modpath("aqua_farming") then
     core.register_craft({
         output = "cucina_vegana:imitation_fish",
         recipe = {
-                    {"aqua_farming:sea_grass_item","cucina_vegana:tofu", "group:dye,color_blue"},
-                    {"cucina_vegana:tofu","aqua_farming:sea_grass_item", "cucina_vegana:tofu"},
-                    {"","cucina_vegana:tofu", ""},
-
-                },
+            {"aqua_farming:sea_grass_item","cucina_vegana:tofu", "group:dye,color_blue"},
+            {"cucina_vegana:tofu","aqua_farming:sea_grass_item", "cucina_vegana:tofu"},
+            {"","cucina_vegana:tofu", ""},
+        },
     })
 
     core.register_craft({
         output = "cucina_vegana:sea_salad",
         recipe = {
-                    {"aqua_farming:sea_cucumber_item","cucina_vegana:parsley", "cucina_vegana:lettuce"},
-                    {"cucina_vegana:chives","aqua_farming:sea_anemone_item", "cucina_vegana:asparagus"},
-                    {"","cucina_vegana:bowl", ""},
-
-                },
+            {"aqua_farming:sea_cucumber_item","cucina_vegana:parsley", "cucina_vegana:lettuce"},
+            {"cucina_vegana:chives","aqua_farming:sea_anemone_item", "cucina_vegana:asparagus"},
+            {"","cucina_vegana:bowl", ""},
+        },
     })
-
 end
 
 cucina_vegana.add_group("default:blueberries", {food_blueberry = 1, food_blueberries = 1})

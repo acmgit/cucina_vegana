@@ -24,23 +24,25 @@ core.register_node("cucina_vegana:wild_" .. pname, {
 	walkable = true,
 	climbable = true,
 	drop = {
-			items = {
-					{items = {"cucina_vegana:" .. pname .. "_grape 2"}},
-					{items = {"cucina_vegana:" .. pname .. "_sapling 1"}},
-				}
-			},
+		items = {
+			{items = {"cucina_vegana:" .. pname .. "_grape 2"}},
+			{items = {"cucina_vegana:" .. pname .. "_sapling 1"}},
+		}
+	},
 	drawtype = "plantlike",
 	paramtype2 = "facedir",
 	sunlight_propagates = true,
 	tiles = {"cucina_vegana_" .. pname .. "_bottom_1.png"},
-	groups = {snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1,
-                growing = 1, not_in_creative_inventory = 1, tree},
+	groups = {
+		snappy = 3, dig_immediate = 1, flammable = 2, plant = 1,
+		attached_node = 1, growing = 1, not_in_creative_inventory = 1, tree
+	},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
-			type = "fixed",
-			fixed = {
-				{-0.5, -0.5, -0.5, 0.5, -0.35, 0.5}, -- side f
-			},
+		type = "fixed",
+		fixed = {
+			{-0.5, -0.5, -0.5, 0.5, -0.35, 0.5}, -- side f
+		},
 	},
 })
 
@@ -73,8 +75,8 @@ core.register_node("cucina_vegana:" .. pname .. "_leaves", {
 		}
 	},
 	after_place_node = function(...)
-							return default.after_place_leaves(...)
-						end,
+		return default.after_place_leaves(...)
+	end,
 })
 
 core.register_craftitem("cucina_vegana:" .. pname .. "_grape", {
@@ -82,7 +84,6 @@ core.register_craftitem("cucina_vegana:" .. pname .. "_grape", {
 	inventory_image = "cucina_vegana_" .. pname .. "_grape.png",
 	groups = {food = 1, food_wine = 1},
     on_use = core.item_eat(3)
-
 })
 
 core.register_node("cucina_vegana:" .. pname .. "_sapling", {
@@ -96,8 +97,10 @@ core.register_node("cucina_vegana:" .. pname .. "_sapling", {
 	tiles = {"cucina_vegana_" .. pname .. "_sapling.png"},
 	inventory_image = "cucina_vegana_" .. pname .. "_sapling.png",
 	wield_image = "cucina_vegana_" .. pname .. "_sapling.png",
-	groups = {	snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1,
-                growing = 1},
+	groups = {
+		snappy = 3, dig_immediate = 1, flammable = 2, plant = 1,
+		attached_node = 1, growing = 1
+	},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed",
@@ -107,7 +110,11 @@ core.register_node("cucina_vegana:" .. pname .. "_sapling", {
 	},
 })
 
-cv.lib.register_bottom_abm("cucina_vegana:" .. pname .. "_sapling", "cucina_vegana:" .. pname .. "_bottom_1", duration, maxlight)
+cv.lib.register_bottom_abm(
+	"cucina_vegana:" .. pname .. "_sapling", 
+	"cucina_vegana:" .. pname .. "_bottom_1",
+	duration, maxlight
+)
 
 for step = 1, bottom_steps do
 	core.register_node("cucina_vegana:" .. pname .. "_bottom_" .. step, {
@@ -124,23 +131,27 @@ for step = 1, bottom_steps do
 		paramtype2 = "facedir",
 		sunlight_propagates = true,
 		tiles = {"cucina_vegana_" .. pname .. "_bottom_" .. step .. ".png"},
-		groups = {	snappy = 3, flammable=2, plant=1, attached_node = 1,
-	                growing = 1, not_in_creative_inventory = 1},
+		groups = {
+			snappy = 3, flammable = 2, plant = 1, attached_node = 1,
+	        growing = 1, not_in_creative_inventory = 1
+		},
 		sounds = default.node_sound_leaves_defaults(),
 		selection_box = {
 			type = "fixed",
 			fixed = {
-						{-0.4, -0.5, -0.4, 0.4, 0.5, 0.4}, -- side f
-					},
+				{-0.4, -0.5, -0.4, 0.4, 0.5, 0.4}, -- side f
+			},
 		},
 	})
 
-	if (step < bottom_steps) then
-		cv.lib.register_bottom_abm("cucina_vegana:" .. pname .. "_bottom_" .. step, "cucina_vegana:" .. pname .. "_bottom_" .. step+1, duration, maxlight)
-
+	if step < bottom_steps then
+		cv.lib.register_bottom_abm(
+			"cucina_vegana:" .. pname .. "_bottom_" .. step,
+			"cucina_vegana:" .. pname .. "_bottom_" .. step + 1,
+			duration, maxlight
+		)
 	end
-
-end -- for step
+end
 
 core.register_abm({
     nodenames = {"cucina_vegana:" .. pname .. "_bottom_" .. bottom_steps},
@@ -148,18 +159,16 @@ core.register_abm({
     chance = percent,
     catch_up = true,
     action = function(pos, node, active_object_count, active_object_count_wider)
-                local nodepos = { x = pos.x, y = pos.y+1, z = pos.z}
-	                if(cv.lib.check_light(nodepos, maxlight)) then
-                        if(cv.lib.check_air(nodepos)) then
-                            core.set_node(nodepos, {name = "cucina_vegana:" .. pname .. "_top_1"})
-
-                        end -- if(check_air)
-
-                    end -- if(cv.check_light
-
-            end, -- function(
-
-}) -- core.register_abm({
+        local nodepos = { x = pos.x, y = pos.y+1, z = pos.z}
+	    if cv.lib.check_light(nodepos, maxlight) then
+            if cv.lib.check_air(nodepos) then
+                core.set_node(nodepos, {
+					name = "cucina_vegana:" .. pname .. "_top_1"
+				})
+            end
+        end
+    end,
+})
 
 for step = 1, top_steps do
 	core.register_node("cucina_vegana:" .. pname .. "_top_" .. step, {
@@ -168,35 +177,38 @@ for step = 1, top_steps do
 		walkable = false,
 		drop = {
 			items = {
-						{items = {"cucina_vegana:" .. pname .. "_leaves 2"}},
-						{items = {"cucina_vegana:" .. pname .. "_grape " .. step}, rarity = top_steps-step},
-						{items = {"cucina_vegana:" .. pname .. "_sapling"}, rarity = 5},
-					},
-				},
+				{items = {"cucina_vegana:" .. pname .. "_leaves 2"}},
+				{items = {"cucina_vegana:" .. pname .. "_grape " .. step}, rarity = top_steps-step},
+				{items = {"cucina_vegana:" .. pname .. "_sapling"}, rarity = 5},
+			},
+		},
 		drawtype = "plantlike",
 		paramtype2 = "facedir",
 		sunlight_propagates = true,
 		tiles = {"cucina_vegana_" .. pname .. "_top_" .. step .. ".png"},
-		groups = {	snappy = 3, dig_immediate=1, flammable=2, plant=1, attached_node = 1,
-	                growing = 1, not_in_creative_inventory = 1, tree = 1},
+		groups = {
+			snappy = 3, dig_immediate = 1, flammable = 2, plant = 1,
+			attached_node = 1, growing = 1, not_in_creative_inventory = 1, tree = 1
+		},
 		sounds = default.node_sound_leaves_defaults(),
 		selection_box = {
 			type = "fixed",
 			fixed = {
-						{-0.4, -0.5, -0.4, 0.4, 0.5, 0.4}, -- side f
-					},
+				{-0.4, -0.5, -0.4, 0.4, 0.5, 0.4}, -- side f
+			},
 		},
 	})
 
-	if (step < top_steps) then
-		cv.lib.register_top_abm("cucina_vegana:" .. pname .. "_top_" .. step, "cucina_vegana:" .. pname .. "_top_" .. step+1, duration, maxlight)
-
+	if step < top_steps then
+		cv.lib.register_top_abm(
+			"cucina_vegana:" .. pname .. "_top_" .. step,
+			"cucina_vegana:" .. pname .. "_top_" .. step + 1,
+			duration, maxlight
+		)
 	end
-
-end -- for step
+end
 
 -- Register @ farming_nextgen
 if cucina_vegana.farming_ng then
     cucina_vegana.register_farming_ng(pname, top_steps)
-
-end -- if(cucina_vegana.farming_ng
+end

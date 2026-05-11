@@ -33,7 +33,7 @@ local nodes = {
 }
 
 for node, value in ipairs(nodes) do
-    if(core.registered_nodes[value.name] or core.registered_items[value.name]) then
+    if core.registered_nodes[value.name] or core.registered_items[value.name] then
         core.register_craft({
             output = value.output,
             recipe = value.recipe,

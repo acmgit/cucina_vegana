@@ -154,9 +154,7 @@ core.register_node("cucina_vegana:coffee_cup", {
 	description = S("Cup of Coffee cold"),
 	drawtype = "mesh",
 	mesh = "cucina_vegana_coffee_cup.obj",
-	tiles = {
-				"cucina_vegana_coffee_cup.png",
-			},
+	tiles = {"cucina_vegana_coffee_cup.png"},
 	inventory_image = "cucina_vegana_coffee_cup_inv.png",
 	wield_image = "cucina_vegana_coffee_cup_inv.png",
 	paramtype = "light",
@@ -177,35 +175,31 @@ core.register_node("cucina_vegana:coffee_cup_hot", {
 	drawtype = "mesh",
 	mesh = "cucina_vegana_coffee_cup.obj",
 	tiles = {
-				{
-					name = "cucina_vegana_coffee_cup_hot_anim.png",
-					backfaceculling = false,
-					animation =
-					{
-						type = "vertical_frames",
-						aspect_w = 64,
-						aspect_h = 64,
-						length = 3
-
-					}
-
-				}
-
-			},
+		{
+			name = "cucina_vegana_coffee_cup_hot_anim.png",
+			backfaceculling = false,
+			animation = {
+				type = "vertical_frames",
+				aspect_w = 64,
+				aspect_h = 64,
+				length = 3
+			}
+		}
+	},
 	inventory_image = "cucina_vegana_coffee_cup_hot_inv.png",
 	wield_image = "cucina_vegana_coffee_cup_hot_inv.png",
 	paramtype = "light",
 	paramtype2 = "facedir",
 	param2 = "4dir",
 	is_ground_content = false,
-	on_use = function(itemstack, playerobject, pointed_thing)
-				if (not playerobject) then return end
+	on_use = function(itemstack, player, pointed_thing)
+		if not player then return end
 
-				core.item_eat(2)
-				cv.lib.coffee_effect(playerobject)
-				itemstack:take_item(1)
-				return itemstack
-			end,
+		core.item_eat(2)
+		cv.lib.coffee_effect(player)
+		itemstack:take_item(1)
+		return itemstack
+	end,
 	walkable = true,
 	selection_box = {
 		type = "fixed",
